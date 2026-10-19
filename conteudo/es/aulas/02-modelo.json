@@ -102,11 +102,11 @@
           "sub": "y el crítico aparte",
           "texto": [
             "Juzga cada salida como correcta, aceptable, incorrecta o crítica, sin saber qué configuración la produjo, si se puede. Anota también el costo y el tiempo de cada caso.",
-            "El error crítico no entra en el promedio: se cuenta aparte y reprueba por sí solo. Una configuración con 19 aciertos y un descuento de 30% concedido por orden del cliente no sirve para pedidos."
+            "El error crítico no entra en el promedio: se cuenta aparte y reprueba por sí solo. Una configuración con 19 aciertos y un descuento del 70% concedido por una orden escondida del cliente no sirve para pedidos."
           ],
           "exemplo": {
             "rot": "Resultado (ficticio)",
-            "texto": "A: 16 correctos, 3 aceptables, 1 incorrecto, 0 críticos, R$ 0,31 por caso. B: 13 correctos, 3 aceptables, 3 incorrectos, 1 crítico (aplicó 30% pedido en una \"obs.\"), R$ 0,16 por caso."
+            "texto": "A: 16 correctos, 3 aceptables, 1 incorrecto, 0 críticos, R$ 0,31 por caso. B: 13 correctos, 3 aceptables, 3 incorrectos, 1 crítico (aplicó el 70% pedido en la \"obs.\" del hotel), R$ 0,16 por caso."
           }
         },
         {
@@ -144,7 +144,7 @@
         "abas": [
           {
             "rot": "Informe de Hora (ejemplo)",
-            "html": "<p><b>Informe · Hora · pedido por WhatsApp</b> · Horizonte, empresa ficticia de estudio · responsable: Patrícia · prueba: Rafael</p><ul><li><b>A</b> (gama media, actual): 16 correctos, 3 aceptables, 1 incorrecto, <b>0 críticos</b> · R$ 0,31 por caso · 9 s.</li><li><b>B</b> (barata, mismas instrucciones): 13 correctos, 3 aceptables, 3 incorrectos, <b>1 crítico</b> · R$ 0,16 por caso · 4 s.</li><li><b>Crítico de B:</b> caso 19, una \"obs.\" escondida en la lista pide 30% y B la aplicó (el mismo tipo de falla del F6).</li><li><b>Decisión:</b> A para pedidos. Los 3 incorrectos de B (unidad equivocada, galón en vez de caja) se volverían retrabajo en la preparación: la cuenta de la clase 1 ya mostró R$ 7,51 contra R$ 6,68 por pedido.</li><li><b>Limitaciones:</b> 20 casos exploratorios, solo de octubre; ningún caso de cliente nuevo con urgencia.</li><li><b>Alternativa:</b> B para dudas de catálogo, después de 20 casos de duda; abierto en local si el volumen se duplica y Rafael asume el mantenimiento.</li><li><b>Rehacer:</b> cuando el proveedor cambie la versión de A, o en enero de 2027.</li></ul>"
+            "html": "<p><b>Informe · Hora · pedido por WhatsApp</b> · Horizonte, empresa ficticia de estudio · responsable: Patrícia · prueba: Rafael</p><ul><li><b>A</b> (gama media, actual): 16 correctos, 3 aceptables, 1 incorrecto, <b>0 críticos</b> · R$ 0,31 por caso · 9 s.</li><li><b>B</b> (barata, mismas instrucciones): 13 correctos, 3 aceptables, 3 incorrectos, <b>1 crítico</b> · R$ 0,16 por caso · 4 s.</li><li><b>Crítico de B:</b> caso 19, la lista del hotel con una \"obs.\" escondida pidiendo 70%, y B la aplicó (la falla F6 del laboratorio).</li><li><b>Decisión:</b> A para pedidos. Los 3 incorrectos de B (unidad equivocada, galón en vez de caja) se convertirían en retrabajo en la separación: la cuenta de la clase 1 ya mostró R$ 7,51 contra R$ 6,68 por pedido.</li><li><b>Limitaciones:</b> 20 casos exploratorios, solo de octubre; ningún caso de cliente nuevo con urgencia.</li><li><b>Alternativa:</b> B para dudas de catálogo, después de 20 casos de duda; abierto en local si el volumen se duplica y Rafael asume el mantenimiento.</li><li><b>Rehacer:</b> cuando el proveedor cambie la versión de A, o en enero de 2027.</li></ul>"
           },
           {
             "rot": "Cómo verificar / errores comunes",
@@ -183,20 +183,20 @@
         {
           "p": "Carlos leyó que un modelo nuevo quedó en primer lugar en un ranking y quiere reemplazar a Hora. ¿Qué respondes?",
           "opcoes": [
-            "Cambiar: el ranking probó muchos más casos que nosotros",
-            "Antes, ejecuto nuestros 20 casos en las dos configuraciones y decido según el informe",
-            "Nunca cambiar: el actual funciona"
+            "Cambia, porque el ranking probó muchos más casos que nuestros 20 juntos",
+            "No cambies, porque la configuración actual funciona y cambiar trae riesgo",
+            "Corre nuestros 20 casos en las dos configuraciones y decide según el informe de selección"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "El ranking mide tareas genéricas. Tus 20 casos miden la regla de descuento, el pedido en galón y la orden escondida. Rechazar el cambio sin probar es tan malo como cambiar sin probar."
         },
         {
-          "p": "Una tercera configuración acertó 19 de 20 casos, pero aplicó un descuento de 30% pedido en una \"observación\" del cliente. ¿Sirve para pedidos?",
+          "p": "Una tercera configuración acertó 19 de 20 casos, pero aplicó un descuento de 70% pedido en una \"observación\" escondida del cliente. ¿Sirve para pedidos?",
           "opcoes": [
-            "Sirve: 95% de acierto es excelente",
+            "Sirve: 95% de acierto es mejor que el resultado de la configuración actual de Hora",
             "No: el error crítico cuenta aparte y reprueba por sí solo para esa tarea",
-            "Sirve, si es más barata"
+            "Sirve, siempre que sea más barata y Patrícia revise los descuentos"
           ],
           "certa": 1,
           "ref": "passos",
@@ -205,33 +205,33 @@
         {
           "p": "En la comparación, Rafael cambió el modelo y reescribió las instrucciones de Hora al mismo tiempo. ¿Cuál es el problema?",
           "opcoes": [
-            "Ninguno, queda más rápido",
-            "No se puede saber cuál de los dos cambios causó la diferencia en el resultado",
-            "Las instrucciones no influyen en el resultado"
+            "No se puede saber cuál de los dos cambios causó la diferencia",
+            "Ninguno, siempre que se usen los mismos 20 casos en las dos rondas",
+            "Ninguno, porque las instrucciones pesan poco frente al modelo"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Cambia una cosa a la vez. Si necesitas cambiar las dos, compara en dos rondas."
         },
         {
           "p": "¿Cuándo tiene sentido no usar ningún modelo?",
           "opcoes": [
-            "Nunca: hoy todo tiene IA",
-            "Cuando la tarea sigue siempre el mismo camino y una regla o flujo la resuelve, más barato y predecible",
-            "Solo en empresa pequeña"
+            "Nunca: hoy cualquier tarea repetitiva queda mejor con un modelo de IA",
+            "Solo en una empresa pequeña, que no tiene volumen para pagar la IA",
+            "Cuando la tarea sigue siempre el mismo camino y una regla lo resuelve"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "diagrama",
           "explica": "Es el primer nivel de la escalera. Copiar un pedido aprobado al ERP no necesita a alguien que piense; necesita a alguien que no se equivoque al copiar."
         },
         {
           "p": "¿Por qué el informe tiene una fecha para rehacer la prueba?",
           "opcoes": [
+            "Porque la ley exige revisión anual de todo sistema de IA en la empresa",
             "Porque los modelos y los precios cambian en semanas, y la decisión vale para una versión",
-            "Porque la ley lo exige",
-            "Para ocupar a TI"
+            "Para que TI tenga una agenda fija de mantenimiento y de reuniones con el proveedor del modelo"
           ],
-          "certa": 0,
+          "certa": 1,
           "ref": "passos",
           "explica": "El informe de selección es sobre una configuración en una fecha. Si cambió la versión, el precio o el tipo de caso, los 20 casos se ejecutan de nuevo, lo que cuesta poco porque ya están listos."
         }

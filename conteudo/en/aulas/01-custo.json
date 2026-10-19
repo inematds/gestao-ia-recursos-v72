@@ -224,42 +224,42 @@
         {
           "p": "The vendor dashboard shows R$ 0.31 per conversation. Why isn't that number enough to decide?",
           "opcoes": [
-            "Because it's wrong: the vendor always charges more",
-            "Because it's the cost of one attempt; it doesn't include tools, review hours, exceptions or rework, and a conversation is not a result",
-            "Because it should be in dollars"
+            "Because it is an average over the whole month and hides the peak days, when each conversation costs a lot more",
+            "Because the vendor charges in dollars, and the exchange rate for the month changes the final invoice in reais quite a bit",
+            "Because it measures one attempt: it leaves out tools, people's hours and rework, and a conversation is not an order"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "diagrama",
           "explica": "The number is true, but it answers a different question. At Hora, the invoice is only 24% of the cost of each completed request. Whoever decides by the vendor's price list decides with a quarter of the bill."
         },
         {
           "p": "In the cost per completed task calculation, where do the conversations that didn't become a request go?",
           "opcoes": [
-            "Nowhere: they didn't produce a result",
-            "In the numerator (the cost), not in the denominator (the completed tasks)",
-            "In the denominator, so the average cost comes out lower"
+            "In the numerator (the cost), and outside the denominator (the completed tasks)",
+            "In the denominator, because each conversation is also a service delivered",
+            "Nowhere, because a conversation that doesn't become an order doesn't generate new revenue"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Attempts and failures cost money and are on the invoice. Putting them in the denominator hides the cost of getting it wrong; taking them out of the numerator makes the calculation look cheaper than it is."
         },
         {
           "p": "A model at half the price made the sorting step get twice as many requests wrong. What happens to the cost per request?",
           "opcoes": [
-            "It drops by half, like the invoice",
-            "It can go up: rework and exception hours grow more than the invoice drops",
-            "It doesn't change: rework is not an AI cost"
+            "It is cut in half, because the model invoice is always the biggest cost in the process",
+            "It stays the same, because rework is a picking cost, not an AI cost",
+            "It can go up: rework and exceptions grow more than the invoice falls"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "At Horizonte, it went from R$ 6.68 to R$ 7.51. A cheap agent that makes mistakes and needs two attempts cost double the price list."
         },
         {
           "p": "Juliana is already an employee and gets a fixed salary. Do the 30 hours she spends taking over Hora's conversations count in the calculation?",
           "opcoes": [
-            "No, the salary would be paid anyway",
-            "Yes, at the hourly cost: it's time that could go to other work, and it shows how much of the \"does it on its own\" depends on people",
-            "Only if she works overtime"
+            "They don't count, because her salary would be paid anyway at the end of the month",
+            "They count at the hourly cost: it is time that could go to other work",
+            "They only count if she works overtime to cover Hora's conversations"
           ],
           "certa": 1,
           "ref": "diagrama",
@@ -268,11 +268,11 @@
         {
           "p": "A model's price per token dropped 40% compared to the previous version. What do you do with the calculation?",
           "opcoes": [
-            "Announce 40% savings on the process",
-            "Check the vendor's price on the day, redo the model's line and see how much the cost per completed task changes",
-            "Nothing: model price doesn't matter"
+            "Checks the price that day, redoes the model line and sees the effect on cost per task",
+            "Tells the owner the process will save 40%, since the model got cheaper",
+            "Moves to the new version the same day, without running the cases, to take advantage of the price"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "If the model is 24% of the total, 40% less on it is close to 10% less on the cost of the request, and only if quality holds. The whole calculation decides, not the launch headline."
         }

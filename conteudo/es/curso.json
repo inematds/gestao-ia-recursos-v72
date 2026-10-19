@@ -45,6 +45,61 @@
         "t": "conversación simulada con el dueño"
       }
     ],
+    "cursos": {
+      "titulo": "Los 6 cursos de la formación",
+      "sub": "Orden sugerido: G0 → G2 → G3 → G4 → G1 → G5. El G1 (personas) puede ir en paralelo, y quien es de RR. HH. puede empezar por él. Los seis ya están publicados.",
+      "abrir": "Abrir el curso",
+      "itens": [
+        {
+          "rot": "G0 · puerta de entrada · publicado",
+          "t": "La empresa agéntica y el gestor de 2027",
+          "l": "Qué cambió en la gestión, qué dicen las consultoras, Brasil, la carrera y tu primer proceso.",
+          "href": "https://inematds.github.io/gestao-ia-base-v72/",
+          "href_idioma": true,
+          "img": "assets/img/cursos/g0.jpg"
+        },
+        {
+          "rot": "G2 · procesos · publicado",
+          "t": "Procesos: el proceso no es sagrado",
+          "l": "Desarmar el proceso antes de automatizar: eliminar, simplificar, rediseñar y decidir quién hace cada etapa.",
+          "href": "https://inematds.github.io/gestao-ia-processos-v72/",
+          "href_idioma": true,
+          "img": "assets/img/cursos/g2.jpg"
+        },
+        {
+          "rot": "G3 · agentes · publicado",
+          "t": "Agentes: contratar, delegar y supervisar",
+          "l": "Cargo, delegación, constitución, nivel de autorización, confianza progresiva, equipo de agentes y cola de excepciones.",
+          "href": "https://inematds.github.io/gestao-ia-agentes-v72/",
+          "href_idioma": true,
+          "img": "assets/img/cursos/g3.jpg"
+        },
+        {
+          "rot": "G4 · recursos · estás aquí",
+          "t": "Recursos: modelos, datos y presupuesto",
+          "l": "Costo por tarea completada, modelo elegido según tus casos, contexto con dueño, herramientas con acceso mínimo, presupuesto y salida del proveedor.",
+          "href": "https://inematds.github.io/gestao-ia-recursos-v72/",
+          "href_idioma": true,
+          "img": "assets/img/cursos/g4.jpg"
+        },
+        {
+          "rot": "G1 · personas · publicado",
+          "t": "Personas: liderar el equipo híbrido",
+          "l": "Lo que queda con las personas, la conversación sobre el cambio, el junior que supervisa agentes y la formación del equipo.",
+          "href": "https://inematds.github.io/gestao-ia-pessoas-v72/",
+          "href_idioma": true,
+          "img": "assets/img/cursos/g1.jpg"
+        },
+        {
+          "rot": "G5 · cierre + proyecto final · publicado",
+          "t": "Gobernar, medir y evolucionar",
+          "l": "Responsables, permisos y registro; evaluación con indicadores; un ciclo LOOP-R y el proyecto final de la formación.",
+          "href": "https://inematds.github.io/gestao-ia-governanca-v72/",
+          "href_idioma": true,
+          "img": "assets/img/cursos/g5.jpg"
+        }
+      ]
+    },
     "aulas_titulo": "Las clases",
     "aulas_sub": "Primero la cuenta (cuánto cuesta el resultado), después cada recurso que entra en ella: el modelo, el conocimiento, las herramientas, lo que el equipo ya usa por fuera y el proveedor. Las clases 7 y 8 juntan todo en el presupuesto y en el plan de recursos del área.",
     "blocos": [

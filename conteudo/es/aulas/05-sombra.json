@@ -189,31 +189,31 @@
         {
           "p": "La encuesta reveló que un vendedor pega la planilla de clientes en un chatbot gratuito. ¿Cuál es la mejor reacción?",
           "opcoes": [
-            "Una advertencia por escrito, para que sirva de ejemplo",
-            "Cortar el uso ya y ofrecer ese mismo día una herramienta aprobada para escribir propuestas",
-            "Dejarlo, porque ahorra tiempo"
+            "Cortar el uso ya y ofrecer el mismo día una herramienta aprobada",
+            "Advertencia por escrito, para que sirva de ejemplo al resto del equipo",
+            "Dejarlo como está, porque ahorra tiempo y el cliente ni lo nota"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Castigar hace que la próxima encuesta vuelva vacía. Dejarlo expone datos de clientes. Cortar con alternativa resuelve el riesgo y mantiene la necesidad atendida."
         },
         {
           "p": "¿Qué pregunta decide el riesgo de una herramienta en la sombra?",
           "opcoes": [
-            "¿Es popular?",
-            "Qué dato lleva, a dónde va, bajo qué contrato y si puede entrenar modelos con él",
-            "¿Es gratuita?"
+            "Si es popular y está bien evaluada por las otras empresas del sector",
+            "Si es gratuita o de pago, y cuánto costaría al mes la versión para empresas",
+            "Qué datos se lleva, adónde, bajo qué contrato y si entrena con ellos"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "diagrama",
           "explica": "El riesgo viaja con el dato. Ser gratuita solo empeora las cosas cuando el precio es el uso de tus datos, como en los términos del servicio de resumen del laboratorio."
         },
         {
           "p": "El resumen diario de atención lo creó la propia TI. ¿Entra en el inventario de IA en la sombra?",
           "opcoes": [
-            "No, TI sabe que existe",
-            "Sí: está fuera del inventario oficial, sin contrato, y envía datos de clientes hacia afuera",
-            "Solo si alguien se queja"
+            "No, porque TI sabe que existe y responde por él",
+            "Sí: está fuera del inventario, sin contrato, y envía datos de clientes hacia afuera",
+            "Solo si alguien se queja o si hay un incidente con los datos"
           ],
           "certa": 1,
           "ref": "passos",
@@ -222,11 +222,11 @@
         {
           "p": "18 de las 40 personas no respondieron la encuesta. ¿Qué significa eso para el inventario?",
           "opcoes": [
-            "Que esas personas no usan IA",
-            "Que está incompleto hasta una segunda ronda, con los líderes de cada área",
-            "Nada, 22 respuestas bastan"
+            "Que es probable que esas personas no usen ninguna IA en su trabajo diario",
+            "Nada: 22 respuestas de 40 ya bastan para cerrar el inventario",
+            "Que está incompleto hasta una segunda ronda con los líderes"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "El silencio no es cero. El inventario dice cuántos respondieron y marca la segunda ronda antes de declararse completo."
         }

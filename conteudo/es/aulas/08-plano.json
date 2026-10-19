@@ -155,7 +155,7 @@
         "abas": [
           {
             "rot": "Plan de Horizonte (ejemplo)",
-            "html": "<p><b>Plan de recursos · comercial · v1 · oct/2026</b> · Horizonte, empresa ficticia de estudio · responsable: Patrícia</p><ol><li><b>Modelos:</b> pedidos en la gama media (16/3/1/0 en 20 casos) · alternativa barata solo para dudas, después de 20 casos propios · rehacer en ene/2027.</li><li><b>Contexto:</b> paquete v3, 7 documentos, todos con responsable · fuera: CPF, planilla de clientes, tabla vencida · pruebas en \"testes-hora\".</li><li><b>Herramientas y sombra:</b> consultar_cliente (leer), criar_pedido (escribir hasta R$ 5 mil y 5%), correo (leer; enviar solo como borrador) · límites confirmados por Rafael · inventario: 5 herramientas, 4 cortadas y 1 suspendida hasta el cambio · próxima revisión ene/2027.</li><li><b>Presupuesto y ROI:</b> R$ 6,68 por pedido (M, con horas anotadas durante una semana) · costo del mes R$ 2.040, tope del modelo R$ 1.400 · inversión R$ 3.600 · ROI estimado −23% / +27% / +77% (E, línea de base no medida) · ahorro realizado: aún no observado.</li><li><b>Salida:</b> proveedor del modelo: disparadores +30% de precio, costo por pedido superior a R$ 8, términos de datos · cambio R$ 1.840 en 3 semanas · ensayo hecho el 20/10.</li></ol><p><b>Rúbrica:</b> 84/100, 6 de 6 obligatorios. <b>Armado:</b> Patrícia. <b>Límites:</b> Rafael. <b>Aprobado:</b> Carlos. <b>Revisión:</b> enero de 2027.</p>"
+            "html": "<p><b>Plan de recursos · comercial · v1 · oct/2026</b> · Horizonte, empresa ficticia de estudio · responsable: Patrícia</p><ol><li><b>Modelos:</b> pedidos en la gama media (16/3/1/0 en 20 casos) · alternativa barata solo para dudas, tras 20 casos propios · rehacer en ene/2027.</li><li><b>Contexto:</b> paquete v3, 7 documentos, todos con responsable · fuera: CPF, hoja de cálculo de clientes, tabla vencida · pruebas en \"testes-hora\".</li><li><b>Herramientas y sombra:</b> consultar_cliente (leer), criar_pedido (escribir hasta R$ 5 mil y 5%), correo (leer; enviar solo como borrador) · límites confirmados por Rafael · inventario: 5 herramientas, 4 cortadas y 1 suspendida hasta el cambio · próxima encuesta ene/2027.</li><li><b>Presupuesto y ROI:</b> R$ 6,68 por pedido (M, con horas anotadas durante una semana) · costo del mes R$ 2.040, tope del modelo R$ 1.400 · inversión R$ 3.600 · ROI estimado −23% / +27% / +77% (E, línea de base no medida) · ahorro realizado: aún no observado.</li><li><b>Salida:</b> proveedor del modelo: disparadores +30% de precio, costo por pedido superior a R$ 8, términos de datos · cambio R$ 1.840 en 3 semanas · ensayo hecho el 16/10.</li></ol><p><b>Rúbrica:</b> 84/100, 6 de 6 obligatorios. <b>Armado:</b> Patrícia. <b>Límites:</b> Rafael. <b>Aprobado:</b> Carlos. <b>Revisión:</b> enero de 2027.</p>"
           }
         ]
       }
@@ -182,7 +182,7 @@
           "sub": "gamas y cobro por uso",
           "texto": [
             "OpenAI: los Workspace Agents, que sustituyen a los Custom GPTs, pasaron a cobrarse por token (06/07/2026). GPT-6 llegó a todos los planes en gamas: Luna en el gratuito, Sol en los de pago, Astra en los planes Pro, Business y Enterprise (07–08/10/2026).",
-            "Anthropic: los Managed Agents, agentes que trabajan solos durante horas, van en la dirección de cobrar por hora de agente, además del token. Fuentes: notas de lanzamiento y páginas de los proveedores."
+            "Anthropic: los Managed Agents, agentes que trabajan solos por horas, apuntan a un cobro por hora de agente, además del token. Es la dirección que el panorama INEMA de octubre registra, sin fecha de anuncio en la fuente: trátalo como tendencia, no como tabla."
           ],
           "exemplo": {
             "rot": "Lectura",
@@ -357,9 +357,9 @@
         {
           "p": "El plan sacó 90 puntos, pero el asistente de correo todavía puede borrar mensajes por su cuenta. ¿Resultado?",
           "opcoes": [
-            "Aprobado: 90 está muy por encima de 75",
-            "Reprobado: una operación irreversible al alcance del agente es obligatoria, y si falta uno, se reprueba",
-            "Aprobado con reservas"
+            "Aprobado: 90 puntos está muy por encima del mínimo de 75",
+            "Reprobado: falta un obligatorio, y con uno que falte se reprueba",
+            "Aprobado con reservas, con plazo para corregir el correo"
           ],
           "certa": 1,
           "ref": "codigo",
@@ -368,31 +368,31 @@
         {
           "p": "¿Quién debe firmar el plan de recursos del área comercial de Horizonte?",
           "opcoes": [
-            "Patrícia, que lo armó y lo conoce todo",
-            "Carlos, que responde por el presupuesto, después de que Rafael confirme los bloqueos",
-            "El proveedor del modelo"
+            "Patrícia, que armó el plan y conoce cada pieza",
+            "Rafael, que configuró los límites y el tope en el proveedor",
+            "Carlos, que responde por el presupuesto, después de que Rafael confirme los bloqueos"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "Quien arma no aprueba. TI confirma lo técnico (bloqueos, tope en el proveedor); quien responde por el dinero firma."
         },
         {
           "p": "El precio de un modelo bajó desde que se aprobó el plan. ¿Qué hacer?",
           "opcoes": [
-            "Anunciar el ahorro al dueño",
-            "Rehacer el cálculo de costo por tarea completada con el precio del día y, si cambias de modelo, correr los 20 casos antes de tocar el presupuesto",
-            "Nada, el plan está aprobado"
+            "Rehacer la cuenta de costo por tarea completada y, si cambias de modelo, los 20 casos",
+            "Anunciar al dueño el ahorro que traerá el precio nuevo en el trimestre",
+            "Nada hasta la próxima revisión trimestral, porque el plan ya está aprobado y firmado"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "El precio es un número del cálculo, no el cálculo. Y cambiar de modelo sin los casos es el cambio sin prueba de la simulación de la clase 7."
         },
         {
           "p": "El panel \"Qué cambió\" cita una acusación de un gobierno contra proveedores de modelos abiertos. ¿Cómo usar eso en el informe de selección?",
           "opcoes": [
-            "Prohibir todo modelo abierto",
-            "Como pregunta de procedencia en la alternativa abierta en local, recordando que es una acusación, no una decisión judicial",
-            "Ignorarlo, no tiene que ver con la gestión"
+            "Excluir del informe de selección todo modelo abierto de un proveedor acusado",
+            "Como pregunta de procedencia en la alternativa, sabiendo que es una acusación",
+            "Ignorar, porque es un asunto de gobierno y no de gestión de un área comercial"
           ],
           "certa": 1,
           "ref": "passos",

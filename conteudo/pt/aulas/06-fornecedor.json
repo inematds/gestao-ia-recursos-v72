@@ -69,7 +69,7 @@
          "conteudo": "Você é consultor de contratos de tecnologia. Abaixo está a descrição de\ncomo uma empresa usa um fornecedor de IA e o plano de saída que ela\nescreveu. Não recomende fornecedor: aponte riscos de aprisionamento.\n\n1. Que parte do trabalho da empresa só existe dentro da plataforma?\n2. Que dado ou histórico não sai em formato aberto?\n3. Que gatilho de saída está faltando ou não tem número?\n4. O custo da troca esqueceu alguma coisa (credenciais, histórico,\n   treinamento da equipe, período de aprovação manual)?\n\nUso do fornecedor:\n\"\"\"<cole>\"\"\"\nPlano:\n\"\"\"<cole>\"\"\""}
       ],
       "saida": {"selo": "simulacao", "abas": [
-        {"rot": "Plano da Hora (exemplo)", "html": "<p><b>Plano de saída · fornecedor do modelo da Hora</b> · Horizonte, empresa fictícia de estudo · dona: Patrícia · técnica: Rafael · aprova: Carlos</p><ul><li><b>Nosso, fora da plataforma:</b> constituição v2.0, pacote de contexto v3, matriz e contratos v1, os 20 casos (pasta \"testes-hora\"). Histórico das conversas: exporta em planilha, uma vez por mês.</li><li><b>Deles:</b> o modelo da faixa média e a versão; o preço, conferido no site em 15/10.</li><li><b>Gatilhos:</b> descontinuação; preço +30%; custo por pedido acima de R$ 8; termos de uso dos dados mudando; mais de 1 crítico nos 20 casos depois de troca de versão.</li><li><b>Alternativa:</b> outra configuração da faixa média, de outro fornecedor · ensaio em 20/10: 15 corretos, 4 aceitáveis, 1 incorreto, 0 crítico.</li><li><b>Troca:</b> Rafael reconfigura e testa (16 h, R$ 1.440); Patrícia aprova tudo no amarelo por 2 semanas (5 h extras, R$ 400). Total estimado R$ 1.840, 3 semanas.</li><li><b>Próximo ensaio:</b> outubro de 2027.</li></ul>"},
+        {"rot": "Plano da Hora (exemplo)", "html": "<p><b>Plano de saída · fornecedor do modelo da Hora</b> · Horizonte, empresa fictícia de estudo · dona: Patrícia · técnica: Rafael · aprova: Carlos</p><ul><li><b>Nosso, fora da plataforma:</b> constituição v2.0, pacote de contexto v3, matriz e contratos v1, os 20 casos (pasta \"testes-hora\"). Histórico das conversas: exporta em planilha, uma vez por mês.</li><li><b>Deles:</b> o modelo da faixa média e a versão; o preço, conferido no site em 15/10.</li><li><b>Gatilhos:</b> descontinuação; preço +30%; custo por pedido acima de R$ 8; termos de uso dos dados mudando; mais de 1 crítico nos 20 casos depois de troca de versão.</li><li><b>Alternativa:</b> outra configuração da faixa média, de outro fornecedor · ensaio em 16/10: 15 corretos, 4 aceitáveis, 1 incorreto, 0 crítico.</li><li><b>Troca:</b> Rafael reconfigura e testa (16 h, R$ 1.440); Patrícia aprova tudo no amarelo por 2 semanas (5 h extras, R$ 400). Total estimado R$ 1.840, 3 semanas.</li><li><b>Próximo ensaio:</b> outubro de 2027.</li></ul>"},
         {"rot": "Como conferir / erros comuns", "html": "<ol><li><b>\"Está tudo na plataforma.\"</b> Então nada é seu. Exporte e guarde no arquivo da empresa.</li><li><b>Gatilho sem número.</b> \"Se ficar caro\" nunca dispara; \"+30%\" dispara.</li><li><b>Custo da troca só técnico.</b> Esquecer as semanas de aprovação manual e o treinamento da equipe.</li><li><b>Nunca ensaiado.</b> O primeiro teste da alternativa acontece no dia em que a atual sai do ar.</li><li><b>Conferência:</b> cada item de \"o que é nosso\" tem caminho de pasta; cada gatilho tem número ou evento; a troca tem dono, horas, R$ e prazo por linha.</li></ol>"}
       ]}
     },
@@ -93,20 +93,20 @@
       "sub": "4 perguntas. A explicação aparece depois da sua tentativa.",
       "perguntas": [
         {"p": "A constituição do agente só existe digitada no painel da plataforma. Qual o risco?",
-         "opcoes": ["Nenhum, a plataforma guarda", "Se a plataforma mudar ou sair, o trabalho da empresa vai junto; precisa haver cópia em formato aberto no arquivo da empresa", "Só o risco de digitação"],
+         "opcoes": ["Nenhum, porque a plataforma guarda o histórico de versões", "Se a plataforma mudar ou sair, o trabalho vai junto; precisa de cópia fora", "Só o risco de alguém apagar sem querer um trecho do texto"],
          "certa": 1, "ref": "diagrama",
          "explica": "O que a empresa escreveu é ativo dela. Guardado só dentro do fornecedor, vira refém do formato e do contrato dele."},
         {"p": "Qual destes é um gatilho de saída bem escrito?",
-         "opcoes": ["\"Se o fornecedor piorar\"", "\"Preço acima de 30% do atual ou custo por pedido acima de R$ 8\"", "\"Quando aparecer coisa melhor\""],
-         "certa": 1, "ref": "passos",
+         "opcoes": ["\"Preço acima de 30% do atual ou custo por pedido acima de R$ 8\"", "\"Se o fornecedor piorar a qualidade ou o atendimento ao cliente\"", "\"Quando aparecer no mercado uma opção melhor e mais barata\""],
+         "certa": 0, "ref": "passos",
          "explica": "Gatilho precisa ser verificável por qualquer pessoa, sem discussão. Os outros dois dependem de opinião e nunca disparam a tempo."},
         {"p": "O Agent Builder do AgentKit será desativado em 30/11/2026, segundo a OpenAI. O que essa notícia ensina para o gestor?",
-         "opcoes": ["Que aquele fornecedor é ruim", "Que produto sai de linha em meses, e o plano de saída precisa existir antes do aviso", "Que não se deve usar IA"],
-         "certa": 1, "ref": "passos",
+         "opcoes": ["Que aquele fornecedor não é confiável e deve ser evitado", "Que é mais seguro esperar o mercado se estabilizar antes de usar agentes de IA", "Que produto sai de linha em meses, e o plano de saída vem antes do aviso"],
+         "certa": 2, "ref": "passos",
          "explica": "É o ciclo curto do mercado, não um caso isolado. Quem tinha o trabalho fora da plataforma e um plano ensaiado tem uma migração; quem não tinha, uma emergência."},
         {"p": "Durante a troca de modelo da Hora, o que acontece com o pedido de até R$ 5 mil, que estava no verde?",
-         "opcoes": ["Continua no verde, é a mesma regra", "Volta ao amarelo até os casos de teste passarem na configuração nova", "Fica proibido"],
-         "certa": 1, "ref": "passos",
+         "opcoes": ["Volta ao amarelo até os casos de teste passarem na configuração nova", "Continua no verde, porque a regra de alçada da Hora não mudou com a troca", "Fica proibido até o fornecedor novo assinar o contrato de dados"],
+         "certa": 0, "ref": "passos",
          "explica": "Troca de modelo muda o comportamento. A regra do G3 vale aqui: ações afetadas voltam a ter aprovação até a evidência ser refeita. Esse tempo de aprovação entra no custo da troca."}
       ]
     },

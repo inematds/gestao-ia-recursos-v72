@@ -178,7 +178,7 @@
         "abas": [
           {
             "rot": "Hora's plan (example)",
-            "html": "<p><b>Exit plan · vendor of Hora's model</b> · Horizonte, fictional study company · owner: Patrícia · technical lead: Rafael · approves: Carlos</p><ul><li><b>Ours, outside the platform:</b> constitution v2.0, context package v3, matrix and contracts v1, the 20 cases (folder \"testes-hora\"). Conversation history: exports as a spreadsheet, once a month.</li><li><b>Theirs:</b> the mid tier model and its version; the price, checked on the website on 10/15.</li><li><b>Triggers:</b> discontinuation; price +30%; cost per order above R$ 8; data-use terms changing; more than 1 critical error in the 20 cases after a version change.</li><li><b>Alternative:</b> another mid tier configuration, from another vendor · rehearsal on 10/20: 15 correct, 4 acceptable, 1 incorrect, 0 critical.</li><li><b>Switch:</b> Rafael reconfigures and tests (16 h, R$ 1,440); Patrícia approves everything in yellow for 2 weeks (5 extra hours, R$ 400). Estimated total R$ 1,840, 3 weeks.</li><li><b>Next rehearsal:</b> October 2027.</li></ul>"
+            "html": "<p><b>Exit plan · Hora's model vendor</b> · Horizonte, fictional study company · owner: Patrícia · technical lead: Rafael · approves: Carlos</p><ul><li><b>Ours, outside the platform:</b> constitution v2.0, context package v3, matrix and contracts v1, the 20 cases (folder \"testes-hora\"). Conversation history: export to a spreadsheet, once a month.</li><li><b>Theirs:</b> the mid-tier model and its version; the price, checked on the website on 10/15.</li><li><b>Triggers:</b> discontinuation; price +30%; cost per request above R$ 8; data terms of use changing; more than 1 critical error in the 20 cases after a version change.</li><li><b>Alternative:</b> another mid-tier configuration, from another vendor · trial run on 10/16: 15 correct, 4 acceptable, 1 incorrect, 0 critical.</li><li><b>Switch:</b> Rafael reconfigures and tests (16 h, R$ 1,440); Patrícia approves everything in yellow for 2 weeks (5 extra hours, R$ 400). Estimated total R$ 1,840, 3 weeks.</li><li><b>Next trial run:</b> October 2027.</li></ul>"
           },
           {
             "rot": "How to check / common mistakes",
@@ -217,9 +217,9 @@
         {
           "p": "The agent's constitution exists only typed into the platform's panel. What is the risk?",
           "opcoes": [
-            "None, the platform keeps it",
-            "If the platform changes or goes away, the company's work goes with it; there must be a copy in an open format in the company archive",
-            "Only the risk of typos"
+            "None, because the platform keeps the version history",
+            "If the platform changes or shuts down, the work goes with it; you need a copy outside",
+            "Only the risk of someone accidentally deleting a piece of the text"
           ],
           "certa": 1,
           "ref": "diagrama",
@@ -228,33 +228,33 @@
         {
           "p": "Which of these is a well-written exit trigger?",
           "opcoes": [
-            "\"If the vendor gets worse\"",
             "\"Price above 30% of the current one or cost per order above R$ 8\"",
-            "\"When something better shows up\""
+            "\"If the vendor lets quality or customer service slip\"",
+            "\"When a better, cheaper option shows up on the market\""
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "A trigger must be verifiable by anyone, without debate. The other two depend on opinion and never fire in time."
         },
         {
           "p": "OpenAI says the AgentKit Agent Builder will be shut down on 11/30/2026. What does this news teach the manager?",
           "opcoes": [
-            "That this vendor is bad",
-            "That products get retired within months, and the exit plan must exist before the notice",
-            "That you should not use AI"
+            "That this vendor is not trustworthy and should be avoided",
+            "That it's safer to wait for the market to settle before using AI agents",
+            "That products get pulled in a matter of months, and the exit plan comes before the notice"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "It is the market's short cycle, not an isolated case. Whoever had the work outside the platform and a rehearsed plan has a migration; whoever did not has an emergency."
         },
         {
           "p": "During the switch of Hora's model, what happens to the request of up to R$ 5 thousand, which was in green?",
           "opcoes": [
-            "It stays in green, it is the same rule",
             "It goes back to yellow until the test cases pass on the new configuration",
-            "It becomes prohibited"
+            "It stays green, because Hora's authority limit rule didn't change with the switch",
+            "It stays prohibited until the new vendor signs the data contract"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Switching models changes behavior. The G3 rule applies here: affected actions go back to requiring approval until the evidence is redone. That approval time goes into the cost of the switch."
         }

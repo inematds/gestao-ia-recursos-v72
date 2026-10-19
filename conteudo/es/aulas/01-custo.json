@@ -224,42 +224,42 @@
         {
           "p": "El panel del proveedor muestra R$ 0,31 por conversación. ¿Por qué ese número no basta para decidir?",
           "opcoes": [
-            "Porque está mal: el proveedor siempre cobra más",
-            "Porque es el costo de un intento; no incluye herramientas, horas de revisión, excepciones ni retrabajo, y una conversación no es un resultado",
-            "Porque debería estar en dólares"
+            "Porque es un promedio de todo el mes y esconde los días de pico, cuando cada conversación sale bastante más cara",
+            "Porque el proveedor cobra en dólares, y el tipo de cambio del mes cambia bastante el valor final de la factura en reales",
+            "Porque mide un intento: faltan herramientas, horas de personas y retrabajo, y una conversación no es un pedido"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "diagrama",
           "explica": "El número es verdadero, pero responde a otra pregunta. En Hora, la factura es solo el 24% del costo de cada pedido completado. Quien decide por la tabla del proveedor decide con un cuarto de la cuenta."
         },
         {
           "p": "En la cuenta del costo por tarea completada, ¿dónde entran las conversaciones que no se convirtieron en pedido?",
           "opcoes": [
-            "En ningún lugar: no dieron resultado",
-            "En el numerador (el costo), no en el denominador (las tareas completadas)",
-            "En el denominador, para que el costo promedio quede menor"
+            "En el numerador (el costo), y fuera del denominador (las tareas completadas)",
+            "En el denominador, porque cada conversación también es una atención realizada",
+            "En ningún lugar, porque una conversación que no se convierte en pedido no genera ingresos nuevos"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Los intentos y los fallos cuestan y están en la factura. Ponerlos en el denominador esconde el costo de equivocarse; sacarlos del numerador hace que la cuenta parezca más barata de lo que es."
         },
         {
           "p": "Un modelo a la mitad del precio hizo que la separación corrigiera el doble de pedidos. ¿Qué pasa con el costo por pedido?",
           "opcoes": [
-            "Cae a la mitad, como la factura",
-            "Puede subir: el retrabajo y las horas de excepción crecen más de lo que cae la factura",
-            "No cambia: el retrabajo no es costo de IA"
+            "Cae a la mitad, porque la factura del modelo siempre es el mayor costo del proceso",
+            "Queda igual, porque el retrabajo es costo de la separación y no de la IA",
+            "Puede subir: el retrabajo y las excepciones crecen más de lo que cae la factura"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "En Horizonte, pasó de R$ 6,68 a R$ 7,51. Un agente barato que se equivoca y necesita dos intentos costó el doble de la tabla."
         },
         {
           "p": "Juliana ya es empleada y recibe un salario fijo. ¿Las 30 horas en que ella asume conversaciones de Hora entran en la cuenta?",
           "opcoes": [
-            "No, el salario se pagaría de todos modos",
-            "Sí, por el costo de la hora: es tiempo que podría ir a otro trabajo, y muestra cuánto del \"lo hace solo\" depende de personas",
-            "Solo si hace horas extra"
+            "No entran, porque su sueldo se pagaría de todos modos a fin de mes",
+            "Entran por el costo de la hora: es tiempo que podría ir a otro trabajo",
+            "Solo entran si hace horas extra para cubrir las conversaciones de Hora"
           ],
           "certa": 1,
           "ref": "diagrama",
@@ -268,11 +268,11 @@
         {
           "p": "El precio por token de un modelo cayó 40% respecto a la versión anterior. ¿Qué haces con la cuenta?",
           "opcoes": [
-            "Anuncias 40% de ahorro en el proceso",
-            "Verificas el precio del proveedor ese día, rehaces la línea del modelo y ves cuánto cambia el costo por tarea completada",
-            "Nada: el precio del modelo no importa"
+            "Confirma el precio del día, rehace la línea del modelo y ve el efecto en el costo por tarea",
+            "Le anuncia al dueño un 40% de ahorro en el proceso, ya que el modelo quedó más barato",
+            "Migra a la versión nueva el mismo día, sin correr los casos, para aprovechar el precio"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Si el modelo pesa 24% del total, 40% menos en él es cerca de 10% menos en el costo del pedido, y solo si la calidad se mantiene. Decide la cuenta completa, no el titular del lanzamiento."
         }

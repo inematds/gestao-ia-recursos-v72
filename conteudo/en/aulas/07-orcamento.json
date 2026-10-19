@@ -315,31 +315,31 @@
         {
           "p": "What is the estimated ROI formula used in the course?",
           "opcoes": [
-            "Freed hours × salary",
-            "(Potential benefit − monthly cost) ÷ monthly cost, with the initial investment kept separate",
-            "Model bill ÷ number of conversations"
+            "Hours freed × cost per hour, adding the initial investment to the month",
+            "Expected savings ÷ the model's bill, not counting the human time spent",
+            "(Potential benefit − the month's cost) ÷ the month's cost, investment separate"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "diagrama",
           "explica": "The benefit comes from the human cost before minus after; the net result subtracts the monthly cost. The initial investment goes into the payback time, not mixed into the month."
         },
         {
           "p": "The baseline was never measured. What should you do?",
           "opcoes": [
-            "Calculate nothing until you have data",
-            "Estimate as a range with the person who did the work, say it is an estimate, and start measuring now",
-            "Use the number that makes the ROI look best"
+            "Estimate a range with the people who did the work, and start measuring now",
+            "Wait for three months of measured data before calculating any ROI number",
+            "Use the market average time for this type of request"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Waiting blocks the decision; making it up misleads. The written range, with its source, lets you decide now and correct later, when the measurement arrives."
         },
         {
           "p": "In the likely scenario, Hora frees up about 63 hours per month. Is that savings?",
           "opcoes": [
-            "Yes, 63 h × R$ 45",
-            "No: it's capacity; it becomes savings only if the company cuts an expense or uses the hours on something measured",
-            "Yes, if Carlos approves"
+            "Yes: 63 h × R$ 45 is the month's savings, with the cost already subtracted",
+            "No: it's capacity; it only becomes savings with a decision and evidence",
+            "Yes, as long as Carlos approves the number in the meeting"
           ],
           "certa": 1,
           "ref": "passos",
@@ -348,22 +348,22 @@
         {
           "p": "Why present three scenarios instead of one number?",
           "opcoes": [
-            "To sound more technical",
-            "Because it shows how big the uncertainty is: at Horizonte, the pessimistic case is negative, and that changes the decision",
-            "Because finance requires it"
+            "Because it shows the size of the uncertainty: the pessimistic one is negative",
+            "Because finance always requires three numbers in every annual budget",
+            "Because that way the average result gets closer to the optimistic one"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "diagrama",
           "explica": "With a single number (+27%), no one sees that the pessimistic case gives −23%. The range turns the question \"how much does it save?\" into \"what do we need to measure to find out?\"."
         },
         {
           "p": "The model cost blew past the month's cap because of long conversations. Which control was missing?",
           "opcoes": [
-            "None, it's normal",
-            "A per-task limit (attempts and maximum cost per conversation) and an alert before the cap",
-            "Switching vendors"
+            "None: long conversations are normal, and the cap adjusts itself the following month",
+            "Switch to a vendor that charges a fixed price per month",
+            "A limit per task (attempts and cost per conversation) and an alert before the cap"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "A monthly cap with no per-task limit only warns you after the damage is done. With a per-conversation limit, the expensive case stops and goes to a person; with an alert at 80%, there's time to act."
         }

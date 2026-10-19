@@ -47,8 +47,8 @@
          "texto": ["Tire os casos de conversas reais, anonimizadas ou fictícias. Misture: a maioria de rotina, alguns de fronteira, alguns com dado faltando e pelo menos dois de risco crítico. Escreva antes o que seria a resposta certa.", "São casos exploratórios: servem para escolher, não para provar. O conjunto de validação, com gabarito e mais casos, é do G5."],
          "exemplo": {"rot": "Os 20 da Hora", "texto": "12 de rotina (pedido de cliente cadastrado), 4 de fronteira (desconto de 5% a 10%, pedido perto de R$ 5 mil), 2 sem dado (cliente sem CNPJ) e 2 críticos (a \"observação\" do hotel pedindo 70%, um cliente dizendo que já pagou)."}},
         {"titulo": "Mesma régua", "sub": "e o crítico à parte",
-         "texto": ["Julgue cada saída como correta, aceitável, incorreta ou crítica, sem saber qual configuração a produziu, se der. Anote também o custo e o tempo de cada caso.", "Erro crítico não entra na média: conta separado e reprova sozinho. Uma configuração com 19 acertos e um desconto de 30% concedido por ordem do cliente não serve para pedido."],
-         "exemplo": {"rot": "Resultado (fictício)", "texto": "A: 16 corretos, 3 aceitáveis, 1 incorreto, 0 crítico, R$ 0,31 por caso. B: 13 corretos, 3 aceitáveis, 3 incorretos, 1 crítico (aplicou 30% pedido numa \"obs.\"), R$ 0,16 por caso."}},
+         "texto": ["Julgue cada saída como correta, aceitável, incorreta ou crítica, sem saber qual configuração a produziu, se der. Anote também o custo e o tempo de cada caso.", "Erro crítico não entra na média: conta separado e reprova sozinho. Uma configuração com 19 acertos e um desconto de 70% concedido por ordem escondida do cliente não serve para pedido."],
+         "exemplo": {"rot": "Resultado (fictício)", "texto": "A: 16 corretos, 3 aceitáveis, 1 incorreto, 0 crítico, R$ 0,31 por caso. B: 13 corretos, 3 aceitáveis, 3 incorretos, 1 crítico (aplicou os 70% pedidos na \"obs.\" do hotel), R$ 0,16 por caso."}},
         {"titulo": "Parecer, não ranking", "sub": "decisão com prazo de validade",
          "texto": ["O parecer diz a decisão para este processo, o porquê nos casos, as limitações, a alternativa e quando refazer o teste. Ele não diz qual modelo é melhor no mundo.", "Refaça a comparação quando o fornecedor trocar a versão, quando o preço mudar muito ou quando aparecer um tipo de caso novo. O custo de refazer é baixo: os 20 casos já estão prontos."],
          "exemplo": {"rot": "Parecer da Hora", "texto": "Fica A para pedidos. B vira candidata só para dúvida de catálogo, depois de 20 casos próprios. Alternativa registrada: aberto local, se o volume crescer e alguém assumir a manutenção."}}
@@ -65,7 +65,7 @@
          "conteudo": "Você é o revisor que vai contestar um parecer de seleção de modelo\nde IA antes que ele seja aprovado. Não escolha o modelo: aponte\nfraquezas.\n\n1. Os 20 casos representam o trabalho real? Que tipo de caso falta?\n2. Mais de uma coisa mudou entre as configurações?\n3. Algum erro crítico ficou escondido como \"incorreto\"?\n4. O custo considera o retrabalho que os erros vão gerar?\n5. A alternativa registrada é viável? O que a impediria?\n\nParecer:\n\"\"\"<cole>\"\"\""}
       ],
       "saida": {"selo": "simulacao", "abas": [
-        {"rot": "Parecer da Hora (exemplo)", "html": "<p><b>Parecer · Hora · pedido pelo WhatsApp</b> · Horizonte, empresa fictícia de estudo · responsável: Patrícia · teste: Rafael</p><ul><li><b>A</b> (faixa média, atual): 16 corretos, 3 aceitáveis, 1 incorreto, <b>0 crítico</b> · R$ 0,31 por caso · 9 s.</li><li><b>B</b> (barata, mesmas instruções): 13 corretos, 3 aceitáveis, 3 incorretos, <b>1 crítico</b> · R$ 0,16 por caso · 4 s.</li><li><b>Crítico de B:</b> caso 19, uma \"obs.\" escondida na lista pede 30% e B aplicou (o mesmo tipo de falha do F6).</li><li><b>Decisão:</b> A para pedidos. Os 3 incorretos de B (unidade errada, galão em vez de caixa) virariam retrabalho na separação: a conta da aula 1 já mostrou R$ 7,51 contra R$ 6,68 por pedido.</li><li><b>Limitações:</b> 20 casos exploratórios, só de outubro; nenhum caso de cliente novo com urgência.</li><li><b>Alternativa:</b> B para dúvida de catálogo, depois de 20 casos de dúvida; aberto local se o volume dobrar e o Rafael assumir a manutenção.</li><li><b>Refazer:</b> quando o fornecedor trocar a versão de A, ou em janeiro de 2027.</li></ul>"},
+        {"rot": "Parecer da Hora (exemplo)", "html": "<p><b>Parecer · Hora · pedido pelo WhatsApp</b> · Horizonte, empresa fictícia de estudo · responsável: Patrícia · teste: Rafael</p><ul><li><b>A</b> (faixa média, atual): 16 corretos, 3 aceitáveis, 1 incorreto, <b>0 crítico</b> · R$ 0,31 por caso · 9 s.</li><li><b>B</b> (barata, mesmas instruções): 13 corretos, 3 aceitáveis, 3 incorretos, <b>1 crítico</b> · R$ 0,16 por caso · 4 s.</li><li><b>Crítico de B:</b> caso 19, a lista do hotel com uma \"obs.\" escondida pedindo 70%, e B aplicou (a falha F6 do laboratório).</li><li><b>Decisão:</b> A para pedidos. Os 3 incorretos de B (unidade errada, galão em vez de caixa) virariam retrabalho na separação: a conta da aula 1 já mostrou R$ 7,51 contra R$ 6,68 por pedido.</li><li><b>Limitações:</b> 20 casos exploratórios, só de outubro; nenhum caso de cliente novo com urgência.</li><li><b>Alternativa:</b> B para dúvida de catálogo, depois de 20 casos de dúvida; aberto local se o volume dobrar e o Rafael assumir a manutenção.</li><li><b>Refazer:</b> quando o fornecedor trocar a versão de A, ou em janeiro de 2027.</li></ul>"},
         {"rot": "Como conferir / erros comuns", "html": "<ol><li><b>Casos só fáceis.</b> Vinte pedidos de rotina fazem qualquer configuração parecer boa. Tem de haver fronteira, dado faltando e crítico.</li><li><b>Crítico dentro da média.</b> \"95% de acerto\" com um desconto indevido escondido não é aprovação.</li><li><b>Duas mudanças de uma vez.</b> Trocou modelo e instruções: o parecer não sabe dizer o que funcionou.</li><li><b>Ranking como argumento.</b> \"Está em primeiro no ranking\" não substitui nenhum dos seus 20 casos.</li><li><b>Sem data de validade.</b> Parecer sem \"refazer quando\" vira verdade eterna sobre um produto que muda em semanas.</li></ol>"}
       ]}
     },
@@ -89,24 +89,24 @@
       "sub": "5 perguntas. A explicação aparece depois da sua tentativa.",
       "perguntas": [
         {"p": "O Carlos leu que um modelo novo ficou em primeiro num ranking e quer trocar a Hora. O que você responde?",
-         "opcoes": ["Troca: o ranking testou muito mais casos que nós", "Antes, rodo os nossos 20 casos nas duas configurações e decido pelo parecer", "Nunca troca: o atual funciona"],
-         "certa": 1, "ref": "passos",
+         "opcoes": ["Troca, porque o ranking testou muito mais casos do que os nossos 20 juntos", "Não troca, porque a configuração atual funciona e mudar traz risco", "Roda os nossos 20 casos nas duas configurações e decide pelo parecer"],
+         "certa": 2, "ref": "passos",
          "explica": "O ranking mede tarefas genéricas. Os seus 20 casos medem a regra de desconto, o pedido em galão e a ordem escondida. Recusar a troca sem testar é tão ruim quanto trocar sem testar."},
-        {"p": "Uma terceira configuração acertou 19 de 20 casos, mas aplicou um desconto de 30% pedido numa \"observação\" do cliente. Ela serve para pedidos?",
-         "opcoes": ["Serve: 95% de acerto é ótimo", "Não: erro crítico conta à parte e reprova sozinho para essa tarefa", "Serve, se for mais barata"],
+        {"p": "Uma terceira configuração acertou 19 de 20 casos, mas aplicou um desconto de 70% pedido numa \"observação\" escondida do cliente. Ela serve para pedidos?",
+         "opcoes": ["Serve: 95% de acerto é melhor que o resultado da configuração atual da Hora", "Não: erro crítico conta à parte e reprova sozinho para essa tarefa", "Serve, desde que seja mais barata e a Patrícia revise os descontos"],
          "certa": 1, "ref": "passos",
          "explica": "Um crítico na amostra pequena indica que vai acontecer de novo no volume real. A média não pode esconder o caso que mais custa."},
         {"p": "Na comparação, o Rafael trocou o modelo e reescreveu as instruções da Hora ao mesmo tempo. Qual o problema?",
-         "opcoes": ["Nenhum, fica mais rápido", "Não dá para saber qual das duas mudanças causou a diferença no resultado", "As instruções não influenciam o resultado"],
-         "certa": 1, "ref": "passos",
+         "opcoes": ["Não dá para saber qual das duas mudanças causou a diferença", "Nenhum, desde que os mesmos 20 casos sejam usados nas duas rodadas", "Nenhum, porque as instruções pesam pouco perto do modelo"],
+         "certa": 0, "ref": "passos",
          "explica": "Mude uma coisa por vez. Se precisar mudar as duas, compare em duas rodadas."},
         {"p": "Quando faz sentido não usar modelo nenhum?",
-         "opcoes": ["Nunca: hoje tudo tem IA", "Quando a tarefa segue sempre o mesmo caminho e uma regra ou fluxo resolve, mais barato e previsível", "Só em empresa pequena"],
-         "certa": 1, "ref": "diagrama",
+         "opcoes": ["Nunca: hoje qualquer tarefa repetitiva fica melhor com um modelo de IA", "Só em empresa pequena, que não tem volume para pagar a IA", "Quando a tarefa segue sempre o mesmo caminho e uma regra resolve"],
+         "certa": 2, "ref": "diagrama",
          "explica": "É o primeiro degrau da escada. Copiar um pedido aprovado para o ERP não precisa de alguém que pense; precisa de alguém que não erre a cópia."},
         {"p": "Por que o parecer tem uma data para refazer o teste?",
-         "opcoes": ["Porque modelos e preços mudam em semanas, e a decisão vale para uma versão", "Porque a lei exige", "Para ocupar a TI"],
-         "certa": 0, "ref": "passos",
+         "opcoes": ["Porque a lei exige revisão anual de todo sistema de IA na empresa", "Porque modelos e preços mudam em semanas, e a decisão vale para uma versão", "Para a TI ter uma agenda fixa de manutenção e de reuniões com o fornecedor do modelo"],
+         "certa": 1, "ref": "passos",
          "explica": "O parecer é sobre uma configuração numa data. Mudou a versão, o preço ou o tipo de caso, os 20 casos rodam de novo, o que custa pouco porque já estão prontos."}
       ]
     },

@@ -155,7 +155,7 @@
         "abas": [
           {
             "rot": "Horizonte plan (example)",
-            "html": "<p><b>Resource plan · commercial · v1 · Oct/2026</b> · Horizonte, fictional study company · owner: Patrícia</p><ol><li><b>Models:</b> requests on the mid tier (16/3/1/0 in 20 cases) · cheap alternative only for questions, after 20 cases of our own · redo in Jan/2027.</li><li><b>Context:</b> package v3, 7 documents, all with an owner · left out: CPF, customer spreadsheet, expired table · tests in \"testes-hora\".</li><li><b>Tools and shadow AI:</b> consultar_cliente (read), criar_pedido (write up to R$ 5 thousand and 5%), email (read; send only as a draft) · limits confirmed by Rafael · inventory: 5 tools, 4 cut and 1 suspended until the replacement · next survey Jan/2027.</li><li><b>Budget and ROI:</b> R$ 6.68 per request (M, with hours logged for one week) · cost for the month R$ 2,040, model ceiling R$ 1,400 · investment R$ 3,600 · estimated ROI −23% / +27% / +77% (E, baseline not measured) · realized savings: not yet observed.</li><li><b>Exit:</b> model vendor: triggers +30% in price, cost per request above R$ 8, data terms · switch R$ 1,840 in 3 weeks · rehearsal done on 10/20.</li></ol><p><b>Rubric:</b> 84/100, 6 of 6 required. <b>Assembled by:</b> Patrícia. <b>Limits set by:</b> Rafael. <b>Approved by:</b> Carlos. <b>Review:</b> January 2027.</p>"
+            "html": "<p><b>Resource plan · sales · v1 · Oct/2026</b> · Horizonte, fictional study company · owner: Patrícia</p><ol><li><b>Models:</b> requests on the mid tier (16/3/1/0 in 20 cases) · cheap alternative only for questions, after 20 cases of our own · redo in Jan/2027.</li><li><b>Context:</b> package v3, 7 documents, each with an owner · out: CPF, customer spreadsheet, expired price table · tests in \"testes-hora\".</li><li><b>Tools and shadow AI:</b> consultar_cliente (read), criar_pedido (write up to R$ 5,000 and 5%), email (read; send only as a draft) · limits confirmed by Rafael · inventory: 5 tools, 4 cut and 1 suspended until the switch · next survey Jan/2027.</li><li><b>Budget and ROI:</b> R$ 6.68 per request (M, with hours logged for one week) · cost of the month R$ 2,040, model cap R$ 1,400 · investment R$ 3,600 · estimated ROI −23% / +27% / +77% (E, baseline not measured) · realized savings: not yet observed.</li><li><b>Exit:</b> model vendor: triggers +30% price, cost per request above R$ 8, data terms · switch R$ 1,840 in 3 weeks · trial run done on 10/16.</li></ol><p><b>Rubric:</b> 84/100, 6 of 6 required. <b>Assembled:</b> Patrícia. <b>Limits:</b> Rafael. <b>Approved:</b> Carlos. <b>Review:</b> January 2027.</p>"
           }
         ]
       }
@@ -182,7 +182,7 @@
           "sub": "tiers and usage-based billing",
           "texto": [
             "OpenAI: Workspace Agents, which replace Custom GPTs, are now billed per token (07/06/2026). GPT-6 reached all plans in tiers: Luna on the free plan, Sol on paid plans, Astra on the Pro, Business and Enterprise plans (10/07–08/2026).",
-            "Anthropic: Managed Agents, agents that work on their own for hours, are moving toward billing per agent hour, on top of tokens. Sources: release notes and vendor pages."
+            "Anthropic: Managed Agents, agents that work on their own for hours, point toward billing per agent-hour, on top of tokens. That's the direction the INEMA October overview records, with no announcement date in the source: treat it as a trend, not a price list."
           ],
           "exemplo": {
             "rot": "Reading",
@@ -357,9 +357,9 @@
         {
           "p": "The plan scored 90 points, but the email assistant can still delete messages on its own. Result?",
           "opcoes": [
-            "Approved: 90 is well above 75",
-            "Rejected: an irreversible operation within the agent's reach is a required item, and one missing means rejection",
-            "Approved with a caveat"
+            "Approved: 90 points is well above the minimum of 75",
+            "Rejected: a required item is missing, and one missing means rejection",
+            "Approved with a caveat, with a deadline to fix the email"
           ],
           "certa": 1,
           "ref": "codigo",
@@ -368,31 +368,31 @@
         {
           "p": "Who should sign the resource plan for Horizonte's sales area?",
           "opcoes": [
-            "Patrícia, who built it and knows everything",
-            "Carlos, who is responsible for the budget, after Rafael confirms the safeguards",
-            "The model vendor"
+            "Patrícia, who put the plan together and knows every piece",
+            "Rafael, who configured the limits and the cap with the vendor",
+            "Carlos, who is responsible for the budget, after Rafael confirms the safeguards"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "Whoever builds it doesn't approve it. IT confirms the technical parts (safeguards, vendor cap); whoever answers for the money signs."
         },
         {
           "p": "The price of a model dropped since the plan was approved. What should you do?",
           "opcoes": [
-            "Announce the savings to the owner",
-            "Redo the cost-per-task calculation with today's price and, if you switch models, run the 20 cases before touching the budget",
-            "Nothing, the plan is approved"
+            "Redo the cost-per-task calculation and, if you change models, the 20 cases",
+            "Announce to the owner the savings the new price will bring this quarter",
+            "Nothing until the next quarterly review, because the plan is already approved and signed"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Price is a number in the calculation, not the calculation. And switching models without the cases is the untested switch from the simulation in lesson 7."
         },
         {
           "p": "The \"What changed\" panel cites a government accusation against open model providers. How should you use that in the selection report?",
           "opcoes": [
-            "Ban all open models",
-            "As a provenance question in the open, run-locally alternative, remembering it is an accusation, not a court decision",
-            "Ignore it, it has nothing to do with management"
+            "Exclude from the selection report every open model from an accused vendor",
+            "As a provenance question for the alternative, knowing it's an accusation",
+            "Ignore it, because it's a governance matter and not about managing a sales area"
           ],
           "certa": 1,
           "ref": "passos",

@@ -189,31 +189,31 @@
         {
           "p": "The survey revealed that a salesperson pastes the customer spreadsheet into a free chatbot. What is the best reaction?",
           "opcoes": [
-            "A written warning, to set an example",
-            "Cut the use right away and offer an approved tool for writing proposals the same day",
-            "Let it go, because it saves time"
+            "Cut off the use right away and offer an approved tool the same day",
+            "A written warning, to set an example for the rest of the team",
+            "Leave it as is, because it saves time and the customer doesn't even notice"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Punishing makes the next survey come back empty. Letting it go exposes customer data. Cutting with an alternative solves the risk and keeps the need met."
         },
         {
           "p": "Which question decides the risk of a shadow tool?",
           "opcoes": [
-            "Is it popular?",
-            "What data it takes, where it goes, under what contract, and whether it can train models with it",
-            "Is it free?"
+            "Whether it's popular and well rated by other companies in the industry",
+            "Whether it's free or paid, and how much the business version would cost per month",
+            "What data it takes, where it goes, under what contract, and whether it trains on that data"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "diagrama",
           "explica": "Risk travels with the data. Being free only makes it worse when the price is the use of your data, as in the terms of service of the lab's summary tool."
         },
         {
           "p": "The daily customer service summary was created by IT itself. Does it go in the shadow AI inventory?",
           "opcoes": [
-            "No, IT knows it exists",
-            "Yes: it is outside the official inventory, has no contract, and sends customer data outside",
-            "Only if someone complains"
+            "No, because IT knows it exists and is responsible for it",
+            "Yes: it's outside the inventory, has no contract, and sends customer data outside the company",
+            "Only if someone complains or there's an incident involving the data"
           ],
           "certa": 1,
           "ref": "passos",
@@ -222,11 +222,11 @@
         {
           "p": "18 of the 40 people did not respond to the survey. What does that mean for the inventory?",
           "opcoes": [
-            "That these people don't use AI",
-            "That it is incomplete until a second round, with the leaders of each department",
-            "Nothing, 22 responses are enough"
+            "That these people probably don't use any AI in their day-to-day work",
+            "Nothing: 22 answers out of 40 are enough to close the inventory",
+            "That it's incomplete until a second round with the leaders"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "Silence is not zero. The inventory says how many responded and schedules the second round before declaring itself complete."
         }

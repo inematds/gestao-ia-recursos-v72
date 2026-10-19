@@ -178,7 +178,7 @@
         "abas": [
           {
             "rot": "Plan de Hora (ejemplo)",
-            "html": "<p><b>Plan de salida · proveedor del modelo de Hora</b> · Horizonte, empresa ficticia de estudio · responsable: Patrícia · técnico: Rafael · aprueba: Carlos</p><ul><li><b>Nuestro, fuera de la plataforma:</b> constitución v2.0, paquete de contexto v3, matriz y contratos v1, los 20 casos (carpeta \"testes-hora\"). Historial de las conversaciones: se exporta en hoja de cálculo, una vez al mes.</li><li><b>Suyo:</b> el modelo de la gama media y la versión; el precio, verificado en el sitio el 15/10.</li><li><b>Disparadores:</b> descontinuación; precio +30%; costo por pedido superior a R$ 8; cambio en los términos de uso de los datos; más de 1 crítico en los 20 casos después de un cambio de versión.</li><li><b>Alternativa:</b> otra configuración de la gama media, de otro proveedor · ensayo el 20/10: 15 correctos, 4 aceptables, 1 incorrecto, 0 críticos.</li><li><b>Cambio:</b> Rafael reconfigura y prueba (16 h, R$ 1.440); Patrícia aprueba todo en amarillo por 2 semanas (5 h extras, R$ 400). Total estimado R$ 1.840, 3 semanas.</li><li><b>Próximo ensayo:</b> octubre de 2027.</li></ul>"
+            "html": "<p><b>Plan de salida · proveedor del modelo de Hora</b> · Horizonte, empresa ficticia de estudio · responsable: Patrícia · técnico: Rafael · aprueba: Carlos</p><ul><li><b>Nuestro, fuera de la plataforma:</b> constitución v2.0, paquete de contexto v3, matriz y contratos v1, los 20 casos (carpeta \"testes-hora\"). Historial de las conversaciones: se exporta a una hoja de cálculo, una vez al mes.</li><li><b>De ellos:</b> el modelo de la gama media y la versión; el precio, verificado en el sitio el 15/10.</li><li><b>Disparadores:</b> descontinuación; precio +30%; costo por pedido superior a R$ 8; cambio en los términos de uso de los datos; más de 1 crítico en los 20 casos después de un cambio de versión.</li><li><b>Alternativa:</b> otra configuración de la gama media, de otro proveedor · ensayo el 16/10: 15 correctos, 4 aceptables, 1 incorrecto, 0 crítico.</li><li><b>Cambio:</b> Rafael reconfigura y prueba (16 h, R$ 1.440); Patrícia aprueba todo en amarillo durante 2 semanas (5 h extra, R$ 400). Total estimado R$ 1.840, 3 semanas.</li><li><b>Próximo ensayo:</b> octubre de 2027.</li></ul>"
           },
           {
             "rot": "Cómo verificar / errores comunes",
@@ -217,9 +217,9 @@
         {
           "p": "La constitución del agente solo existe escrita en el panel de la plataforma. ¿Cuál es el riesgo?",
           "opcoes": [
-            "Ninguno, la plataforma lo guarda",
-            "Si la plataforma cambia o desaparece, el trabajo de la empresa se va con ella; debe haber una copia en formato abierto en el archivo de la empresa",
-            "Solo el riesgo de errores al escribir"
+            "Ninguno, porque la plataforma guarda el historial de versiones",
+            "Si la plataforma cambia o cierra, el trabajo se va con ella; necesitas una copia afuera",
+            "Solo el riesgo de que alguien borre sin querer un fragmento del texto"
           ],
           "certa": 1,
           "ref": "diagrama",
@@ -228,33 +228,33 @@
         {
           "p": "¿Cuál de estos es un disparador de salida bien escrito?",
           "opcoes": [
-            "\"Si el proveedor empeora\"",
             "\"Precio por encima del 30% del actual o costo por pedido superior a R$ 8\"",
-            "\"Cuando aparezca algo mejor\""
+            "\"Si el proveedor empeora la calidad o la atención al cliente\"",
+            "\"Cuando aparezca en el mercado una opción mejor y más barata\""
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Un disparador debe poder ser verificado por cualquier persona, sin discusión. Los otros dos dependen de opinión y nunca se activan a tiempo."
         },
         {
           "p": "El Agent Builder de AgentKit será desactivado el 30/11/2026, según OpenAI. ¿Qué le enseña esta noticia al gestor?",
           "opcoes": [
-            "Que ese proveedor es malo",
-            "Que un producto sale de línea en meses, y el plan de salida debe existir antes del aviso",
-            "Que no se debe usar IA"
+            "Que ese proveedor no es confiable y debe evitarse",
+            "Que es más seguro esperar a que el mercado se estabilice antes de usar agentes de IA",
+            "Que un producto sale de línea en meses, y el plan de salida va antes del aviso"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "Es el ciclo corto del mercado, no un caso aislado. Quien tenía el trabajo fuera de la plataforma y un plan ensayado tiene una migración; quien no, una emergencia."
         },
         {
           "p": "Durante el cambio de modelo de Hora, ¿qué pasa con el pedido de hasta R$ 5 mil, que estaba en verde?",
           "opcoes": [
-            "Sigue en verde, es la misma regla",
             "Vuelve al amarillo hasta que los casos de prueba pasen en la configuración nueva",
-            "Queda prohibido"
+            "Sigue en verde, porque la regla de nivel de autorización de Hora no cambió con el cambio",
+            "Queda prohibido hasta que el nuevo proveedor firme el contrato de datos"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Cambiar de modelo cambia el comportamiento. La regla del G3 vale aquí: las acciones afectadas vuelven a requerir aprobación hasta rehacer la evidencia. Ese tiempo de aprobación entra en el costo del cambio."
         }

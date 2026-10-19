@@ -205,20 +205,20 @@
         {
           "p": "The email assistant was turned on with automatic approval to delete and empty the trash. Who decided that?",
           "opcoes": [
-            "Carlos, when he said \"go ahead\"",
-            "Nobody: it came as the tool's default, and a \"go ahead\" on WhatsApp is not a decision about operations",
-            "The agent itself"
+            "Carlos, when he replied \"you can turn it on\" on WhatsApp",
+            "Rafael, who installed it and so approved every operation",
+            "No one: it came as the tool's default, and \"you can turn it on\" doesn't decide operations"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "Approval applies to exact content. \"Go ahead\" said nothing about deleting or sending. The contract exists so that someone decides, operation by operation, and signs."
         },
         {
           "p": "Hora's instructions say \"never give more than 5% discount\". Is that enough?",
           "opcoes": [
-            "It's enough, the agent obeys the instructions",
-            "No: the limit must also be in the tool, because text from the customer can convince the agent to ignore the instruction",
-            "It's enough, if the instruction is in capital letters"
+            "It's enough, because the agent follows the instructions it received",
+            "No: the limit must also be in the tool, not just in the text",
+            "It's enough, if the instruction is highlighted and repeated at the start of the text"
           ],
           "certa": 1,
           "ref": "diagrama",
@@ -227,31 +227,31 @@
         {
           "p": "Where is the password the agent uses to access the order app kept?",
           "opcoes": [
-            "In the agent's instructions, so it knows",
             "In a vault or on the server, under the agent's own named access",
-            "In the team spreadsheet, so everyone can find it"
+            "In the agent's instructions, in a section the customer doesn't see",
+            "In the team spreadsheet, password-protected, so everyone finds it easily"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "What is in the instructions, a spreadsheet or the browser can leak. Its own access also makes the log say \"it was the agent\" and lets you cut it off without affecting Patrícia."
         },
         {
           "p": "The connection dropped in the middle of an order and the agent tried again. What does the contract need to guarantee?",
           "opcoes": [
-            "That the order goes out twice, to be safe",
-            "That the retry is recognized by a unique key and doesn't duplicate the order",
-            "Don't let the agent give up on the first failure"
+            "That the request is resent until the tool confirms receipt",
+            "That the agent gives up at the first failure and tells the customer",
+            "That a unique key recognizes the repeat and doesn't duplicate the request"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "Retrying is normal; duplicating is damage. The unique key (conversation + request version) makes the tool refuse what it has already done, and the error goes to a person with the context."
         },
         {
           "p": "A new connector version that breaks the old ones was announced. Why does the contract on paper help?",
           "opcoes": [
-            "It doesn't help, it's just bureaucracy",
-            "Because it says exactly what the tool can do, and serves as a checklist for redoing the configuration and testing after the switch",
-            "Because it stops the vendor from making changes"
+            "It doesn't help: with a new connector, the old contract no longer applies",
+            "It lists what the tool can do and is used to rebuild and test the configuration",
+            "It forces the vendor to keep the old version until the end of the contract"
           ],
           "certa": 1,
           "ref": "passos",

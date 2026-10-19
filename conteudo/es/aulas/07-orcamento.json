@@ -315,31 +315,31 @@
         {
           "p": "¿Cuál es la fórmula del ROI estimado usada en el curso?",
           "opcoes": [
-            "Horas liberadas × salario",
-            "(Beneficio potencial − costo del mes) ÷ costo del mes, con la inversión inicial aparte",
-            "Factura del modelo ÷ número de conversaciones"
+            "Horas liberadas × costo de la hora, sumando la inversión inicial al mes",
+            "Ahorro esperado ÷ factura del modelo, sin contar el tiempo humano gastado",
+            "(Beneficio potencial − costo del mes) ÷ costo del mes, inversión aparte"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "diagrama",
           "explica": "El beneficio sale del costo humano antes menos el de después; el resultado neto descuenta el costo del mes. La inversión inicial entra en el tiempo de retorno, no mezclada en el mes."
         },
         {
           "p": "La línea de base nunca se midió. ¿Qué hacer?",
           "opcoes": [
-            "No calcular nada hasta tener datos",
-            "Estimar en rango con quien hacía el trabajo, decir que es una estimación y empezar a medir ahora",
-            "Usar el número que deja el ROI más bonito"
+            "Estimar en un rango con quien hacía el trabajo y empezar a medir ahora",
+            "Esperar tres meses de datos medidos antes de calcular cualquier número de ROI",
+            "Usar el tiempo promedio del mercado para este tipo de pedido"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Esperar frena la decisión; inventar engaña. El rango escrito, con la fuente, permite decidir ahora y corregir después, cuando llegue la medida."
         },
         {
           "p": "En el escenario probable, la Hora libera cerca de 63 horas por mes. ¿Eso es ahorro?",
           "opcoes": [
-            "Sí, 63 h × R$ 45",
-            "No: es capacidad; se vuelve ahorro solo si la empresa reduce un gasto o usa las horas en algo medido",
-            "Sí, si Carlos lo aprueba"
+            "Sí: 63 h × R$ 45 es el ahorro del mes, ya descontado el costo",
+            "No: es capacidad; solo se vuelve ahorro con decisión y evidencia",
+            "Sí, siempre que Carlos apruebe el número en la reunión"
           ],
           "certa": 1,
           "ref": "passos",
@@ -348,22 +348,22 @@
         {
           "p": "¿Por qué presentar tres escenarios en vez de un solo número?",
           "opcoes": [
-            "Para parecer más técnico",
-            "Porque muestra el tamaño de la incertidumbre: en Horizonte, el pesimista es negativo, y eso cambia la decisión",
-            "Porque finanzas lo exige"
+            "Porque muestra el tamaño de la incertidumbre: el pesimista es negativo",
+            "Porque finanzas siempre exige tres números en todo presupuesto anual",
+            "Porque así el resultado promedio queda más cerca del optimista"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "diagrama",
           "explica": "Con un solo número (+27%), nadie ve que el pesimista da −23%. El rango convierte la pregunta \"¿cuánto ahorra?\" en \"¿qué necesitamos medir para saberlo?\"."
         },
         {
           "p": "El costo del modelo superó el tope del mes por conversaciones largas. ¿Qué control faltó?",
           "opcoes": [
-            "Ninguno, es normal",
-            "Límite por tarea (intentos y costo máximo por conversación) y alerta antes del tope",
-            "Cambiar de proveedor"
+            "Ninguno: una conversación larga es normal, y el tope se ajusta solo el mes siguiente",
+            "Cambiar de proveedor por uno que cobre un precio fijo al mes",
+            "Límite por tarea (intentos y costo por conversación) y alerta antes del tope"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "Un tope mensual sin límite por tarea solo avisa después del daño. Con límite por conversación, el caso caro se detiene y pasa a una persona; con alerta al 80%, hay tiempo de actuar."
         }

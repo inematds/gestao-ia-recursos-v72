@@ -52,7 +52,7 @@ Mês de referência (4 semanas do painel do lab): **3.600 conversas** e **680 pe
 
 **Comparação de configurações (aula 2)**, 20 casos exploratórios tirados das conversas (fictícios):
 - A · faixa média (a atual): 16 corretos, 3 aceitáveis, 1 incorreto, 0 crítico; R$ 6,20 nos 20 casos (R$ 0,31/caso); 9 s em média.
-- B · barata: 13 corretos, 3 aceitáveis, 3 incorretos, 1 crítico (aplicou 30% pedido numa "obs." do cliente, como no F6); R$ 3,10 (R$ 0,16/caso); 4 s.
+- B · barata: 13 corretos, 3 aceitáveis, 3 incorretos, 1 crítico (aplicou os 70% pedidos na "obs." escondida da lista do hotel, como no F6 da conversa c-202); R$ 3,10 (R$ 0,16/caso); 4 s.
 - Decisão: A para pedidos; B candidata só para dúvida de catálogo, depois dos seus próprios 20 casos; alternativa registrada: aberto local se o volume crescer e alguém assumir a manutenção.
 
 ## As 8 aulas
@@ -90,4 +90,4 @@ Somas: promessa 0; troca 0–6; preso 1–7; melhor 8. Nenhum desvio soma fala e
 - **MCP 28/07/2026:** o arquivo de mercado marca [incerto]; entra só como "noticiado por fonte secundária, confira", nunca como fato.
 - **Preços:** só os do `mercado-ia-2026-10.md`, com data, e sempre "confira o preço do fornecedor no dia". O preço da GPT-6 Luna (§1) não tem data nem fonte na linha: fica fora. Sem conversão para real (não há câmbio nas fontes): os R$ da Horizonte são fictícios.
 - **F10 no G4:** a transferência internacional e a LGPD ficam no `prof2030-base`; aqui o F10 é decisão de recurso (serviço gratuito sem contrato, fora do inventário).
-- `lado_card` aponta para o G0 (`gestao-ia-base-v72`, ainda não publicado: 404 esperado no `validar --links`).
+- `lado_card` aponta para o G0 (`gestao-ia-base-v72`, publicado).

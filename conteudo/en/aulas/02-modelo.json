@@ -102,11 +102,11 @@
           "sub": "and the critical error set apart",
           "texto": [
             "Judge each output as correct, acceptable, incorrect, or critical, without knowing which configuration produced it, if possible. Also note the cost and time of each case.",
-            "A critical error does not go into the average: it is counted separately and fails the configuration on its own. A configuration with 19 right answers and a 30% discount granted on the customer's say-so is not fit for orders."
+            "A critical error doesn't go into the average: it is counted separately and fails the configuration on its own. A configuration with 19 correct answers and a 70% discount granted because of an order hidden from the customer is not fit for orders."
           ],
           "exemplo": {
             "rot": "Result (fictional)",
-            "texto": "A: 16 correct, 3 acceptable, 1 incorrect, 0 critical, R$ 0.31 per case. B: 13 correct, 3 acceptable, 3 incorrect, 1 critical (applied the 30% requested in a \"note\"), R$ 0.16 per case."
+            "texto": "A: 16 correct, 3 acceptable, 1 incorrect, 0 critical, R$ 0.31 per case. B: 13 correct, 3 acceptable, 3 incorrect, 1 critical (applied the 70% requested in the hotel's \"notes\" field), R$ 0.16 per case."
           }
         },
         {
@@ -144,7 +144,7 @@
         "abas": [
           {
             "rot": "Hora's report (example)",
-            "html": "<p><b>Report · Hora · order requested via WhatsApp</b> · Horizonte, fictional study company · owner: Patrícia · test: Rafael</p><ul><li><b>A</b> (mid tier, current): 16 correct, 3 acceptable, 1 incorrect, <b>0 critical</b> · R$ 0.31 per case · 9 s.</li><li><b>B</b> (cheap, same instructions): 13 correct, 3 acceptable, 3 incorrect, <b>1 critical</b> · R$ 0.16 per case · 4 s.</li><li><b>B's critical:</b> case 19, a hidden \"note\" in the list asks for 30% off and B applied it (the same kind of failure as F6).</li><li><b>Decision:</b> A for orders. B's 3 incorrect answers (wrong unit, gallon instead of box) would turn into rework at picking: the math from lesson 1 already showed R$ 7.51 versus R$ 6.68 per order.</li><li><b>Limitations:</b> 20 exploratory cases, from October only; no case of a new customer with urgency.</li><li><b>Alternative:</b> B for catalog questions, after 20 cases of questions; open, run locally if the volume doubles and Rafael takes over maintenance.</li><li><b>Redo:</b> when the vendor changes A's version, or in January 2027.</li></ul>"
+            "html": "<p><b>Selection report · Hora · order via WhatsApp</b> · Horizonte, fictional study company · owner: Patrícia · test: Rafael</p><ul><li><b>A</b> (mid tier, current): 16 correct, 3 acceptable, 1 incorrect, <b>0 critical</b> · R$ 0.31 per case · 9 s.</li><li><b>B</b> (cheap, same instructions): 13 correct, 3 acceptable, 3 incorrect, <b>1 critical</b> · R$ 0.16 per case · 4 s.</li><li><b>B's critical error:</b> case 19, the hotel's list with a hidden \"notes\" field asking for 70%, and B applied it (lab failure F6).</li><li><b>Decision:</b> A for orders. B's 3 incorrect answers (wrong unit, gallon instead of case) would turn into rework in picking: the lesson 1 calculation already showed R$ 7.51 versus R$ 6.68 per order.</li><li><b>Limitations:</b> 20 exploratory cases, October only; no case of a new customer with urgency.</li><li><b>Alternative:</b> B for catalog questions, after 20 question cases; open, run locally if volume doubles and Rafael takes over maintenance.</li><li><b>Redo:</b> when the vendor changes A's version, or in January 2027.</li></ul>"
           },
           {
             "rot": "How to check / common mistakes",
@@ -183,20 +183,20 @@
         {
           "p": "Carlos read that a new model ranked first in a ranking and wants to replace Hora. What do you answer?",
           "opcoes": [
-            "Switch: the ranking tested far more cases than we did",
-            "First, I run our 20 cases on both configurations and decide from the report",
-            "Never switch: the current one works"
+            "Switches, because the ranking tested far more cases than our 20 combined",
+            "No swap, because the current configuration works and changing it brings risk",
+            "Run our 20 cases on both configurations and decide by the selection report"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "The ranking measures generic tasks. Your 20 cases measure the discount rule, the order in gallons and the hidden instruction. Refusing the switch without testing is as bad as switching without testing."
         },
         {
-          "p": "A third configuration got 19 of 20 cases right, but applied a 30% discount requested in a customer \"note\". Is it good enough for orders?",
+          "p": "A third configuration got 19 of 20 cases right, but it applied a 70% discount requested in a hidden customer \"note.\" Is it fit for handling orders?",
           "opcoes": [
-            "Yes: 95% accuracy is great",
+            "It is: 95% accuracy is better than the result of Hora's current configuration",
             "No: a critical error counts separately and fails it on its own for this task",
-            "Yes, if it's cheaper"
+            "It is, as long as it is cheaper and Patrícia reviews the discounts"
           ],
           "certa": 1,
           "ref": "passos",
@@ -205,33 +205,33 @@
         {
           "p": "In the comparison, Rafael changed the model and rewrote Hora's instructions at the same time. What's the problem?",
           "opcoes": [
-            "None, it's faster",
-            "There's no way to know which of the two changes caused the difference in the result",
-            "Instructions don't influence the result"
+            "There is no way to know which of the two changes caused the difference",
+            "None, as long as the same 20 cases are used in both rounds",
+            "None, because instructions weigh little next to the model"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "Change one thing at a time. If you need to change both, compare in two rounds."
         },
         {
           "p": "When does it make sense to use no model at all?",
           "opcoes": [
-            "Never: everything has AI these days",
-            "When the task always follows the same path and a rule or flow solves it, which is cheaper and more predictable",
-            "Only in a small company"
+            "Never: today any repetitive task is better off with an AI model",
+            "Only in a small company that doesn't have the volume to pay for AI",
+            "When the task always follows the same path and a rule solves it"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "diagrama",
           "explica": "It's the first step of the ladder. Copying an approved order into the ERP doesn't need someone who thinks; it needs someone who doesn't get the copy wrong."
         },
         {
           "p": "Why does the report have a date to redo the test?",
           "opcoes": [
+            "Because the law requires an annual review of every AI system in the company",
             "Because models and prices change in weeks, and the decision holds for one version",
-            "Because the law requires it",
-            "For IT to handle"
+            "So IT has a fixed schedule for maintenance and for meetings with the model vendor"
           ],
-          "certa": 0,
+          "certa": 1,
           "ref": "passos",
           "explica": "The report covers one configuration on one date. If the version, the price or the type of case changes, the 20 cases run again, which costs little because they are already built."
         }

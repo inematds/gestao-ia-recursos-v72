@@ -222,44 +222,44 @@
         {
           "p": "Hora quoted an expired price. The first management fix is:",
           "opcoes": [
-            "Swap the model for a smarter one",
-            "Give the table an owner, a version, and an expiration date, and keep only one version in use",
-            "Forbid Hora from talking about price"
+            "Give the table an owner, a version and an expiration date, with only one version in use",
+            "Swap the model for a top-tier one, which makes fewer mistakes when quoting prices",
+            "Ban Hora from talking about prices and hand that part over to Juliana"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "The model read what was there. The problem is an asset with no owner: two tables in the same folder. A better model reading the wrong table still gets it wrong."
         },
         {
           "p": "The delivery FAQ says a minimum order of 5 boxes; the new commercial policy says 3. What does the agent do?",
           "opcoes": [
-            "Picks the most recent one",
-            "Follows the order of precedence (the policy wins) and the conflict goes to the FAQ owner to fix",
-            "Asks the customer which one they prefer"
+            "It follows the most recent document, which is usually the more correct of the two",
+            "It asks the customer which of the two rules they prefer to follow",
+            "It follows precedence (the policy rules) and tells the FAQ owner"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "A written order of precedence keeps the agent from choosing on its own. And a conflict that is found becomes a task with an owner and a deadline, so it doesn't come back next week."
         },
         {
           "p": "Why not use as an example a conversation that is among the 20 test cases?",
           "opcoes": [
+            "Because the package gets too big and each conversation costs more",
             "Because the test becomes a cheat sheet and stops measuring what the agent would do in a new case",
-            "Because it takes up space",
-            "There's no problem at all"
+            "There's no problem, as long as the conversation is anonymized beforehand"
           ],
-          "certa": 0,
+          "certa": 1,
           "ref": "diagrama",
           "explica": "An example teaches; a test measures. Mixing the two makes the configuration look better than it is, and the lesson 2 decision loses its value."
         },
         {
           "p": "\"Put the whole customer spreadsheet into the agent, so it knows everything.\" What's wrong with that?",
           "opcoes": [
-            "Nothing, the more context the better",
-            "It exposes data the task doesn't need and makes every conversation more expensive; the agent should only look up the customer in the conversation",
-            "The spreadsheet is too small"
+            "It exposes data the task doesn't need and makes each conversation more expensive",
+            "Nothing, as long as the spreadsheet is up to date and error-free",
+            "Only the size: the spreadsheet should go in in parts, one per region"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "diagrama",
           "explica": "Keeping it out of the package is a safeguard for protection and cost. Looking up the right customer is a tool with minimal access, the subject of lesson 4."
         }

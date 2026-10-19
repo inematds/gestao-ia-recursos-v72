@@ -222,44 +222,44 @@
         {
           "p": "Hora cotizó un precio vencido. La primera corrección de gestión es:",
           "opcoes": [
-            "Cambiar el modelo por uno más inteligente",
-            "Darle dueño, versión y vigencia a la tabla, y dejar una sola versión en uso",
-            "Prohibirle a Hora hablar de precios"
+            "Darle dueño, versión y vigencia a la tabla, con una sola versión en uso",
+            "Cambiar el modelo por uno de punta, que se equivoca menos al cotizar precios",
+            "Prohibir que Hora hable de precios y pasar esa parte a Juliana"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "passos",
           "explica": "El modelo leyó lo que había ahí. El problema es de un activo sin dueño: dos tablas en la misma carpeta. Un modelo mejor leyendo la tabla equivocada sigue equivocándose."
         },
         {
           "p": "El FAQ de entrega dice pedido mínimo de 5 cajas; la nueva política comercial dice 3. ¿Qué hace el agente?",
           "opcoes": [
-            "Elige la más reciente",
-            "Sigue el orden de precedencia (manda la política) y el conflicto pasa al dueño del FAQ para que lo corrija",
-            "Le pregunta al cliente cuál prefiere"
+            "Sigue el documento más reciente, que suele ser el más acertado de los dos",
+            "Le pregunta al cliente cuál de las dos reglas prefiere seguir",
+            "Sigue la precedencia (la política manda) y avisa al dueño del FAQ"
           ],
-          "certa": 1,
+          "certa": 2,
           "ref": "passos",
           "explica": "La precedencia escrita evita que el agente elija por su cuenta. Y un conflicto encontrado se vuelve una tarea con dueño y plazo, para que no vuelva a aparecer la semana siguiente."
         },
         {
           "p": "¿Por qué no usar como ejemplo una conversación que está entre los 20 casos de prueba?",
           "opcoes": [
+            "Porque el paquete de contexto queda demasiado grande y cada conversación sale más cara",
             "Porque la prueba se vuelve un machete y deja de medir lo que el agente haría en un caso nuevo",
-            "Porque ocupa espacio",
-            "No hay ningún problema"
+            "No hay problema, siempre que la conversación esté anonimizada antes"
           ],
-          "certa": 0,
+          "certa": 1,
           "ref": "diagrama",
           "explica": "El ejemplo enseña; la prueba mide. Mezclar los dos hace que la configuración parezca mejor de lo que es, y la decisión de la clase 2 pierde su valor."
         },
         {
           "p": "\"Pon la hoja de cálculo completa de clientes en el agente, así lo sabe todo\". ¿Qué está mal?",
           "opcoes": [
-            "Nada, cuanto más contexto mejor",
-            "Expone datos que la tarea no necesita y encarece cada conversación; el agente solo consulta al cliente de la conversación",
-            "La hoja de cálculo es demasiado pequeña"
+            "Expone datos que la tarea no necesita y encarece cada conversación",
+            "Nada, siempre que la planilla esté actualizada y sin errores",
+            "Solo el tamaño: la planilla debe entrar en partes, una por región"
           ],
-          "certa": 1,
+          "certa": 0,
           "ref": "diagrama",
           "explica": "Dejarlo fuera del paquete es una caja de protección y de costo. La consulta al cliente correcto es una herramienta con acceso mínimo, tema de la clase 4."
         }

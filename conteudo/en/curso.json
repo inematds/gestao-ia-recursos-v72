@@ -45,6 +45,61 @@
         "t": "simulated conversation with the owner"
       }
     ],
+    "cursos": {
+      "titulo": "The 6 courses in the program",
+      "sub": "Suggested order: G0 → G2 → G3 → G4 → G1 → G5. G1 (people) can run in parallel, and if you work in HR, you can start with it. All six are already published.",
+      "abrir": "Open the course",
+      "itens": [
+        {
+          "rot": "G0 · front door · published",
+          "t": "The agentic company and the manager of 2027",
+          "l": "What changed in management, what the consultancies say, Brazil, your career and your first process.",
+          "href": "https://inematds.github.io/gestao-ia-base-v72/",
+          "href_idioma": true,
+          "img": "assets/img/cursos/g0.jpg"
+        },
+        {
+          "rot": "G2 · processes · published",
+          "t": "Processes: a process is not sacred",
+          "l": "Take the process apart before automating it: eliminate, simplify, redesign and decide who does each step.",
+          "href": "https://inematds.github.io/gestao-ia-processos-v72/",
+          "href_idioma": true,
+          "img": "assets/img/cursos/g2.jpg"
+        },
+        {
+          "rot": "G3 · agents · published",
+          "t": "Agents: hire, delegate and supervise",
+          "l": "Job role, delegation, constitution, authority limit, progressive trust, agent team and exception queue.",
+          "href": "https://inematds.github.io/gestao-ia-agentes-v72/",
+          "href_idioma": true,
+          "img": "assets/img/cursos/g3.jpg"
+        },
+        {
+          "rot": "G4 · resources · you are here",
+          "t": "Resources: models, data and budget",
+          "l": "Cost per completed task, the model chosen from your own cases, context with an owner, tools with minimum access, budget and exiting the vendor.",
+          "href": "https://inematds.github.io/gestao-ia-recursos-v72/",
+          "href_idioma": true,
+          "img": "assets/img/cursos/g4.jpg"
+        },
+        {
+          "rot": "G1 · people · published",
+          "t": "People: leading the hybrid team",
+          "l": "What stays with people, the conversation about change, the junior who supervises agents and training the team.",
+          "href": "https://inematds.github.io/gestao-ia-pessoas-v72/",
+          "href_idioma": true,
+          "img": "assets/img/cursos/g1.jpg"
+        },
+        {
+          "rot": "G5 · wrap-up + final project · published",
+          "t": "Govern, measure and evolve",
+          "l": "Owners, permissions and records; evaluation with indicators; one LOOP-R cycle and the program's final project.",
+          "href": "https://inematds.github.io/gestao-ia-governanca-v72/",
+          "href_idioma": true,
+          "img": "assets/img/cursos/g5.jpg"
+        }
+      ]
+    },
     "aulas_titulo": "The lessons",
     "aulas_sub": "First the math (what the result costs), then each resource that goes into it: the model, the knowledge, the tools, what the team already uses on the side, and the vendor. Lessons 7 and 8 bring it all together in the budget and the area's resource plan.",
     "blocos": [
