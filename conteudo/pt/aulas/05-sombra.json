@@ -1,0 +1,132 @@
+{
+  "slug": "sombra",
+  "num": 5,
+  "menu": "Sombra",
+  "titulo": "IA na sombra",
+  "titulo_curto": "IA na sombra",
+  "minutos": 20,
+  "lead": "A lista oficial do Rafael tem oito ferramentas. A pesquisa interna (22 das 40 pessoas responderam) achou mais quatro: uma extensão que lê e-mails do financeiro, um app que grava visitas a clientes, um chatbot gratuito com a planilha de clientes e um complemento com acesso a todo o Drive. Ninguém agiu por mal. Nesta aula você faz o inventário e decide o que fica.",
+  "objetivo": "inventariar as ferramentas de IA que a equipe já usa sem a TI saber, com dono, dado que passa e decisão de manter, trocar ou cortar.",
+  "competencias": ["inventariar-ia-na-sombra", "avaliar-o-dado-que-passa", "decidir-manter-trocar-cortar"],
+  "aprende": [
+    {"t": "Perguntar de um jeito que as pessoas respondem"},
+    {"t": "Seguir o dado: o que passa, para onde e sob que contrato"},
+    {"t": "Decidir manter, trocar ou cortar, sempre com alternativa"},
+    {"t": "Uma política de uma página e a pesquisa a cada trimestre"}
+  ],
+  "hero_alt": "Escritório aberto visto de trás: uma pessoa grava com o celular, outra usa uma janela de conversa no notebook, outra trabalha numa planilha colorida.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "O ciclo do inventário",
+      "sub": "Não é caça às bruxas: é descobrir o que a equipe precisa e oferecer um jeito seguro. Clique em cada etapa.",
+      "volta": "A cada trimestre, a pesquisa roda de novo",
+      "nos": [
+        {"icone": "megafone", "titulo": "Perguntar", "sub": "sem punir",
+         "detalhe": "Pesquisa anônima, por setor, com perguntas concretas: que ferramenta, para quê, que dado você coloca nela. Diga antes que ninguém será punido pelo que contar. Quem tem medo não responde, e a sombra continua."},
+        {"icone": "lista", "titulo": "Listar", "sub": "oficial e não oficial",
+         "detalhe": "Junte a lista da TI com as respostas da pesquisa. Inclua o que a própria TI montou e não registrou: automação feita às pressas também é sombra."},
+        {"icone": "lupa", "titulo": "Seguir o dado", "sub": "o que passa e para onde", "forte": true,
+         "detalhe": "Para cada ferramenta: que dado entra (cliente, e-mail, voz, todo o Drive), para onde vai (conta pessoal, fornecedor sem contrato, outro país), se o fornecedor pode usar esse dado para treinar modelos, e quem responde por ela."},
+        {"icone": "check", "titulo": "Decidir", "sub": "manter, trocar, cortar",
+         "detalhe": "Manter: dado de baixo risco, contrato e dono. Trocar: a necessidade é legítima e a ferramenta não. Cortar: dado de cliente ou acesso excessivo sem controle. Toda decisão de cortar vem com alternativa, ou a ferramenta volta por outra porta."},
+        {"icone": "arquivo", "titulo": "Política", "sub": "uma página",
+         "detalhe": "O que pode, o que não pode, a quem pedir uma ferramenta nova e em quanto tempo a resposta sai. Curta o bastante para ser lida, publicada onde a equipe trabalha."}
+      ],
+      "legenda": "Recomendação do gabarito do laboratório para o F12: não punir; levantar, avaliar cada uma, oferecer alternativa aprovada, publicar política simples e repetir a pesquisa a cada trimestre. Horizonte: empresa fictícia de estudo."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Do achado à decisão",
+      "sub": "Quatro passos com o inventário da Horizonte (F12 e F10 no laboratório).",
+      "passos": [
+        {"titulo": "Pergunte sem punir", "sub": "e conte quem não respondeu",
+         "texto": ["As respostas da Horizonte vieram porque a pesquisa era anônima e perguntava \"como você usa tecnologia no trabalho\", sem a palavra proibido. Mesmo assim, 18 das 40 pessoas não responderam.", "Quem não respondeu é parte do resultado: pode ser o setor que mais usa. Faça uma segunda rodada, conversando com cada líder, antes de dizer que o inventário está completo."],
+         "exemplo": {"rot": "Na Horizonte", "texto": "\"Para escrever proposta eu colo a planilha de clientes num chatbot de IA gratuito, na minha conta pessoal. Economiza muito tempo.\" Vendas, resposta 8. É uma necessidade real, resolvida do jeito errado."}},
+        {"titulo": "Siga o dado", "sub": "o risco está no que passa",
+         "texto": ["A pergunta não é \"a ferramenta é boa?\", é \"o que ela leva daqui e para onde?\". Um corretor de texto que não guarda nada pesa menos que um complemento com acesso a todo o Drive.", "Não dá para proteger o que não se conhece: dado de cliente saindo por conta pessoal não tem contrato, não tem registro e não volta."],
+         "exemplo": {"rot": "Os quatro achados", "texto": "MailResumo lê os e-mails do financeiro (boletos, fornecedores). GravaReunião grava clientes sem aviso. O chatbot gratuito recebe a planilha de clientes. O PlanilhaGênio tem acesso a todo o Drive."}},
+        {"titulo": "Manter, trocar ou cortar", "sub": "sempre com alternativa",
+         "texto": ["Corte o que expõe dado de cliente ou dá acesso amplo sem controle, e corte já. Mas se a necessidade é legítima (escrever proposta mais rápido), ofereça a alternativa aprovada no mesmo dia.", "Quem decide é o dono do processo com a TI; quem usava a ferramenta é ouvido. A decisão fica no inventário com data e motivo."],
+         "exemplo": {"rot": "Decisão (fictícia)", "texto": "Chatbot pessoal com a planilha: cortar já; trocar por ferramenta de IA em conta da empresa, com contrato, sem colar a planilha inteira. Dona da decisão: Patrícia, com o Rafael."}},
+        {"titulo": "A sombra oficial", "sub": "a TI também esquece de registrar",
+         "texto": ["O resumo diário de atendimento foi montado pelo Rafael: manda as conversas completas, com CPF e endereço, para um serviço gratuito fora do Brasil, sem contrato, cujos termos permitem treinar com os dados. Não está no inventário.", "Ele entra na lista como as outras. A parte legal (transferência internacional, base legal) fica com quem cuida da LGPD; o curso Profissional 2030 Base trata disso."],
+         "exemplo": {"rot": "Decisão (fictícia)", "texto": "Resumo diário: suspender o envio até trocar por fornecedor com contrato, sem uso dos dados para treino e com anonimização antes. Registrar no inventário. Dona: Juliana, que usa; técnica: Rafael."}}
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "A pesquisa, o inventário com decisão e a política de uma página. A aba ao lado mostra o inventário da Horizonte.",
+      "blocos": [
+        {"rot": "Pesquisa anônima (4 perguntas)", "icone": "megafone",
+         "conteudo": "PESQUISA · Como você usa tecnologia e IA no trabalho? · anônima · <setor>\nNinguém será punido pelo que responder. Queremos saber o que ajuda você,\npara oferecer um jeito seguro de continuar.\n\n1. Que ferramentas (apps, sites, extensões, assistentes) você usa no trabalho\n   além das oficiais? Para quê?\n2. Que informação você coloca ou deixa essas ferramentas lerem?\n   (clientes, e-mails, planilhas, fotos, áudios, documentos)\n3. Você usa com conta da empresa ou conta pessoal? Gratuita ou paga?\n4. Se a ferramenta sumisse amanhã, o que ficaria mais difícil no seu trabalho?"},
+        {"rot": "Inventário de IA com decisão", "icone": "lista",
+         "conteudo": "INVENTÁRIO DE IA · <área/empresa> · data <...> · responsável <nome>\nPesquisa: <n> de <total> pessoas responderam · 2ª rodada: <data>\n\n| Ferramenta | Setor / quem usa | Para quê | Dado que passa | Para onde vai / conta | Contrato? Treina com o dado? | Dono | Decisão (manter/trocar/cortar) | Alternativa | Prazo |\n|---|---|---|---|---|---|---|---|---|---|\n| <...> | <...> | <...> | <...> | <pessoal/empresa, país> | <sim/não> | <nome> | <...> | <...> | <data> |\n\nCRITÉRIO: cortar = dado de cliente ou acesso amplo sem controle\n          trocar = necessidade legítima, ferramenta inadequada\n          manter = dado de baixo risco + contrato + dono\nAÇÕES IMEDIATAS: <acessos a revogar, envios a suspender>\nPRÓXIMA PESQUISA: <data, daqui a um trimestre>"},
+        {"rot": "Política de uso de IA (1 página)", "icone": "arquivo",
+         "conteudo": "POLÍTICA DE USO DE IA · <empresa> · versão <...> · dono <nome>\n\nPODE (com as ferramentas aprovadas: <lista>)\n- <usar IA para rascunhos de texto sem dado de cliente>\n- <...>\n\nNÃO PODE\n- Colocar dado de cliente, funcionário ou financeiro em ferramenta não aprovada\n  ou em conta pessoal.\n- Gravar cliente ou colega sem aviso.\n- Dar a uma extensão ou complemento acesso a todos os arquivos.\n- <...>\n\nQUER UMA FERRAMENTA NOVA? Peça a <nome/canal>. Resposta em até <n> dias úteis.\nACHOU QUE ERROU? Avise <nome>. Quem avisa não é punido; o que se esconde é.\nREVISÃO: a cada trimestre, junto com a pesquisa."}
+      ],
+      "saida": {"selo": "simulacao", "abas": [
+        {"rot": "Inventário da Horizonte (exemplo)", "html": "<p><b>Inventário de IA · comercial e áreas próximas · out/2026</b> · Horizonte, empresa fictícia de estudo · responsável: Patrícia com o Rafael · pesquisa: 22 de 40</p><ol><li><b>Chatbot gratuito, conta pessoal</b> · vendas · propostas · planilha de clientes · <b>cortar já</b>; trocar por IA em conta da empresa com contrato, sem a planilha inteira · Patrícia.</li><li><b>GravaReunião</b> · comercial · grava visitas sem aviso · voz e conversa de clientes · <b>cortar a gravação sem aviso</b>; trocar por anotação ou ferramenta aprovada com aviso ao cliente · Patrícia.</li><li><b>MailResumo</b> (extensão) · financeiro · resumo de boletos · e-mails de fornecedores e valores · <b>cortar</b> e avaliar alternativa no e-mail corporativo · Rafael.</li><li><b>PlanilhaGênio</b> (complemento) · financeiro · fórmulas · acesso a todo o Drive · <b>cortar o acesso</b> já; avaliar opção com acesso só à planilha · Rafael.</li><li><b>Resumo diário (serviço gratuito)</b> · atendimento · conversas completas com CPF e endereço, fora do Brasil, sem contrato · <b>suspender e trocar</b> por fornecedor com contrato e anonimização · Juliana e Rafael.</li></ol><p>2ª rodada com os líderes dos setores: até 31/10. Próxima pesquisa: janeiro de 2027.</p>"},
+        {"rot": "Como conferir / erros comuns", "html": "<ol><li><b>Inventário só da TI.</b> Sem pesquisa, a lista mostra o que foi comprado, não o que é usado.</li><li><b>Punir quem contou.</b> Na rodada seguinte, ninguém conta nada.</li><li><b>Cortar sem alternativa.</b> A necessidade continua e a ferramenta volta por outra conta.</li><li><b>Esquecer a sombra oficial.</b> Automação da própria TI fora do inventário também conta.</li><li><b>Conferência:</b> cada linha tem dado que passa, destino, dono, decisão e prazo; toda linha \"cortar\" tem uma alternativa ou o motivo de não ter.</li></ol>"}
+      ]}
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática",
+      "sub": "O inventário da Horizonte para treinar; o da sua equipe para valer.",
+      "fonte": "Peças do laboratório: <a href=\"https://inematds.github.io/prof2030-lab/inventario.html\">inventário de TI e pesquisa interna (F12)</a> e <a href=\"https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/\">resumo de atendimento (F10)</a>.",
+      "exercicios": [
+        {"id": "e1", "titulo": "1 · O inventário da Horizonte", "min": "30 min",
+         "texto": "Abra o inventário de TI do laboratório e leia as 22 respostas. Ache as ferramentas que não estão na lista oficial. Abra também o resumo de atendimento e confira se ele está no inventário. Preencha o modelo, decida cada linha e escreva a política de uma página da Horizonte.",
+         "pronto": "o inventário tem as 5 ferramentas (as 4 da pesquisa e o resumo diário), cada uma com setor, dado que passa, destino, dono, decisão e prazo; toda decisão de cortar tem alternativa; a política tem as quatro partes (pode, não pode, a quem pedir, achou que errou) e a data da próxima pesquisa."},
+        {"id": "e2", "titulo": "2 · A pesquisa da sua equipe", "min": "30 min + 1 semana",
+         "dias": 7,
+         "texto": "Mande a pesquisa anônima para a sua equipe (ou área), dizendo antes que ninguém será punido. Espere uma semana, converse com quem não respondeu e monte o inventário. Leve as decisões de cortar à TI com a alternativa já pensada.",
+         "pronto": "a pesquisa foi enviada a toda a equipe, você sabe quantos responderam, fez a segunda rodada com quem não respondeu, e o inventário tem cada ferramenta com dado, destino, dono, decisão e prazo, mais a política de uma página publicada ou enviada para aprovação."}
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste rápido",
+      "sub": "4 perguntas. A explicação aparece depois da sua tentativa.",
+      "perguntas": [
+        {"p": "A pesquisa revelou que um vendedor cola a planilha de clientes num chatbot gratuito. Qual a melhor reação?",
+         "opcoes": ["Advertência por escrito, para servir de exemplo", "Cortar o uso já e oferecer no mesmo dia uma ferramenta aprovada para escrever propostas", "Deixar, porque economiza tempo"],
+         "certa": 1, "ref": "passos",
+         "explica": "Punir faz a próxima pesquisa voltar vazia. Deixar expõe dado de cliente. Cortar com alternativa resolve o risco e mantém a necessidade atendida."},
+        {"p": "Qual pergunta decide o risco de uma ferramenta na sombra?",
+         "opcoes": ["Ela é popular?", "Que dado ela leva, para onde, sob que contrato e se pode treinar modelos com ele", "Ela é gratuita?"],
+         "certa": 1, "ref": "diagrama",
+         "explica": "O risco anda com o dado. Ser gratuita só piora quando o preço é o uso dos seus dados, como nos termos do serviço de resumo do laboratório."},
+        {"p": "O resumo diário de atendimento foi criado pela própria TI. Ele entra no inventário de IA na sombra?",
+         "opcoes": ["Não, a TI sabe que ele existe", "Sim: está fora do inventário oficial, sem contrato, e manda dado de cliente para fora", "Só se alguém reclamar"],
+         "certa": 1, "ref": "passos",
+         "explica": "Sombra é o que está fora do controle, não só o que o funcionário instalou. Saber que existe não é o mesmo que estar registrado, com dono e contrato."},
+        {"p": "18 das 40 pessoas não responderam à pesquisa. O que isso significa para o inventário?",
+         "opcoes": ["Que essas pessoas não usam IA", "Que ele está incompleto até uma segunda rodada, com os líderes de cada setor", "Nada, 22 respostas bastam"],
+         "certa": 1, "ref": "passos",
+         "explica": "Silêncio não é zero. O inventário diz quantos responderam e marca a segunda rodada antes de se declarar completo."}
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumo",
+      "itens": [
+        {"t": "Perguntar sem punir", "texto": "Pesquisa anônima, concreta, e conta de quem não respondeu."},
+        {"t": "Seguir o dado", "texto": "O que entra, para onde vai, contrato e uso para treino."},
+        {"t": "Cortar com alternativa", "texto": "Manter, trocar ou cortar, com dono, data e motivo."},
+        {"t": "Política de uma página", "texto": "Pode, não pode, a quem pedir. Pesquisa de novo a cada trimestre."}
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {"t": "Laboratório Horizonte: inventário de TI e pesquisa interna (F12, empresa fictícia de estudo)", "href": "https://inematds.github.io/prof2030-lab/inventario.html", "icone": "lista"},
+        {"t": "Laboratório Horizonte: o resumo de atendimento (F10)", "href": "https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/", "icone": "nuvem"},
+        {"t": "Profissional 2030 Base: confiar no que a IA constrói (LGPD e para onde o dado vai)", "href": "https://inematds.github.io/prof2030-base/", "icone": "escudo"}
+      ]
+    }
+  ]
+}

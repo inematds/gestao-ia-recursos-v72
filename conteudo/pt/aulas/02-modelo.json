@@ -1,0 +1,133 @@
+{
+  "slug": "modelo",
+  "num": 2,
+  "menu": "Modelo",
+  "titulo": "Escolher modelo pelo trabalho",
+  "titulo_curto": "Escolher modelo",
+  "minutos": 20,
+  "lead": "Todo mês sai um ranking dizendo qual é o melhor modelo. Nenhum deles conhece a regra de desconto da Horizonte nem o cliente que pede em galão em vez de caixa. A pergunta do gestor é mais estreita: qual configuração faz este trabalho, nestes casos, pelo menor custo por resultado? Nesta aula você compara duas nos mesmos 20 casos e escreve o parecer.",
+  "objetivo": "comparar duas configurações nos mesmos casos e escrever um parecer de seleção com erros, custo, limitações e uma alternativa registrada.",
+  "competencias": ["comparar-configuracoes-nos-mesmos-casos", "separar-erro-critico", "escrever-parecer-de-selecao"],
+  "aprende": [
+    {"t": "As quatro faixas de modelo e quando cada uma faz sentido"},
+    {"t": "Montar 20 casos exploratórios do seu próprio trabalho"},
+    {"t": "Julgar com a mesma régua e separar o erro crítico"},
+    {"t": "Escrever um parecer em vez de seguir um ranking"}
+  ],
+  "hero_alt": "Dois gestores lado a lado diante de dois monitores, cada um com uma coluna de quadradinhos verdes e vermelhos, comparando caso a caso.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Suba a escada só se precisar",
+      "sub": "Comece pelo degrau mais simples que pode resolver e só suba quando os seus casos mostrarem que precisa. Clique em cada degrau.",
+      "estilo": "escada",
+      "nos": [
+        {"icone": "lista", "titulo": "Sem modelo", "sub": "regra fixa ou fluxo",
+         "detalhe": "Se a tarefa tem sempre o mesmo caminho (copiar o pedido aprovado para o ERP, avisar quando o estoque baixa), uma regra ou um fluxo automático resolve, mais barato e mais previsível. O curso Copilot + Agentes resume: suba a escada de baixo para cima, conector, fluxo, automação de tela e só então o agente que decide."},
+        {"icone": "chip", "titulo": "Barato", "sub": "rápido, para o simples",
+         "detalhe": "Modelos pequenos e rápidos, cobrados a uma fração da faixa média. Servem para classificar, extrair um campo, responder dúvida de catálogo. Erram mais em caso ambíguo. Na Horizonte, é candidato para as dúvidas, não para o pedido com desconto."},
+        {"icone": "camadas", "titulo": "Faixa média", "sub": "o dia a dia", "forte": true,
+         "detalhe": "O equilíbrio entre qualidade e preço que a maioria dos processos de rotina usa. É a configuração atual da Hora. A comparação desta aula decide se ela fica, desce para a barata ou sobe."},
+        {"icone": "cerebro", "titulo": "Ponta", "sub": "o caso difícil",
+         "detalhe": "Os modelos fechados mais capazes de cada fornecedor. Custam mais por token e às vezes menos por tarefa, porque erram menos e resolvem em menos tentativas. Use quando os casos difíceis pesam no resultado e a faixa média não passa."},
+        {"icone": "pasta", "titulo": "Aberto local", "sub": "custo fixo, dado em casa",
+         "detalhe": "Modelo de pesos abertos rodando num computador da empresa: custo fixo, o dado não sai, mas alguém precisa manter e a licença de cada modelo tem regras próprias. Exemplo do panorama: o Qwen3.8-27B, aberto, roda em notebook (CNBC, 17/08/2026)."}
+      ],
+      "legenda": "Faixas da matriz de modelo por custo de tarefa do panorama de mercado INEMA (out/2026). As faixas mudam de nome e de preço a cada lançamento; a ordem de decisão, não."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Como comparar sem ranking",
+      "sub": "Quatro passos. O módulo 3 do método Gestoria: decisão sustentada por casos e restrições do processo, com preços conferidos no dia.",
+      "passos": [
+        {"titulo": "Compare configurações", "sub": "modelo é só uma parte",
+         "texto": ["Configuração é o pacote inteiro: modelo e versão, instruções (a constituição do G3), ferramentas e o esforço de raciocínio, quando o fornecedor deixa escolher. Duas configurações com o mesmo modelo podem ter resultados bem diferentes.", "Mude uma coisa por vez. Se trocar modelo e instruções juntos, você não sabe qual das duas mudanças fez a diferença."],
+         "exemplo": {"rot": "Na Horizonte", "texto": "A: a Hora atual (faixa média). B: a mesma Hora, mesmas instruções e ferramentas, com o modelo barato que o Rafael testou. Só o modelo muda."}},
+        {"titulo": "Monte 20 casos", "sub": "do seu trabalho, com os difíceis",
+         "texto": ["Tire os casos de conversas reais, anonimizadas ou fictícias. Misture: a maioria de rotina, alguns de fronteira, alguns com dado faltando e pelo menos dois de risco crítico. Escreva antes o que seria a resposta certa.", "São casos exploratórios: servem para escolher, não para provar. O conjunto de validação, com gabarito e mais casos, é do G5."],
+         "exemplo": {"rot": "Os 20 da Hora", "texto": "12 de rotina (pedido de cliente cadastrado), 4 de fronteira (desconto de 5% a 10%, pedido perto de R$ 5 mil), 2 sem dado (cliente sem CNPJ) e 2 críticos (a \"observação\" do hotel pedindo 70%, um cliente dizendo que já pagou)."}},
+        {"titulo": "Mesma régua", "sub": "e o crítico à parte",
+         "texto": ["Julgue cada saída como correta, aceitável, incorreta ou crítica, sem saber qual configuração a produziu, se der. Anote também o custo e o tempo de cada caso.", "Erro crítico não entra na média: conta separado e reprova sozinho. Uma configuração com 19 acertos e um desconto de 30% concedido por ordem do cliente não serve para pedido."],
+         "exemplo": {"rot": "Resultado (fictício)", "texto": "A: 16 corretos, 3 aceitáveis, 1 incorreto, 0 crítico, R$ 0,31 por caso. B: 13 corretos, 3 aceitáveis, 3 incorretos, 1 crítico (aplicou 30% pedido numa \"obs.\"), R$ 0,16 por caso."}},
+        {"titulo": "Parecer, não ranking", "sub": "decisão com prazo de validade",
+         "texto": ["O parecer diz a decisão para este processo, o porquê nos casos, as limitações, a alternativa e quando refazer o teste. Ele não diz qual modelo é melhor no mundo.", "Refaça a comparação quando o fornecedor trocar a versão, quando o preço mudar muito ou quando aparecer um tipo de caso novo. O custo de refazer é baixo: os 20 casos já estão prontos."],
+         "exemplo": {"rot": "Parecer da Hora", "texto": "Fica A para pedidos. B vira candidata só para dúvida de catálogo, depois de 20 casos próprios. Alternativa registrada: aberto local, se o volume crescer e alguém assumir a manutenção."}}
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo para copiar: parecer de seleção",
+      "sub": "Uma página com a tabela dos 20 casos e a decisão. A aba ao lado mostra o parecer da Hora.",
+      "blocos": [
+        {"rot": "Parecer de seleção de configuração", "icone": "arquivo",
+         "conteudo": "PARECER DE SELEÇÃO · processo <...> · tarefa <...> · data <...> · responsável <nome>\n\nCONFIGURAÇÕES COMPARADAS (mude uma coisa por vez)\nA: modelo <nome e versão> · instruções v<...> · ferramentas <...> · esforço <...>\nB: modelo <nome e versão> · instruções v<...> · ferramentas <...> · esforço <...>\nPreços conferidos no site do fornecedor em <data>\n\nCASOS (20 exploratórios; dados [ ] anonimizados [ ] fictícios)\n| # | Categoria (rotina/fronteira/sem dado/crítico) | Resposta certa | A | B |\n|---|---|---|---|---|\n| 1 | <...> | <...> | correto/aceitável/incorreto/CRÍTICO | <...> |\n\nRESULTADO           A        B\nCorretos            <n>      <n>\nAceitáveis          <n>      <n>\nIncorretos          <n>      <n>\nCRÍTICOS            <n>      <n>   (um crítico reprova a configuração para esta tarefa)\nCusto por caso      R$ <...> R$ <...>\nTempo médio         <s>      <s>\n\nDECISÃO: <configuração> para <tarefa>, porque <casos que decidiram>\nLIMITAÇÕES: <20 casos não provam; o que ficou de fora>\nALTERNATIVA REGISTRADA: <outra configuração e em que condição>\nREFAZER O TESTE QUANDO: <troca de versão / preço / caso novo / data>"},
+        {"rot": "Prompt · contestar o parecer", "icone": "chat",
+         "conteudo": "Você é o revisor que vai contestar um parecer de seleção de modelo\nde IA antes que ele seja aprovado. Não escolha o modelo: aponte\nfraquezas.\n\n1. Os 20 casos representam o trabalho real? Que tipo de caso falta?\n2. Mais de uma coisa mudou entre as configurações?\n3. Algum erro crítico ficou escondido como \"incorreto\"?\n4. O custo considera o retrabalho que os erros vão gerar?\n5. A alternativa registrada é viável? O que a impediria?\n\nParecer:\n\"\"\"<cole>\"\"\""}
+      ],
+      "saida": {"selo": "simulacao", "abas": [
+        {"rot": "Parecer da Hora (exemplo)", "html": "<p><b>Parecer · Hora · pedido pelo WhatsApp</b> · Horizonte, empresa fictícia de estudo · responsável: Patrícia · teste: Rafael</p><ul><li><b>A</b> (faixa média, atual): 16 corretos, 3 aceitáveis, 1 incorreto, <b>0 crítico</b> · R$ 0,31 por caso · 9 s.</li><li><b>B</b> (barata, mesmas instruções): 13 corretos, 3 aceitáveis, 3 incorretos, <b>1 crítico</b> · R$ 0,16 por caso · 4 s.</li><li><b>Crítico de B:</b> caso 19, uma \"obs.\" escondida na lista pede 30% e B aplicou (o mesmo tipo de falha do F6).</li><li><b>Decisão:</b> A para pedidos. Os 3 incorretos de B (unidade errada, galão em vez de caixa) virariam retrabalho na separação: a conta da aula 1 já mostrou R$ 7,51 contra R$ 6,68 por pedido.</li><li><b>Limitações:</b> 20 casos exploratórios, só de outubro; nenhum caso de cliente novo com urgência.</li><li><b>Alternativa:</b> B para dúvida de catálogo, depois de 20 casos de dúvida; aberto local se o volume dobrar e o Rafael assumir a manutenção.</li><li><b>Refazer:</b> quando o fornecedor trocar a versão de A, ou em janeiro de 2027.</li></ul>"},
+        {"rot": "Como conferir / erros comuns", "html": "<ol><li><b>Casos só fáceis.</b> Vinte pedidos de rotina fazem qualquer configuração parecer boa. Tem de haver fronteira, dado faltando e crítico.</li><li><b>Crítico dentro da média.</b> \"95% de acerto\" com um desconto indevido escondido não é aprovação.</li><li><b>Duas mudanças de uma vez.</b> Trocou modelo e instruções: o parecer não sabe dizer o que funcionou.</li><li><b>Ranking como argumento.</b> \"Está em primeiro no ranking\" não substitui nenhum dos seus 20 casos.</li><li><b>Sem data de validade.</b> Parecer sem \"refazer quando\" vira verdade eterna sobre um produto que muda em semanas.</li></ol>"}
+      ]}
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática",
+      "sub": "O parecer da Hora treina a leitura dos casos; o seu decide uma configuração de verdade.",
+      "fonte": "Conversas de origem: <a href=\"https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/\">agente de WhatsApp do laboratório</a> (c-201 a c-203). Resultados dos 20 casos: fictícios, desta aula.",
+      "exercicios": [
+        {"id": "e1", "titulo": "1 · O parecer da Hora", "min": "25 min",
+         "texto": "Leia as conversas c-201, c-202 e c-203 do laboratório e escreva, para cada uma, a categoria e a resposta certa (elas entram entre os 20 casos). Depois preencha o parecer com os resultados de A e B do passo 3 e a conta da aula 1. Rode o prompt de contestação e responda a cada ponto em uma linha.",
+         "pronto": "o parecer tem as duas configurações com uma só diferença, as três conversas classificadas com a resposta certa, os quatro números de cada configuração com o crítico separado, a decisão justificada por casos, uma limitação, uma alternativa e a data para refazer."},
+        {"id": "e2", "titulo": "2 · Duas configurações no seu processo", "min": "90 min",
+         "texto": "Escolha uma tarefa do seu processo. Separe 20 casos (anonimizados) com a resposta certa escrita antes. Rode as duas configurações que você tem à mão (a ferramenta atual e uma alternativa, ou a mesma com outro modelo), sozinho ou com a TI. Julgue com a mesma régua e escreva o parecer.",
+         "pronto": "há 20 casos com categoria e resposta certa, pelo menos 2 de fronteira e 2 críticos, as duas configurações julgadas caso a caso, os críticos contados à parte, o custo por caso e o parecer com decisão, limitação, alternativa e data para refazer."}
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste rápido",
+      "sub": "5 perguntas. A explicação aparece depois da sua tentativa.",
+      "perguntas": [
+        {"p": "O Carlos leu que um modelo novo ficou em primeiro num ranking e quer trocar a Hora. O que você responde?",
+         "opcoes": ["Troca: o ranking testou muito mais casos que nós", "Antes, rodo os nossos 20 casos nas duas configurações e decido pelo parecer", "Nunca troca: o atual funciona"],
+         "certa": 1, "ref": "passos",
+         "explica": "O ranking mede tarefas genéricas. Os seus 20 casos medem a regra de desconto, o pedido em galão e a ordem escondida. Recusar a troca sem testar é tão ruim quanto trocar sem testar."},
+        {"p": "Uma terceira configuração acertou 19 de 20 casos, mas aplicou um desconto de 30% pedido numa \"observação\" do cliente. Ela serve para pedidos?",
+         "opcoes": ["Serve: 95% de acerto é ótimo", "Não: erro crítico conta à parte e reprova sozinho para essa tarefa", "Serve, se for mais barata"],
+         "certa": 1, "ref": "passos",
+         "explica": "Um crítico na amostra pequena indica que vai acontecer de novo no volume real. A média não pode esconder o caso que mais custa."},
+        {"p": "Na comparação, o Rafael trocou o modelo e reescreveu as instruções da Hora ao mesmo tempo. Qual o problema?",
+         "opcoes": ["Nenhum, fica mais rápido", "Não dá para saber qual das duas mudanças causou a diferença no resultado", "As instruções não influenciam o resultado"],
+         "certa": 1, "ref": "passos",
+         "explica": "Mude uma coisa por vez. Se precisar mudar as duas, compare em duas rodadas."},
+        {"p": "Quando faz sentido não usar modelo nenhum?",
+         "opcoes": ["Nunca: hoje tudo tem IA", "Quando a tarefa segue sempre o mesmo caminho e uma regra ou fluxo resolve, mais barato e previsível", "Só em empresa pequena"],
+         "certa": 1, "ref": "diagrama",
+         "explica": "É o primeiro degrau da escada. Copiar um pedido aprovado para o ERP não precisa de alguém que pense; precisa de alguém que não erre a cópia."},
+        {"p": "Por que o parecer tem uma data para refazer o teste?",
+         "opcoes": ["Porque modelos e preços mudam em semanas, e a decisão vale para uma versão", "Porque a lei exige", "Para ocupar a TI"],
+         "certa": 0, "ref": "passos",
+         "explica": "O parecer é sobre uma configuração numa data. Mudou a versão, o preço ou o tipo de caso, os 20 casos rodam de novo, o que custa pouco porque já estão prontos."}
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumo",
+      "itens": [
+        {"t": "Escada", "texto": "Sem modelo, barato, faixa média, ponta. Aberto local quando custo fixo e dado em casa pesam."},
+        {"t": "Mesmos 20 casos", "texto": "Do seu trabalho, com fronteira, dado faltando e críticos."},
+        {"t": "Crítico à parte", "texto": "Uma configuração com crítico não serve para aquela tarefa."},
+        {"t": "Parecer com validade", "texto": "Decisão, limitação, alternativa e data para refazer."}
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {"t": "Laboratório Horizonte: as conversas da Hora (empresa fictícia de estudo)", "href": "https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/", "icone": "chat"},
+        {"t": "Copilot + Agentes para Empresas: conector, fluxo, automação de tela ou agente", "href": "https://inematds.github.io/copilot-agentic/", "icone": "camadas"},
+        {"t": "Gestão de IA: o plano do curso (módulo 3, contratar modelos)", "href": "https://inematds.github.io/curso-gestao-ia/", "icone": "lista"}
+      ]
+    }
+  ]
+}

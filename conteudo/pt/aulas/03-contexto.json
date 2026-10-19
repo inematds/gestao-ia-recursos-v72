@@ -1,0 +1,135 @@
+{
+  "slug": "contexto",
+  "num": 3,
+  "menu": "Contexto",
+  "titulo": "Conhecimento da empresa como ativo",
+  "titulo_curto": "Conhecimento",
+  "minutos": 20,
+  "lead": "Na segunda de manhã a Hora cotou o detergente pelo preço de setembro. Não foi erro do modelo: a tabela nova e a antiga estavam na mesma pasta, e ninguém era dono de nenhuma das duas. O agente sabe o que a empresa escreveu para ele. Nesta aula você organiza esse conhecimento como um ativo: cada documento com dono, versão e validade.",
+  "objetivo": "organizar procedimentos, exemplos e regras que o agente lê num pacote de contexto em que cada documento tem dono, versão e validade.",
+  "competencias": ["montar-pacote-de-contexto", "nomear-dono-e-versao-por-documento", "separar-exemplo-de-teste"],
+  "aprende": [
+    {"t": "Os cinco tipos de conhecimento que o agente lê"},
+    {"t": "Dono, versão e validade em cada documento"},
+    {"t": "Resolver conflito entre fontes antes que o agente escolha"},
+    {"t": "O que fica fora do pacote, e por que exemplo não é teste"}
+  ],
+  "hero_alt": "Mulher organiza fichários com abas coloridas numa estante baixa do escritório, segurando um tablet; um colega trabalha ao fundo.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "O pacote de contexto",
+      "sub": "Tudo o que o agente lê cabe em cinco caixas. A última é a que mais protege. Clique em cada uma.",
+      "nos": [
+        {"icone": "escudo", "titulo": "Regras", "sub": "o que vale sempre",
+         "itens": [{"icone": "arquivo", "t": "política comercial", "sub": "e a constituição"}],
+         "detalhe": "Política comercial, alçada, constituição do agente (G3). Mudam pouco e mandam em tudo o que vem depois. Na Horizonte: tetos de desconto de 5% e 10%, aprovação acima de R$ 5 mil, o que a Hora nunca faz. Dono: o Carlos assina a política; a Patrícia mantém a constituição."},
+        {"icone": "lista", "titulo": "Referência", "sub": "fatos que mudam",
+         "itens": [{"icone": "calendario", "t": "tabela, catálogo, entrega", "sub": "com validade"}],
+         "detalhe": "Tabela de preços, catálogo, cidades e dias de entrega. Mudam todo mês, e por isso cada um tem data de validade e uma versão só em uso. A tabela de setembro não é apagada: vai para o arquivo, fora do alcance do agente."},
+        {"icone": "camadas", "titulo": "Procedimentos", "sub": "como se faz", "forte": true,
+         "itens": [{"icone": "check", "t": "passo a passo", "sub": "com entrada e saída"}],
+         "detalhe": "O jeito certo de fazer uma tarefa que se repete, escrito como uma pessoa experiente faria: quando usar, o que precisa ter em mãos, os passos e como fica a entrega. Alguns fornecedores chamam isso de Skill. Na Hora: \"montar pedido de reposição\" e \"responder prazo de entrega\"."},
+        {"icone": "chat", "titulo": "Exemplos", "sub": "bom e ruim",
+         "itens": [{"icone": "x", "t": "separados dos testes", "sub": "nunca os mesmos"}],
+         "detalhe": "Conversas que mostram o bom atendimento e o erro corrigido. Ensinam tom e critério. Nunca use como exemplo um caso que está entre os 20 da aula 2: o teste viraria cola, e o resultado deixaria de dizer alguma coisa."},
+        {"icone": "cadeado", "titulo": "Fora do pacote", "sub": "o que o agente não lê",
+         "itens": [{"icone": "x", "t": "dado desnecessário", "sub": "e versão vencida"}],
+         "detalhe": "CPF, planilha inteira de clientes, conversa de outro cliente, tabela vencida, rascunho de política que ninguém aprovou. O que o agente não precisa para a tarefa fica fora. Não é só segurança: menos texto irrelevante também é menos custo por conversa."}
+      ],
+      "legenda": "Divisão do módulo 4 do método Gestoria (INEMA): procedimentos, exemplos, regras e conhecimento recuperável, com dono e versão. Horizonte: empresa fictícia de estudo."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Como transformar documentos em ativo",
+      "sub": "Quatro regras. Nenhuma exige programar; todas exigem decidir quem cuida de quê.",
+      "passos": [
+        {"titulo": "Todo documento tem dono", "sub": "e o dono é uma pessoa",
+         "texto": ["Para cada documento: dono (quem corrige quando estiver errado), versão, data de validade e onde fica. \"A empresa\" ou \"o comercial\" não é dono: quando ninguém é, ninguém atualiza.", "O dono avisa quem cuida do agente quando muda o documento. Mudou a tabela, muda a versão em uso no agente no mesmo dia, e a anterior vai para o arquivo."],
+         "exemplo": {"rot": "Na Horizonte (fictício)", "texto": "O preço de setembro saiu porque a pasta tinha \"tabela-precos.pdf\" e \"tabela-precos-NOVA.pdf\". Agora: \"Tabela de preços · v2026-10 · válida até 31/10 · dona: Patrícia\". Uma só em uso."}},
+        {"titulo": "Conflito se resolve antes", "sub": "não deixe o agente escolher",
+         "texto": ["Se dois documentos discordam, o agente escolhe um, e você só descobre na reclamação. Escreva a ordem de precedência: regras mandam em referência, que manda em procedimentos, que mandam em exemplos.", "Achou conflito, o agente não decide: passa o caso adiante e o dono do documento corrige. Conflito encontrado é tarefa com dono e prazo, não nota de rodapé."],
+         "exemplo": {"rot": "Conflito real do pacote", "texto": "O FAQ de entrega dizia \"pedido mínimo de 5 caixas\"; a política comercial de outubro baixou para 3. Vale a política. A Juliana, dona do FAQ, corrige até sexta."}},
+        {"titulo": "Procedimento reutilizável", "sub": "quando usar, entradas, passos, saída",
+         "texto": ["O procedimento é a experiência da equipe escrita de um jeito que outra pessoa, ou o agente, repete. Tem gatilho (quando usar), quando não usar, entradas obrigatórias, passos que dá para conferir e a saída com formato.", "Teste o procedimento com uma pessoa nova antes do agente: se ela trava num passo, o agente também vai travar, só que sem avisar."],
+         "exemplo": {"rot": "Na Horizonte", "texto": "\"Montar pedido de reposição\": use quando cliente cadastrado pede itens que já comprou; não use para cliente novo. Entradas: cliente, itens, quantidades em caixa. Saída: rascunho do pedido com preço da tabela vigente e a versão dela."}},
+        {"titulo": "Exemplo não é teste", "sub": "e menos é mais",
+         "texto": ["Os exemplos ensinam; os casos de teste medem. Se o mesmo caso estiver nos dois, a medida mente. Guarde os 20 casos da aula 2 numa pasta que o agente não lê.", "Defina também a memória: o que o agente guarda de uma conversa para a outra, por quanto tempo e quem pode corrigir. Os prazos legais para dado pessoal ficam com quem cuida da LGPD na empresa."],
+         "exemplo": {"rot": "Memória da Hora", "texto": "Guarda: itens que o cliente costuma pedir e o dia de entrega preferido. Não guarda: CPF, conversa inteira, dado de pagamento. Quem corrige: Juliana, a pedido do cliente."}}
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "O índice do pacote, o procedimento reutilizável e um prompt que procura conflito. A aba ao lado mostra o pacote da Patrícia.",
+      "blocos": [
+        {"rot": "Índice do pacote de contexto", "icone": "pasta",
+         "conteudo": "PACOTE DE CONTEXTO · agente <nome> · processo <...> · versão do pacote <...> · data <...>\nResponsável pelo pacote: <nome>\n\n| # | Documento | Tipo (regra/referência/procedimento/exemplo) | Dono | Versão | Válido até | Onde fica |\n|---|---|---|---|---|---|---|\n| 1 | <...> | regra | <nome> | v<...> | <data> | <pasta> |\n\nPRECEDÊNCIA: regra > referência > procedimento > exemplo\nCONFLITO ENCONTRADO: o agente não decide; avisa <nome>, que corrige em <prazo>\nFORA DO PACOTE: <dados e documentos que o agente não lê>\nCASOS DE TESTE: guardados em <pasta que o agente não lê>; nenhum é exemplo\nMEMÓRIA: guarda <...> · não guarda <...> · por <prazo> · quem corrige <nome>\nREVISÃO DO PACOTE: <periodicidade> e sempre que um dono mudar um documento"},
+        {"rot": "Procedimento reutilizável (Skill)", "icone": "camadas",
+         "conteudo": "PROCEDIMENTO · <nome> · versão <...> · dono <nome>\n\nUSE QUANDO: <gatilho>\nNÃO USE QUANDO: <exclusões>\nENTRADAS OBRIGATÓRIAS: <...>\nFONTES PERMITIDAS: <documentos do pacote, com versão>\nPASSOS (cada um dá para conferir):\n1. <...>\n2. <...>\n3. <...>\nSAÍDA: <campos e formato>\nCRITÉRIO DE SUCESSO: <como o revisor confere>\nFALHA OU DADO FALTANDO: <para quem vai, com o quê>\nEXEMPLO BOM / EXEMPLO RUIM: <um de cada, que não esteja nos testes>"},
+        {"rot": "Prompt · procurar conflito e lacuna", "icone": "chat",
+         "conteudo": "Você é revisor de documentação operacional. Abaixo estão os documentos\nque um agente de IA lê para trabalhar. Não reescreva nada: aponte.\n\n1. Dois documentos dizem coisas diferentes sobre o mesmo assunto?\n   Cite os dois trechos.\n2. Algum documento não tem dono, versão ou validade?\n3. Há dado que a tarefa não precisa (documento pessoal, dados de\n   outros clientes, versão vencida)?\n4. Que pergunta frequente do cliente nenhum documento responde?\n\nDocumentos:\n\"\"\"<cole>\"\"\""}
+      ],
+      "saida": {"selo": "simulacao", "abas": [
+        {"rot": "Pacote da Patrícia (exemplo)", "html": "<p><b>Pacote · Hora · v3</b> · Horizonte, empresa fictícia de estudo · responsável: Patrícia</p><ol><li><b>Política comercial</b> · regra · dono: Carlos · v1.2 · revisão trimestral.</li><li><b>Constituição da Hora</b> · regra · dona: Patrícia · v2.0 (G3).</li><li><b>Tabela de preços</b> · referência · dona: Patrícia · v2026-10 · válida até 31/10.</li><li><b>Catálogo</b> (produtos, embalagem, caixa = 6 galões) · referência · dona: Patrícia · v2026-10.</li><li><b>FAQ de entrega</b> (cidades, dias, pedido mínimo) · referência · dona: Juliana · v4 · conflito com a política corrigido.</li><li><b>Procedimentos</b> \"montar pedido de reposição\" e \"responder prazo de entrega\" · dona: Patrícia · v1.</li><li><b>Exemplos</b>: 10 conversas boas e 5 ruins com a correção · dona: Patrícia · nenhuma entre os 20 casos de teste.</li></ol><p><b>Fora:</b> CPF, a planilha inteira de clientes, conversas de outros clientes, tabela de setembro (arquivada).</p>"},
+        {"rot": "Como conferir / erros comuns", "html": "<ol><li><b>Dono genérico.</b> \"Comercial\" não corrige documento. Ponha um nome.</li><li><b>Duas versões em uso.</b> Procure arquivos com \"novo\", \"final\", \"v2-certo\" na mesma pasta: um deles vai ser lido.</li><li><b>Tudo dentro.</b> Colocar a planilha inteira de clientes \"para o agente saber mais\" expõe dado e encarece cada conversa.</li><li><b>Teste como exemplo.</b> Se o caso do hotel está nos exemplos, o teste dele não mede mais nada.</li><li><b>Conferência:</b> para cada linha do índice, abra o documento e veja se dono, versão e validade estão escritos nele, não só no índice.</li></ol>"}
+      ]}
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática",
+      "sub": "O pacote da Patrícia para treinar; o da sua área para valer.",
+      "fonte": "Peças de origem: <a href=\"https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/\">configuração e prompt da Hora</a> e <a href=\"https://inematds.github.io/prof2030-lab/pecas/planilha-clientes/\">planilha de clientes</a> (o que não deve entrar no pacote).",
+      "exercicios": [
+        {"id": "e1", "titulo": "1 · O pacote da Patrícia", "min": "30 min",
+         "texto": "Abra o prompt da Hora no laboratório e marque o que nele é regra, referência, procedimento ou exemplo (está tudo misturado num texto só). Monte o índice do pacote com o modelo, escreva um procedimento completo e a lista do que fica fora. Inclua a planilha de clientes do laboratório na lista de fora e diga por quê.",
+         "pronto": "o índice tem pelo menos 6 documentos, cada um com tipo, dono com nome, versão e validade; a ordem de precedência está escrita; há um procedimento com as 9 partes do modelo; a lista de fora tem pelo menos 3 itens, entre eles a planilha de clientes."},
+        {"id": "e2", "titulo": "2 · O pacote da sua área", "min": "60 min",
+         "texto": "Liste tudo o que o agente do seu processo lê hoje (ou o que você daria a uma pessoa nova). Classifique, dê dono e versão, resolva os conflitos e escreva um procedimento da tarefa mais frequente. Rode o prompt de conflito e marque cada ponto como corrigido ou com dono e prazo.",
+         "pronto": "o índice está salvo com dono, versão e validade em todos os documentos, nenhum documento em duas versões em uso, cada conflito apontado tem dono e prazo, um procedimento está escrito e os casos de teste estão numa pasta separada dos exemplos."}
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste rápido",
+      "sub": "4 perguntas. A explicação aparece depois da sua tentativa.",
+      "perguntas": [
+        {"p": "A Hora cotou um preço vencido. A primeira correção de gestão é:",
+         "opcoes": ["Trocar o modelo por um mais inteligente", "Dar dono, versão e validade à tabela, e deixar só uma versão em uso", "Proibir a Hora de falar de preço"],
+         "certa": 1, "ref": "passos",
+         "explica": "O modelo leu o que estava lá. O problema é de ativo sem dono: duas tabelas na mesma pasta. Modelo melhor lendo a tabela errada continua errando."},
+        {"p": "O FAQ de entrega diz pedido mínimo de 5 caixas; a política comercial nova diz 3. O que o agente faz?",
+         "opcoes": ["Escolhe a mais recente", "Segue a ordem de precedência (a política manda) e o conflito vai para o dono do FAQ corrigir", "Pergunta ao cliente qual ele prefere"],
+         "certa": 1, "ref": "passos",
+         "explica": "Precedência escrita evita que o agente escolha por conta própria. E conflito encontrado vira tarefa com dono e prazo, para não voltar na semana seguinte."},
+        {"p": "Por que não usar como exemplo uma conversa que está entre os 20 casos de teste?",
+         "opcoes": ["Porque o teste vira cola e deixa de medir o que o agente faria num caso novo", "Porque ocupa espaço", "Não há problema nenhum"],
+         "certa": 0, "ref": "diagrama",
+         "explica": "Exemplo ensina; teste mede. Misturar os dois faz a configuração parecer melhor do que é, e a decisão da aula 2 perde o valor."},
+        {"p": "\"Coloca a planilha inteira de clientes no agente, assim ele sabe tudo.\" O que está errado?",
+         "opcoes": ["Nada, quanto mais contexto melhor", "Expõe dado que a tarefa não precisa e encarece cada conversa; o agente só consulta o cliente da conversa", "A planilha é pequena demais"],
+         "certa": 1, "ref": "diagrama",
+         "explica": "Fora do pacote é uma caixa de proteção e de custo. A consulta ao cliente certo é uma ferramenta com acesso mínimo, assunto da aula 4."}
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumo",
+      "itens": [
+        {"t": "Cinco caixas", "texto": "Regras, referência, procedimentos, exemplos e o que fica fora."},
+        {"t": "Dono, versão, validade", "texto": "Em cada documento. Uma versão em uso."},
+        {"t": "Precedência escrita", "texto": "Conflito não é decidido pelo agente: vai para o dono, com prazo."},
+        {"t": "Exemplo não é teste", "texto": "Casos de teste numa pasta que o agente não lê."}
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {"t": "Laboratório Horizonte: o prompt e a configuração da Hora (empresa fictícia de estudo)", "href": "https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/", "icone": "arquivo"},
+        {"t": "Kit do Arquiteto de Agentes: especificação e contexto de um agente", "href": "https://inematds.github.io/kit-arquiteto-agentes/", "icone": "camadas"},
+        {"t": "Gestão de IA: o plano do curso (módulo 4, contexto e Skills)", "href": "https://inematds.github.io/curso-gestao-ia/", "icone": "lista"}
+      ]
+    }
+  ]
+}

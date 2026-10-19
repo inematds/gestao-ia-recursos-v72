@@ -1,0 +1,135 @@
+{
+  "slug": "ferramentas",
+  "num": 4,
+  "menu": "Ferramentas",
+  "titulo": "Ferramentas e integrações",
+  "titulo_curto": "Ferramentas",
+  "minutos": 20,
+  "lead": "A Patrícia pediu ao assistente de e-mail para \"limpar o que é spam\". Ele apagou 112 e-mails e esvaziou a lixeira. Horas depois, confirmou dados de pagamento a um suposto fornecedor; no dia seguinte, mandou a tabela de preços para 640 contatos. Esse poder veio no padrão da ferramenta. Nesta aula você escreve o contrato que limita cada ferramenta ao mínimo.",
+  "objetivo": "dar a cada ferramenta do agente o acesso mínimo: leitura ou escrita, escopo, limite, credencial fora do prompt, registro e quem aprovou.",
+  "competencias": ["dar-acesso-minimo-por-ferramenta", "escrever-contrato-de-ferramenta", "exigir-credencial-fora-do-prompt"],
+  "aprende": [
+    {"t": "Separar ler, preparar, escrever e o que nunca sai sem aprovação"},
+    {"t": "Escopo e limite: quais registros, campos, destinos e valores"},
+    {"t": "Credencial guardada fora do texto, com identidade própria do agente"},
+    {"t": "Repetir sem duplicar, erro com destino e registro de cada ação"}
+  ],
+  "hero_alt": "Um técnico de TI e uma gerente comercial olham juntos um notebook numa mesa alta; no canto, um pequeno rack de rede com cabos.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "A escada do acesso",
+      "sub": "Cada operação de uma ferramenta fica num degrau. Comece de baixo e suba só com motivo escrito. Clique em cada degrau.",
+      "estilo": "escada",
+      "nos": [
+        {"icone": "lupa", "titulo": "Ler", "sub": "consulta, sem efeito",
+         "itens": [{"icone": "check", "t": "começa aqui", "sub": "só o necessário"}],
+         "detalhe": "Consultar catálogo, ler o cadastro do cliente da conversa, ler a caixa de entrada. Não muda nada fora do agente. Mesmo aqui há escopo: o cliente da conversa, não a base inteira; a caixa comercial, não a do financeiro."},
+        {"icone": "arquivo", "titulo": "Rascunho", "sub": "prepara, uma pessoa envia",
+         "itens": [{"icone": "relogio", "t": "nada sai sozinho", "sub": "aprovação do conteúdo"}],
+         "detalhe": "O agente monta o pedido ou a resposta do e-mail e deixa como rascunho. Uma pessoa aprova aquele conteúdo e envia. É o degrau certo para quase toda escrita no começo: o trabalho é feito, o efeito externo espera o \"sim\"."},
+        {"icone": "caneta", "titulo": "Escrever com limite", "sub": "efeito dentro de um teto", "forte": true,
+         "itens": [{"icone": "cadeado", "t": "limite na ferramenta", "sub": "não só no texto"}],
+         "detalhe": "O agente executa sozinho, mas dentro de um limite que a própria ferramenta impõe: criar pedido até R$ 5 mil, desconto até 5%, só para cliente cadastrado, um destinatário por e-mail. Se o limite só está escrito nas instruções, um texto esperto do cliente passa por cima."},
+        {"icone": "x", "titulo": "Apagar, pagar, enviar em massa", "sub": "fora do agente",
+         "itens": [{"icone": "usuario", "t": "pessoa decide e faz", "sub": "uma por vez"}],
+         "detalhe": "Apagar e-mail, esvaziar lixeira, mudar dado bancário, marcar como pago, mandar para uma lista inteira. O que não se desfaz fica fora do alcance do agente; se a tarefa exigir, é uma pessoa que faz, caso a caso. Corresponde ao vermelho da alçada do G3."}
+      ],
+      "legenda": "Módulo 5 do método Gestoria (INEMA): leitura × escrita e escopo mínimo. Os degraus combinam com as cores da alçada do G3 (verde, amarelo, vermelho). Horizonte: empresa fictícia de estudo."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "O contrato de uma ferramenta",
+      "sub": "Quatro regras que corrigem o assistente de e-mail da Horizonte (F9 no laboratório). Você decide; a TI configura e confirma.",
+      "passos": [
+        {"titulo": "Liste o que ela consegue", "sub": "não o que você pretende",
+         "texto": ["Peça à TI, ou ao fornecedor, a lista de todas as operações que a ferramenta permite. O risco está no que ela consegue fazer, não no que você imaginou que ela faria.", "Para cada operação, escolha o degrau. O padrão de fábrica costuma ser o mais aberto, porque assim a ferramenta \"funciona de primeira\"."],
+         "exemplo": {"rot": "F9 no laboratório", "texto": "Escopos: ler, enviar, apagar, mover e ler contatos. Aprovação automática para ler, enviar, responder, apagar e esvaziar a lixeira. Aprovação humana: desligada. Aprovado por: \"pode ligar\", do Carlos, por WhatsApp."}},
+        {"titulo": "Escopo e limite", "sub": "quais registros, campos, destinos, valores",
+         "texto": ["Escreva o alcance de cada operação: quais registros (só o cliente da conversa), quais campos (sem CPF), quais destinos (só quem escreveu), quais valores (até R$ 5 mil).", "Peça que o limite fique na ferramenta, não só nas instruções. A frase \"nunca dê mais de 5%\" no texto do agente é um pedido; o teto configurado no app de pedidos é uma trava."],
+         "exemplo": {"rot": "Na Horizonte", "texto": "criar_pedido: cliente cadastrado, preço da tabela vigente, desconto até 5%, valor até R$ 5 mil. Acima disso a ferramenta só aceita rascunho, que espera a Patrícia."}},
+        {"titulo": "Credencial fora do texto", "sub": "identidade própria do agente",
+         "texto": ["A senha ou chave de acesso fica guardada no servidor ou num cofre de senhas, nunca nas instruções do agente, numa planilha ou no navegador. Tudo o que vai para o navegador é público, como mostra a chave exposta no app de pedidos do laboratório (F1).", "O agente usa um acesso com nome próprio, não a senha da Patrícia: assim o registro diz quem fez, e dá para cortar o agente sem cortar a pessoa."],
+         "exemplo": {"rot": "Na Horizonte", "texto": "A caixa comercial@ ganha um acesso \"hora-email\", só de leitura, guardado pelo Rafael no cofre. A chave antiga, que circulou num arquivo de configuração, é trocada."}},
+        {"titulo": "Repetir sem duplicar", "sub": "erro com destino, ação com registro",
+         "texto": ["Se a conexão cai e o agente tenta de novo, o pedido não pode sair duas vezes. Peça à TI uma marca única por operação (o número da conversa e a versão do pedido); repetiu a marca, a ferramenta recusa.", "Defina quantas tentativas, quanto tempo de espera, para quem vai o erro com o contexto, e o registro de cada ação. Conector muda: em 28/07/2026 foi noticiada uma versão nova do MCP que quebra servidores antigos (fonte secundária, não confirmada; confira). O contrato no papel é o que você usa para refazer e testar."],
+         "exemplo": {"rot": "Na Horizonte", "texto": "criar_pedido: no máximo 2 tentativas, 30 segundos de espera; falhou, o caso vai para a Juliana com a conversa e o rascunho. Toda chamada fica registrada com conversa, valor e versão."}}
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo para copiar: contrato de ferramenta",
+      "sub": "Um contrato por ferramenta, numa página. A aba ao lado mostra os dois contratos da Hora e o F9 corrigido.",
+      "blocos": [
+        {"rot": "Contrato de ferramenta", "icone": "cadeado",
+         "conteudo": "CONTRATO DE FERRAMENTA · <nome> · agente <...> · versão <...> · data <...>\nDono (negócio): <nome> · Configura e confirma (TI): <nome>\n\nO QUE ELA CONSEGUE FAZER (lista da TI/fornecedor, completa):\n| Operação | Efeito fora da empresa? | Degrau (ler / rascunho / escrever com limite / fora) |\n|---|---|---|\n| <...> | sim/não | <...> |\n\nESCOPO: registros <...> · campos permitidos <...> · campos proibidos <...>\nDESTINOS PERMITIDOS: <...>\nLIMITES NA FERRAMENTA (não só no texto): <valor, quantidade, destinatários>\nAPROVAÇÃO: <quem> · sobre o conteúdo exato · prazo <...>\nCREDENCIAL: acesso próprio do agente \"<nome-do-acesso>\" guardado em <cofre/servidor>\n            (nunca no prompt, na planilha ou no navegador) · troca em <periodicidade>\nREPETIÇÃO: marca única = <...> · tentativas <n> · espera <s>\nERRO: vai para <nome> com <conversa, rascunho, motivo>\nREGISTRO: <o que fica gravado> · guardado por <prazo>\nAPROVADO POR: <nome, data, neste documento> (mensagem de \"pode ligar\" não vale)"},
+        {"rot": "Prompt · o que a ferramenta faz que o contrato não diz", "icone": "chat",
+         "conteudo": "Você é revisor de segurança de processos. Abaixo estão a lista de\noperações que uma ferramenta permite (da documentação ou da\nconfiguração) e o contrato que limita o uso dela por um agente de IA.\nNão configure nada: aponte.\n\n1. Que operação a ferramenta permite e o contrato não menciona?\n2. Algo que não se desfaz (apagar, pagar, enviar para muitos) ficou\n   ao alcance do agente?\n3. Algum limite existe só no texto e não na ferramenta?\n4. A credencial aparece em algum lugar visível?\n5. O que acontece se a mesma ação for repetida por engano?\n\nOperações / configuração:\n\"\"\"<cole>\"\"\"\nContrato:\n\"\"\"<cole>\"\"\""}
+      ],
+      "saida": {"selo": "simulacao", "abas": [
+        {"rot": "Contratos da Hora (exemplo)", "html": "<p><b>Hora · contratos v1</b> · Horizonte, empresa fictícia de estudo · dona: Patrícia · TI: Rafael</p><ul><li><b>consultar_cliente</b> · ler · só o cliente do telefone da conversa · campos: razão social, CNPJ, endereço de entrega cadastrado, condição de pagamento · proibido: CPF, outros clientes · registro de cada consulta.</li><li><b>criar_pedido</b> · escrever com limite · cliente cadastrado, preço da tabela vigente, desconto até 5%, valor até R$ 5 mil (trava no app) · acima: só rascunho, aprovação da Patrícia em 2 h úteis · marca única: conversa + versão do pedido · 2 tentativas · erro para a Juliana · acesso \"hora-pedidos\" no cofre do Rafael · aprovado pelo Carlos neste documento.</li></ul>"},
+        {"rot": "F9 corrigido", "html": "<ol><li><b>Ficam:</b> ler a caixa comercial@ e ler contatos (degrau ler).</li><li><b>Viram rascunho:</b> responder e enviar. A Patrícia aprova cada envio; um destinatário por vez; nada de lista inteira.</li><li><b>Saem do agente:</b> apagar e-mail, esvaziar lixeira, mover em massa. Spam se marca; quem apaga é uma pessoa.</li><li><b>Aprovação humana:</b> ligada. <b>Credencial:</b> chave trocada, acesso próprio \"hora-email\" no cofre.</li><li><b>O que já aconteceu:</b> o e-mail de troca de conta bancária vira incidente (o financeiro confirma por telefone com o fornecedor); a lixeira esvaziada é pedida ao provedor de e-mail, se ainda der; os 640 contatos recebem correção se a tabela estava errada.</li><li><b>Aprovado por:</b> Carlos, no contrato, depois de ler. O \"pode ligar\" por WhatsApp não vale como aprovação.</li></ol>"}
+      ]}
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática",
+      "sub": "Os contratos da Hora e a correção do F9 para treinar; uma ferramenta sua para valer.",
+      "fonte": "Peças do laboratório: <a href=\"https://inematds.github.io/prof2030-lab/pecas/mcp-email/\">assistente de e-mail (F9)</a> e <a href=\"https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/\">configuração da Hora</a>.",
+      "exercicios": [
+        {"id": "e1", "titulo": "1 · Dois contratos e o F9", "min": "35 min",
+         "texto": "Abra a configuração da Hora e escreva os contratos de consultar_cliente e criar_pedido com o modelo. Depois abra o assistente de e-mail do laboratório, leia a configuração e o registro das últimas ações, e escreva o contrato corrigido: o que fica, o que vira rascunho, o que sai do agente, e o que fazer com as quatro ações já registradas.",
+         "pronto": "há 3 contratos (2 da Hora e 1 do e-mail), cada operação com degrau, nenhum apagar ou esvaziar ao alcance do agente, limite em número em toda operação com valor ou destinatários, credencial com acesso próprio e lugar de guarda, marca contra repetição no criar_pedido, e uma providência para cada uma das 4 ações registradas."},
+        {"id": "e2", "titulo": "2 · Uma ferramenta sua", "min": "40 min",
+         "texto": "Escolha a ferramenta mais poderosa que um agente ou automação usa no seu processo (e-mail, ERP, CRM, planilha compartilhada). Peça à TI ou ao fornecedor a lista completa de operações. Escreva o contrato e rode o prompt de revisão. Entregue à TI e peça a confirmação por escrito das travas.",
+         "pronto": "o contrato tem a lista completa de operações com degrau, escopo, limites que existem na ferramenta, credencial fora do texto, destino do erro e registro, e você tem a confirmação escrita da TI (ou a lista do que ainda falta configurar, com prazo)."}
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste rápido",
+      "sub": "5 perguntas. A explicação aparece depois da sua tentativa.",
+      "perguntas": [
+        {"p": "O assistente de e-mail foi ligado com aprovação automática para apagar e esvaziar a lixeira. Quem decidiu isso?",
+         "opcoes": ["O Carlos, quando disse \"pode ligar\"", "Ninguém: veio no padrão da ferramenta, e um \"pode ligar\" por WhatsApp não é decisão sobre operações", "O próprio agente"],
+         "certa": 1, "ref": "passos",
+         "explica": "Aprovação vale para um conteúdo exato. \"Pode ligar\" não dizia nada sobre apagar ou enviar. O contrato existe para que alguém decida, operação por operação, e assine."},
+        {"p": "As instruções da Hora dizem \"nunca dê mais de 5% de desconto\". Isso basta?",
+         "opcoes": ["Basta, o agente obedece às instruções", "Não: o limite precisa estar também na ferramenta, porque um texto do cliente pode convencer o agente a ignorar a instrução", "Basta, se a instrução estiver em maiúsculas"],
+         "certa": 1, "ref": "diagrama",
+         "explica": "Instrução é pedido; trava na ferramenta é limite. A ordem escondida do F6 mostra que um texto colado pelo cliente pode passar por cima do que está escrito no agente."},
+        {"p": "Onde fica a senha que o agente usa para acessar o app de pedidos?",
+         "opcoes": ["Nas instruções do agente, para ele saber", "Num cofre ou no servidor, num acesso com nome próprio do agente", "Na planilha da equipe, para todos acharem"],
+         "certa": 1, "ref": "passos",
+         "explica": "O que está nas instruções, numa planilha ou no navegador pode vazar. Acesso próprio também faz o registro dizer \"foi o agente\" e permite cortá-lo sem afetar a Patrícia."},
+        {"p": "A conexão caiu no meio de um pedido e o agente tentou de novo. O que o contrato precisa garantir?",
+         "opcoes": ["Que o pedido saia duas vezes, para garantir", "Que a repetição seja reconhecida por uma marca única e não duplique o pedido", "Que o agente desista na primeira falha"],
+         "certa": 1, "ref": "passos",
+         "explica": "Repetir é normal; duplicar é estrago. A marca única (conversa + versão do pedido) faz a ferramenta recusar o que já fez, e o erro vai para uma pessoa com o contexto."},
+        {"p": "Foi noticiada uma versão nova do conector que quebra os antigos. Por que o contrato no papel ajuda?",
+         "opcoes": ["Não ajuda, é só burocracia", "Porque diz exatamente o que a ferramenta pode fazer, e serve de lista para refazer a configuração e testar depois da troca", "Porque impede o fornecedor de mudar"],
+         "certa": 1, "ref": "passos",
+         "explica": "A notícia sobre o MCP vem de fonte secundária e precisa ser conferida, mas o ponto vale para qualquer conector: ele muda, e o contrato é a referência para conferir que nada passou a ter mais acesso do que devia."}
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumo",
+      "itens": [
+        {"t": "Escada do acesso", "texto": "Ler, rascunho, escrever com limite. Apagar, pagar e enviar em massa ficam fora."},
+        {"t": "Lista completa", "texto": "O risco está no que a ferramenta consegue, não no que você pretende."},
+        {"t": "Trava fora do texto", "texto": "Limite na ferramenta, credencial no cofre, acesso com nome do agente."},
+        {"t": "Repetir, errar, registrar", "texto": "Marca única, tentativas, destino do erro e registro de cada ação."}
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {"t": "Laboratório Horizonte: o assistente de e-mail (F9, empresa fictícia de estudo)", "href": "https://inematds.github.io/prof2030-lab/pecas/mcp-email/", "icone": "enviar"},
+        {"t": "Super-Agentes na prática: menor privilégio e identidade própria", "href": "https://inematds.github.io/agi-pratica/", "icone": "escudo"},
+        {"t": "Gestão de IA: o plano do curso (módulo 5, ferramentas e integrações)", "href": "https://inematds.github.io/curso-gestao-ia/", "icone": "lista"}
+      ]
+    }
+  ]
+}

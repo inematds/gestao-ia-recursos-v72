@@ -1,0 +1,174 @@
+{
+  "slug": "orcamento",
+  "num": 7,
+  "menu": "Orçamento",
+  "titulo": "Orçamento computacional e ROI",
+  "titulo_curto": "Orçamento e ROI",
+  "minutos": 20,
+  "lead": "\"Olha como sobe! O agente está se pagando.\" O Carlos disse isso olhando um painel que começou a contar no mesmo dia em que a Hora entrou. Ninguém mediu o antes. Nesta aula você monta o orçamento mensal com teto e o ROI estimado em três cenários, e treina a conversa em que o dono pede um número de economia e você responde sem prometer.",
+  "objetivo": "montar o orçamento mensal e o ROI estimado da operação em três cenários, com incertezas escritas e sem prometer economia.",
+  "competencias": ["montar-orcamento-computacional", "estimar-roi-em-cenarios", "comunicar-incerteza-sem-prometer"],
+  "aprende": [
+    {"t": "O orçamento do mês com teto, alerta e limite por tarefa"},
+    {"t": "Estimar o benefício quando a linha de base nunca foi medida"},
+    {"t": "ROI estimado em três cenários, com o investimento à parte"},
+    {"t": "Por que capacidade liberada não é economia"}
+  ],
+  "hero_alt": "O dono da empresa, de cabelos grisalhos, pergunta algo à gerente do outro lado da mesa; entre os dois, uma folha com um gráfico de três faixas.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Do orçamento ao ROI estimado",
+      "sub": "Cinco etapas. A última é uma decisão, não um número. Clique em cada uma.",
+      "volta": "No mês seguinte, o medido substitui o estimado",
+      "nos": [
+        {"icone": "grafico", "titulo": "Custo do mês", "sub": "com teto",
+         "detalhe": "Modelo (variável, com teto e alerta), ferramentas (fixas) e manutenção. Na Horizonte: R$ 1.100 + R$ 400 + R$ 540 = R$ 2.040 por mês, valores fictícios. O tempo humano de revisão não sai do caixa, mas entra no benefício."},
+        {"icone": "pasta", "titulo": "Investimento", "sub": "à parte",
+         "detalhe": "O que se gastou uma vez para começar: na Horizonte, 40 horas do Rafael na implantação, R$ 3.600. Fica separado do custo do mês, para não esconder nem inflar o ROI."},
+        {"icone": "usuario", "titulo": "Benefício potencial", "sub": "custo humano antes − depois", "forte": true,
+         "detalhe": "Quanto custava em horas fazer o trabalho sem o agente, menos quanto custa hoje com revisão, exceções e retrabalho. Na Horizonte o \"antes\" nunca foi medido (F11), então ele entra como faixa: 8 a 12 minutos por pedido."},
+        {"icone": "camadas", "titulo": "Três cenários", "sub": "pessimista, provável, otimista",
+         "detalhe": "Cada ponta da faixa da linha de base dá um cenário. ROI estimado = (benefício potencial − custo do mês) ÷ custo do mês. Na Horizonte: −23%, +27% e +77%. Um número só esconde a dúvida; três mostram o tamanho dela."},
+        {"icone": "check", "titulo": "Decisão", "sub": "e o que medir",
+         "detalhe": "Com o cenário pessimista negativo, a decisão honesta é: manter, medir a linha de base e refazer a conta em um mês. O orçamento diz quanto se pode gastar; o ROI estimado diz se vale continuar medindo."}
+      ],
+      "legenda": "Fórmulas do método Gestoria (INEMA): benefício potencial, resultado líquido estimado e ROI estimado, com investimento inicial separado do recorrente. Horizonte: empresa e valores fictícios de estudo."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Como montar e defender os números",
+      "sub": "Quatro passos. Ao final, a conta da Horizonte inteira, para você conferir linha a linha.",
+      "passos": [
+        {"titulo": "Orçamento com teto", "sub": "e limite por tarefa",
+         "texto": ["O custo do modelo é variável: sobe com o volume, com conversas longas e com o modelo de ponta. Por isso ele tem teto mensal e alerta antes do teto, combinados com a TI e, se der, configurados no fornecedor.", "Ponha também limite por tarefa: número de tentativas e custo máximo de uma conversa. Passou, o agente para e chama uma pessoa. Revisão humana também é custo de governança, e ele cresce: o Gartner prevê o gasto mundial com governança de IA saindo de US$ 492 milhões em 2026 para mais de US$ 1 bilhão em 2030 (previsão, 17/02/2026)."],
+         "exemplo": {"rot": "Na Horizonte (fictício)", "texto": "Modelo: média R$ 1.100, teto R$ 1.400, alerta em R$ 1.120 (80%). Por conversa: até 2 tentativas e R$ 1,50; acima disso, a conversa vai para a Juliana."}},
+        {"titulo": "Linha de base em faixa", "sub": "quando o antes não foi medido",
+         "texto": ["Sem o \"antes\", qualquer número de economia é chute. Reconstrua a linha de base com quem fazia o trabalho: quanto tempo levava um pedido pelo WhatsApp antes da Hora? Peça o menor e o maior tempo razoável, não uma média.", "Escreva de onde veio a faixa e comece a medir agora, com período comparável. Daqui a um mês, parte da incerteza vira medida."],
+         "exemplo": {"rot": "Na Horizonte (fictício)", "texto": "Juliana e os vendedores: de 8 a 12 minutos por pedido, mais provável 10. Com 680 pedidos e R$ 45 a hora, o custo humano antes fica entre R$ 4.080 e R$ 6.120."}},
+        {"titulo": "Três cenários", "sub": "e o investimento à parte",
+         "texto": ["Custo humano depois: Patrícia R$ 720 + Juliana R$ 1.350 + retrabalho R$ 432 = R$ 2.502. Benefício potencial: R$ 1.578, R$ 2.598 ou R$ 3.618. Menos o custo do mês (R$ 2.040): −R$ 462, +R$ 558 ou +R$ 1.578.", "ROI estimado: −23%, +27% e +77%. Os R$ 3.600 da implantação voltam em cerca de 6,5 meses no cenário provável e nunca no pessimista. Isso vai escrito, junto com os números."],
+         "exemplo": {"rot": "Leitura", "texto": "O resultado mais provável é positivo e pequeno; o pessimista é negativo. A frase honesta é \"provavelmente se paga, e ainda não sabemos\", não \"está se pagando\"."}},
+        {"titulo": "Capacidade não é economia", "sub": "as horas precisam de destino",
+         "texto": ["No cenário provável, a Hora libera cerca de 63 horas de pessoas por mês. Isso é capacidade. Só vira economia se a empresa reduzir um gasto ou usar as horas em algo com resultado que se mede.", "Por isso o parecer separa \"benefício potencial\" de \"economia realizada\" e deixa esta última em branco até haver evidência. Simulação não é apresentada como receita nem como economia."],
+         "exemplo": {"rot": "Na Horizonte", "texto": "As horas da Juliana foram para o cadastro de clientes novos e o pós-venda. Economia realizada: ainda não observada. A Patrícia mede por um mês onde as horas foram antes de qualquer outra decisão."}}
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo para copiar: orçamento e ROI estimado",
+      "sub": "Uma página que o financeiro e o dono leem. A aba ao lado mostra a da Horizonte.",
+      "blocos": [
+        {"rot": "Orçamento mensal + ROI estimado", "icone": "grafico",
+         "conteudo": "ORÇAMENTO E ROI ESTIMADO · <processo> · <mês/ano> · responsável <nome>\nValores: [ ] medidos [ ] estimados (marcar linha a linha)\n\nCUSTO DO MÊS (recorrente)\n| Linha | Média | Teto | Alerta | Medido ou estimado |\n|---|---|---|---|---|\n| Modelo de IA | R$ <...> | R$ <...> | R$ <...> (80%) | <...> |\n| Ferramentas | R$ <...> | - | - | <...> |\n| Manutenção | R$ <...> | - | - | <...> |\n| TOTAL | R$ <...> | | | |\nLIMITE POR TAREFA: <n> tentativas · R$ <...> por <conversa/caso> · passou -> <nome>\nINVESTIMENTO INICIAL (à parte): R$ <...> (<o que foi>)\n\nBENEFÍCIO POTENCIAL = custo humano antes - custo humano depois\nLinha de base: <min> a <max> min por tarefa · fonte: <quem/como> · medida? [ ] sim [ ] não\nCusto humano depois: revisão R$ <...> + exceções R$ <...> + retrabalho R$ <...>\n\n                      PESSIMISTA   PROVÁVEL   OTIMISTA\nCusto humano antes    R$ <...>     R$ <...>   R$ <...>\nBenefício potencial   R$ <...>     R$ <...>   R$ <...>\nResultado líquido     R$ <...>     R$ <...>   R$ <...>   (= benefício - custo do mês)\nROI ESTIMADO          <...>%       <...>%     <...>%     (= resultado ÷ custo do mês)\nRetorno do investimento: <meses> no provável · <...> no pessimista\n\nCAPACIDADE LIBERADA: <h>/mês (provável) · destino: <...>\nECONOMIA REALIZADA: <evidência ou \"ainda não observada\">\nINCERTEZAS: 1. <...> 2. <...> 3. <...>\nDECISÃO: <manter / ampliar / reduzir / pausar> · REFAZER A CONTA EM: <data>"},
+        {"rot": "Prompt · onde o ROI está otimista demais", "icone": "chat",
+         "conteudo": "Você é o diretor financeiro mais cético da empresa. Abaixo está o\norçamento e o ROI estimado de uma operação com agente de IA. Não refaça\na conta: aponte onde ela pode estar otimista demais.\n\n1. Que custo está faltando (manutenção, revisão, retrabalho, troca de\n   fornecedor, aumento de volume)?\n2. De onde vem a linha de base? Foi medida ou lembrada?\n3. Alguma capacidade liberada está sendo tratada como economia?\n4. O investimento inicial ficou separado?\n5. Que pergunta eu faria antes de aprovar?\n\nDocumento:\n\"\"\"<cole>\"\"\""}
+      ],
+      "saida": {"selo": "simulacao", "abas": [
+        {"rot": "Orçamento e ROI da Horizonte", "html": "<p><b>Hora · pedido pelo WhatsApp · out/2026</b> · Horizonte, empresa fictícia de estudo · responsável: Patrícia</p><ul><li><b>Custo do mês:</b> modelo R$ 1.100 (teto R$ 1.400, alerta R$ 1.120) + ferramentas R$ 400 + manutenção R$ 540 = <b>R$ 2.040</b>. Limite: 2 tentativas e R$ 1,50 por conversa.</li><li><b>Investimento inicial:</b> R$ 3.600 (40 h do Rafael).</li><li><b>Linha de base:</b> 8 a 12 min por pedido, estimada com a Juliana e os vendedores · <b>não medida</b>.</li><li><b>Custo humano depois:</b> R$ 720 + R$ 1.350 + R$ 432 = R$ 2.502.</li></ul><table><tr><th></th><th>Pessimista</th><th>Provável</th><th>Otimista</th></tr><tr><td>Antes</td><td>R$ 4.080</td><td>R$ 5.100</td><td>R$ 6.120</td></tr><tr><td>Benefício</td><td>R$ 1.578</td><td>R$ 2.598</td><td>R$ 3.618</td></tr><tr><td>Líquido</td><td>−R$ 462</td><td>+R$ 558</td><td>+R$ 1.578</td></tr><tr><td>ROI estimado</td><td>−23%</td><td>+27%</td><td>+77%</td></tr></table><p>Retorno do investimento: ~6,5 meses no provável; não volta no pessimista. Capacidade liberada: ~63 h/mês (provável). Economia realizada: ainda não observada. <b>Decisão:</b> manter e medir a linha de base por 2 semanas; refazer em 30/11.</p>"},
+        {"rot": "Como conferir / erros comuns", "html": "<ol><li><b>Um número só.</b> \"ROI de 27%\" sem a faixa esconde que o pessimista é negativo.</li><li><b>Capacidade somada como economia.</b> Horas liberadas não são dinheiro no caixa.</li><li><b>Investimento misturado.</b> Somar a implantação ao mês derruba o ROI; esquecê-la infla o retorno.</li><li><b>Linha de base de memória sem dizer.</b> Pode usar estimativa, mas escrita como estimativa, com quem a deu.</li><li><b>Conferência:</b> antes − 2.502 = benefício; benefício − 2.040 = líquido; líquido ÷ 2.040 = ROI. Os três cenários da Horizonte têm de fechar.</li></ol>"}
+      ]}
+    },
+    {
+      "tipo": "simconversa",
+      "titulo": "Simulação: o Carlos quer um número",
+      "sub": "Conversa simulada para treinar. O dono vai à reunião de resultados do trimestre e quer saber quanto o agente economiza. Você responde com a conta desta aula.",
+      "personagem": {"nome": "Carlos · dono da Horizonte (simulação)", "papel": "Horizonte Distribuidora, empresa fictícia de estudo"},
+      "inicio": "abre",
+      "falas": {
+        "abre": {"cliente": "Patrícia, sexta tenho a reunião de resultados do trimestre. O painel mostra que a Hora está se pagando. Me dá um número: quanto vamos economizar por mês com ela?",
+          "opcoes": [
+            {"t": "R$ 2.600 por mês. É o que a Hora tira de trabalho da equipe.", "vai": "fim-promessa", "nota": 0, "comenta": "R$ 2.600 é o benefício potencial no cenário provável, antes de descontar os R$ 2.040 do custo do mês, e ainda é capacidade, não economia. Virou promessa na boca do dono."},
+            {"t": "Uns R$ 560 por mês.", "vai": "painel", "nota": 1, "comenta": "É o resultado líquido do cenário provável, então a conta está certa. Mas um número só esconde que o cenário pessimista é negativo e que a linha de base foi estimada, não medida."},
+            {"t": "Posso dar uma estimativa, não uma economia: no cenário provável, R$ 560 a mais por mês; no pessimista, R$ 460 a menos; no otimista, R$ 1.580. A maior dúvida é o \"antes\", que nunca medimos.", "vai": "painel", "nota": 2, "comenta": "Três cenários, a palavra estimado e a origem da incerteza. O Carlos sai com um número que aguenta pergunta na reunião."}
+          ]},
+        "painel": {"cliente": "Mas olha o painel: os atendimentos subiram de 702 para 901 por semana desde setembro. Isso não prova que está funcionando?",
+          "opcoes": [
+            {"t": "Prova, sim. Pode levar o gráfico para a reunião.", "vai": "horas", "nota": 0, "comenta": "Atendimento é volume, não resultado. Pode subir por desconto (o F5), por época do ano ou por preço. Levar o gráfico como prova é levar o F11 para a reunião."},
+            {"t": "Esse painel está errado, melhor ignorar.", "vai": "horas", "nota": 1, "comenta": "Desconfiar está certo, mas o painel não está errado: ele mede volume. O problema é usá-lo para responder uma pergunta de resultado sem linha de base."},
+            {"t": "Atendimento é volume, e o painel começou no mesmo dia da Hora, então não tem o antes. Proponho medir por duas semanas tempo por pedido, correções e margem, comparando com o mesmo período do ano passado.", "vai": "horas", "nota": 2, "comenta": "Você não jogou o dado fora: disse o que ele mede, o que falta e como conseguir. Em duas semanas, parte da incerteza vira medida."}
+          ]},
+        "horas": {"cliente": "Então vamos fazer a economia ficar real: se sobram horas da Juliana, eu corto meio período dela.",
+          "opcoes": [
+            {"t": "Faz sentido, corta.", "vai": "barato", "nota": 0, "comenta": "As horas liberadas são estimadas e hoje a Juliana cobre as exceções da Hora e o cadastro. Cortar agora pode transformar o cenário provável no pessimista e tirar a pessoa que segura o agente."},
+            {"t": "Melhor não mexer em nada por enquanto.", "vai": "barato", "nota": 1, "comenta": "Prudente, mas deixa a capacidade sem destino. Horas sem destino não viram economia nem resultado: somem."},
+            {"t": "Capacidade liberada não é economia automática. Hoje a Juliana cobre as exceções da Hora e o cadastro de clientes novos. Eu meço por um mês para onde as horas foram e trago a decisão com ela, com números.", "vai": "barato", "nota": 2, "comenta": "Você separou capacidade de economia, protegeu a operação e deu prazo e dono para a decisão. É o que o parecer chama de economia realizada: só com evidência."}
+          ]},
+        "barato": {"cliente": "Última: o Rafael achou um modelo pela metade do preço. Se a gente trocar amanhã, o ROI dobra, certo?",
+          "opcoes": [
+            {"t": "Certo, pode trocar amanhã.", "vai": "fim-troca", "nota": 0, "comenta": "Metade da fatura não é metade do custo: o modelo é 24% do custo do pedido. E sem os 20 casos, ninguém sabe quantos erros novos a troca traz."},
+            {"t": "Antes, rodo os mesmos 20 casos nos dois e faço a conta por pedido concluído, com retrabalho. Da última vez, o barato errou mais e saiu R$ 7,51 por pedido contra R$ 6,68.", "vai": "fim-bom", "nota": 2, "comenta": "Você levou a decisão para os casos e para o custo por resultado, e lembrou a evidência que já existe."},
+            {"t": "Não. Modelo que funciona a gente não troca.", "vai": "fim-preso", "nota": 1, "comenta": "Recusar sem testar é a outra metade do erro. Preço e qualidade mudam em semanas; a resposta certa é testar nos mesmos casos."}
+          ]},
+        "fim-promessa": {"fim": true, "titulo": "Promessa na reunião", "texto": "O Carlos anunciou R$ 2.600 de economia por mês. No mês seguinte, o caixa não mostrou nada parecido, e a Hora passou a ser vista como um projeto que não entregou. Benefício potencial não é economia, e um número só não aguenta a primeira pergunta."},
+        "fim-troca": {"fim": true, "titulo": "Troca sem teste", "texto": "A troca saiu no dia seguinte. A fatura caiu, o retrabalho na separação dobrou e a Juliana voltou a assumir conversas. O custo por pedido subiu. Modelo se troca depois dos mesmos casos e da conta por resultado."},
+        "fim-preso": {"fim": true, "titulo": "Preso ao que funciona", "texto": "A conversa terminou sem teste. A Hora continua bem, mas a empresa não sabe se está pagando caro, e o dia em que o fornecedor mudar o preço ou a versão vai pegar todo mundo de surpresa. Testar não obriga a trocar."},
+        "fim-bom": {"fim": true, "titulo": "Números que aguentam pergunta", "texto": "O Carlos levou à reunião uma faixa de resultado estimado, o plano de medir a linha de base, a decisão sobre as horas da Juliana com prazo e o teste do modelo barato marcado. Nenhuma promessa, e tudo com dono e data."}
+      },
+      "licao": "Ao dono, leve faixa e não ponto: cenários, a palavra estimado, a origem da incerteza e o que vai ser medido. Capacidade só vira economia com decisão e evidência; e modelo se troca depois dos mesmos casos, pela conta do custo por resultado."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática",
+      "sub": "O orçamento da Horizonte para treinar, o seu para valer e a conversa com o dono para ensaiar.",
+      "fonte": "Peça do laboratório: <a href=\"https://inematds.github.io/prof2030-lab/pecas/painel/\">painel da Hora (F11, sem linha de base)</a>. Valores em reais: fictícios, desta aula.",
+      "exercicios": [
+        {"id": "e1", "titulo": "1 · O orçamento da Horizonte", "min": "25 min",
+         "texto": "Preencha o modelo com os números da Horizonte, linha por linha, marcando o que é medido e o que é estimado. Confira as três colunas pela fórmula. Rode o prompt do diretor financeiro cético e escreva três incertezas e a decisão.",
+         "pronto": "o documento tem o custo do mês com teto e alerta, o investimento à parte, a linha de base em faixa com a fonte, os três cenários fechando (−R$ 462, +R$ 558, +R$ 1.578), \"economia realizada: ainda não observada\", três incertezas escritas e a data para refazer."},
+        {"id": "e2", "titulo": "2 · O orçamento do seu processo", "min": "45 min",
+         "texto": "Use a conta da aula 1 do seu processo. Monte o orçamento com teto, estime a linha de base em faixa com quem fazia o trabalho, calcule os três cenários e escreva a decisão. Mostre a uma pessoa do financeiro antes de levar ao dono.",
+         "pronto": "o seu documento tem teto e alerta para o modelo, limite por tarefa, investimento separado, os três cenários com a fórmula conferida, pelo menos três incertezas, a capacidade liberada com destino e a data em que o estimado vira medido."},
+        {"id": "e3", "titulo": "3 · A conversa com o Carlos", "min": "10 min",
+         "texto": "Faça a simulação acima até o fim. Se não chegar ao placar máximo, recomece e veja o que muda em cada resposta. Depois escreva, em três frases, como você responderia a mesma pergunta no seu processo.",
+         "pronto": "você chegou a 8 de 8 pontos e tem as três frases escritas, com uma faixa de valores, a palavra \"estimado\" e o que vai ser medido."}
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste rápido",
+      "sub": "5 perguntas. A explicação aparece depois da sua tentativa.",
+      "perguntas": [
+        {"p": "Qual é a fórmula do ROI estimado usada no curso?",
+         "opcoes": ["Horas liberadas × salário", "(Benefício potencial − custo do mês) ÷ custo do mês, com o investimento inicial à parte", "Fatura do modelo ÷ número de conversas"],
+         "certa": 1, "ref": "diagrama",
+         "explica": "O benefício sai do custo humano antes menos o depois; o resultado líquido desconta o custo do mês. O investimento inicial entra no tempo de retorno, não misturado no mês."},
+        {"p": "A linha de base nunca foi medida. O que fazer?",
+         "opcoes": ["Não calcular nada até ter dados", "Estimar em faixa com quem fazia o trabalho, dizer que é estimativa e começar a medir agora", "Usar o número que deixa o ROI mais bonito"],
+         "certa": 1, "ref": "passos",
+         "explica": "Esperar trava a decisão; inventar engana. A faixa escrita, com a fonte, permite decidir agora e corrigir depois, quando a medida chegar."},
+        {"p": "No cenário provável, a Hora libera cerca de 63 horas por mês. Isso é economia?",
+         "opcoes": ["Sim, 63 h × R$ 45", "Não: é capacidade; vira economia só se a empresa reduzir um gasto ou usar as horas em algo medido", "Sim, se o Carlos aprovar"],
+         "certa": 1, "ref": "passos",
+         "explica": "Hora liberada que ninguém usa não aparece no caixa. O parecer deixa \"economia realizada\" em branco até haver evidência."},
+        {"p": "Por que apresentar três cenários em vez de um número?",
+         "opcoes": ["Para parecer mais técnico", "Porque mostra o tamanho da incerteza: na Horizonte, o pessimista é negativo, e isso muda a decisão", "Porque o financeiro exige"],
+         "certa": 1, "ref": "diagrama",
+         "explica": "Com um número só (+27%), ninguém vê que o pessimista dá −23%. A faixa transforma a pergunta \"quanto economiza?\" em \"o que precisamos medir para saber?\"."},
+        {"p": "O custo do modelo estourou o teto do mês por causa de conversas longas. Qual controle faltou?",
+         "opcoes": ["Nenhum, é normal", "Limite por tarefa (tentativas e custo máximo por conversa) e alerta antes do teto", "Trocar de fornecedor"],
+         "certa": 1, "ref": "passos",
+         "explica": "Teto mensal sem limite por tarefa só avisa depois do estrago. Com limite por conversa, o caso caro para e vai para uma pessoa; com alerta em 80%, há tempo de agir."}
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumo",
+      "itens": [
+        {"t": "Orçamento com teto", "texto": "Modelo variável com teto e alerta; limite por tarefa; investimento à parte."},
+        {"t": "Linha de base em faixa", "texto": "Estimada com quem fazia, escrita como estimativa, medida a partir de agora."},
+        {"t": "Três cenários", "texto": "ROI estimado pessimista, provável e otimista, com incertezas escritas."},
+        {"t": "Sem promessa", "texto": "Capacidade não é economia. Economia realizada só com evidência."}
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {"t": "Laboratório Horizonte: o painel que começou junto com o agente (F11, empresa fictícia de estudo)", "href": "https://inematds.github.io/prof2030-lab/pecas/painel/", "icone": "grafico"},
+        {"t": "Gestão de IA: o plano do curso (módulo 9, custos e ROI)", "href": "https://inematds.github.io/curso-gestao-ia/", "icone": "lista"},
+        {"t": "Gestoria: administrar uma operação híbrida de ponta a ponta", "href": "https://inematds.github.io/gestoria/", "icone": "camadas"}
+      ]
+    }
+  ]
+}

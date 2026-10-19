@@ -1,0 +1,140 @@
+{
+  "slug": "custo",
+  "num": 1,
+  "menu": "Custo",
+  "titulo": "Quanto custa produzir o resultado",
+  "titulo_curto": "Custo do resultado",
+  "minutos": 20,
+  "lead": "O painel do fornecedor diz que cada conversa da Hora custa R$ 0,31. Parece barato, e é o número errado para decidir. O gestor precisa saber quanto custa cada pedido que chega certo ao faturamento: a fatura, as ferramentas, as horas de quem revisa e o retrabalho. Nesta aula você faz essa conta para a Hora e para um processo seu.",
+  "objetivo": "calcular o custo por tarefa concluída de um processo, somando IA, ferramentas, tempo humano e retrabalho, em vez de olhar o custo por chamada.",
+  "competencias": ["calcular-custo-por-tarefa-concluida", "definir-o-denominador", "incluir-tempo-humano-e-retrabalho"],
+  "aprende": [
+    {"t": "Por que o custo por chamada engana"},
+    {"t": "Escolher o denominador: o que conta como tarefa concluída"},
+    {"t": "Somar as seis linhas do custo de um resultado"},
+    {"t": "Por que o modelo barato que erra sai caro"}
+  ],
+  "hero_alt": "Mesa de escritório com notas fiscais impressas, uma calculadora e um notebook mostrando um gráfico de barras empilhadas.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Da fatura ao custo do resultado",
+      "sub": "Role a página: cada etapa acende a sua parte da conta. É a conta de um mês da Hora, com números fictícios.",
+      "rolagem": true,
+      "nos": [
+        {"icone": "arquivo", "titulo": "Fatura", "sub": "o que o fornecedor cobra",
+         "itens": [{"icone": "chip", "t": "R$ 1.100 no mês", "sub": "3.600 conversas"}],
+         "detalhe": "O modelo cobra por token, os pedaços de texto que ele lê e escreve, com preço por milhão de tokens, separado em entrada e saída. Na Horizonte, a fatura do mês deu R$ 1.100 por 3.600 conversas: os R$ 0,31 por conversa do painel. É o custo de uma tentativa, não de um resultado."},
+        {"icone": "check", "titulo": "Tarefa concluída", "sub": "o denominador", "forte": true,
+         "itens": [{"icone": "alvo", "t": "680 pedidos", "sub": "aceitos pela separação"}],
+         "detalhe": "Antes de dividir, escreva o que conta como pronto. Na Hora: pedido que chegou à separação e foi faturado. Foram 680 no mês. As conversas que não viraram pedido entram no custo e ficam fora do denominador. Se a dúvida respondida também é resultado, ela vira outra tarefa, com conta própria."},
+        {"icone": "camadas", "titulo": "Ferramentas", "sub": "e quem as mantém",
+         "itens": [{"icone": "chip", "t": "R$ 400 + R$ 540", "sub": "plataformas e manutenção"}],
+         "detalhe": "A plataforma de WhatsApp e o app de pedidos custam R$ 400 por mês. O Rafael, da TI terceirizada, gasta 6 horas por mês ajustando a Hora, a R$ 90 a hora: R$ 540. Nenhuma das duas linhas aparece no painel do modelo."},
+        {"icone": "usuario", "titulo": "Tempo humano", "sub": "revisão e exceções",
+         "itens": [{"icone": "relogio", "t": "39 horas", "sub": "Patrícia e Juliana"}],
+         "detalhe": "A Patrícia passa 9 horas por mês aprovando exceções (R$ 80 a hora: R$ 720). A Juliana assume as conversas que a Hora não resolve: 30 horas a R$ 45, R$ 1.350. O agente que \"faz sozinho\" quase sempre tem alguém por trás, e essa hora custa."},
+        {"icone": "voltar", "titulo": "Retrabalho", "sub": "o erro também custa",
+         "itens": [{"icone": "x", "t": "54 pedidos corrigidos", "sub": "8% do mês"}],
+         "detalhe": "A separação corrigiu 54 pedidos no mês (item errado, quantidade em galão em vez de caixa), 12 minutos cada: 10,8 horas a R$ 40, R$ 432. Retrabalho é a linha que mais muda quando se troca de modelo, e por isso ela decide a escolha da aula 2."}
+      ],
+      "rolagem_fim": {"titulo": "R$ 6,68 por pedido concluído", "texto": "Somando tudo, o mês custou R$ 4.542 para 680 pedidos: R$ 6,68 por pedido. A fatura do modelo é só 24% disso. O número que o painel mostra (R$ 0,31) é real, mas responde a outra pergunta.", "curto": "R$ 4.542 ÷ 680 = R$ 6,68"},
+      "legenda": "Horizonte Distribuidora, empresa fictícia de estudo: todos os valores são fictícios. A conta segue o indicador \"custo total do processo\" do método Gestoria (INEMA)."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Como fazer a conta",
+      "sub": "Quatro passos. O método é do gestor, não do programador: precisa de uma planilha e de uma semana de anotações.",
+      "passos": [
+        {"titulo": "Escolha o denominador", "sub": "o que é tarefa concluída",
+         "texto": ["Escreva numa frase o que conta como resultado: \"pedido faturado\", \"proposta aceita pelo cliente\", \"chamado encerrado sem reabertura em 7 dias\". Conte só o que chegou lá, no mesmo período da fatura.", "Tentativas, falhas e conversas abandonadas entram no numerador, nunca no denominador. É assim que o custo de errar aparece na conta, em vez de sumir na média."],
+         "exemplo": {"rot": "Na Horizonte", "texto": "Tarefa concluída da Hora: pedido que chegou à separação e foi faturado. Outubro: 680. As 2.920 conversas restantes (dúvidas, orçamentos, desistências) estão na fatura, mas não no denominador."}},
+        {"titulo": "Some o custo inteiro", "sub": "seis linhas",
+         "texto": ["Modelo, ferramentas, manutenção, revisão humana, exceções assumidas por pessoas e retrabalho. Para as horas, use o custo da hora com encargos, que o financeiro sabe dizer, e anote o tempo por uma semana em vez de chutar.", "Separe o que é recorrente do que foi gasto uma vez (a implantação). O investimento inicial entra no ROI da aula 7, não no custo de cada mês."],
+         "exemplo": {"rot": "Na Horizonte (fictício)", "texto": "R$ 1.100 modelo + R$ 400 ferramentas + R$ 540 manutenção + R$ 720 Patrícia + R$ 1.350 Juliana + R$ 432 retrabalho = R$ 4.542 no mês."}},
+        {"titulo": "O barato que erra", "sub": "mais barato por chamada, mais caro por resultado",
+         "texto": ["O Rafael testou um modelo pela metade do preço. A fatura cairia para R$ 550, mas a separação passou a corrigir 16% dos pedidos e a Juliana a assumir 45 horas por mês. O custo por pedido subiu de R$ 6,68 para R$ 7,51.", "A área Gestão de IA resume: um agente barato que erra e precisa de duas tentativas custou o dobro da tabela. É conta de gestor."],
+         "exemplo": {"rot": "Conta do teste (fictícia)", "texto": "R$ 550 + 400 + 540 + 720 + 2.025 (Juliana) + 872 (retrabalho) = R$ 5.107 ÷ 680 = R$ 7,51 por pedido."}},
+        {"titulo": "Preço muda; a conta fica", "sub": "confira o preço no dia",
+         "texto": ["O preço por token cai a cada geração. Exemplo do panorama de outubro: a Anthropic anunciou o Opus 5.5 a US$ 4 por milhão de tokens de entrada e US$ 20 de saída, 40% menos que o Opus 5 (anúncio do fornecedor, 22/09/2026).", "Na Hora, o modelo é só 24% do custo do pedido. Cortar o preço do modelo pela metade mexe pouco; cortar o retrabalho pela metade mexe mais. Confira sempre o preço do fornecedor no dia em que fizer a conta."],
+         "exemplo": {"rot": "Regra", "texto": "Tabela de preço de modelo envelhece em semanas. A conta de custo por tarefa concluída serve para qualquer modelo, de qualquer fornecedor."}}
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo para copiar: custo por tarefa concluída",
+      "sub": "Uma página por processo. Cole numa planilha; a aba ao lado mostra a conta da Hora preenchida.",
+      "blocos": [
+        {"rot": "Conta de custo por tarefa concluída", "icone": "grafico",
+         "conteudo": "CUSTO POR TAREFA CONCLUÍDA · <processo> · período <mês/ano> · responsável: <nome>\n\nTAREFA CONCLUÍDA = <frase: o que conta como pronto>\nQuantidade no período: <n>    Fonte: <sistema ou planilha>\n\n| Linha                              | Como medi                     | R$ no período |\n|------------------------------------|-------------------------------|---------------|\n| A. Modelo de IA (fatura)           | fatura do fornecedor          | <...>         |\n| B. Ferramentas e plataformas       | contratos                     | <...>         |\n| C. Manutenção técnica              | <h> h × R$ <custo/h>          | <...>         |\n| D. Revisão e aprovação humana      | <h> h × R$ <custo/h>          | <...>         |\n| E. Exceções assumidas por pessoas  | <h> h × R$ <custo/h>          | <...>         |\n| F. Retrabalho                      | <n corrigidos> × <min> × R$/h | <...>         |\n| TOTAL                              | A+B+C+D+E+F                   | <...>         |\n\nCUSTO POR TAREFA CONCLUÍDA = TOTAL ÷ <n> = R$ <...>\nCUSTO POR CHAMADA (só para comparar) = A ÷ <chamadas> = R$ <...>\nPeso do modelo no total: A ÷ TOTAL = <...>%\n\nFORA DESTA CONTA (vai para o ROI): investimento inicial <R$ ...>\nCOMO MEDI AS HORAS: <semana de anotação / sistema / estimativa da equipe>\nPREÇO DO MODELO CONFERIDO NO SITE DO FORNECEDOR EM: <data>"},
+        {"rot": "Prompt · achar o custo escondido", "icone": "chat",
+         "conteudo": "Você é analista de custos. Abaixo está a conta de custo por tarefa\nconcluída de um processo que usa um agente de IA. Não refaça a conta\nnem invente números: aponte lacunas.\n\n1. O denominador diz o que conta como pronto? Tentativas e falhas\n   ficaram no numerador?\n2. Falta alguma linha (manutenção, revisão, exceções, retrabalho)?\n3. Alguma hora foi chutada em vez de medida? Qual?\n4. Há investimento inicial misturado com custo do mês?\n5. Que pergunta eu deveria fazer ao financeiro antes de apresentar?\n\nConta:\n\"\"\"<cole>\"\"\""}
+      ],
+      "saida": {"selo": "simulacao", "abas": [
+        {"rot": "Conta da Hora (exemplo)", "html": "<p><b>Hora · pedido pelo WhatsApp · outubro</b> · Horizonte, empresa fictícia de estudo · responsável: Patrícia</p><ul><li><b>Tarefa concluída:</b> pedido que chegou à separação e foi faturado · 680 no mês (app de pedidos).</li><li><b>A. Modelo:</b> R$ 1.100 (fatura) · <b>B. Ferramentas:</b> R$ 400</li><li><b>C. Manutenção:</b> 6 h × R$ 90 = R$ 540 (Rafael)</li><li><b>D. Revisão:</b> 9 h × R$ 80 = R$ 720 (Patrícia)</li><li><b>E. Exceções:</b> 30 h × R$ 45 = R$ 1.350 (Juliana)</li><li><b>F. Retrabalho:</b> 54 pedidos × 12 min = 10,8 h × R$ 40 = R$ 432</li><li><b>Total:</b> R$ 4.542 · <b>por pedido: R$ 6,68</b> · por conversa (só a fatura): R$ 0,31 · peso do modelo: 24%</li></ul><p>Fora da conta: implantação de R$ 3.600 (40 h do Rafael), que vai para o ROI da aula 7.</p>"},
+        {"rot": "Como conferir / erros comuns", "html": "<ol><li><b>Denominador sem frase.</b> \"Atendimentos\" não é resultado: inclui quem só perguntou o preço. Escreva o que é pronto.</li><li><b>Hora humana fora da conta.</b> \"A Juliana já ganha salário\" não zera o custo: a hora dela poderia ir para outra coisa.</li><li><b>Retrabalho esquecido.</b> Pergunte a quem recebe o trabalho (a separação, o financeiro) quantos casos voltam.</li><li><b>Períodos diferentes.</b> Fatura de um mês com pedidos de outro dá um número sem sentido.</li><li><b>Conferência:</b> some as linhas de novo e divida pelo denominador. O resultado da Hora tem de dar R$ 6,68.</li></ol>"}
+      ]}
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática",
+      "sub": "A conta da Hora para treinar; a do seu processo para valer.",
+      "fonte": "Volume do laboratório: <a href=\"https://inematds.github.io/prof2030-lab/pecas/painel/\">painel da Hora</a> (cerca de 900 atendimentos e 170 pedidos por semana em outubro). Valores em reais: fictícios, desta aula.",
+      "exercicios": [
+        {"id": "e1", "titulo": "1 · A conta da Hora", "min": "20 min",
+         "texto": "Abra o painel da Hora no laboratório e confira o volume de uma semana. Copie o modelo e preencha a conta de outubro com os valores do diagrama. Depois refaça a conta para o modelo barato que o Rafael testou (fatura R$ 550, Juliana 45 h, 16% de pedidos corrigidos) e escreva, em duas frases, qual dos dois você manteria e por quê.",
+         "pronto": "a conta tem as seis linhas, o denominador escrito em uma frase, o resultado de R$ 6,68 por pedido, a versão barata com R$ 7,51 e a sua decisão justificada pelo custo por pedido, não pelo preço do modelo."},
+        {"id": "e2", "titulo": "2 · A conta do seu processo", "min": "40 min + 1 semana",
+         "dias": 7,
+         "texto": "Escolha um processo seu em que já há IA (ou um que você quer automatizar). Escreva a frase da tarefa concluída. Por uma semana, peça a quem revisa, corrige ou assume os casos que anote o tempo. No fim, preencha o modelo e rode o prompt do custo escondido.",
+         "pronto": "a conta tem o denominador em uma frase, as seis linhas com a origem de cada número, as horas medidas por pelo menos 5 dias úteis, o custo por tarefa concluída e o peso do modelo no total, em porcentagem."}
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste rápido",
+      "sub": "5 perguntas. A explicação aparece depois da sua tentativa.",
+      "perguntas": [
+        {"p": "O painel do fornecedor mostra R$ 0,31 por conversa. Por que esse número não basta para decidir?",
+         "opcoes": ["Porque está errado: o fornecedor sempre cobra mais", "Porque é o custo de uma tentativa; não inclui ferramentas, horas de revisão, exceções nem retrabalho, e conversa não é resultado", "Porque deveria estar em dólar"],
+         "certa": 1, "ref": "diagrama",
+         "explica": "O número é verdadeiro, mas responde a outra pergunta. Na Hora, a fatura é só 24% do custo de cada pedido concluído. Quem decide pela tabela do fornecedor decide com um quarto da conta."},
+        {"p": "Na conta do custo por tarefa concluída, onde entram as conversas que não viraram pedido?",
+         "opcoes": ["Em lugar nenhum: não deram resultado", "No numerador (o custo), não no denominador (as tarefas concluídas)", "No denominador, para o custo médio ficar menor"],
+         "certa": 1, "ref": "passos",
+         "explica": "Tentativas e falhas custam e estão na fatura. Colocá-las no denominador esconde o custo de errar; tirá-las do numerador faz a conta parecer mais barata do que é."},
+        {"p": "Um modelo pela metade do preço fez a separação corrigir o dobro de pedidos. O que acontece com o custo por pedido?",
+         "opcoes": ["Cai pela metade, como a fatura", "Pode subir: o retrabalho e as horas de exceção crescem mais do que a fatura cai", "Não muda: retrabalho não é custo de IA"],
+         "certa": 1, "ref": "passos",
+         "explica": "Na Horizonte, foi de R$ 6,68 para R$ 7,51. Um agente barato que erra e precisa de duas tentativas custou o dobro da tabela."},
+        {"p": "A Juliana já é funcionária e recebe salário fixo. As 30 horas em que ela assume conversas da Hora entram na conta?",
+         "opcoes": ["Não, o salário seria pago de qualquer jeito", "Sim, pelo custo da hora: é tempo que poderia ir para outro trabalho, e ele mostra quanto do \"faz sozinho\" depende de gente", "Só se ela fizer hora extra"],
+         "certa": 1, "ref": "diagrama",
+         "explica": "Custo humano fixo não é custo zero. Deixá-lo de fora é o jeito mais comum de um agente parecer barato e de a capacidade liberada da aula 7 virar um número inventado."},
+        {"p": "O preço por token de um modelo caiu 40% em relação à versão anterior. O que você faz com a conta?",
+         "opcoes": ["Anuncia 40% de economia no processo", "Confere o preço do fornecedor no dia, refaz a linha do modelo e vê quanto muda o custo por tarefa concluída", "Nada: preço de modelo não importa"],
+         "certa": 1, "ref": "passos",
+         "explica": "Se o modelo pesa 24% do total, 40% a menos nele é perto de 10% a menos no custo do pedido, e só se a qualidade se mantiver. A conta inteira decide, não a manchete do lançamento."}
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumo",
+      "itens": [
+        {"t": "Resultado, não chamada", "texto": "Custo por tarefa concluída = custo total do período ÷ tarefas concluídas."},
+        {"t": "Denominador escrito", "texto": "Uma frase diz o que é pronto. Tentativas e falhas ficam no numerador."},
+        {"t": "Seis linhas", "texto": "Modelo, ferramentas, manutenção, revisão, exceções e retrabalho."},
+        {"t": "Barato que erra", "texto": "Sai caro. O preço do modelo se confere no dia; a conta fica."}
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {"t": "Laboratório Horizonte: o painel da Hora (empresa fictícia de estudo)", "href": "https://inematds.github.io/prof2030-lab/pecas/painel/", "icone": "grafico"},
+        {"t": "Área Gestão de IA: o gerente de 2027 e a economia dos agentes", "href": "https://eventos.inema.pro/gestao-ia/", "icone": "alvo"},
+        {"t": "Gestão de IA: o plano do curso, com o método e os indicadores", "href": "https://inematds.github.io/curso-gestao-ia/", "icone": "lista"}
+      ]
+    }
+  ]
+}

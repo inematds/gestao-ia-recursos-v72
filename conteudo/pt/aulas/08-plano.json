@@ -1,0 +1,212 @@
+{
+  "slug": "plano",
+  "num": 8,
+  "menu": "Projeto",
+  "titulo": "Projeto: o plano de recursos + O que mudou",
+  "titulo_curto": "Projeto: o plano",
+  "minutos": 20,
+  "lead": "O dono não vai ler sete documentos. Vai ler uma página: que modelo, que conhecimento, que ferramentas, quanto custa por mês e como sair se o fornecedor mudar. O projeto é o plano de recursos da área, com as peças das aulas 1 a 7 por trás, aprovado por rubrica e assinado por quem não o escreveu. No fim, o que mudou no trimestre.",
+  "objetivo": "entregar o plano de recursos da área em uma página e aprová-lo pela rubrica, com assinatura de quem não o escreveu.",
+  "competencias": ["montar-plano-de-recursos", "aplicar-rubrica-de-aprovacao", "ler-precos-e-anuncios-com-data"],
+  "aprende": [
+    {"t": "Os cinco blocos do plano de recursos em uma página"},
+    {"t": "Aplicar a rubrica com os itens que reprovam sozinhos"},
+    {"t": "Quem assina, quem confirma as travas e quando revisar"},
+    {"t": "O que mudou até outubro de 2026, com data e fonte"}
+  ],
+  "hero_alt": "Gerente apresenta uma única folha com blocos coloridos ao dono e a um técnico numa mesa redonda; atrás do vidro, o estoque com paletes.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "O plano de recursos",
+      "sub": "Cinco blocos numa página, cada um apoiado nas peças de uma aula, mais a rubrica e a assinatura. Clique em cada parte.",
+      "volta": "Reprovado num item: volta para o bloco que falhou, não para o zero",
+      "nos": [
+        {"icone": "chip", "titulo": "Modelos", "sub": "aula 2",
+         "detalhe": "Para cada tarefa, a configuração escolhida pelos 20 casos, o resultado com o crítico separado, a alternativa e a data para refazer o teste."},
+        {"icone": "pasta", "titulo": "Contexto", "sub": "aula 3",
+         "detalhe": "O índice do pacote: documentos com dono, versão e validade, a precedência, o que fica fora e onde ficam os casos de teste."},
+        {"icone": "cadeado", "titulo": "Ferramentas", "sub": "aulas 4 e 5",
+         "detalhe": "Cada ferramenta com o degrau de acesso e as travas confirmadas pela TI; o inventário da IA na sombra com as decisões e a data da próxima pesquisa."},
+        {"icone": "grafico", "titulo": "Orçamento", "sub": "aulas 1 e 7", "forte": true,
+         "detalhe": "Custo por tarefa concluída, custo do mês com teto e alerta, investimento à parte e o ROI estimado nos três cenários, com as incertezas escritas."},
+        {"icone": "voltar", "titulo": "Saída", "sub": "aula 6",
+         "detalhe": "Para os fornecedores importantes: o que é da empresa fora da plataforma, os gatilhos com número, o custo estimado da troca e a data do ensaio."},
+        {"icone": "check", "titulo": "Rubrica e assinatura", "sub": "quem monta não aprova",
+         "detalhe": "A rubrica dá a nota e tem seis itens que reprovam sozinhos. Na Horizonte, a Patrícia monta, o Rafael confirma as travas e o teto no fornecedor, e o Carlos assina."}
+      ],
+      "legenda": "A aprovação pedagógica do plano não autoriza, sozinha, gasto nem contrato na empresa: essa decisão continua sendo de quem responde por ela."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Do rascunho à assinatura",
+      "sub": "Quatro passos. O plano da Horizonte é o treino; o da sua área é o que vale.",
+      "passos": [
+        {"titulo": "Uma página", "sub": "com as peças por trás",
+         "texto": ["A página resume; as peças provam. Cada bloco tem duas ou três linhas e aponta para o documento da aula que o sustenta, na versão certa.", "Marque o que é medido e o que é estimado. Um plano que mistura os dois sem dizer é o primeiro a ser contestado na reunião."],
+         "exemplo": {"rot": "Na Horizonte", "texto": "\"Plano de recursos · comercial · v1 · out/2026\": uma página na frente, e atrás o parecer de modelo, o pacote, os contratos, o inventário, o plano de saída e o orçamento."}},
+        {"titulo": "Passe pela rubrica", "sub": "100 pontos e seis obrigatórios",
+         "texto": ["A rubrica soma 100 pontos em seis blocos. Aprova com 75 ou mais e os seis obrigatórios marcados. Um obrigatório faltando reprova, mesmo com 95 pontos.", "Os obrigatórios evitam o estrago grande: custo por tarefa com tempo humano, modelo escolhido por casos, documento com dono, nada irreversível ao alcance do agente, teto de gasto e ROI em cenários sem promessa."],
+         "exemplo": {"rot": "Teste da banca", "texto": "Rode o prompt da banca (modelo ao lado). Ele aponta lacunas; quem decide a nota é você e quem assina."}},
+        {"titulo": "Quem confirma, quem assina", "sub": "separação de funções",
+         "texto": ["Quem montou o plano não o aprova. A TI confirma por escrito que as travas existem na ferramenta e que o teto está configurado no fornecedor, quando der.", "Quem assina é quem responde pelo orçamento. Ele lê a página, confere os obrigatórios e pergunta o que não entendeu, de preferência sobre o cenário pessimista."],
+         "exemplo": {"rot": "Na Horizonte", "texto": "Patrícia monta. Rafael confirma as travas do app de pedidos, do e-mail e o teto de R$ 1.400. Carlos lê, pergunta sobre o −R$ 462 e assina."}},
+        {"titulo": "Data de revisão", "sub": "o plano envelhece",
+         "texto": ["O plano sai com data de revisão: a cada trimestre, junto com a pesquisa de IA na sombra, ou antes, se um gatilho de saída disparar ou o custo passar do teto.", "Na revisão, o estimado vira medido: a linha de base, a economia realizada, o custo real do mês. É assim que o ROI deixa de ser faixa."],
+         "exemplo": {"rot": "Regra", "texto": "Mudou o modelo, o fornecedor ou o preço: refaça a conta da aula 1 e os 20 casos da aula 2 antes de mexer no orçamento."}}
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "O plano em uma página, a rubrica e um prompt de banca. A aba ao lado mostra o plano da Horizonte.",
+      "blocos": [
+        {"rot": "Plano de recursos (1 página)", "icone": "arquivo",
+         "conteudo": "PLANO DE RECURSOS · <área> · versão <...> · <data> · responsável <nome>\nProcesso(s): <...> · Valores: medidos (M) ou estimados (E) marcados em cada linha\n\n1. MODELOS\n   <tarefa>: <configuração> · 20 casos: <c/a/i/CRÍTICOS> · alternativa <...> · refazer <data>\n2. CONTEXTO\n   Pacote v<...> · <n> documentos, todos com dono · fora: <...> · testes em <pasta>\n3. FERRAMENTAS E SOMBRA\n   <ferramenta>: degrau <...> · travas confirmadas por <nome> em <data>\n   Inventário: <n> ferramentas · cortadas <n> · trocadas <n> · próxima pesquisa <data>\n4. ORÇAMENTO E ROI ESTIMADO\n   Custo por tarefa concluída: R$ <...> (M/E) · custo do mês R$ <...> · teto R$ <...>\n   Investimento inicial R$ <...> · ROI estimado: <pess>% / <prov>% / <otim>%\n   Economia realizada: <evidência ou \"ainda não observada\"> · incertezas: <...>\n5. SAÍDA\n   <fornecedor>: gatilhos <...> · troca R$ <...> em <prazo> · ensaio <data>\n\nNOTA NA RUBRICA: <...>/100 · obrigatórios <6 de 6>\nTRAVAS CONFIRMADAS PELA TI: <nome, data>\nMONTADO POR: <nome> · APROVADO POR (não pode ser quem montou): <nome> em <data>\nPRÓXIMA REVISÃO: <data> ou antes, se um gatilho disparar ou o custo passar do teto"},
+        {"rot": "Rubrica do plano (100 pontos)", "icone": "lista",
+         "conteudo": "RUBRICA · plano de recursos · aprova com >= 75 E os 6 obrigatórios\n\nBLOCO                          PONTOS  CRITÉRIO DE PONTO CHEIO\n1. Modelos                       20    configuração por tarefa escolhida em 20 casos;\n                                       crítico separado; alternativa; data para refazer\n2. Contexto                      15    dono, versão e validade por documento; precedência;\n                                       fora do pacote; testes separados dos exemplos\n3. Ferramentas e sombra          20    contrato por ferramenta com degrau e travas na\n                                       ferramenta; credencial fora do texto; inventário\n                                       com decisão, alternativa e próxima pesquisa\n4. Saída do fornecedor           15    o que é nosso fora da plataforma; gatilhos com\n                                       número; custo e dono da troca; data do ensaio\n5. Orçamento e ROI               25    custo por tarefa com 6 linhas; teto e alerta;\n                                       investimento à parte; 3 cenários; incertezas\n6. Clareza                        5    uma página; medido x estimado marcado;\n                                       dados fictícios ou anonimizados identificados\n\nOBRIGATÓRIOS (um faltando reprova)\n[ ] Custo por tarefa concluída inclui tempo humano e retrabalho\n[ ] Modelo escolhido por casos, com crítico separado e alternativa\n[ ] Todo documento do pacote tem dono com nome\n[ ] Nenhuma operação irreversível (apagar, pagar, enviar em massa) ao alcance do agente\n[ ] Teto mensal de gasto escrito\n[ ] ROI em cenários, com a palavra \"estimado\" e sem economia prometida\n\nNOTA: <...>/100 · obrigatórios: <...>/6 · resultado: [ ] aprovado [ ] volta para <bloco>"},
+        {"rot": "Prompt · banca antes da assinatura", "icone": "chat",
+         "conteudo": "Você é a banca que revisa o plano de recursos de uma área que usa\nagentes de IA, usando a rubrica abaixo. Você não aprova nem reprova:\naponta lacunas para quem vai assinar.\n\nPara cada bloco da rubrica:\n1. Diga o que está presente e o que falta para o ponto cheio,\n   citando o trecho do plano.\n2. Marque cada obrigatório como presente ou ausente, com o trecho.\n3. Liste as três perguntas que o aprovador deveria fazer antes de\n   assinar, pelo menos uma sobre o cenário pessimista.\n\nNão invente informação que não esteja no plano.\n\nRubrica:\n\"\"\"<cole a rubrica>\"\"\"\nPlano:\n\"\"\"<cole o plano e, se couber, as peças>\"\"\""}
+      ],
+      "saida": {"selo": "simulacao", "abas": [
+        {"rot": "Plano da Horizonte (exemplo)", "html": "<p><b>Plano de recursos · comercial · v1 · out/2026</b> · Horizonte, empresa fictícia de estudo · responsável: Patrícia</p><ol><li><b>Modelos:</b> pedidos na faixa média (16/3/1/0 em 20 casos) · alternativa barata só para dúvidas, após 20 casos próprios · refazer em jan/2027.</li><li><b>Contexto:</b> pacote v3, 7 documentos, todos com dono · fora: CPF, planilha de clientes, tabela vencida · testes em \"testes-hora\".</li><li><b>Ferramentas e sombra:</b> consultar_cliente (ler), criar_pedido (escrever até R$ 5 mil e 5%), e-mail (ler; enviar só como rascunho) · travas confirmadas pelo Rafael · inventário: 5 ferramentas, 4 cortadas ou suspensas, 1 em troca · próxima pesquisa jan/2027.</li><li><b>Orçamento e ROI:</b> R$ 6,68 por pedido (M, com horas anotadas por uma semana) · custo do mês R$ 2.040, teto do modelo R$ 1.400 · investimento R$ 3.600 · ROI estimado −23% / +27% / +77% (E, linha de base não medida) · economia realizada: ainda não observada.</li><li><b>Saída:</b> fornecedor do modelo: gatilhos +30% de preço, custo por pedido acima de R$ 8, termos de dados · troca R$ 1.840 em 3 semanas · ensaio feito em 20/10.</li></ol><p><b>Rubrica:</b> 84/100, 6 de 6 obrigatórios. <b>Montado:</b> Patrícia. <b>Travas:</b> Rafael. <b>Aprovado:</b> Carlos. <b>Revisão:</b> janeiro de 2027.</p>"}
+      ]}
+    },
+    {
+      "tipo": "passos",
+      "titulo": "O que mudou · outubro de 2026",
+      "sub": "Painel do trimestre, trocado a cada revisão do curso. Cada item com data, fonte e o tipo de afirmação. Preços mudam em semanas: confira sempre o preço do fornecedor no dia. O método das aulas 1 a 7 não depende de nenhum deles.",
+      "passos": [
+        {"titulo": "Preços do trimestre", "sub": "por milhão de tokens, entrada/saída",
+         "texto": ["Anthropic: Opus 5.5 a US$ 4/20, 40% menos que o Opus 5 (22/09/2026); Sonnet 5.5 pelo mesmo preço do Sonnet 5, US$ 2/10 (28/09/2026); Fable 5.1 cerca de 25% mais barato por tarefa (01/09/2026). xAI: Grok 4.7 a US$ 2/6 (21/09/2026). Fontes: anúncios e documentação dos fornecedores e imprensa especializada.", "O panorama INEMA lê o trimestre assim: o preço por tarefa cai de 40% a 50% a cada geração. É uma leitura dos anúncios, não uma medição."],
+         "exemplo": {"rot": "Para o plano", "texto": "Preço caindo não muda a conta: muda um número dela. Refaça a linha do modelo com o preço do dia e veja quanto mexe no custo por tarefa concluída."}},
+        {"titulo": "Como os agentes são cobrados", "sub": "faixas e cobrança por uso",
+         "texto": ["OpenAI: os Workspace Agents, substitutos dos Custom GPTs, passaram a ser cobrados por token (06/07/2026). O GPT-6 chegou a todos os planos em faixas: Luna no gratuito, Sol nos pagos, Astra nos planos Pro, Business e Enterprise (07–08/10/2026).", "Anthropic: os Managed Agents, agentes que trabalham sozinhos por horas, entram na direção de cobrança por hora de agente, além do token. Fontes: notas de lançamento e páginas dos fornecedores."],
+         "exemplo": {"rot": "Leitura", "texto": "Faixa de plano e forma de cobrança mudam o orçamento mais do que o preço de tabela. O teto mensal e o limite por tarefa da aula 7 continuam valendo para qualquer forma."}},
+        {"titulo": "Abertos e locais", "sub": "custo fixo, outras perguntas",
+         "texto": ["O Qwen3.8-27B, aberto, roda em notebook (CNBC, 17/08/2026). Para PME, aberto local significa custo fixo e dado em casa, com manutenção própria e licenças diferentes entre modelos.", "Procedência também entra: em 09/09/2026, NSA, CISA e FBI acusaram DeepSeek, Alibaba, Moonshot e outros de \"destilação em escala\" de modelos americanos (The Register). É acusação de governo, não decisão judicial."],
+         "exemplo": {"rot": "Para o parecer", "texto": "Aberto local vai para a alternativa registrada com três perguntas: quem mantém, que licença, de onde veio."}},
+        {"titulo": "Saindo de linha e governança", "sub": "o ciclo curto",
+         "texto": ["OpenAI: o Agent Builder e os Evals do AgentKit serão desativados em 30/11/2026, com migração para o Agents SDK ou os Workspace Agents. Gartner: gasto mundial com governança de IA de US$ 492 milhões em 2026 para mais de US$ 1 bilhão em 2030 (previsão, 17/02/2026).", "Relatório de consultoria e anúncio de fornecedor vendem o que descrevem. Use como mapa, nunca como prova do seu caso: a prova é a sua conta de custo por tarefa e os seus 20 casos."],
+         "exemplo": {"rot": "Próxima revisão deste painel", "texto": "Janeiro de 2027, com o panorama do trimestre seguinte. O que é método (aulas 1 a 7) não muda; o que é preço, produto e número, sim."}}
+      ]
+    },
+    {
+      "tipo": "mapa",
+      "titulo": "O mapa do curso",
+      "sub": "As quatro entregas que sustentam o plano de recursos e os exercícios que as produzem. Clique num exercício para ver o \"pronto quando\".",
+      "degraus": [
+        {"aula": "custo", "icone": "grafico", "quando": "Semana 1", "titulo": "Medir", "sub": "custo do resultado",
+         "saida": "Conta de custo por tarefa concluída com as seis linhas.",
+         "passo": "A base de tudo: sem o custo por resultado, a escolha de modelo e o ROI ficam sem chão. As horas pedem uma semana de anotação."},
+        {"aula": "modelo", "icone": "chip", "quando": "Semanas 1 e 2", "titulo": "Escolher", "sub": "modelo e contexto",
+         "saida": "Parecer com 20 casos e pacote de contexto com dono.",
+         "passo": "Requer a conta da aula 1 para comparar custo por resultado. O pacote de contexto (aula 3) entra junto: a configuração inclui o que o agente lê."},
+        {"aula": "ferramentas", "icone": "cadeado", "quando": "Semana 2", "titulo": "Proteger", "sub": "ferramentas, sombra, saída",
+         "saida": "Contratos de ferramenta, inventário e plano de saída.",
+         "passo": "Requer o parecer. Os contratos limitam o que o agente faz; o inventário (aula 5) acha o que ninguém registrou; o plano de saída (aula 6) protege o que é da empresa."},
+        {"aula": "orcamento", "icone": "calendario", "quando": "Semana 3", "titulo": "Orçar", "sub": "orçamento e ROI",
+         "saida": "Orçamento com teto e ROI estimado em três cenários.",
+         "passo": "Requer a conta da aula 1 e as decisões das anteriores. A conversa com o dono (simulação) é o ensaio antes da reunião de verdade."}
+      ],
+      "rolagem_fim": {"titulo": "O plano inteiro", "texto": "Medir, escolher, proteger e orçar, nesta ordem. Cada entrega usa a anterior, e o plano só vai para a assinatura quando o \"pronto quando\" de cada degrau for verdade."},
+      "resultado": {"titulo": "Ao final do curso", "texto": "Um plano de recursos de uma página, aprovado pela rubrica e assinado por quem não o escreveu: modelos, contexto, ferramentas, orçamento e saída.", "total": "18 exercícios"},
+      "legenda": "Ordem recomendada: cada entrega usa a anterior."
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Gere o seu plano com datas",
+      "sub": "Escolha a data de início e quanto tempo você tem por semana. O plano respeita os exercícios que pedem uma semana de anotação ou de pesquisa.",
+      "curso": "Recursos: modelos, dados e orçamento",
+      "horas_padrao": 3,
+      "degraus": [
+        {"titulo": "Aula 1 · Quanto custa produzir o resultado", "aula": "custo"},
+        {"titulo": "Aula 2 · Escolher modelo pelo trabalho", "aula": "modelo"},
+        {"titulo": "Aula 3 · Conhecimento da empresa como ativo", "aula": "contexto"},
+        {"titulo": "Aula 4 · Ferramentas e integrações", "aula": "ferramentas"},
+        {"titulo": "Aula 5 · IA na sombra", "aula": "sombra"},
+        {"titulo": "Aula 6 · Fornecedor e lock-in", "aula": "fornecedor"},
+        {"titulo": "Aula 7 · Orçamento computacional e ROI", "aula": "orcamento"},
+        {"titulo": "Aula 8 · O plano de recursos", "aula": "plano"}
+      ],
+      "txt": {
+        "titulo": "Plano — Recursos: modelos, dados e orçamento",
+        "inicio": "Início",
+        "ritmo": "Ritmo",
+        "termino": "Término previsto",
+        "ate": "até",
+        "pronto": "pronto quando",
+        "semanas": "semanas",
+        "travou": "## O que travou e a regra que criei",
+        "h": "h por semana",
+        "exs": "exercícios"
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática",
+      "sub": "O plano da Horizonte para treinar a rubrica; o da sua área para valer.",
+      "exercicios": [
+        {"id": "e1", "titulo": "1 · O plano da Horizonte", "min": "40 min",
+         "texto": "Junte as peças da Horizonte que você fez nas aulas 1 a 7 e monte a página do plano com o modelo. Passe pela rubrica e rode o prompt da banca. Corrija o que faltar até a nota passar de 75 com os seis obrigatórios. Escreva quem confirma as travas e quem assina na Horizonte, e por quê.",
+         "pronto": "o plano da Horizonte cabe em uma página, tem os cinco blocos com medido e estimado marcados, nota de 75 ou mais na rubrica com os seis obrigatórios, e o nome de quem assina, diferente de quem montou."},
+        {"id": "e2", "titulo": "2 · O plano da sua área", "min": "60 min",
+         "texto": "Faça o mesmo com as peças das práticas \"no seu processo\". Entregue a uma pessoa que responde pelo orçamento e que não escreveu nada, peça que confira os obrigatórios e anote as perguntas dela, principalmente sobre o cenário pessimista.",
+         "pronto": "o plano da sua área tem nota de 75 ou mais, os seis obrigatórios, a data da próxima revisão e a assinatura (ou o aceite por escrito) de alguém que não o montou."},
+        {"id": "e3", "titulo": "3 · O seu plano datado", "min": "5 min",
+         "texto": "Use o gerador acima para montar o plano com as suas datas e baixe o .ics para o calendário.",
+         "pronto": "o plano está salvo e as datas estão no seu calendário."}
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste rápido",
+      "sub": "4 perguntas. A explicação aparece depois da sua tentativa.",
+      "perguntas": [
+        {"p": "O plano fez 90 pontos, mas o assistente de e-mail ainda pode apagar mensagens sozinho. Resultado?",
+         "opcoes": ["Aprovado: 90 é bem acima de 75", "Reprovado: operação irreversível ao alcance do agente é obrigatório, e um faltando reprova", "Aprovado com ressalva"],
+         "certa": 1, "ref": "codigo",
+         "explica": "Os obrigatórios existem para que uma nota alta não esconda o estrago grande. O plano volta para o bloco de ferramentas, não para o zero."},
+        {"p": "Quem deve assinar o plano de recursos da área comercial da Horizonte?",
+         "opcoes": ["A Patrícia, que montou e conhece tudo", "O Carlos, que responde pelo orçamento, depois que o Rafael confirmar as travas", "O fornecedor do modelo"],
+         "certa": 1, "ref": "passos",
+         "explica": "Quem monta não aprova. A TI confirma o que é técnico (travas, teto no fornecedor); quem responde pelo dinheiro assina."},
+        {"p": "O preço de um modelo caiu desde que o plano foi aprovado. O que fazer?",
+         "opcoes": ["Anunciar a economia ao dono", "Refazer a conta de custo por tarefa com o preço do dia e, se trocar de modelo, os 20 casos antes de mexer no orçamento", "Nada, o plano está aprovado"],
+         "certa": 1, "ref": "passos",
+         "explica": "Preço é um número da conta, não a conta. E troca de modelo sem os casos é a troca sem teste da simulação da aula 7."},
+        {"p": "O painel \"O que mudou\" cita uma acusação de governo contra fornecedores de modelos abertos. Como usar isso no parecer?",
+         "opcoes": ["Proibir todo modelo aberto", "Como pergunta de procedência na alternativa aberta local, lembrando que é acusação, não decisão judicial", "Ignorar, não tem a ver com gestão"],
+         "certa": 1, "ref": "passos",
+         "explica": "O tipo de afirmação importa: acusação, previsão, pesquisa de fornecedor e anúncio pesam diferente. No parecer, procedência vira uma das três perguntas da alternativa: quem mantém, que licença, de onde veio."}
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumo",
+      "itens": [
+        {"t": "Uma página, cinco blocos", "texto": "Modelos, contexto, ferramentas, orçamento e saída, com as peças por trás."},
+        {"t": "Rubrica com obrigatórios", "texto": "75 pontos e os seis obrigatórios. Um faltando reprova."},
+        {"t": "Quem monta não assina", "texto": "A TI confirma as travas; quem responde pelo orçamento aprova."},
+        {"t": "Mercado com data", "texto": "Preço do dia, tipo de afirmação e fonte, antes de qualquer número."}
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Certificação",
+      "paragrafos": [
+        "Certificação INEMA de qualificação \"Gestor de IA\", em breve no cert.inema.pro. Não é certificação profissional regulada.",
+        "Este é o curso G4 da Formação Gestão de IA 2027. Os outros cursos tratam da empresa agêntica (G0), das pessoas (G1), dos processos (G2), dos agentes (G3) e de governar, medir e evoluir (G5), onde fica o projeto final da formação. O bloco 5 da rubrica final, recursos, é este plano."
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {"t": "Área Gestão de IA: a formação e os cursos", "href": "https://eventos.inema.pro/gestao-ia/", "icone": "alvo"},
+        {"t": "G3 · Agentes: contratar, delegar e supervisionar", "href": "https://inematds.github.io/gestao-ia-agentes-v72/", "icone": "usuario"},
+        {"t": "Gestoria: administrar uma operação híbrida de ponta a ponta", "href": "https://inematds.github.io/gestoria/", "icone": "camadas"}
+      ]
+    }
+  ]
+}
