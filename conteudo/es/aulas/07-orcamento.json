@@ -1,0 +1,416 @@
+{
+  "slug": "orcamento",
+  "num": 7,
+  "menu": "Presupuesto",
+  "titulo": "Presupuesto de cómputo y ROI",
+  "titulo_curto": "Presupuesto y ROI",
+  "minutos": 20,
+  "lead": "\"¡Mira cómo sube! El agente se está pagando solo.\" Carlos dijo eso mirando un panel que empezó a contar el mismo día en que entró la Hora. Nadie midió el antes. En esta clase armas el presupuesto mensual con tope y el ROI estimado en tres escenarios, y practicas la conversación en la que el dueño te pide un número de ahorro y tú respondes sin prometer.",
+  "objetivo": "armar el presupuesto mensual y el ROI estimado de la operación en tres escenarios, con las incertidumbres escritas y sin prometer ahorro.",
+  "competencias": [
+    "montar-orcamento-computacional",
+    "estimar-roi-em-cenarios",
+    "comunicar-incerteza-sem-prometer"
+  ],
+  "aprende": [
+    {
+      "t": "El presupuesto del mes con tope, alerta y límite por tarea"
+    },
+    {
+      "t": "Estimar el beneficio cuando la línea de base nunca se midió"
+    },
+    {
+      "t": "ROI estimado en tres escenarios, con la inversión aparte"
+    },
+    {
+      "t": "Por qué capacidad liberada no es ahorro"
+    }
+  ],
+  "hero_alt": "El dueño de la empresa, de cabello canoso, le pregunta algo a la gerente al otro lado de la mesa; entre los dos, una hoja con un gráfico de tres franjas.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Del presupuesto al ROI estimado",
+      "sub": "Cinco etapas. La última es una decisión, no un número. Haz clic en cada una.",
+      "volta": "Al mes siguiente, lo medido reemplaza lo estimado",
+      "nos": [
+        {
+          "icone": "grafico",
+          "titulo": "Costo del mes",
+          "sub": "con tope",
+          "detalhe": "Modelo (variable, con tope y alerta), herramientas (fijas) y mantenimiento. En Horizonte: R$ 1.100 + R$ 400 + R$ 540 = R$ 2.040 por mes, valores ficticios. El tiempo humano de revisión no sale de la caja, pero entra en el beneficio."
+        },
+        {
+          "icone": "pasta",
+          "titulo": "Inversión",
+          "sub": "aparte",
+          "detalhe": "Lo que se gastó una vez para empezar: en Horizonte, 40 horas de Rafael en la implantación, R$ 3.600. Queda separado del costo del mes, para no esconder ni inflar el ROI."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Beneficio potencial",
+          "sub": "costo humano antes − después",
+          "forte": true,
+          "detalhe": "Cuánto costaba en horas hacer el trabajo sin el agente, menos cuánto cuesta hoy con revisión, excepciones y retrabajo. En Horizonte el \"antes\" nunca se midió (F11), así que entra como rango: de 8 a 12 minutos por pedido."
+        },
+        {
+          "icone": "camadas",
+          "titulo": "Tres escenarios",
+          "sub": "pesimista, probable, optimista",
+          "detalhe": "Cada extremo del rango de la línea de base da un escenario. ROI estimado = (beneficio potencial − costo del mes) ÷ costo del mes. En Horizonte: −23%, +27% y +77%. Un solo número esconde la duda; tres muestran su tamaño."
+        },
+        {
+          "icone": "check",
+          "titulo": "Decisión",
+          "sub": "y qué medir",
+          "detalhe": "Con el escenario pesimista negativo, la decisión honesta es: mantener, medir la línea de base y rehacer la cuenta en un mes. El presupuesto dice cuánto se puede gastar; el ROI estimado dice si vale la pena seguir midiendo."
+        }
+      ],
+      "legenda": "Fórmulas del método Gestoria (INEMA): beneficio potencial, resultado neto estimado y ROI estimado, con la inversión inicial separada de la recurrente. Horizonte: empresa y valores ficticios de estudio."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Cómo armar y defender los números",
+      "sub": "Cuatro pasos. Al final, la cuenta completa de Horizonte, para que la revises línea por línea.",
+      "passos": [
+        {
+          "titulo": "Presupuesto con tope",
+          "sub": "y límite por tarea",
+          "texto": [
+            "El costo del modelo es variable: sube con el volumen, con las conversaciones largas y con el modelo de punta. Por eso tiene un tope mensual y una alerta antes del tope, acordados con TI y, si se puede, configurados en el proveedor.",
+            "Pon también un límite por tarea: número de intentos y costo máximo de una conversación. Si se pasa, el agente se detiene y llama a una persona. La revisión humana también es un costo de gobernanza, y crece: Gartner prevé que el gasto mundial en gobernanza de IA pase de US$ 492 millones en 2026 a más de US$ 1.000 millones en 2030 (previsión, 17/02/2026)."
+          ],
+          "exemplo": {
+            "rot": "En Horizonte (ficticio)",
+            "texto": "Modelo: promedio R$ 1.100, tope R$ 1.400, alerta en R$ 1.120 (80%). Por conversación: hasta 2 intentos y R$ 1,50; por encima de eso, la conversación pasa a Juliana."
+          }
+        },
+        {
+          "titulo": "Línea de base en rango",
+          "sub": "cuando el antes no se midió",
+          "texto": [
+            "Sin el \"antes\", cualquier número de ahorro es una adivinanza. Reconstruye la línea de base con quien hacía el trabajo: ¿cuánto tiempo tomaba un pedido por WhatsApp antes de Hora? Pide el menor y el mayor tiempo razonable, no un promedio.",
+            "Escribe de dónde salió el rango y empieza a medir ahora, con un período comparable. Dentro de un mes, parte de la incertidumbre se convierte en medida."
+          ],
+          "exemplo": {
+            "rot": "En Horizonte (ficticio)",
+            "texto": "Juliana y los vendedores: de 8 a 12 minutos por pedido, lo más probable 10. Con 680 pedidos y R$ 45 la hora, el costo humano antes queda entre R$ 4.080 y R$ 6.120."
+          }
+        },
+        {
+          "titulo": "Tres escenarios",
+          "sub": "y la inversión aparte",
+          "texto": [
+            "Costo humano después: Patrícia R$ 720 + Juliana R$ 1.350 + retrabajo R$ 432 = R$ 2.502. Beneficio potencial: R$ 1.578, R$ 2.598 o R$ 3.618. Menos el costo del mes (R$ 2.040): −R$ 462, +R$ 558 o +R$ 1.578.",
+            "ROI estimado: −23%, +27% y +77%. Los R$ 3.600 de la implementación se recuperan en cerca de 6,5 meses en el escenario probable y nunca en el pesimista. Eso se deja por escrito, junto con los números."
+          ],
+          "exemplo": {
+            "rot": "Lectura",
+            "texto": "El resultado más probable es positivo y pequeño; el pesimista es negativo. La frase honesta es \"probablemente se paga, y aún no lo sabemos\", no \"se está pagando\"."
+          }
+        },
+        {
+          "titulo": "Capacidad no es ahorro",
+          "sub": "las horas necesitan un destino",
+          "texto": [
+            "En el escenario probable, Hora libera cerca de 63 horas de personas por mes. Eso es capacidad. Solo se vuelve ahorro si la empresa reduce un gasto o usa las horas en algo con un resultado que se mida.",
+            "Por eso el informe separa \"beneficio potencial\" de \"ahorro realizado\" y deja esta última en blanco hasta que haya evidencia. Una simulación no se presenta como receta ni como ahorro."
+          ],
+          "exemplo": {
+            "rot": "En Horizonte",
+            "texto": "Las horas de Juliana se destinaron al registro de clientes nuevos y a la posventa. Ahorro realizado: aún no observado. Patrícia mide durante un mes adónde fueron las horas antes de cualquier otra decisión."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo para copiar: presupuesto y ROI estimado",
+      "sub": "Una página que leen el área de finanzas y el dueño. La pestaña de al lado muestra la de Horizonte.",
+      "blocos": [
+        {
+          "rot": "Presupuesto mensual + ROI estimado",
+          "icone": "grafico",
+          "conteudo": "PRESUPUESTO Y ROI ESTIMADO · <proceso> · <mes/año> · responsable <nombre>\nValores: [ ] medidos [ ] estimados (marcar línea por línea)\n\nCOSTO DEL MES (recurrente)\n| Línea | Promedio | Tope | Alerta | Medido o estimado |\n|---|---|---|---|---|\n| Modelo de IA | R$ <...> | R$ <...> | R$ <...> (80%) | <...> |\n| Herramientas | R$ <...> | - | - | <...> |\n| Mantenimiento | R$ <...> | - | - | <...> |\n| TOTAL | R$ <...> | | | |\nLÍMITE POR TAREA: <n> intentos · R$ <...> por <conversación/caso> · si se pasa -> <nombre>\nINVERSIÓN INICIAL (aparte): R$ <...> (<qué fue>)\n\nBENEFICIO POTENCIAL = costo humano antes - costo humano después\nLínea de base: <min> a <max> min por tarea · fuente: <quién/cómo> · ¿medida? [ ] sí [ ] no\nCosto humano después: revisión R$ <...> + excepciones R$ <...> + retrabajo R$ <...>\n\n                      PESIMISTA    PROBABLE   OPTIMISTA\nCosto humano antes    R$ <...>     R$ <...>   R$ <...>\nBeneficio potencial   R$ <...>     R$ <...>   R$ <...>\nResultado neto        R$ <...>     R$ <...>   R$ <...>   (= beneficio - costo del mes)\nROI ESTIMADO          <...>%       <...>%     <...>%     (= resultado ÷ costo del mes)\nRetorno de la inversión: <meses> en el probable · <...> en el pesimista\n\nCAPACIDAD LIBERADA: <h>/mes (probable) · destino: <...>\nAHORRO REALIZADO: <evidencia o \"aún no observado\">\nINCERTIDUMBRES: 1. <...> 2. <...> 3. <...>\nDECISIÓN: <mantener / ampliar / reducir / pausar> · REHACER LA CUENTA EN: <fecha>"
+        },
+        {
+          "rot": "Prompt · dónde el ROI está demasiado optimista",
+          "icone": "chat",
+          "conteudo": "Eres el director financiero más escéptico de la empresa. Abajo está el\npresupuesto y el ROI estimado de una operación con agente de IA. No rehagas\nla cuenta: señala dónde puede estar demasiado optimista.\n\n1. ¿Qué costo falta (mantenimiento, revisión, retrabajo, cambio de\n   proveedor, aumento de volumen)?\n2. ¿De dónde viene la línea de base? ¿Se midió o se recordó?\n3. ¿Alguna capacidad liberada se está tratando como ahorro?\n4. ¿La inversión inicial quedó separada?\n5. ¿Qué pregunta haría yo antes de aprobar?\n\nDocumento:\n\"\"\"<pega>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Presupuesto y ROI de Horizonte",
+            "html": "<p><b>Hora · pedido por WhatsApp · oct/2026</b> · Horizonte, empresa ficticia de estudio · responsable: Patrícia</p><ul><li><b>Costo del mes:</b> modelo R$ 1.100 (tope R$ 1.400, alerta R$ 1.120) + herramientas R$ 400 + mantenimiento R$ 540 = <b>R$ 2.040</b>. Límite: 2 intentos y R$ 1,50 por conversación.</li><li><b>Inversión inicial:</b> R$ 3.600 (40 h de Rafael).</li><li><b>Línea de base:</b> 8 a 12 min por pedido, estimada con Juliana y los vendedores · <b>no medida</b>.</li><li><b>Costo humano después:</b> R$ 720 + R$ 1.350 + R$ 432 = R$ 2.502.</li></ul><table><tr><th></th><th>Pesimista</th><th>Probable</th><th>Optimista</th></tr><tr><td>Antes</td><td>R$ 4.080</td><td>R$ 5.100</td><td>R$ 6.120</td></tr><tr><td>Beneficio</td><td>R$ 1.578</td><td>R$ 2.598</td><td>R$ 3.618</td></tr><tr><td>Neto</td><td>−R$ 462</td><td>+R$ 558</td><td>+R$ 1.578</td></tr><tr><td>ROI estimado</td><td>−23%</td><td>+27%</td><td>+77%</td></tr></table><p>Retorno de la inversión: ~6,5 meses en el probable; no se recupera en el pesimista. Capacidad liberada: ~63 h/mes (probable). Ahorro realizado: aún no observado. <b>Decisión:</b> mantener y medir la línea de base durante 2 semanas; rehacer el 30/11.</p>"
+          },
+          {
+            "rot": "Cómo verificar / errores comunes",
+            "html": "<ol><li><b>Un solo número.</b> \"ROI de 27%\" sin el rango esconde que el pesimista es negativo.</li><li><b>Capacidad sumada como ahorro.</b> Las horas liberadas no son dinero en caja.</li><li><b>Inversión mezclada.</b> Sumar la implementación al mes hunde el ROI; olvidarla infla el retorno.</li><li><b>Línea de base de memoria sin decirlo.</b> Se puede usar una estimación, pero escrita como estimación, con quién la dio.</li><li><b>Verificación:</b> antes − 2.502 = beneficio; beneficio − 2.040 = neto; neto ÷ 2.040 = ROI. Los tres escenarios de Horizonte tienen que cuadrar.</li></ol>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "simconversa",
+      "titulo": "Simulación: Carlos quiere un número",
+      "sub": "Conversación simulada para practicar. El dueño va a la reunión de resultados del trimestre y quiere saber cuánto ahorra el agente. Tú respondes con la cuenta de esta clase.",
+      "personagem": {
+        "nome": "Carlos · dueño de Horizonte (simulación)",
+        "papel": "Horizonte Distribuidora, empresa ficticia de estudio"
+      },
+      "inicio": "abre",
+      "falas": {
+        "abre": {
+          "cliente": "Patrícia, el viernes tengo la reunión de resultados del trimestre. El panel muestra que Hora se está pagando. Dame un número: ¿cuánto vamos a ahorrar por mes con ella?",
+          "opcoes": [
+            {
+              "t": "R$ 2.600 por mes. Es lo que Hora le quita de trabajo al equipo.",
+              "vai": "fim-promessa",
+              "nota": 0,
+              "comenta": "R$ 2.600 es el beneficio potencial en el escenario probable, antes de descontar los R$ 2.040 del costo del mes, y además es capacidad, no ahorro. En boca del dueño se convirtió en promesa."
+            },
+            {
+              "t": "Unos R$ 560 por mes.",
+              "vai": "painel",
+              "nota": 1,
+              "comenta": "Es el resultado neto del escenario probable, así que la cuenta está bien. Pero un solo número esconde que el escenario pesimista es negativo y que la línea de base fue estimada, no medida."
+            },
+            {
+              "t": "Puedo dar una estimación, no un ahorro: en el escenario probable, R$ 560 más por mes; en el pesimista, R$ 460 menos; en el optimista, R$ 1.580. La mayor duda es el \"antes\", que nunca medimos.",
+              "vai": "painel",
+              "nota": 2,
+              "comenta": "Tres escenarios, la palabra estimado y el origen de la incertidumbre. Carlos sale con un número que aguanta preguntas en la reunión."
+            }
+          ]
+        },
+        "painel": {
+          "cliente": "Pero mira el panel: las atenciones subieron de 702 a 901 por semana desde septiembre. ¿Eso no prueba que está funcionando?",
+          "opcoes": [
+            {
+              "t": "Sí lo prueba. Puedes llevar el gráfico a la reunión.",
+              "vai": "horas",
+              "nota": 0,
+              "comenta": "Atención es volumen, no resultado. Puede subir por un descuento (el F5), por la época del año o por el precio. Llevar el gráfico como prueba es llevar el F11 a la reunión."
+            },
+            {
+              "t": "Ese panel está mal, mejor ignorarlo.",
+              "vai": "horas",
+              "nota": 1,
+              "comenta": "Desconfiar está bien, pero el panel no está mal: mide volumen. El problema es usarlo para responder una pregunta de resultado sin línea de base."
+            },
+            {
+              "t": "Atención al cliente es volumen, y el panel empezó el mismo día de Hora, así que no existe el antes. Propongo medir durante dos semanas el tiempo por pedido, las correcciones y el margen, y compararlos con la estimación del equipo.",
+              "vai": "horas",
+              "nota": 2,
+              "comenta": "No tiraste el dato: dijiste qué mide, qué falta y cómo conseguirlo. En dos semanas, parte de la incertidumbre se convierte en medida."
+            }
+          ]
+        },
+        "horas": {
+          "cliente": "Entonces hagamos que el ahorro sea real: si sobran horas de Juliana, le recorto medio turno.",
+          "opcoes": [
+            {
+              "t": "Tiene sentido, recórtalo.",
+              "vai": "barato",
+              "nota": 0,
+              "comenta": "Las horas liberadas son estimadas y hoy Juliana cubre las excepciones de la Hora y el registro de clientes. Recortar ahora puede convertir el escenario probable en el pesimista y quitar a la persona que sostiene al agente."
+            },
+            {
+              "t": "Mejor no tocar nada por ahora.",
+              "vai": "barato",
+              "nota": 1,
+              "comenta": "Es prudente, pero deja la capacidad sin destino. Las horas sin destino no se vuelven ahorro ni resultado: desaparecen."
+            },
+            {
+              "t": "La capacidad liberada no es ahorro automático. Hoy Juliana cubre las excepciones de la Hora y el registro de clientes nuevos. Mido durante un mes a dónde fueron las horas y traigo la decisión con ella, con números.",
+              "vai": "barato",
+              "nota": 2,
+              "comenta": "Separaste capacidad de ahorro, protegiste la operación y le pusiste plazo y responsable a la decisión. Es lo que el informe llama ahorro realizado: solo con evidencia."
+            }
+          ]
+        },
+        "barato": {
+          "cliente": "Última: Rafael encontró un modelo por la mitad del precio. Si lo cambiamos mañana, el ROI se duplica, ¿cierto?",
+          "opcoes": [
+            {
+              "t": "Cierto, puedes cambiarlo mañana.",
+              "vai": "fim-troca",
+              "nota": 0,
+              "comenta": "La mitad de la factura no es la mitad del costo: el modelo es el 24% del costo del pedido. Y sin los 20 casos, nadie sabe cuántos errores nuevos trae el cambio."
+            },
+            {
+              "t": "Antes, corro los mismos 20 casos en los dos y hago la cuenta por pedido completado, con retrabajo. La última vez, el barato erró más y salió R$ 7,51 por pedido contra R$ 6,68.",
+              "vai": "fim-bom",
+              "nota": 2,
+              "comenta": "Llevaste la decisión a los casos y al costo por resultado, y recordaste la evidencia que ya existe."
+            },
+            {
+              "t": "No. Un modelo que funciona no se cambia.",
+              "vai": "fim-preso",
+              "nota": 1,
+              "comenta": "Rechazar sin probar es la otra mitad del error. El precio y la calidad cambian en semanas; la respuesta correcta es probar con los mismos casos."
+            }
+          ]
+        },
+        "fim-promessa": {
+          "fim": true,
+          "titulo": "Promesa en la reunión",
+          "texto": "Carlos anunció R$ 2.600 de ahorro por mes. Al mes siguiente, la caja no mostró nada parecido, y la Hora pasó a verse como un proyecto que no cumplió. El beneficio potencial no es ahorro, y un solo número no aguanta la primera pregunta."
+        },
+        "fim-troca": {
+          "fim": true,
+          "titulo": "Cambio sin prueba",
+          "texto": "El cambio se hizo al día siguiente. La factura bajó, el retrabajo en la separación se duplicó y Juliana volvió a asumir conversaciones. El costo por pedido subió. Un modelo se cambia después de los mismos casos y de la cuenta por resultado."
+        },
+        "fim-preso": {
+          "fim": true,
+          "titulo": "Aferrado a lo que funciona",
+          "texto": "La conversación terminó sin prueba. La Hora sigue bien, pero la empresa no sabe si está pagando caro, y el día en que el proveedor cambie el precio o la versión va a tomar a todos por sorpresa. Probar no obliga a cambiar."
+        },
+        "fim-bom": {
+          "fim": true,
+          "titulo": "Números que aguantan preguntas",
+          "texto": "Carlos llevó a la reunión un rango de resultado estimado, el plan para medir la línea de base, la decisión sobre las horas de Juliana con plazo y la prueba del modelo barato agendada. Ninguna promesa, y todo con responsable y fecha."
+        }
+      },
+      "licao": "Al dueño, llévale rango y no punto: escenarios, la palabra estimado, el origen de la incertidumbre y qué se va a medir. La capacidad solo se vuelve ahorro con decisión y evidencia; y un modelo se cambia después de los mismos casos, con la cuenta del costo por resultado."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "El presupuesto de Horizonte para practicar, el tuyo para valer y la conversación con el dueño para ensayar.",
+      "fonte": "Pieza del laboratorio: <a href=\"https://inematds.github.io/prof2030-lab/pecas/painel/\">panel de la Hora (F11, sin línea de base)</a>. Valores en reales: ficticios, de esta clase.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · El presupuesto de Horizonte",
+          "min": "25 min",
+          "texto": "Completa el modelo con los números de Horizonte, línea por línea, marcando lo que es medido y lo que es estimado. Revisa las tres columnas con la fórmula. Corre el prompt del director financiero escéptico y escribe tres incertidumbres y la decisión.",
+          "pronto": "el documento tiene el costo del mes con tope y alerta, la inversión aparte, la línea de base en rango con la fuente, los tres escenarios cerrando (−R$ 462, +R$ 558, +R$ 1.578), \"ahorro realizado: aún no observado\", tres incertidumbres escritas y la fecha para rehacerlo."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · El presupuesto de tu proceso",
+          "min": "45 min",
+          "texto": "Usa la cuenta de la clase 1 de tu proceso. Arma el presupuesto con tope, estima la línea de base en rango con quien hacía el trabajo, calcula los tres escenarios y escribe la decisión. Muéstraselo a una persona de finanzas antes de llevarlo al dueño.",
+          "pronto": "tu documento tiene tope y alerta para el modelo, límite por tarea, inversión separada, los tres escenarios con la fórmula revisada, al menos tres incertidumbres, la capacidad liberada con destino y la fecha en que lo estimado se vuelve medido."
+        },
+        {
+          "id": "e3",
+          "titulo": "3 · La conversación con Carlos",
+          "min": "10 min",
+          "texto": "Haz la simulación de arriba hasta el final. Si no llegas al puntaje máximo, empieza de nuevo y mira qué cambia en cada respuesta. Después escribe, en tres frases, cómo responderías la misma pregunta en tu proceso.",
+          "pronto": "llegaste a 8 de 8 puntos y tienes las tres frases escritas, con un rango de valores, la palabra \"estimado\" y qué se va a medir."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba rápida",
+      "sub": "5 preguntas. La explicación aparece después de tu intento.",
+      "perguntas": [
+        {
+          "p": "¿Cuál es la fórmula del ROI estimado usada en el curso?",
+          "opcoes": [
+            "Horas liberadas × salario",
+            "(Beneficio potencial − costo del mes) ÷ costo del mes, con la inversión inicial aparte",
+            "Factura del modelo ÷ número de conversaciones"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "El beneficio sale del costo humano antes menos el de después; el resultado neto descuenta el costo del mes. La inversión inicial entra en el tiempo de retorno, no mezclada en el mes."
+        },
+        {
+          "p": "La línea de base nunca se midió. ¿Qué hacer?",
+          "opcoes": [
+            "No calcular nada hasta tener datos",
+            "Estimar en rango con quien hacía el trabajo, decir que es una estimación y empezar a medir ahora",
+            "Usar el número que deja el ROI más bonito"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Esperar frena la decisión; inventar engaña. El rango escrito, con la fuente, permite decidir ahora y corregir después, cuando llegue la medida."
+        },
+        {
+          "p": "En el escenario probable, la Hora libera cerca de 63 horas por mes. ¿Eso es ahorro?",
+          "opcoes": [
+            "Sí, 63 h × R$ 45",
+            "No: es capacidad; se vuelve ahorro solo si la empresa reduce un gasto o usa las horas en algo medido",
+            "Sí, si Carlos lo aprueba"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "La hora liberada que nadie usa no aparece en la caja. El informe deja \"ahorro realizado\" en blanco hasta que haya evidencia."
+        },
+        {
+          "p": "¿Por qué presentar tres escenarios en vez de un solo número?",
+          "opcoes": [
+            "Para parecer más técnico",
+            "Porque muestra el tamaño de la incertidumbre: en Horizonte, el pesimista es negativo, y eso cambia la decisión",
+            "Porque finanzas lo exige"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "Con un solo número (+27%), nadie ve que el pesimista da −23%. El rango convierte la pregunta \"¿cuánto ahorra?\" en \"¿qué necesitamos medir para saberlo?\"."
+        },
+        {
+          "p": "El costo del modelo superó el tope del mes por conversaciones largas. ¿Qué control faltó?",
+          "opcoes": [
+            "Ninguno, es normal",
+            "Límite por tarea (intentos y costo máximo por conversación) y alerta antes del tope",
+            "Cambiar de proveedor"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Un tope mensual sin límite por tarea solo avisa después del daño. Con límite por conversación, el caso caro se detiene y pasa a una persona; con alerta al 80%, hay tiempo de actuar."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumen",
+      "itens": [
+        {
+          "t": "Presupuesto con tope",
+          "texto": "Modelo variable con tope y alerta; límite por tarea; inversión aparte."
+        },
+        {
+          "t": "Línea de base en rango",
+          "texto": "Estimada con quien lo hacía, escrita como estimación, medida a partir de ahora."
+        },
+        {
+          "t": "Tres escenarios",
+          "texto": "ROI estimado pesimista, probable y optimista, con incertidumbres escritas."
+        },
+        {
+          "t": "Sin promesas",
+          "texto": "Capacidad no es ahorro. Ahorro realizado solo con evidencia."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Laboratorio Horizonte: el panel que empezó junto con el agente (F11, empresa ficticia de estudio)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/painel/",
+          "icone": "grafico"
+        },
+        {
+          "t": "Gestión de IA: el plan del curso (módulo 9, costos y ROI)",
+          "href": "https://inematds.github.io/curso-gestao-ia/",
+          "icone": "lista"
+        },
+        {
+          "t": "Gestoria: administrar una operación híbrida de punta a punta",
+          "href": "https://inematds.github.io/gestoria/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

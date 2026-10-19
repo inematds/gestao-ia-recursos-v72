@@ -1,0 +1,325 @@
+{
+  "slug": "custo",
+  "num": 1,
+  "menu": "Cost",
+  "titulo": "How much it costs to produce the result",
+  "titulo_curto": "Cost of the result",
+  "minutos": 20,
+  "lead": "The vendor's dashboard says each Hora conversation costs R$ 0.31. That sounds cheap, and it's the wrong number to decide with. The manager needs to know what each request that reaches billing correctly costs: the invoice, the tools, the hours of whoever reviews, and the rework. In this lesson you do that math for Hora and for one of your own processes.",
+  "objetivo": "calculate the cost per completed task of a process, adding up AI, tools, human time and rework, instead of looking at the cost per call.",
+  "competencias": [
+    "calcular-custo-por-tarefa-concluida",
+    "definir-o-denominador",
+    "incluir-tempo-humano-e-retrabalho"
+  ],
+  "aprende": [
+    {
+      "t": "Why cost per call is misleading"
+    },
+    {
+      "t": "Choose the denominator: what counts as a completed task"
+    },
+    {
+      "t": "Add up the six lines of a result's cost"
+    },
+    {
+      "t": "Why the cheap model that makes mistakes ends up expensive"
+    }
+  ],
+  "hero_alt": "Office desk with printed invoices, a calculator and a laptop showing a stacked bar chart.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From the invoice to the cost of the result",
+      "sub": "Scroll the page: each step lights up its part of the bill. This is Hora's bill for one month, with fictional numbers.",
+      "rolagem": true,
+      "nos": [
+        {
+          "icone": "arquivo",
+          "titulo": "Invoice",
+          "sub": "what the vendor charges",
+          "itens": [
+            {
+              "icone": "chip",
+              "t": "R$ 1,100 for the month",
+              "sub": "3,600 conversations"
+            }
+          ],
+          "detalhe": "The model charges per token, the pieces of text it reads and writes, with a price per million tokens, split into input and output. At Horizonte, the month's invoice came to R$ 1,100 for 3,600 conversations: the R$ 0.31 per conversation on the dashboard. That is the cost of one attempt, not of a result."
+        },
+        {
+          "icone": "check",
+          "titulo": "Completed task",
+          "sub": "the denominator",
+          "forte": true,
+          "itens": [
+            {
+              "icone": "alvo",
+              "t": "680 orders",
+              "sub": "accepted by fulfillment"
+            }
+          ],
+          "detalhe": "Before dividing, write down what counts as done. At Hora: an order that reached fulfillment and was invoiced. There were 680 in the month. The conversations that did not become an order go into the cost and stay out of the denominator. If an answered question is also a result, it becomes another task, with its own calculation."
+        },
+        {
+          "icone": "camadas",
+          "titulo": "Tools",
+          "sub": "and who maintains them",
+          "itens": [
+            {
+              "icone": "chip",
+              "t": "R$ 400 + R$ 540",
+              "sub": "platforms and maintenance"
+            }
+          ],
+          "detalhe": "The WhatsApp platform and the order app cost R$ 400 a month. Rafael, from the outsourced IT, spends 6 hours a month tuning Hora, at R$ 90 an hour: R$ 540. Neither of these lines shows up on the model dashboard."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Human time",
+          "sub": "review and exceptions",
+          "itens": [
+            {
+              "icone": "relogio",
+              "t": "39 hours",
+              "sub": "Patrícia and Juliana"
+            }
+          ],
+          "detalhe": "Patrícia spends 9 hours a month approving exceptions (R$ 80 an hour: R$ 720). Juliana takes over the conversations Hora can't resolve: 30 hours at R$ 45, R$ 1,350. The agent that \"does it on its own\" almost always has someone behind it, and that hour costs money."
+        },
+        {
+          "icone": "voltar",
+          "titulo": "Rework",
+          "sub": "mistakes cost too",
+          "itens": [
+            {
+              "icone": "x",
+              "t": "54 orders corrected",
+              "sub": "8% of the month"
+            }
+          ],
+          "detalhe": "Fulfillment corrected 54 orders in the month (wrong item, gallon quantity instead of box), 12 minutes each: 10.8 hours at R$ 40, R$ 432. Rework is the line that changes most when you switch models, and that is why it drives the choice in lesson 2."
+        }
+      ],
+      "rolagem_fim": {
+        "titulo": "R$ 6.68 per completed order",
+        "texto": "Adding it all up, the month cost R$ 4,542 for 680 orders: R$ 6.68 per order. The model invoice is only 24% of that. The number the dashboard shows (R$ 0.31) is real, but it answers a different question.",
+        "curto": "R$ 4,542 ÷ 680 = R$ 6.68"
+      },
+      "legenda": "Horizonte Distribuidora, a fictional study company: all values are fictional. The calculation follows the \"total process cost\" indicator from the Gestoria method (INEMA)."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How to do the calculation",
+      "sub": "Four steps. The method belongs to the manager, not the programmer: you need a spreadsheet and a week of notes.",
+      "passos": [
+        {
+          "titulo": "Choose the denominator",
+          "sub": "what a completed task is",
+          "texto": [
+            "Write in one sentence what counts as a result: \"invoiced order\", \"proposal accepted by the customer\", \"ticket closed without reopening within 7 days\". Count only what got there, in the same period as the invoice.",
+            "Attempts, failures and abandoned conversations go in the numerator, never the denominator. This is how the cost of getting it wrong shows up in the math, instead of disappearing into the average."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "Hora's completed task: an order that reached picking and was invoiced. October: 680. The remaining 2,920 conversations (questions, quotes, drop-offs) are on the bill, but not in the denominator."
+          }
+        },
+        {
+          "titulo": "Add up the whole cost",
+          "sub": "six lines",
+          "texto": [
+            "Model, tools, maintenance, human review, exceptions taken on by people, and rework. For hours, use the hourly cost with payroll charges, which finance can tell you, and log the time for a week instead of guessing.",
+            "Separate what recurs from what was spent once (the setup). The initial investment goes into the ROI in lesson 7, not into each month's cost."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte (fictional)",
+            "texto": "R$ 1,100 model + R$ 400 tools + R$ 540 maintenance + R$ 720 Patrícia + R$ 1,350 Juliana + R$ 432 rework = R$ 4,542 for the month."
+          }
+        },
+        {
+          "titulo": "The cheap one that gets it wrong",
+          "sub": "cheaper per call, more expensive per result",
+          "texto": [
+            "Rafael tested a model at half the price. The bill would drop to R$ 550, but picking started correcting 16% of the orders and Juliana took on 45 hours a month. The cost per order went up from R$ 6.68 to R$ 7.51.",
+            "The AI Management area sums it up: a cheap agent that gets it wrong and needs two tries cost double the price list. It's a manager's math."
+          ],
+          "exemplo": {
+            "rot": "Test math (fictional)",
+            "texto": "R$ 550 + 400 + 540 + 720 + 2,025 (Juliana) + 872 (rework) = R$ 5,107 ÷ 680 = R$ 7.51 per order."
+          }
+        },
+        {
+          "titulo": "Prices change; the math stays",
+          "sub": "check the price that day",
+          "texto": [
+            "The price per token drops with each generation. Example from the October overview: Anthropic announced Opus 5.5 at US$ 4 per million input tokens and US$ 20 for output, 40% less than Opus 5 (vendor announcement, 09/22/2026).",
+            "At Hora, the model is only 24% of the cost of an order. Cutting the model price in half moves little; cutting rework in half moves more. Always check the vendor's price on the day you do the math."
+          ],
+          "exemplo": {
+            "rot": "Rule",
+            "texto": "A model price table gets old within weeks. The cost per completed task math works for any model, from any vendor."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template to copy: cost per completed task",
+      "sub": "One page per process. Paste it into a spreadsheet; the next tab shows Hora's math filled in.",
+      "blocos": [
+        {
+          "rot": "Cost per completed task math",
+          "icone": "grafico",
+          "conteudo": "COST PER COMPLETED TASK · <process> · period <month/year> · owner: <name>\n\nCOMPLETED TASK = <sentence: what counts as done>\nQuantity in the period: <n>    Source: <system or spreadsheet>\n\n| Line                               | How I measured                | R$ in the period |\n|------------------------------------|-------------------------------|------------------|\n| A. AI model (bill)                 | vendor bill                   | <...>            |\n| B. Tools and platforms             | contracts                     | <...>            |\n| C. Technical maintenance           | <h> h × R$ <cost/h>           | <...>            |\n| D. Human review and approval       | <h> h × R$ <cost/h>           | <...>            |\n| E. Exceptions taken on by people   | <h> h × R$ <cost/h>           | <...>            |\n| F. Rework                          | <n corrected> × <min> × R$/h  | <...>            |\n| TOTAL                              | A+B+C+D+E+F                   | <...>            |\n\nCOST PER COMPLETED TASK = TOTAL ÷ <n> = R$ <...>\nCOST PER CALL (only for comparing) = A ÷ <calls> = R$ <...>\nModel's share of the total: A ÷ TOTAL = <...>%\n\nOUTSIDE THIS MATH (goes into ROI): initial investment <R$ ...>\nHOW I MEASURED THE HOURS: <week of logging / system / team estimate>\nMODEL PRICE CHECKED ON THE VENDOR'S SITE ON: <date>"
+        },
+        {
+          "rot": "Prompt · find the hidden cost",
+          "icone": "chat",
+          "conteudo": "You are a cost analyst. Below is the cost per completed task math\nfor a process that uses an AI agent. Do not redo the math\nor make up numbers: point out gaps.\n\n1. Does the denominator say what counts as done? Did attempts\n   and failures stay in the numerator?\n2. Is any line missing (maintenance, review, exceptions, rework)?\n3. Was any hour guessed instead of measured? Which one?\n4. Is there initial investment mixed in with the month's cost?\n5. What question should I ask finance before presenting this?\n\nMath:\n\"\"\"<paste>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Hora's math (example)",
+            "html": "<p><b>Hora · order via WhatsApp · October</b> · Horizonte, fictional study company · owner: Patrícia</p><ul><li><b>Completed task:</b> an order that reached picking and was invoiced · 680 in the month (orders app).</li><li><b>A. Model:</b> R$ 1,100 (bill) · <b>B. Tools:</b> R$ 400</li><li><b>C. Maintenance:</b> 6 h × R$ 90 = R$ 540 (Rafael)</li><li><b>D. Review:</b> 9 h × R$ 80 = R$ 720 (Patrícia)</li><li><b>E. Exceptions:</b> 30 h × R$ 45 = R$ 1,350 (Juliana)</li><li><b>F. Rework:</b> 54 orders × 12 min = 10.8 h × R$ 40 = R$ 432</li><li><b>Total:</b> R$ 4,542 · <b>per order: R$ 6.68</b> · per conversation (bill only): R$ 0.31 · model's share: 24%</li></ul><p>Outside the math: setup of R$ 3,600 (40 h of Rafael), which goes into the lesson 7 ROI.</p>"
+          },
+          {
+            "rot": "How to check / common mistakes",
+            "html": "<ol><li><b>Denominator without a sentence.</b> \"Interactions\" is not a result: it includes people who only asked the price. Write down what done means.</li><li><b>Human hours left out of the math.</b> \"Juliana already gets a salary\" doesn't zero out the cost: her hour could go to something else.</li><li><b>Forgotten rework.</b> Ask whoever receives the work (picking, finance) how many cases come back.</li><li><b>Different periods.</b> A bill from one month with orders from another gives a meaningless number.</li><li><b>Double-check:</b> add up the lines again and divide by the denominator. Hora's result must come out to R$ 6.68.</li></ol>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Hora's math to practice on; your own process's math for real.",
+      "fonte": "Lab volume: <a href=\"https://inematds.github.io/prof2030-lab/pecas/painel/\">Hora dashboard</a> (about 900 conversations and 170 orders per week in October). Amounts in reais: fictional, from this lesson.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · Hora's math",
+          "min": "20 min",
+          "texto": "Open the Hora dashboard in the lab and check one week's volume. Copy the template and fill in October's math with the values from the diagram. Then redo the math for the cheap model Rafael tested (bill R$ 550, Juliana 45 h, 16% of orders corrected) and write, in two sentences, which of the two you would keep and why.",
+          "pronto": "the math has the six lines, the denominator written in one sentence, the result of R$ 6.68 per order, the cheap version at R$ 7.51, and your decision justified by cost per order, not by the model's price."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Your process's math",
+          "min": "40 min + 1 week",
+          "dias": 7,
+          "texto": "Pick a process of yours that already uses AI (or one you want to automate). Write the completed task sentence. For one week, ask whoever reviews, corrects or takes over the cases to log their time. At the end, fill in the template and run the hidden cost prompt.",
+          "pronto": "the math has the denominator in one sentence, the six lines with the source of each number, the hours measured over at least 5 business days, the cost per completed task and the model's share of the total, as a percentage."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "5 questions. The explanation appears after your attempt.",
+      "perguntas": [
+        {
+          "p": "The vendor dashboard shows R$ 0.31 per conversation. Why isn't that number enough to decide?",
+          "opcoes": [
+            "Because it's wrong: the vendor always charges more",
+            "Because it's the cost of one attempt; it doesn't include tools, review hours, exceptions or rework, and a conversation is not a result",
+            "Because it should be in dollars"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "The number is true, but it answers a different question. At Hora, the invoice is only 24% of the cost of each completed request. Whoever decides by the vendor's price list decides with a quarter of the bill."
+        },
+        {
+          "p": "In the cost per completed task calculation, where do the conversations that didn't become a request go?",
+          "opcoes": [
+            "Nowhere: they didn't produce a result",
+            "In the numerator (the cost), not in the denominator (the completed tasks)",
+            "In the denominator, so the average cost comes out lower"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Attempts and failures cost money and are on the invoice. Putting them in the denominator hides the cost of getting it wrong; taking them out of the numerator makes the calculation look cheaper than it is."
+        },
+        {
+          "p": "A model at half the price made the sorting step get twice as many requests wrong. What happens to the cost per request?",
+          "opcoes": [
+            "It drops by half, like the invoice",
+            "It can go up: rework and exception hours grow more than the invoice drops",
+            "It doesn't change: rework is not an AI cost"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "At Horizonte, it went from R$ 6.68 to R$ 7.51. A cheap agent that makes mistakes and needs two attempts cost double the price list."
+        },
+        {
+          "p": "Juliana is already an employee and gets a fixed salary. Do the 30 hours she spends taking over Hora's conversations count in the calculation?",
+          "opcoes": [
+            "No, the salary would be paid anyway",
+            "Yes, at the hourly cost: it's time that could go to other work, and it shows how much of the \"does it on its own\" depends on people",
+            "Only if she works overtime"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "A fixed human cost is not a zero cost. Leaving it out is the most common way for an agent to look cheap and for the freed capacity from lesson 7 to become an invented number."
+        },
+        {
+          "p": "A model's price per token dropped 40% compared to the previous version. What do you do with the calculation?",
+          "opcoes": [
+            "Announce 40% savings on the process",
+            "Check the vendor's price on the day, redo the model's line and see how much the cost per completed task changes",
+            "Nothing: model price doesn't matter"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "If the model is 24% of the total, 40% less on it is close to 10% less on the cost of the request, and only if quality holds. The whole calculation decides, not the launch headline."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "Result, not call",
+          "texto": "Cost per completed task = total cost for the period ÷ completed tasks."
+        },
+        {
+          "t": "Denominator written down",
+          "texto": "One sentence says what counts as done. Attempts and failures stay in the numerator."
+        },
+        {
+          "t": "Six lines",
+          "texto": "Model, tools, maintenance, review, exceptions and rework."
+        },
+        {
+          "t": "Cheap but wrong",
+          "texto": "Ends up expensive. The model's price is checked on the day; the calculation stays."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "Horizonte Lab: Hora's dashboard (fictional study company)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/painel/",
+          "icone": "grafico"
+        },
+        {
+          "t": "AI Management Area: the 2027 manager and the economics of agents",
+          "href": "https://eventos.inema.pro/gestao-ia/",
+          "icone": "alvo"
+        },
+        {
+          "t": "AI Management: the course plan, with the method and the indicators",
+          "href": "https://inematds.github.io/curso-gestao-ia/",
+          "icone": "lista"
+        }
+      ]
+    }
+  ]
+}

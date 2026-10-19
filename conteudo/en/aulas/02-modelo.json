@@ -1,0 +1,284 @@
+{
+  "slug": "modelo",
+  "num": 2,
+  "menu": "Model",
+  "titulo": "Choose a model for the job",
+  "titulo_curto": "Choose a model",
+  "minutos": 20,
+  "lead": "Every month a ranking comes out saying which model is the best. None of them knows Horizonte's discount rule or the customer who orders by the jug instead of the box. The manager's question is narrower: which configuration does this job, on these cases, at the lowest cost per result? In this lesson you compare two on the same 20 cases and write the selection report.",
+  "objetivo": "compare two configurations on the same cases and write a selection report with errors, cost, limitations and a recorded alternative.",
+  "competencias": [
+    "comparar-configuracoes-nos-mesmos-casos",
+    "separar-erro-critico",
+    "escrever-parecer-de-selecao"
+  ],
+  "aprende": [
+    {
+      "t": "The four model tiers and when each one makes sense"
+    },
+    {
+      "t": "Build 20 exploratory cases from your own work"
+    },
+    {
+      "t": "Judge with the same yardstick and set critical errors apart"
+    },
+    {
+      "t": "Write a selection report instead of following a ranking"
+    }
+  ],
+  "hero_alt": "Two managers side by side in front of two monitors, each with a column of little green and red squares, comparing case by case.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Climb the ladder only if you need to",
+      "sub": "Start with the simplest step that can solve it, and only climb when your cases show you need to. Click each step.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "icone": "lista",
+          "titulo": "No model",
+          "sub": "fixed rule or flow",
+          "detalhe": "If the task always follows the same path (copy the approved order into the ERP, send an alert when stock runs low), a rule or an automatic flow solves it, cheaper and more predictable. The Copilot + Agents course sums it up: climb the ladder from the bottom up, connector, flow, screen automation, and only then the agent that decides."
+        },
+        {
+          "icone": "chip",
+          "titulo": "Cheap",
+          "sub": "fast, for the simple stuff",
+          "detalhe": "Small, fast models, billed at a fraction of the mid tier. They work for sorting, pulling out a field, answering a catalog question. They make more mistakes on ambiguous cases. At Horizonte, it is a candidate for the questions, not for the order with a discount."
+        },
+        {
+          "icone": "camadas",
+          "titulo": "Mid tier",
+          "sub": "everyday work",
+          "forte": true,
+          "detalhe": "The balance between quality and price that most routine processes use. It is Hora's current configuration. The comparison in this lesson decides whether it stays, moves down to the cheap tier, or moves up."
+        },
+        {
+          "icone": "cerebro",
+          "titulo": "Top",
+          "sub": "the hard case",
+          "detalhe": "Each provider's most capable closed models. They cost more per token and sometimes less per task, because they make fewer mistakes and solve things in fewer attempts. Use them when the hard cases weigh heavily on the result and the mid tier falls short."
+        },
+        {
+          "icone": "pasta",
+          "titulo": "Open, run locally",
+          "sub": "fixed cost, data stays in-house",
+          "detalhe": "An open-weights model running on a company computer: fixed cost, the data does not leave, but someone has to maintain it, and each model's license has its own rules. Example from the overview: the open Qwen3.8-27B runs on a laptop (CNBC, 08/17/2026)."
+        }
+      ],
+      "legenda": "Tiers of the model matrix by task cost, from the INEMA market overview (Oct/2026). The tiers change names and prices with every release; the order of decision does not."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How to compare without a ranking",
+      "sub": "Four steps. Module 3 of the Gestoria method: a decision backed by cases and process constraints, with prices checked on the day.",
+      "passos": [
+        {
+          "titulo": "Compare configurations",
+          "sub": "the model is only one part",
+          "texto": [
+            "A configuration is the whole package: model and version, instructions (the G3 constitution), tools, and the reasoning effort, when the provider lets you choose. Two configurations with the same model can give very different results.",
+            "Change one thing at a time. If you swap the model and the instructions together, you can't tell which of the two changes made the difference."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "A: the current Hora (mid tier). B: the same Hora, same instructions and tools, with the cheap model that Rafael tested. Only the model changes."
+          }
+        },
+        {
+          "titulo": "Build 20 cases",
+          "sub": "from your work, including the hard ones",
+          "texto": [
+            "Take the cases from real conversations, anonymized or fictional. Mix them: mostly routine, some borderline, some with missing data, and at least two with critical risk. Write down in advance what the right answer would be.",
+            "These are exploratory cases: they are for choosing, not for proving. The validation set, with an answer key and more cases, belongs to G5."
+          ],
+          "exemplo": {
+            "rot": "Hora's 20",
+            "texto": "12 routine (order from a registered customer), 4 borderline (discount from 5% to 10%, order close to R$ 5 thousand), 2 with missing data (customer with no CNPJ), and 2 critical (the hotel's \"note\" asking for 70%, a customer saying they already paid)."
+          }
+        },
+        {
+          "titulo": "Same yardstick",
+          "sub": "and the critical error set apart",
+          "texto": [
+            "Judge each output as correct, acceptable, incorrect, or critical, without knowing which configuration produced it, if possible. Also note the cost and time of each case.",
+            "A critical error does not go into the average: it is counted separately and fails the configuration on its own. A configuration with 19 right answers and a 30% discount granted on the customer's say-so is not fit for orders."
+          ],
+          "exemplo": {
+            "rot": "Result (fictional)",
+            "texto": "A: 16 correct, 3 acceptable, 1 incorrect, 0 critical, R$ 0.31 per case. B: 13 correct, 3 acceptable, 3 incorrect, 1 critical (applied the 30% requested in a \"note\"), R$ 0.16 per case."
+          }
+        },
+        {
+          "titulo": "A report, not a ranking",
+          "sub": "a decision with an expiration date",
+          "texto": [
+            "The report states the decision for this process, the reason based on the cases, the limitations, the alternative, and when to redo the test. It does not say which model is best in the world.",
+            "Redo the comparison when the vendor changes the version, when the price changes a lot, or when a new type of case shows up. Redoing it costs little: the 20 cases are already ready."
+          ],
+          "exemplo": {
+            "rot": "Hora's report",
+            "texto": "A stays for orders. B becomes a candidate only for catalog questions, after 20 cases of its own. Alternative on record: open, run locally, if the volume grows and someone takes over maintenance."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template to copy: selection report",
+      "sub": "One page with the table of the 20 cases and the decision. The tab next to it shows Hora's report.",
+      "blocos": [
+        {
+          "rot": "Configuration selection report",
+          "icone": "arquivo",
+          "conteudo": "SELECTION REPORT · process <...> · task <...> · date <...> · owner <name>\n\nCONFIGURATIONS COMPARED (change one thing at a time)\nA: model <name and version> · instructions v<...> · tools <...> · effort <...>\nB: model <name and version> · instructions v<...> · tools <...> · effort <...>\nPrices checked on the vendor's website on <date>\n\nCASES (20 exploratory; data [ ] anonymized [ ] fictional)\n| # | Category (routine/edge/missing data/critical) | Right answer | A | B |\n|---|---|---|---|---|\n| 1 | <...> | <...> | correct/acceptable/incorrect/CRITICAL | <...> |\n\nRESULT              A        B\nCorrect             <n>      <n>\nAcceptable          <n>      <n>\nIncorrect           <n>      <n>\nCRITICAL            <n>      <n>   (one critical fails the configuration for this task)\nCost per case       R$ <...> R$ <...>\nAverage time        <s>      <s>\n\nDECISION: <configuration> for <task>, because <cases that decided it>\nLIMITATIONS: <20 cases don't prove it; what was left out>\nALTERNATIVE ON RECORD: <other configuration and under what condition>\nREDO THE TEST WHEN: <version change / price / new case / date>"
+        },
+        {
+          "rot": "Prompt · challenge the report",
+          "icone": "chat",
+          "conteudo": "You are the reviewer who will challenge an AI model selection report\nbefore it is approved. Do not choose the model: point out\nweaknesses.\n\n1. Do the 20 cases represent the real work? What type of case is missing?\n2. Did more than one thing change between the configurations?\n3. Was any critical error hidden as \"incorrect\"?\n4. Does the cost include the rework the errors will create?\n5. Is the alternative on record viable? What would stop it?\n\nReport:\n\"\"\"<paste>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Hora's report (example)",
+            "html": "<p><b>Report · Hora · order requested via WhatsApp</b> · Horizonte, fictional study company · owner: Patrícia · test: Rafael</p><ul><li><b>A</b> (mid tier, current): 16 correct, 3 acceptable, 1 incorrect, <b>0 critical</b> · R$ 0.31 per case · 9 s.</li><li><b>B</b> (cheap, same instructions): 13 correct, 3 acceptable, 3 incorrect, <b>1 critical</b> · R$ 0.16 per case · 4 s.</li><li><b>B's critical:</b> case 19, a hidden \"note\" in the list asks for 30% off and B applied it (the same kind of failure as F6).</li><li><b>Decision:</b> A for orders. B's 3 incorrect answers (wrong unit, gallon instead of box) would turn into rework at picking: the math from lesson 1 already showed R$ 7.51 versus R$ 6.68 per order.</li><li><b>Limitations:</b> 20 exploratory cases, from October only; no case of a new customer with urgency.</li><li><b>Alternative:</b> B for catalog questions, after 20 cases of questions; open, run locally if the volume doubles and Rafael takes over maintenance.</li><li><b>Redo:</b> when the vendor changes A's version, or in January 2027.</li></ul>"
+          },
+          {
+            "rot": "How to check / common mistakes",
+            "html": "<ol><li><b>Only easy cases.</b> Twenty routine orders make any configuration look good. You need edge cases, missing data and a critical one.</li><li><b>Critical hidden in the average.</b> \"95% accuracy\" with an improper discount buried inside is not approval.</li><li><b>Two changes at once.</b> You changed the model and the instructions: the report can't tell what worked.</li><li><b>Ranking as an argument.</b> \"It's number one in the ranking\" doesn't replace any of your 20 cases.</li><li><b>No expiration date.</b> A report without \"redo when\" becomes eternal truth about a product that changes in weeks.</li></ol>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Hora's report trains you to read the cases; yours decides a real configuration.",
+      "fonte": "Source conversations: <a href=\"https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/\">the lab's WhatsApp agent</a> (c-201 to c-203). Results of the 20 cases: fictional, from this lesson.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · Hora's report",
+          "min": "25 min",
+          "texto": "Read the lab's conversations c-201, c-202 and c-203 and write, for each one, the category and the right answer (they go in among the 20 cases). Then fill in the report with the results of A and B from step 3 and the math from lesson 1. Run the challenge prompt and answer each point in one line.",
+          "pronto": "the report has the two configurations with only one difference, the three conversations classified with the right answer, the four numbers for each configuration with the critical one kept separate, the decision justified by cases, one limitation, one alternative and the date to redo it."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Two configurations on your process",
+          "min": "90 min",
+          "texto": "Pick one task from your process. Set aside 20 cases (anonymized) with the right answer written beforehand. Run the two configurations you have on hand (the current tool and an alternative, or the same one with another model), on your own or with IT. Judge them with the same yardstick and write the report.",
+          "pronto": "there are 20 cases with a category and the right answer, at least 2 edge cases and 2 critical ones, the two configurations judged case by case, the critical errors counted separately, the cost per case and the report with a decision, a limitation, an alternative and the date to redo it."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "5 questions. The explanation appears after your attempt.",
+      "perguntas": [
+        {
+          "p": "Carlos read that a new model ranked first in a ranking and wants to replace Hora. What do you answer?",
+          "opcoes": [
+            "Switch: the ranking tested far more cases than we did",
+            "First, I run our 20 cases on both configurations and decide from the report",
+            "Never switch: the current one works"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "The ranking measures generic tasks. Your 20 cases measure the discount rule, the order in gallons and the hidden instruction. Refusing the switch without testing is as bad as switching without testing."
+        },
+        {
+          "p": "A third configuration got 19 of 20 cases right, but applied a 30% discount requested in a customer \"note\". Is it good enough for orders?",
+          "opcoes": [
+            "Yes: 95% accuracy is great",
+            "No: a critical error counts separately and fails it on its own for this task",
+            "Yes, if it's cheaper"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "One critical error in a small sample suggests it will happen again at real volume. The average can't hide the case that costs the most."
+        },
+        {
+          "p": "In the comparison, Rafael changed the model and rewrote Hora's instructions at the same time. What's the problem?",
+          "opcoes": [
+            "None, it's faster",
+            "There's no way to know which of the two changes caused the difference in the result",
+            "Instructions don't influence the result"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Change one thing at a time. If you need to change both, compare in two rounds."
+        },
+        {
+          "p": "When does it make sense to use no model at all?",
+          "opcoes": [
+            "Never: everything has AI these days",
+            "When the task always follows the same path and a rule or flow solves it, which is cheaper and more predictable",
+            "Only in a small company"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "It's the first step of the ladder. Copying an approved order into the ERP doesn't need someone who thinks; it needs someone who doesn't get the copy wrong."
+        },
+        {
+          "p": "Why does the report have a date to redo the test?",
+          "opcoes": [
+            "Because models and prices change in weeks, and the decision holds for one version",
+            "Because the law requires it",
+            "For IT to handle"
+          ],
+          "certa": 0,
+          "ref": "passos",
+          "explica": "The report covers one configuration on one date. If the version, the price or the type of case changes, the 20 cases run again, which costs little because they are already built."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "Ladder",
+          "texto": "No model, cheap, mid tier, top tier. Open, run locally when fixed cost and keeping data in-house weigh most."
+        },
+        {
+          "t": "Same 20 cases",
+          "texto": "From your own work, with boundary cases, missing data and critical ones."
+        },
+        {
+          "t": "Critical apart",
+          "texto": "A configuration with a critical error is not fit for that task."
+        },
+        {
+          "t": "Report with an expiry date",
+          "texto": "Decision, limitation, alternative and a date to redo it."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "Horizonte Lab: Hora's conversations (fictional study company)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/",
+          "icone": "chat"
+        },
+        {
+          "t": "Copilot + Agents for Business: connector, flow, screen automation or agent",
+          "href": "https://inematds.github.io/copilot-agentic/",
+          "icone": "camadas"
+        },
+        {
+          "t": "AI Management: the course plan (module 3, contracting models)",
+          "href": "https://inematds.github.io/curso-gestao-ia/",
+          "icone": "lista"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "slug": "ferramentas",
+  "num": 4,
+  "menu": "Tools",
+  "titulo": "Tools and integrations",
+  "titulo_curto": "Tools",
+  "minutos": 20,
+  "lead": "Patrícia asked the email assistant to \"clean out the spam.\" It deleted 112 emails and emptied the trash. Hours later, it confirmed payment details to a supposed supplier; the next day, it sent the price list to 640 contacts. That power came as the tool's default. In this lesson, you write the contract that limits each tool to the minimum.",
+  "objetivo": "give each of the agent's tools the minimum access: read or write, scope, limit, credential outside the prompt, log, and who approved it.",
+  "competencias": [
+    "dar-acesso-minimo-por-ferramenta",
+    "escrever-contrato-de-ferramenta",
+    "exigir-credencial-fora-do-prompt"
+  ],
+  "aprende": [
+    {
+      "t": "Separate reading, preparing, writing, and what never goes out without approval"
+    },
+    {
+      "t": "Scope and limit: which records, fields, destinations, and amounts"
+    },
+    {
+      "t": "Credential stored outside the text, with the agent's own identity"
+    },
+    {
+      "t": "Repeat without duplicating, errors with a destination, and a record of every action"
+    }
+  ],
+  "hero_alt": "An IT technician and a sales manager look at a laptop together on a tall table; in the corner, a small network rack with cables.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The access ladder",
+      "sub": "Each operation of a tool sits on a step. Start at the bottom and move up only with a written reason. Click each step.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "icone": "lupa",
+          "titulo": "Read",
+          "sub": "lookup, no effect",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "start here",
+              "sub": "only what's needed"
+            }
+          ],
+          "detalhe": "Look up the catalog, read the customer record for the conversation, read the inbox. It changes nothing outside the agent. Even here there is a scope: the customer in the conversation, not the whole database; the sales inbox, not the finance one."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Draft",
+          "sub": "prepares, a person sends",
+          "itens": [
+            {
+              "icone": "relogio",
+              "t": "nothing goes out on its own",
+              "sub": "content approval"
+            }
+          ],
+          "detalhe": "The agent builds the order or the email reply and leaves it as a draft. A person approves that content and sends it. It is the right step for almost all writing at the start: the work is done, the outside effect waits for the \"yes\"."
+        },
+        {
+          "icone": "caneta",
+          "titulo": "Write within a limit",
+          "sub": "effect within a ceiling",
+          "forte": true,
+          "itens": [
+            {
+              "icone": "cadeado",
+              "t": "limit in the tool",
+              "sub": "not just in the text"
+            }
+          ],
+          "detalhe": "The agent runs on its own, but within a limit that the tool itself enforces: create an order up to R$ 5 mil, discount up to 5%, only for a registered customer, one recipient per email. If the limit is only written in the instructions, a clever message from the customer gets around it."
+        },
+        {
+          "icone": "x",
+          "titulo": "Outside the agent",
+          "sub": "delete, pay, send in bulk",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "a person decides and does it",
+              "sub": "one at a time"
+            }
+          ],
+          "detalhe": "Delete an email, empty the trash, change bank details, mark as paid, send to an entire list. What can't be undone stays out of the agent's reach; if the task requires it, a person does it, case by case. It matches the red of the G3 authority limit."
+        }
+      ],
+      "legenda": "Module 5 of the Gestoria method (INEMA): reading × writing and minimum scope. The steps match the colors of the G3 authority limit (green, yellow, red). Horizonte: fictional study company."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "A tool's contract",
+      "sub": "Four rules that fix Horizonte's email assistant (F9 in the lab). You decide; IT configures and confirms.",
+      "passos": [
+        {
+          "titulo": "List what it can do",
+          "sub": "not what you intend",
+          "texto": [
+            "Ask IT, or the vendor, for the list of all the operations the tool allows. The risk is in what it can do, not in what you imagined it would do.",
+            "For each operation, choose the step. The factory default is usually the most open, because that way the tool \"works right out of the box\"."
+          ],
+          "exemplo": {
+            "rot": "F9 in the lab",
+            "texto": "Scopes: read, send, delete, move, and read contacts. Automatic approval to read, send, reply, delete, and empty the trash. Human approval: off. Approved by: \"you can turn it on\", from Carlos, over WhatsApp."
+          }
+        },
+        {
+          "titulo": "Scope and limit",
+          "sub": "which records, fields, destinations, amounts",
+          "texto": [
+            "Write down the reach of each operation: which records (only the customer in the conversation), which fields (no CPF), which destinations (only whoever wrote in), which amounts (up to R$ 5 mil).",
+            "Ask that the limit live in the tool, not just in the instructions. The sentence \"never give more than 5%\" in the agent's text is a request; the ceiling set in the orders app is a lock."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "criar_pedido: registered customer, current price-list price, discount up to 5%, amount up to R$ 5 mil. Above that the tool only accepts a draft, which waits for Patrícia."
+          }
+        },
+        {
+          "titulo": "Credential outside the text",
+          "sub": "the agent's own identity",
+          "texto": [
+            "The password or access key is stored on the server or in a password vault, never in the agent's instructions, in a spreadsheet, or in the browser. Everything that goes to the browser is public, as the key exposed in the lab's orders app shows (F1).",
+            "The agent uses its own named access, not Patrícia's password. That way the log says who did it, and you can cut off the agent without cutting off the person."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "The comercial@ mailbox gets a read-only access called \"hora-email\", kept by Rafael in the vault. The old key, which circulated in a configuration file, is replaced."
+          }
+        },
+        {
+          "titulo": "Retry without duplicating",
+          "sub": "an error with a destination, an action with a log",
+          "texto": [
+            "If the connection drops and the agent tries again, the order cannot go out twice. Ask IT for a unique key per operation (the conversation number and the order version); if the key repeats, the tool refuses.",
+            "Define how many attempts, how long to wait, who gets the error along with the context, and the log of each action. Connectors change: on 07/28/2026, a new MCP version that breaks old servers was reported (secondary source, not confirmed; check it). The contract on paper is what you use to redo and test."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "criar_pedido: at most 2 attempts, 30 seconds of wait; if it fails, the case goes to Juliana with the conversation and the draft. Every call is logged with conversation, amount and version."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template to copy: tool contract",
+      "sub": "One contract per tool, on one page. The tab next to this one shows Hora's two contracts and the corrected F9.",
+      "blocos": [
+        {
+          "rot": "Tool contract",
+          "icone": "cadeado",
+          "conteudo": "TOOL CONTRACT · <name> · agent <...> · version <...> · date <...>\nOwner (business): <name> · Configures and confirms (IT): <name>\n\nWHAT IT CAN DO (list from IT/vendor, complete):\n| Operation | Effect outside the company? | Step (read / draft / write within a limit / out) |\n|---|---|---|\n| <...> | yes/no | <...> |\n\nSCOPE: records <...> · allowed fields <...> · forbidden fields <...>\nALLOWED DESTINATIONS: <...>\nLIMITS IN THE TOOL (not only in the text): <amount, quantity, recipients>\nAPPROVAL: <who> · on the exact content · deadline <...>\nCREDENTIAL: the agent's own access \"<access-name>\" kept in <vault/server>\n            (never in the prompt, the spreadsheet or the browser) · replaced every <period>\nRETRY: unique key = <...> · attempts <n> · wait <s>\nERROR: goes to <name> with <conversation, draft, reason>\nLOG: <what is recorded> · kept for <period>\nAPPROVED BY: <name, date, in this document> (a \"go ahead\" message does not count)"
+        },
+        {
+          "rot": "Prompt · what the tool does that the contract doesn't say",
+          "icone": "chat",
+          "conteudo": "You are a process security reviewer. Below are the list of\noperations a tool allows (from the documentation or the\nconfiguration) and the contract that limits how an AI agent uses it.\nDo not configure anything: point things out.\n\n1. Which operation does the tool allow that the contract doesn't mention?\n2. Is anything that can't be undone (deleting, paying, sending to many people)\n   within the agent's reach?\n3. Does any limit exist only in the text and not in the tool?\n4. Does the credential appear anywhere visible?\n5. What happens if the same action is repeated by mistake?\n\nOperations / configuration:\n\"\"\"<paste>\"\"\"\nContract:\n\"\"\"<paste>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Hora's contracts (example)",
+            "html": "<p><b>Hora · contracts v1</b> · Horizonte, fictional study company · owner: Patrícia · IT: Rafael</p><ul><li><b>consultar_cliente</b> · read · only the customer of the phone number in the conversation · fields: legal name, CNPJ, registered delivery address, payment terms · forbidden: CPF, other customers · every lookup is logged.</li><li><b>criar_pedido</b> · write within a limit · registered customer, current list price, discount up to 5%, amount up to R$ 5 thousand (locked in the app) · above that: draft only, Patrícia's approval within 2 business hours · unique key: conversation + order version · 2 attempts · error goes to Juliana · access \"hora-pedidos\" in Rafael's vault · approved by Carlos in this document.</li></ul>"
+          },
+          {
+            "rot": "F9 corrected",
+            "html": "<ol><li><b>Stay:</b> read the comercial@ mailbox and read contacts (read step).</li><li><b>Become a draft:</b> reply and send. Patrícia approves each send; one recipient at a time; no entire lists.</li><li><b>Leave the agent:</b> deleting email, emptying the trash, bulk moving. Spam gets flagged; a person does the deleting.</li><li><b>Human approval:</b> on. <b>Credential:</b> key replaced, own access \"hora-email\" in the vault.</li><li><b>What has already happened:</b> the email changing a bank account becomes an incident (finance confirms by phone with the supplier); the emptied trash is requested from the email provider, if still possible; the 640 contacts get a correction if the table was wrong.</li><li><b>Approved by:</b> Carlos, in the contract, after reading it. The \"go ahead\" by WhatsApp does not count as approval.</li></ol>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Hora's contracts and the F9 fix for practice; a tool of your own for real.",
+      "fonte": "Lab pieces: <a href=\"https://inematds.github.io/prof2030-lab/pecas/mcp-email/\">email assistant (F9)</a> and <a href=\"https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/\">Hora's configuration</a>.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · Two contracts and the F9",
+          "min": "35 min",
+          "texto": "Open Hora's configuration and write the contracts for consultar_cliente and criar_pedido using the template. Then open the lab's email assistant, read the configuration and the log of the latest actions, and write the corrected contract: what stays, what becomes a draft, what leaves the agent, and what to do about the four actions already logged.",
+          "pronto": "there are 3 contracts (2 for Hora and 1 for the email), each operation has a step, no delete or empty within the agent's reach, a numeric limit on every operation involving amounts or recipients, a credential with its own access and a storage place, a key against repeats in criar_pedido, and a remedy for each of the 4 logged actions."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · A tool of your own",
+          "min": "40 min",
+          "texto": "Choose the most powerful tool that an agent or automation uses in your process (email, ERP, CRM, shared spreadsheet). Ask IT or the vendor for the complete list of operations. Write the contract and run the review prompt. Hand it to IT and ask for written confirmation of the locks.",
+          "pronto": "the contract has the complete list of operations with a step, scope, limits that exist in the tool, a credential kept out of the text, the destination of errors and the log, and you have written confirmation from IT (or the list of what still needs to be configured, with a deadline)."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "5 questions. The explanation appears after your attempt.",
+      "perguntas": [
+        {
+          "p": "The email assistant was turned on with automatic approval to delete and empty the trash. Who decided that?",
+          "opcoes": [
+            "Carlos, when he said \"go ahead\"",
+            "Nobody: it came as the tool's default, and a \"go ahead\" on WhatsApp is not a decision about operations",
+            "The agent itself"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Approval applies to exact content. \"Go ahead\" said nothing about deleting or sending. The contract exists so that someone decides, operation by operation, and signs."
+        },
+        {
+          "p": "Hora's instructions say \"never give more than 5% discount\". Is that enough?",
+          "opcoes": [
+            "It's enough, the agent obeys the instructions",
+            "No: the limit must also be in the tool, because text from the customer can convince the agent to ignore the instruction",
+            "It's enough, if the instruction is in capital letters"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "An instruction is a request; a lock in the tool is a limit. F6's hidden order shows that text pasted by the customer can override what is written in the agent."
+        },
+        {
+          "p": "Where is the password the agent uses to access the order app kept?",
+          "opcoes": [
+            "In the agent's instructions, so it knows",
+            "In a vault or on the server, under the agent's own named access",
+            "In the team spreadsheet, so everyone can find it"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "What is in the instructions, a spreadsheet or the browser can leak. Its own access also makes the log say \"it was the agent\" and lets you cut it off without affecting Patrícia."
+        },
+        {
+          "p": "The connection dropped in the middle of an order and the agent tried again. What does the contract need to guarantee?",
+          "opcoes": [
+            "That the order goes out twice, to be safe",
+            "That the retry is recognized by a unique key and doesn't duplicate the order",
+            "Don't let the agent give up on the first failure"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Retrying is normal; duplicating is damage. The unique key (conversation + request version) makes the tool refuse what it has already done, and the error goes to a person with the context."
+        },
+        {
+          "p": "A new connector version that breaks the old ones was announced. Why does the contract on paper help?",
+          "opcoes": [
+            "It doesn't help, it's just bureaucracy",
+            "Because it says exactly what the tool can do, and serves as a checklist for redoing the configuration and testing after the switch",
+            "Because it stops the vendor from making changes"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "The news about MCP comes from a secondary source and needs to be verified, but the point holds for any connector: it changes, and the contract is the reference for checking that nothing now has more access than it should."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "Access ladder",
+          "texto": "Read, draft, write within a limit. Deleting, paying and mass sending stay out."
+        },
+        {
+          "t": "Full list",
+          "texto": "The risk is in what the tool can do, not in what you intend to do."
+        },
+        {
+          "t": "Lock outside the text",
+          "texto": "Limit in the tool, credential in the vault, access under the agent's name."
+        },
+        {
+          "t": "Retry, fail, log",
+          "texto": "Unique key, retries, where the error goes, and a log of every action."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "Horizonte Lab: the email assistant (F9, fictional study company)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/mcp-email/",
+          "icone": "enviar"
+        },
+        {
+          "t": "Super-Agents in practice: least privilege and its own identity",
+          "href": "https://inematds.github.io/agi-pratica/",
+          "icone": "escudo"
+        },
+        {
+          "t": "AI Management: the course plan (module 5, tools and integrations)",
+          "href": "https://inematds.github.io/curso-gestao-ia/",
+          "icone": "lista"
+        }
+      ]
+    }
+  ]
+}

@@ -9,6 +9,8 @@ When I correct you, or you catch yourself making a mistake: before continuing, a
 
 ## Lessons
 
+- EN: o tradutor deixa valores em R$ com separador misto (R$ 1.100 ao lado de R$ 1,578; R$ 6,68). Normalize no `conteudo/en` e no cache `i18n/en.json` (milhar com vírgula, decimal com ponto) antes de publicar (19/10/2026).
+- Tradução idêntica ao PT: os 3 blocos de código da aula 3 voltaram em PT no EN com "0 textos sem tradução"; o motor 7.6.9 passou a recusar isso (19/10/2026).
 - Curso técnico: saída de terminal vai num `<pre>` dentro de `saida.abas[].html` (motor 7.5.7 estiliza e rola) e `selo: "real"` só para saída capturada de verdade, com a data na aba ("Saída capturada (DD/MM/AAAA)"); "<" e ">" da saída viram &amp;lt; &amp;gt;. One-liner longo em `<code>` no "pronto quando" transbordava o celular antes do 7.5.7 (19/10/2026).
 - Validador acusando "sobra TODO" em link ou palavra (METODO.md): é falso positivo corrigido no 7.5.6 (TODO só como palavra inteira); recopie o motor em vez de mudar o texto (19/10/2026).
 - Nó de diagrama com rolagem guiada não precisa de número no título: a aba já numera (o motor 7.5.5 tira o "N · " repetido). Com 6 nós em escada no desktop, títulos de uma ou duas palavras evitam quebra (19/10/2026).

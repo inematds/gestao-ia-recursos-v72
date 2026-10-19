@@ -1,0 +1,312 @@
+{
+  "slug": "contexto",
+  "num": 3,
+  "menu": "Context",
+  "titulo": "Company knowledge as an asset",
+  "titulo_curto": "Knowledge",
+  "minutos": 20,
+  "lead": "On Monday morning, Hora quoted the detergent at September's price. It wasn't the model's mistake: the new price table and the old one were in the same folder, and nobody owned either one. The agent knows what the company wrote for it. In this lesson you organize that knowledge as an asset: each document with an owner, a version and an expiry date.",
+  "objetivo": "organize the procedures, examples and rules the agent reads into a context package where each document has an owner, a version and an expiry date.",
+  "competencias": [
+    "montar-pacote-de-contexto",
+    "nomear-dono-e-versao-por-documento",
+    "separar-exemplo-de-teste"
+  ],
+  "aprende": [
+    {
+      "t": "The five types of knowledge the agent reads"
+    },
+    {
+      "t": "Owner, version and expiry date on every document"
+    },
+    {
+      "t": "Resolve conflicts between sources before the agent picks one"
+    },
+    {
+      "t": "What stays out of the package, and why an example is not a test"
+    }
+  ],
+  "hero_alt": "A woman organizes binders with colored tabs on a low office shelf, holding a tablet; a colleague works in the background.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The context package",
+      "sub": "Everything the agent reads fits in five boxes. The last one protects the most. Tap each one.",
+      "nos": [
+        {
+          "icone": "escudo",
+          "titulo": "Rules",
+          "sub": "what always applies",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "commercial policy",
+              "sub": "and the constitution"
+            }
+          ],
+          "detalhe": "Commercial policy, authority limit, the agent's constitution (G3). They rarely change and they govern everything that comes after. At Horizonte: discount caps of 5% and 10%, approval above R$ 5 mil, what Hora never does. Owner: Carlos signs the policy; Patrícia maintains the constitution."
+        },
+        {
+          "icone": "lista",
+          "titulo": "Reference",
+          "sub": "facts that change",
+          "itens": [
+            {
+              "icone": "calendario",
+              "t": "table, catalog, delivery",
+              "sub": "with an expiry date"
+            }
+          ],
+          "detalhe": "Price table, catalog, cities and delivery days. They change every month, so each one has an expiry date and only one version in use. September's table isn't deleted: it goes to the archive, out of the agent's reach."
+        },
+        {
+          "icone": "camadas",
+          "titulo": "Procedures",
+          "sub": "how it's done",
+          "forte": true,
+          "itens": [
+            {
+              "icone": "check",
+              "t": "step by step",
+              "sub": "with input and output"
+            }
+          ],
+          "detalhe": "The right way to do a task that repeats, written the way an experienced person would do it: when to use it, what you need in hand, the steps and what the handoff looks like. Some vendors call this a Skill. At Hora: \"build a restock order\" and \"answer delivery time\"."
+        },
+        {
+          "icone": "chat",
+          "titulo": "Examples",
+          "sub": "good and bad",
+          "itens": [
+            {
+              "icone": "x",
+              "t": "separate from the tests",
+              "sub": "never the same ones"
+            }
+          ],
+          "detalhe": "Conversations that show good service and a corrected mistake. They teach tone and judgment. Never use as an example a case that is among the 20 from lesson 2: the test would become a cheat sheet, and the result would stop telling you anything."
+        },
+        {
+          "icone": "cadeado",
+          "titulo": "Left out of the package",
+          "sub": "what the agent does not read",
+          "itens": [
+            {
+              "icone": "x",
+              "t": "unnecessary data",
+              "sub": "and expired versions"
+            }
+          ],
+          "detalhe": "Tax ID (CPF), the entire customer spreadsheet, another customer's conversation, an expired price table, a draft policy nobody approved. What the agent does not need for the task stays out. It is not only about security: less irrelevant text also means a lower cost per conversation."
+        }
+      ],
+      "legenda": "Module 4 breakdown of the Gestoria method (INEMA): procedures, examples, rules and retrievable knowledge, with an owner and a version. Horizonte: fictional study company."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How to turn documents into an asset",
+      "sub": "Four rules. None requires programming; all require deciding who takes care of what.",
+      "passos": [
+        {
+          "titulo": "Every document has an owner",
+          "sub": "and the owner is a person",
+          "texto": [
+            "For each document: owner (who fixes it when it is wrong), version, expiration date and where it lives. \"The company\" or \"sales\" is not an owner: when nobody is, nobody updates it.",
+            "The owner tells whoever looks after the agent when the document changes. If the table changes, the version the agent uses changes the same day, and the previous one goes to the archive."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte (fictional)",
+            "texto": "The September price went out because the folder had \"tabela-precos.pdf\" and \"tabela-precos-NOVA.pdf\". Now: \"Price table · v2026-10 · valid until 10/31 · owner: Patrícia\". Only one in use."
+          }
+        },
+        {
+          "titulo": "Resolve conflicts beforehand",
+          "sub": "don't let the agent choose",
+          "texto": [
+            "If two documents disagree, the agent picks one, and you only find out when a customer complains. Write the order of precedence: rules outrank reference, which outranks procedures, which outrank examples.",
+            "If it finds a conflict, the agent does not decide: it passes the case along and the document's owner fixes it. A conflict found is a task with an owner and a deadline, not a footnote."
+          ],
+          "exemplo": {
+            "rot": "A real conflict in the package",
+            "texto": "The delivery FAQ said \"minimum order of 5 boxes\"; the October commercial policy lowered it to 3. The policy wins. Juliana, the FAQ's owner, fixes it by Friday."
+          }
+        },
+        {
+          "titulo": "Reusable procedure",
+          "sub": "when to use it, inputs, steps, output",
+          "texto": [
+            "A procedure is the team's experience written in a way that another person, or the agent, can repeat. It has a trigger (when to use it), when not to use it, required inputs, steps you can check, and an output with a defined format.",
+            "Test the procedure with a new person before the agent: if they get stuck on a step, the agent will get stuck too, only without telling you."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "\"Build a restock order\": use it when a registered customer asks for items they have already bought; do not use it for a new customer. Inputs: customer, items, quantities in boxes. Output: a draft order with the price from the current table and its version."
+          }
+        },
+        {
+          "titulo": "An example is not a test",
+          "sub": "and less is more",
+          "texto": [
+            "Examples teach; test cases measure. If the same case is in both, the measurement lies. Keep the 20 cases from lesson 2 in a folder the agent does not read.",
+            "Also define memory: what the agent keeps from one conversation to the next, for how long, and who can correct it. Legal retention periods for personal data are up to whoever handles data protection (LGPD) at the company."
+          ],
+          "exemplo": {
+            "rot": "Hora's memory",
+            "texto": "Keeps: items the customer usually orders and their preferred delivery day. Does not keep: Tax ID (CPF), the whole conversation, payment data. Who corrects it: Juliana, at the customer's request."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The package index, the reusable procedure and a prompt that looks for conflicts. The tab next to this one shows Patrícia's package.",
+      "blocos": [
+        {
+          "rot": "Context package index",
+          "icone": "pasta",
+          "conteudo": "CONTEXT PACKAGE · agent <name> · process <...> · package version <...> · date <...>\nPackage owner: <name>\n\n| # | Document | Type (rule/reference/procedure/example) | Owner | Version | Valid until | Where it lives |\n|---|---|---|---|---|---|---|\n| 1 | <...> | rule | <name> | v<...> | <date> | <folder> |\n\nPRECEDENCE: rule > reference > procedure > example\nCONFLICT FOUND: the agent does not decide; it alerts <name>, who fixes it by <deadline>\nOUTSIDE THE PACKAGE: <data and documents the agent does not read>\nTEST CASES: kept in <folder the agent does not read>; none is an example\nMEMORY: keeps <...> · does not keep <...> · for <deadline> · who corrects it <name>\nPACKAGE REVIEW: <frequency> and whenever an owner changes a document"
+        },
+        {
+          "rot": "Reusable procedure (Skill)",
+          "icone": "camadas",
+          "conteudo": "PROCEDURE · <name> · version <...> · owner <name>\n\nUSE WHEN: <trigger>\nDO NOT USE WHEN: <exclusions>\nREQUIRED INPUTS: <...>\nALLOWED SOURCES: <package documents, with version>\nSTEPS (each one can be checked):\n1. <...>\n2. <...>\n3. <...>\nOUTPUT: <fields and format>\nSUCCESS CRITERION: <how the reviewer checks it>\nFAILURE OR MISSING DATA: <who gets it, and with what>\nGOOD EXAMPLE / BAD EXAMPLE: <one of each, not found in the tests>"
+        },
+        {
+          "rot": "Prompt · look for conflicts and gaps",
+          "icone": "chat",
+          "conteudo": "You are an operational documentation reviewer. Below are the documents\nthat an AI agent reads in order to work. Do not rewrite anything: point things out.\n\n1. Do two documents say different things about the same subject?\n   Quote both passages.\n2. Does any document lack an owner, a version or a validity date?\n3. Is there any data the task does not need (personal documents, data from\n   other customers, expired versions)?\n4. What frequently asked customer question does no document answer?\n\nDocuments:\n\"\"\"<paste>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Patrícia's package (example)",
+            "html": "<p><b>Package · Hora · v3</b> · Horizonte, fictional study company · owner: Patrícia</p><ol><li><b>Commercial policy</b> · rule · owner: Carlos · v1.2 · quarterly review.</li><li><b>Hora's constitution</b> · rule · owner: Patrícia · v2.0 (G3).</li><li><b>Price table</b> · reference · owner: Patrícia · v2026-10 · valid until 10/31.</li><li><b>Catalog</b> (products, packaging, box = 6 gallons) · reference · owner: Patrícia · v2026-10.</li><li><b>Delivery FAQ</b> (cities, days, minimum order) · reference · owner: Juliana · v4 · conflict with the policy fixed.</li><li><b>Procedures</b> \"build a restock order\" and \"answer delivery time\" · owner: Patrícia · v1.</li><li><b>Examples</b>: 10 good conversations and 5 bad ones with the correction · owner: Patrícia · none among the 20 test cases.</li></ol><p><b>Left out:</b> Tax ID (CPF), the entire customer spreadsheet, other customers' conversations, the September table (archived).</p>"
+          },
+          {
+            "rot": "How to check / common mistakes",
+            "html": "<ol><li><b>Generic owner.</b> \"Sales\" does not fix documents. Put a name.</li><li><b>Two versions in use.</b> Look for files with \"new\", \"final\", \"v2-correct\" in the same folder: one of them will get read.</li><li><b>Everything inside.</b> Putting the entire customer spreadsheet in \"so the agent knows more\" exposes data and makes every conversation more expensive.</li><li><b>Test as example.</b> If the hotel case is in the examples, its test no longer measures anything.</li><li><b>Check:</b> for each line of the index, open the document and see whether the owner, version and expiration date are written in it, not only in the index.</li></ol>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Patrícia's package is for practice; the one for your area is the real thing.",
+      "fonte": "Source materials: <a href=\"https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/\">Hora's configuration and prompt</a> and <a href=\"https://inematds.github.io/prof2030-lab/pecas/planilha-clientes/\">customer spreadsheet</a> (what should not go into the package).",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · Patrícia's package",
+          "min": "30 min",
+          "texto": "Open Hora's prompt in the lab and mark what in it is a rule, a reference, a procedure, or an example (it's all mixed together in one text). Build the package index with the template, write one complete procedure, and list what stays out. Put the lab's customer spreadsheet on the out list and say why.",
+          "pronto": "the index has at least 6 documents, each with a type, a named owner, a version, and an expiration date; the order of precedence is written down; there is one procedure with the 9 parts of the template; the out list has at least 3 items, including the customer spreadsheet."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Your area's package",
+          "min": "60 min",
+          "texto": "List everything your process's agent reads today (or what you would hand to a new hire). Classify it, assign an owner and a version, resolve the conflicts, and write a procedure for the most frequent task. Run the conflict prompt and mark each point as fixed or as having an owner and a deadline.",
+          "pronto": "the index is saved with an owner, version, and expiration date on every document, no document has two versions in use, every conflict found has an owner and a deadline, one procedure is written, and the test cases are in a folder separate from the examples."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "4 questions. The explanation appears after you try.",
+      "perguntas": [
+        {
+          "p": "Hora quoted an expired price. The first management fix is:",
+          "opcoes": [
+            "Swap the model for a smarter one",
+            "Give the table an owner, a version, and an expiration date, and keep only one version in use",
+            "Forbid Hora from talking about price"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "The model read what was there. The problem is an asset with no owner: two tables in the same folder. A better model reading the wrong table still gets it wrong."
+        },
+        {
+          "p": "The delivery FAQ says a minimum order of 5 boxes; the new commercial policy says 3. What does the agent do?",
+          "opcoes": [
+            "Picks the most recent one",
+            "Follows the order of precedence (the policy wins) and the conflict goes to the FAQ owner to fix",
+            "Asks the customer which one they prefer"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "A written order of precedence keeps the agent from choosing on its own. And a conflict that is found becomes a task with an owner and a deadline, so it doesn't come back next week."
+        },
+        {
+          "p": "Why not use as an example a conversation that is among the 20 test cases?",
+          "opcoes": [
+            "Because the test becomes a cheat sheet and stops measuring what the agent would do in a new case",
+            "Because it takes up space",
+            "There's no problem at all"
+          ],
+          "certa": 0,
+          "ref": "diagrama",
+          "explica": "An example teaches; a test measures. Mixing the two makes the configuration look better than it is, and the lesson 2 decision loses its value."
+        },
+        {
+          "p": "\"Put the whole customer spreadsheet into the agent, so it knows everything.\" What's wrong with that?",
+          "opcoes": [
+            "Nothing, the more context the better",
+            "It exposes data the task doesn't need and makes every conversation more expensive; the agent should only look up the customer in the conversation",
+            "The spreadsheet is too small"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "Keeping it out of the package is a safeguard for protection and cost. Looking up the right customer is a tool with minimal access, the subject of lesson 4."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "Five boxes",
+          "texto": "Rules, reference, procedures, examples, and what stays out."
+        },
+        {
+          "t": "Owner, version, expiration date",
+          "texto": "On every document. One version in use."
+        },
+        {
+          "t": "Written order of precedence",
+          "texto": "The agent doesn't decide a conflict: it goes to the owner, with a deadline."
+        },
+        {
+          "t": "An example is not a test",
+          "texto": "Test cases in a folder the agent doesn't read."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "Horizonte Lab: Hora's prompt and configuration (fictional study company)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Agent Architect Kit: an agent's specification and context",
+          "href": "https://inematds.github.io/kit-arquiteto-agentes/",
+          "icone": "camadas"
+        },
+        {
+          "t": "AI Management: the course plan (module 4, context and Skills)",
+          "href": "https://inematds.github.io/curso-gestao-ia/",
+          "icone": "lista"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,416 @@
+{
+  "slug": "orcamento",
+  "num": 7,
+  "menu": "Budget",
+  "titulo": "Compute budget and ROI",
+  "titulo_curto": "Budget and ROI",
+  "minutos": 20,
+  "lead": "\"Look how it's climbing! The agent is paying for itself.\" Carlos said this while looking at a dashboard that started counting the same day Hora came on board. Nobody measured the before. In this lesson you build the monthly budget with a cap and the estimated ROI in three scenarios, and you practice the conversation where the owner asks for a savings number and you answer without making promises.",
+  "objetivo": "build the monthly budget and the estimated ROI of the operation in three scenarios, with uncertainties written down and no promised savings.",
+  "competencias": [
+    "montar-orcamento-computacional",
+    "estimar-roi-em-cenarios",
+    "comunicar-incerteza-sem-prometer"
+  ],
+  "aprende": [
+    {
+      "t": "The month's budget with a cap, an alert, and a limit per task"
+    },
+    {
+      "t": "Estimating the benefit when the baseline was never measured"
+    },
+    {
+      "t": "Estimated ROI in three scenarios, with the investment kept separate"
+    },
+    {
+      "t": "Why freed capacity is not savings"
+    }
+  ],
+  "hero_alt": "The company owner, gray-haired, asks the manager across the table a question; between them, a sheet with a three-band chart.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From budget to estimated ROI",
+      "sub": "Five steps. The last one is a decision, not a number. Click each one.",
+      "volta": "Next month, what was measured replaces what was estimated",
+      "nos": [
+        {
+          "icone": "grafico",
+          "titulo": "Cost for the month",
+          "sub": "with a cap",
+          "detalhe": "Model (variable, with a cap and an alert), tools (fixed), and maintenance. At Horizonte: R$ 1,100 + R$ 400 + R$ 540 = R$ 2,040 per month, fictional values. Human review time doesn't come out of the cash account, but it goes into the benefit."
+        },
+        {
+          "icone": "pasta",
+          "titulo": "Investment",
+          "sub": "kept separate",
+          "detalhe": "What was spent once to get started: at Horizonte, 40 hours of Rafael's time on setup, R$ 3,600. Keep it separate from the month's cost, so it doesn't hide or inflate the ROI."
+        },
+        {
+          "icone": "usuario",
+          "titulo": "Potential benefit",
+          "sub": "human cost before − after",
+          "forte": true,
+          "detalhe": "How much the work cost in hours without the agent, minus what it costs today with review, exceptions, and rework. At Horizonte the \"before\" was never measured (F11), so it goes in as a range: 8 to 12 minutes per request."
+        },
+        {
+          "icone": "camadas",
+          "titulo": "Three scenarios",
+          "sub": "pessimistic, likely, optimistic",
+          "detalhe": "Each end of the baseline range gives a scenario. Estimated ROI = (potential benefit − cost for the month) ÷ cost for the month. At Horizonte: −23%, +27%, and +77%. A single number hides the doubt; three show how big it is."
+        },
+        {
+          "icone": "check",
+          "titulo": "Decision",
+          "sub": "and what to measure",
+          "detalhe": "With the pessimistic scenario negative, the honest decision is: keep it, measure the baseline, and redo the math in a month. The budget says how much you can spend; the estimated ROI says whether it's worth continuing to measure."
+        }
+      ],
+      "legenda": "Formulas from the Gestoria method (INEMA): potential benefit, estimated net result, and estimated ROI, with the initial investment kept separate from the recurring one. Horizonte: fictional study company and values."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How to build and defend the numbers",
+      "sub": "Four steps. At the end, the whole Horizonte calculation, so you can check it line by line.",
+      "passos": [
+        {
+          "titulo": "Budget with a cap",
+          "sub": "and a limit per task",
+          "texto": [
+            "Model cost is variable: it rises with volume, with long conversations and with the top-tier model. That is why it has a monthly cap and an alert before the cap, agreed with IT and, if possible, set up with the provider.",
+            "Also set a limit per task: number of attempts and the maximum cost of one conversation. If it goes over, the agent stops and calls a person. Human review is also a governance cost, and it grows: Gartner forecasts worldwide spending on AI governance rising from US$ 492 million in 2026 to more than US$ 1 billion in 2030 (forecast, 02/17/2026)."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte (fictional)",
+            "texto": "Model: average R$ 1,100, cap R$ 1,400, alert at R$ 1,120 (80%). Per conversation: up to 2 attempts and R$ 1.50; above that, the conversation goes to Juliana."
+          }
+        },
+        {
+          "titulo": "Baseline as a range",
+          "sub": "when the \"before\" was not measured",
+          "texto": [
+            "Without the \"before,\" any savings number is a guess. Rebuild the baseline with the people who did the work: how long did a WhatsApp order take before Hora? Ask for the shortest and longest reasonable time, not an average.",
+            "Write down where the range came from and start measuring now, over a comparable period. A month from now, part of the uncertainty becomes a measurement."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte (fictional)",
+            "texto": "Juliana and the salespeople: 8 to 12 minutes per order, most likely 10. With 680 orders and R$ 45 an hour, the human cost before is between R$ 4,080 and R$ 6,120."
+          }
+        },
+        {
+          "titulo": "Three scenarios",
+          "sub": "and the investment kept separate",
+          "texto": [
+            "Human cost after: Patrícia R$ 720 + Juliana R$ 1,350 + rework R$ 432 = R$ 2,502. Potential benefit: R$ 1,578, R$ 2,598 or R$ 3,618. Minus the month's cost (R$ 2,040): −R$ 462, +R$ 558 or +R$ 1,578.",
+            "Estimated ROI: −23%, +27% and +77%. The R$ 3,600 setup cost pays back in about 6.5 months in the likely scenario and never in the pessimistic one. This gets written down, along with the numbers."
+          ],
+          "exemplo": {
+            "rot": "Reading",
+            "texto": "The most likely result is positive and small; the pessimistic one is negative. The honest sentence is \"it probably pays for itself, and we don't know yet,\" not \"it is paying for itself.\""
+          }
+        },
+        {
+          "titulo": "Capacity is not savings",
+          "sub": "the hours need a destination",
+          "texto": [
+            "In the likely scenario, Hora frees up about 63 hours of people's time per month. That is capacity. It only becomes savings if the company cuts an expense or uses the hours on something with a result you can measure.",
+            "That is why the selection report separates \"potential benefit\" from \"realized savings\" and leaves the latter blank until there is evidence. A simulation is not presented as revenue or as savings."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "Juliana's hours went to registering new customers and after-sales. Realized savings: not yet observed. Patrícia tracks for a month where the hours went before any other decision."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template to copy: budget and estimated ROI",
+      "sub": "A page that finance and the owner read. The tab next to it shows Horizonte's.",
+      "blocos": [
+        {
+          "rot": "Monthly budget + estimated ROI",
+          "icone": "grafico",
+          "conteudo": "BUDGET AND ESTIMATED ROI · <process> · <month/year> · owner <name>\nValues: [ ] measured [ ] estimated (mark line by line)\n\nCOST OF THE MONTH (recurring)\n| Line | Average | Cap | Alert | Measured or estimated |\n|---|---|---|---|---|\n| AI model | R$ <...> | R$ <...> | R$ <...> (80%) | <...> |\n| Tools | R$ <...> | - | - | <...> |\n| Maintenance | R$ <...> | - | - | <...> |\n| TOTAL | R$ <...> | | | |\nLIMIT PER TASK: <n> attempts · R$ <...> per <conversation/case> · over the limit -> <name>\nINITIAL INVESTMENT (separate): R$ <...> (<what it was>)\n\nPOTENTIAL BENEFIT = human cost before - human cost after\nBaseline: <min> to <max> min per task · source: <who/how> · measured? [ ] yes [ ] no\nHuman cost after: review R$ <...> + exceptions R$ <...> + rework R$ <...>\n\n                      PESSIMISTIC  LIKELY     OPTIMISTIC\nHuman cost before     R$ <...>     R$ <...>   R$ <...>\nPotential benefit     R$ <...>     R$ <...>   R$ <...>\nNet result            R$ <...>     R$ <...>   R$ <...>   (= benefit - cost of the month)\nESTIMATED ROI         <...>%       <...>%     <...>%     (= result ÷ cost of the month)\nInvestment payback: <months> in the likely case · <...> in the pessimistic case\n\nFREED CAPACITY: <h>/month (likely) · destination: <...>\nREALIZED SAVINGS: <evidence or \"not yet observed\">\nUNCERTAINTIES: 1. <...> 2. <...> 3. <...>\nDECISION: <keep / expand / reduce / pause> · REDO THE CALCULATION ON: <date>"
+        },
+        {
+          "rot": "Prompt · where the ROI is too optimistic",
+          "icone": "chat",
+          "conteudo": "You are the most skeptical chief financial officer in the company. Below is\nthe budget and estimated ROI of an operation run by an AI agent. Do not redo\nthe calculation: point out where it may be too optimistic.\n\n1. What cost is missing (maintenance, review, rework, switching\n   provider, higher volume)?\n2. Where does the baseline come from? Was it measured or remembered?\n3. Is any freed capacity being treated as savings?\n4. Was the initial investment kept separate?\n5. What question would I ask before approving this?\n\nDocument:\n\"\"\"<paste>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Horizonte's budget and ROI",
+            "html": "<p><b>Hora · WhatsApp order · Oct/2026</b> · Horizonte, fictional study company · owner: Patrícia</p><ul><li><b>Cost of the month:</b> model R$ 1,100 (cap R$ 1,400, alert R$ 1,120) + tools R$ 400 + maintenance R$ 540 = <b>R$ 2,040</b>. Limit: 2 attempts and R$ 1.50 per conversation.</li><li><b>Initial investment:</b> R$ 3,600 (40 h of Rafael).</li><li><b>Baseline:</b> 8 to 12 min per order, estimated with Juliana and the salespeople · <b>not measured</b>.</li><li><b>Human cost after:</b> R$ 720 + R$ 1,350 + R$ 432 = R$ 2,502.</li></ul><table><tr><th></th><th>Pessimistic</th><th>Likely</th><th>Optimistic</th></tr><tr><td>Before</td><td>R$ 4,080</td><td>R$ 5,100</td><td>R$ 6,120</td></tr><tr><td>Benefit</td><td>R$ 1,578</td><td>R$ 2,598</td><td>R$ 3,618</td></tr><tr><td>Net</td><td>−R$ 462</td><td>+R$ 558</td><td>+R$ 1,578</td></tr><tr><td>Estimated ROI</td><td>−23%</td><td>+27%</td><td>+77%</td></tr></table><p>Investment payback: ~6.5 months in the likely case; it does not pay back in the pessimistic case. Freed capacity: ~63 h/month (likely). Realized savings: not yet observed. <b>Decision:</b> keep and measure the baseline for 2 weeks; redo on 11/30.</p>"
+          },
+          {
+            "rot": "How to check / common mistakes",
+            "html": "<ol><li><b>A single number.</b> \"27% ROI\" without the range hides that the pessimistic case is negative.</li><li><b>Capacity added up as savings.</b> Hours freed are not money in the bank.</li><li><b>Investment mixed in.</b> Adding the setup cost to the month drags the ROI down; forgetting it inflates the return.</li><li><b>Baseline from memory, unstated.</b> You can use an estimate, but written as an estimate, with who gave it.</li><li><b>Check:</b> before − 2,502 = benefit; benefit − 2,040 = net; net ÷ 2,040 = ROI. All three Horizonte scenarios have to add up.</li></ol>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "simconversa",
+      "titulo": "Simulation: Carlos wants a number",
+      "sub": "A simulated conversation for practice. The owner is going to the quarterly results meeting and wants to know how much the agent saves. You answer with the calculation from this lesson.",
+      "personagem": {
+        "nome": "Carlos · owner of Horizonte (simulation)",
+        "papel": "Horizonte Distribuidora, fictional study company"
+      },
+      "inicio": "abre",
+      "falas": {
+        "abre": {
+          "cliente": "Patrícia, on Friday I have the quarterly results meeting. The dashboard shows Hora is paying for itself. Give me a number: how much will we save per month with it?",
+          "opcoes": [
+            {
+              "t": "R$ 2,600 a month. That is how much work Hora takes off the team.",
+              "vai": "fim-promessa",
+              "nota": 0,
+              "comenta": "R$ 2,600 is the potential benefit in the likely scenario, before subtracting the R$ 2,040 cost of the month, and it is still capacity, not savings. It became a promise in the owner's mouth."
+            },
+            {
+              "t": "About R$ 560 a month.",
+              "vai": "painel",
+              "nota": 1,
+              "comenta": "That is the net result of the likely scenario, so the math is right. But a single number hides that the pessimistic scenario is negative and that the baseline was estimated, not measured."
+            },
+            {
+              "t": "I can give an estimate, not a saving: in the likely scenario, R$ 560 more per month; in the pessimistic one, R$ 460 less; in the optimistic one, R$ 1,580. The biggest doubt is the \"before,\" which we never measured.",
+              "vai": "painel",
+              "nota": 2,
+              "comenta": "Three scenarios, the word estimated and the source of the uncertainty. Carlos leaves with a number that can stand up to questions in the meeting."
+            }
+          ]
+        },
+        "painel": {
+          "cliente": "But look at the dashboard: customer contacts went up from 702 to 901 per week since September. Doesn't that prove it's working?",
+          "opcoes": [
+            {
+              "t": "Yes, it does. You can take the chart to the meeting.",
+              "vai": "horas",
+              "nota": 0,
+              "comenta": "Contacts are volume, not results. They can rise because of a discount (the F5), the time of year or price. Taking the chart as proof is taking the F11 to the meeting."
+            },
+            {
+              "t": "That dashboard is wrong, better to ignore it.",
+              "vai": "horas",
+              "nota": 1,
+              "comenta": "Being skeptical is right, but the dashboard is not wrong: it measures volume. The problem is using it to answer a question about results without a baseline."
+            },
+            {
+              "t": "Support is volume, and the dashboard started on the same day as Hora, so there is no before. I suggest measuring for two weeks: time per request, corrections and margin, and comparing with the team's estimate.",
+              "vai": "horas",
+              "nota": 2,
+              "comenta": "You did not throw the data away: you said what it measures, what is missing and how to get it. In two weeks, part of the uncertainty becomes a measurement."
+            }
+          ]
+        },
+        "horas": {
+          "cliente": "Then let's make the savings real: if Juliana has hours left over, I'll cut her to part-time.",
+          "opcoes": [
+            {
+              "t": "Makes sense, cut it.",
+              "vai": "barato",
+              "nota": 0,
+              "comenta": "The freed hours are estimated, and today Juliana covers the exceptions at Hora and the new-customer registration. Cutting now could turn the likely scenario into the pessimistic one and remove the person who holds the agent up."
+            },
+            {
+              "t": "Better not to change anything for now.",
+              "vai": "barato",
+              "nota": 1,
+              "comenta": "Prudent, but it leaves the capacity with no destination. Hours with no destination don't become savings or results: they vanish."
+            },
+            {
+              "t": "Freed capacity is not automatic savings. Today Juliana covers the exceptions at Hora and the registration of new customers. I'll measure for one month where the hours went and bring the decision to you with her, with numbers.",
+              "vai": "barato",
+              "nota": 2,
+              "comenta": "You separated capacity from savings, protected the operation, and gave the decision a deadline and an owner. That's what the report calls realized savings: only with evidence."
+            }
+          ]
+        },
+        "barato": {
+          "cliente": "Last one: Rafael found a model at half the price. If we switch tomorrow, the ROI doubles, right?",
+          "opcoes": [
+            {
+              "t": "Right, you can switch tomorrow.",
+              "vai": "fim-troca",
+              "nota": 0,
+              "comenta": "Half the bill is not half the cost: the model is 24% of the cost of the order. And without the 20 cases, nobody knows how many new errors the switch brings."
+            },
+            {
+              "t": "First, I run the same 20 cases on both and do the math per completed order, including rework. Last time, the cheap one made more mistakes and came out at R$ 7.51 per order versus R$ 6.68.",
+              "vai": "fim-bom",
+              "nota": 2,
+              "comenta": "You brought the decision back to the cases and to the cost per result, and you recalled the evidence that already exists."
+            },
+            {
+              "t": "No. A model that works, we don't replace.",
+              "vai": "fim-preso",
+              "nota": 1,
+              "comenta": "Refusing without testing is the other half of the mistake. Price and quality change within weeks; the right answer is to test on the same cases."
+            }
+          ]
+        },
+        "fim-promessa": {
+          "fim": true,
+          "titulo": "Promise in the meeting",
+          "texto": "Carlos announced R$ 2,600 in savings per month. The following month, the cash flow showed nothing like it, and Hora came to be seen as a project that didn't deliver. Potential benefit is not savings, and a single number can't withstand the first question."
+        },
+        "fim-troca": {
+          "fim": true,
+          "titulo": "Switch without a test",
+          "texto": "The switch happened the next day. The bill dropped, the rework in order picking doubled, and Juliana went back to taking over conversations. The cost per order went up. You switch a model after the same cases and the math on cost per result."
+        },
+        "fim-preso": {
+          "fim": true,
+          "titulo": "Stuck with what works",
+          "texto": "The conversation ended without a test. Hora is still doing fine, but the company doesn't know whether it is overpaying, and the day the vendor changes the price or the version will catch everyone by surprise. Testing doesn't oblige you to switch."
+        },
+        "fim-bom": {
+          "fim": true,
+          "titulo": "Numbers that hold up under questions",
+          "texto": "Carlos brought to the meeting a range of estimated results, the plan to measure the baseline, the decision on Juliana's hours with a deadline, and the test of the cheap model scheduled. No promises, and everything with an owner and a date."
+        }
+      },
+      "licao": "To the owner, bring a range, not a point: scenarios, the word estimated, the source of the uncertainty, and what will be measured. Capacity only becomes savings with a decision and evidence; and you switch a model after the same cases, based on the cost per result."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Horizonte's budget to train on, yours for real, and the conversation with the owner to rehearse.",
+      "fonte": "Lab piece: <a href=\"https://inematds.github.io/prof2030-lab/pecas/painel/\">Hora dashboard (F11, no baseline)</a>. Amounts in reais: fictional, from this lesson.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · Horizonte's budget",
+          "min": "25 min",
+          "texto": "Fill in the template with Horizonte's numbers, line by line, marking what is measured and what is estimated. Check the three columns against the formula. Run the skeptical CFO prompt and write three uncertainties and the decision.",
+          "pronto": "the document has the monthly cost with a cap and an alert, the investment separate, the baseline as a range with its source, the three scenarios adding up (−R$ 462, +R$ 558, +R$ 1,578), \"realized savings: not yet observed\", three written uncertainties, and the date to redo it."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Your process's budget",
+          "min": "45 min",
+          "texto": "Use the math from lesson 1 for your process. Build the budget with a cap, estimate the baseline as a range with the person who did the work, calculate the three scenarios, and write the decision. Show it to someone in finance before taking it to the owner.",
+          "pronto": "your document has a cap and an alert for the model, a limit per task, a separate investment, the three scenarios with the formula checked, at least three uncertainties, the freed capacity with a destination, and the date when the estimate becomes measured."
+        },
+        {
+          "id": "e3",
+          "titulo": "3 · The conversation with Carlos",
+          "min": "10 min",
+          "texto": "Run the simulation above to the end. If you don't reach the top score, start over and see what changes with each answer. Then write, in three sentences, how you would answer the same question about your own process.",
+          "pronto": "you reached 8 out of 8 points and have the three sentences written, with a range of values, the word \"estimated\", and what will be measured."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "5 questions. The explanation appears after your attempt.",
+      "perguntas": [
+        {
+          "p": "What is the estimated ROI formula used in the course?",
+          "opcoes": [
+            "Freed hours × salary",
+            "(Potential benefit − monthly cost) ÷ monthly cost, with the initial investment kept separate",
+            "Model bill ÷ number of conversations"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "The benefit comes from the human cost before minus after; the net result subtracts the monthly cost. The initial investment goes into the payback time, not mixed into the month."
+        },
+        {
+          "p": "The baseline was never measured. What should you do?",
+          "opcoes": [
+            "Calculate nothing until you have data",
+            "Estimate as a range with the person who did the work, say it is an estimate, and start measuring now",
+            "Use the number that makes the ROI look best"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Waiting blocks the decision; making it up misleads. The written range, with its source, lets you decide now and correct later, when the measurement arrives."
+        },
+        {
+          "p": "In the likely scenario, Hora frees up about 63 hours per month. Is that savings?",
+          "opcoes": [
+            "Yes, 63 h × R$ 45",
+            "No: it's capacity; it becomes savings only if the company cuts an expense or uses the hours on something measured",
+            "Yes, if Carlos approves"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Freed hours that nobody uses don't show up in the cash flow. The selection report leaves \"realized savings\" blank until there is evidence."
+        },
+        {
+          "p": "Why present three scenarios instead of one number?",
+          "opcoes": [
+            "To sound more technical",
+            "Because it shows how big the uncertainty is: at Horizonte, the pessimistic case is negative, and that changes the decision",
+            "Because finance requires it"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "With a single number (+27%), no one sees that the pessimistic case gives −23%. The range turns the question \"how much does it save?\" into \"what do we need to measure to find out?\"."
+        },
+        {
+          "p": "The model cost blew past the month's cap because of long conversations. Which control was missing?",
+          "opcoes": [
+            "None, it's normal",
+            "A per-task limit (attempts and maximum cost per conversation) and an alert before the cap",
+            "Switching vendors"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "A monthly cap with no per-task limit only warns you after the damage is done. With a per-conversation limit, the expensive case stops and goes to a person; with an alert at 80%, there's time to act."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "Budget with a cap",
+          "texto": "Variable-cost model with a cap and an alert; per-task limit; investment kept separate."
+        },
+        {
+          "t": "Baseline as a range",
+          "texto": "Estimated with the people who did the work, written down as an estimate, measured from now on."
+        },
+        {
+          "t": "Three scenarios",
+          "texto": "Pessimistic, likely and optimistic estimated ROI, with the uncertainties written down."
+        },
+        {
+          "t": "No promises",
+          "texto": "Capacity is not savings. Realized savings only with evidence."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "Laboratório Horizonte: the dashboard that started together with the agent (F11, fictional study company)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/painel/",
+          "icone": "grafico"
+        },
+        {
+          "t": "AI Management: the course plan (module 9, costs and ROI)",
+          "href": "https://inematds.github.io/curso-gestao-ia/",
+          "icone": "lista"
+        },
+        {
+          "t": "Gestoria: running a hybrid operation from end to end",
+          "href": "https://inematds.github.io/gestoria/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

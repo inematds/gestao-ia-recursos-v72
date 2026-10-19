@@ -1,0 +1,185 @@
+{
+  "id": "gestao-ia-recursos-v72",
+  "lang": "en",
+  "url": "https://inematds.github.io/gestao-ia-recursos-v72/en/",
+  "nome": "Resources: models, data and budget",
+  "sub": "AI Management Program 2027 · G4",
+  "volta": {
+    "t": "AI Management Area",
+    "href": "https://eventos.inema.pro/gestao-ia/"
+  },
+  "lado_card": {
+    "rot": "AI Management Program 2027 · G4",
+    "t": "Start at the front door",
+    "texto": "G0 shows the agentic company and the role of the 2027 manager. The other courses in the program start from it.",
+    "link": "Go to G0",
+    "href": "https://inematds.github.io/gestao-ia-base-v72/"
+  },
+  "rodape": "INEMA.CLUB · open and free content · INEMA Learning v7.2 format · <a href=\"https://eventos.inema.pro/gestao-ia/\">eventos.inema.pro/gestao-ia</a> · <a href=\"https://inematds.github.io/prof2030-lab/\">Horizonte lab (fictional study company)</a> · <a href=\"https://inema.club/\">inema.club</a>",
+  "videos": {},
+  "inicio": {
+    "kicker": "AI Management Program 2027 · G4 · 8 lessons",
+    "titulo": "Resources: models, data and budget",
+    "lead": "The vendor shows you what each call costs. The manager needs to know what each result costs. In eight lessons, you calculate the cost per completed task, choose the model based on your own cases, organize the knowledge the agent reads, give the tools the minimum access, find the shadow AI, plan your exit from a vendor, and build a budget and estimated ROI without promising savings.",
+    "cta": "Start with lesson 1",
+    "cta2": {
+      "t": "See the AI Management Area",
+      "href": "https://eventos.inema.pro/gestao-ia/"
+    },
+    "capa_alt": "A distributor's manager reviews a budget sheet at the end of the day, next to a laptop with a bar chart; in the background, the warehouse shelves.",
+    "numeros": [
+      {
+        "v": "8",
+        "t": "15 to 20 minute lessons"
+      },
+      {
+        "v": "18",
+        "t": "exercises with \"done when\""
+      },
+      {
+        "v": "19",
+        "t": "templates to copy"
+      },
+      {
+        "v": "1",
+        "t": "simulated conversation with the owner"
+      }
+    ],
+    "aulas_titulo": "The lessons",
+    "aulas_sub": "First the math (what the result costs), then each resource that goes into it: the model, the knowledge, the tools, what the team already uses on the side, and the vendor. Lessons 7 and 8 bring it all together in the budget and the area's resource plan.",
+    "blocos": [
+      {
+        "t": "Who it's for",
+        "itens": [
+          "Area managers, owners of small or mid-sized companies, operations or HR leaders who already have, or soon will have, AI agents on the team.",
+          "People who don't code and don't want to: here you manage the agent. Building an agent is a different course.",
+          "People who sign off on the agent's invoice, or will have to explain to the owner what it costs and what it returns."
+        ]
+      },
+      {
+        "t": "What you'll be able to do",
+        "itens": [
+          "Calculate the cost per completed task, including human time and rework, and not just the price per call.",
+          "Choose the model by comparing two configurations on your own cases, with a selection report and an alternative.",
+          "Keep the knowledge the agent reads with an owner, a version and an expiry date, and give the tools only the access the task requires.",
+          "Build the monthly budget, the estimated ROI in three scenarios and the exit plan for a vendor."
+        ]
+      },
+      {
+        "t": "The case that runs through the course",
+        "itens": [
+          "<b>Horizonte Distribuidora</b>, a <a href=\"https://inematds.github.io/prof2030-lab/\">fictional study company</a> of 40 people that distributes cleaning products in the interior of São Paulo.",
+          "You play <b>Patrícia Lima, sales manager</b>, who is responsible for <b>Hora</b>, an agent that sells over WhatsApp. The process is the order that comes in through WhatsApp and goes all the way to invoicing.",
+          "The failures planted in the lab (the email assistant that deletes without asking, the tools IT doesn't know about, the dashboard with no baseline) become management problems. Every lesson has one practice on Horizonte and another on your own process."
+        ]
+      }
+    ]
+  },
+  "ui": {
+    "pular": "Skip to content",
+    "aulas": "Lessons",
+    "concluido": "completed",
+    "aula": "Lesson",
+    "nesta_aula": "In this lesson, you will learn:",
+    "objetivo": "Goal:",
+    "proxima_aula": "Next lesson",
+    "aula_anterior": "Previous lesson",
+    "voltar_inicio": "Back to the start of the course",
+    "marcar_concluida": "Mark lesson as completed",
+    "dg_dica": "Click each block in the diagram to see what it does.",
+    "copiar": "Copy",
+    "copiado": "Copied",
+    "selo_simulacao": "Simulation: illustrative example",
+    "selo_real": "Repository example",
+    "pronto_quando": "Done when:",
+    "fiz": "I did this exercise",
+    "video_pagina": "Video page with script",
+    "pergunta": "Question",
+    "de": "of",
+    "cert_tag": "skill",
+    "correto": "Correct",
+    "errado": "Not that one",
+    "quiz_aguarda": "Pick one answer. The explanation shows up after you try.",
+    "proxima_pergunta": "Next question",
+    "quiz_ver": "See result",
+    "quiz_fim": "Quiz complete",
+    "quiz_total": "You got {a} of {n} right. Get them all right and the lesson is marked as complete.",
+    "aparencia": "Appearance",
+    "tamanho_texto": "Text size",
+    "tema": "Theme",
+    "tema_escuro": "Dark",
+    "tema_papel": "Light paper",
+    "role_dica": "Scroll the page: each step below lights up its part of the diagram.",
+    "pre_requisito": "requires",
+    "ver_aula": "See the lesson",
+    "mapa_dica": "Click an exercise to see what to do and the \"done when\".",
+    "etapas": "Steps",
+    "exercicios": "exercises",
+    "rever": "Review:",
+    "revisar_erradas": "Review the wrong ones",
+    "refazer": "Retake the quiz",
+    "h_semana": "h per week",
+    "data_inicio": "Start date",
+    "ritmo": "Time available",
+    "gerar_plano": "Create my plan",
+    "baixar_md": "Download plan.md",
+    "baixar_ics": "Download to calendar (.ics)",
+    "ind_estudo": "Study (lessons)",
+    "ind_pratica": "Self-reported practice",
+    "ind_nota": "Practice = exercises you marked as done. Proof comes in the certification exam.",
+    "estudo": {
+      "titulo": "Your study",
+      "continuar": "Pick up where I left off",
+      "comecar": "Start with lesson 1",
+      "cta_continuar": "Continue lesson {n}",
+      "hoje": "today",
+      "ontem": "yesterday",
+      "ha_dias": "{n} days ago",
+      "desempenho": "Quiz performance",
+      "notas": "My notes",
+      "dados": "Copy my data",
+      "sem_testes": "No quizzes taken yet. The quiz is at the end of each lesson.",
+      "nao_fez": "quiz not taken yet",
+      "ultimo": "Last",
+      "melhor": "Best",
+      "tentativas": "attempts",
+      "tentativa": "attempt",
+      "tudo_certo": "You got everything right on the last quiz.",
+      "rever": "To review",
+      "resposta": "Correct answer:",
+      "ir_teste": "Retake the quiz",
+      "sem_notas": "No notes yet. In a lesson, select a passage of text and tap Highlight or Note.",
+      "so_marcado": "(highlight only)",
+      "marcar": "Highlight",
+      "anotar": "Note",
+      "salvar": "Save",
+      "apagar": "Remove highlight",
+      "fechar": "Close",
+      "nota_ph": "Write your note about this passage…",
+      "um_bloco": "Highlight within a single paragraph.",
+      "nao_marca": "This passage can't be highlighted.",
+      "dados_exp": "Your progress, your notes and your quiz scores stay only in this browser. Download a copy (.json) to keep it or to continue on another computer or browser; there, load the copy. Loading adds to what already exists and doesn't erase anything.",
+      "exportar": "Download copy",
+      "importar": "Load copy",
+      "import_ok": "Copy loaded ({n} items). Refreshing the page…",
+      "import_erro": "File not recognized. Nothing was changed.",
+      "import_outro": "This copy is from a different course. Nothing was changed.",
+      "export_ok": "Copy downloaded."
+    },
+    "conv_dica": "Choose your answer. The comment appears right after, and the conversation continues based on your choice.",
+    "conv_voce": "You",
+    "conv_escolha": "Your answer",
+    "conv_boa": "Good choice",
+    "conv_meio": "Room to improve",
+    "conv_ruim": "Weak choice",
+    "conv_fim": "End of conversation",
+    "conv_placar": "You scored {p} out of {m} possible points.",
+    "conv_licao": "Lesson:",
+    "conv_recomecar": "Restart the conversation",
+    "conv_feita": "Your best score: {p} out of {m} points.",
+    "comecar": "Start the lesson",
+    "nesta_vai": "In this lesson you will",
+    "trocar_tema": "Switch light/dark theme"
+  },
+  "icone": "grafico"
+}

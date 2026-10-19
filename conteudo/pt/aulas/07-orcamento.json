@@ -86,7 +86,7 @@
           "opcoes": [
             {"t": "Prova, sim. Pode levar o gráfico para a reunião.", "vai": "horas", "nota": 0, "comenta": "Atendimento é volume, não resultado. Pode subir por desconto (o F5), por época do ano ou por preço. Levar o gráfico como prova é levar o F11 para a reunião."},
             {"t": "Esse painel está errado, melhor ignorar.", "vai": "horas", "nota": 1, "comenta": "Desconfiar está certo, mas o painel não está errado: ele mede volume. O problema é usá-lo para responder uma pergunta de resultado sem linha de base."},
-            {"t": "Atendimento é volume, e o painel começou no mesmo dia da Hora, então não tem o antes. Proponho medir por duas semanas tempo por pedido, correções e margem, comparando com o mesmo período do ano passado.", "vai": "horas", "nota": 2, "comenta": "Você não jogou o dado fora: disse o que ele mede, o que falta e como conseguir. Em duas semanas, parte da incerteza vira medida."}
+            {"t": "Atendimento é volume, e o painel começou no mesmo dia da Hora, então não tem o antes. Proponho medir por duas semanas tempo por pedido, correções e margem, comparando com a estimativa da equipe.", "vai": "horas", "nota": 2, "comenta": "Você não jogou o dado fora: disse o que ele mede, o que falta e como conseguir. Em duas semanas, parte da incerteza vira medida."}
           ]},
         "horas": {"cliente": "Então vamos fazer a economia ficar real: se sobram horas da Juliana, eu corto meio período dela.",
           "opcoes": [

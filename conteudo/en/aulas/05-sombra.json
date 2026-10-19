@@ -1,0 +1,279 @@
+{
+  "slug": "sombra",
+  "num": 5,
+  "menu": "Shadow",
+  "titulo": "Shadow AI",
+  "titulo_curto": "Shadow AI",
+  "minutos": 20,
+  "lead": "Rafael's official list has eight tools. The internal survey (22 of the 40 people answered) found four more: an extension that reads emails from finance, an app that records client visits, a free chatbot with the client spreadsheet, and an add-on with access to the whole Drive. Nobody acted in bad faith. In this lesson you build the inventory and decide what stays.",
+  "objetivo": "take an inventory of the AI tools the team already uses without IT knowing, with owner, data that flows through, and a decision to keep, replace or cut.",
+  "competencias": [
+    "inventariar-ia-na-sombra",
+    "avaliar-o-dado-que-passa",
+    "decidir-manter-trocar-cortar"
+  ],
+  "aprende": [
+    {
+      "t": "Ask in a way people will answer"
+    },
+    {
+      "t": "Follow the data: what goes through, where it goes, and under what contract"
+    },
+    {
+      "t": "Decide to keep, replace or cut, always with an alternative"
+    },
+    {
+      "t": "A one-page policy and the survey every quarter"
+    }
+  ],
+  "hero_alt": "Open office seen from behind: one person records with a phone, another uses a chat window on a laptop, another works on a colorful spreadsheet.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The inventory cycle",
+      "sub": "It's not a witch hunt: it's finding out what the team needs and offering a safe way to do it. Click each step.",
+      "volta": "Every quarter, the survey runs again",
+      "nos": [
+        {
+          "icone": "megafone",
+          "titulo": "Ask",
+          "sub": "without punishing",
+          "detalhe": "Anonymous survey, by department, with concrete questions: which tool, for what, what data you put into it. Say up front that nobody will be punished for what they share. People who are afraid don't answer, and the shadow stays."
+        },
+        {
+          "icone": "lista",
+          "titulo": "List",
+          "sub": "official and unofficial",
+          "detalhe": "Combine IT's list with the survey answers. Include what IT itself built and didn't record: a rushed automation is shadow too."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Follow the data",
+          "sub": "what goes through and where it goes",
+          "forte": true,
+          "detalhe": "For each tool: what data goes in (client, email, voice, the whole Drive), where it goes (personal account, vendor without a contract, another country), whether the vendor can use that data to train models, and who is accountable for it."
+        },
+        {
+          "icone": "check",
+          "titulo": "Decide",
+          "sub": "keep, replace, cut",
+          "detalhe": "Keep: low-risk data, a contract and an owner. Replace: the need is legitimate and the tool is not. Cut: client data or excessive access without controls. Every decision to cut comes with an alternative, or the tool comes back through another door."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Policy",
+          "sub": "one page",
+          "detalhe": "What people can do, what they can't, who to ask for a new tool, and how long the answer takes. Short enough to be read, and published where the team works."
+        }
+      ],
+      "legenda": "Lab answer key recommendation for F12: don't punish; take inventory, evaluate each tool, offer an approved alternative, publish a simple policy, and repeat the survey every quarter. Horizonte: fictional study company."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "From finding to decision",
+      "sub": "Four steps with Horizonte's inventory (F12 and F10 in the lab).",
+      "passos": [
+        {
+          "titulo": "Ask without punishing",
+          "sub": "and count who didn't answer",
+          "texto": [
+            "Horizonte's answers came in because the survey was anonymous and asked \"how do you use technology at work,\" without the word forbidden. Even so, 18 of the 40 people didn't respond.",
+            "The people who didn't answer are part of the result: they may be the department that uses it the most. Do a second round, talking to each leader, before you say the inventory is complete."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "\"To write proposals, I paste the client spreadsheet into a free AI chatbot, on my personal account. It saves a lot of time.\" Sales, answer 8. It's a real need, solved the wrong way."
+          }
+        },
+        {
+          "titulo": "Follow the data",
+          "sub": "the risk is in what passes through",
+          "texto": [
+            "The question is not \"is the tool good?\" but \"what does it take from here, and where does it send it?\" A spell checker that stores nothing weighs less than an add-on with access to the whole Drive.",
+            "You can't protect what you don't know about: client data leaving through a personal account has no contract, no record, and doesn't come back."
+          ],
+          "exemplo": {
+            "rot": "The four findings",
+            "texto": "MailResumo reads the finance team's emails (invoices, suppliers). GravaReunião records clients without notice. The free chatbot receives the client spreadsheet. PlanilhaGênio has access to the whole Drive."
+          }
+        },
+        {
+          "titulo": "Keep, replace or cut",
+          "sub": "always with an alternative",
+          "texto": [
+            "Cut what exposes client data or gives broad access without control, and cut it right away. But if the need is legitimate (writing proposals faster), offer the approved alternative the same day.",
+            "The process owner decides, together with IT; the people who used the tool are heard. The decision stays in the inventory with a date and a reason."
+          ],
+          "exemplo": {
+            "rot": "Decision (fictional)",
+            "texto": "Personal chatbot with the spreadsheet: cut right away; replace with an AI tool on a company account, with a contract, without pasting the whole spreadsheet. Decision owner: Patrícia, with Rafael."
+          }
+        },
+        {
+          "titulo": "Official shadow AI",
+          "sub": "IT forgets to record things too",
+          "texto": [
+            "The daily service summary was built by Rafael: it sends the full conversations, with tax ID and address, to a free service outside Brazil, with no contract, whose terms allow training on the data. It is not in the inventory.",
+            "It goes on the list like the others. The legal side (international transfer, legal basis) belongs to whoever handles data protection law (LGPD); the Profissional 2030 Base course covers that."
+          ],
+          "exemplo": {
+            "rot": "Decision (fictional)",
+            "texto": "Daily summary: suspend the sending until it is replaced by a vendor with a contract, no use of the data for training, and anonymization beforehand. Record it in the inventory. Owner: Juliana, who uses it; technical: Rafael."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The survey, the inventory with decisions, and the one-page policy. The next tab shows Horizonte's inventory.",
+      "blocos": [
+        {
+          "rot": "Anonymous survey (4 questions)",
+          "icone": "megafone",
+          "conteudo": "SURVEY · How do you use technology and AI at work? · anonymous · <department>\nNo one will be punished for what they answer. We want to know what helps you,\nso we can offer a safe way to keep doing it.\n\n1. What tools (apps, sites, extensions, assistants) do you use at work\n   besides the official ones? For what?\n2. What information do you put in, or let these tools read?\n   (clients, emails, spreadsheets, photos, audio, documents)\n3. Do you use a company account or a personal one? Free or paid?\n4. If the tool disappeared tomorrow, what would get harder in your work?"
+        },
+        {
+          "rot": "AI inventory with decisions",
+          "icone": "lista",
+          "conteudo": "AI INVENTORY · <area/company> · date <...> · owner <name>\nSurvey: <n> of <total> people responded · 2nd round: <date>\n\n| Tool | Department / who uses it | For what | Data that passes through | Where it goes / account | Contract? Trains on the data? | Owner | Decision (keep/replace/cut) | Alternative | Deadline |\n|---|---|---|---|---|---|---|---|---|---|\n| <...> | <...> | <...> | <...> | <personal/company, country> | <yes/no> | <name> | <...> | <...> | <date> |\n\nCRITERIA: cut = client data or broad access without control\n          replace = legitimate need, unsuitable tool\n          keep = low-risk data + contract + owner\nIMMEDIATE ACTIONS: <access to revoke, sending to suspend>\nNEXT SURVEY: <date, one quarter from now>"
+        },
+        {
+          "rot": "AI use policy (1 page)",
+          "icone": "arquivo",
+          "conteudo": "AI USE POLICY · <company> · version <...> · owner <name>\n\nALLOWED (with the approved tools: <list>)\n- <use AI for text drafts without client data>\n- <...>\n\nNOT ALLOWED\n- Putting client, employee or financial data into a tool that isn't approved\n  or into a personal account.\n- Recording a client or colleague without notice.\n- Giving an extension or add-on access to all files.\n- <...>\n\nWANT A NEW TOOL? Ask <name/channel>. Answer within <n> business days.\nTHINK YOU MADE A MISTAKE? Tell <name>. Whoever speaks up is not punished; what gets hidden is.\nREVIEW: every quarter, together with the survey."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Horizonte's inventory (example)",
+            "html": "<p><b>AI inventory · sales and nearby areas · Oct/2026</b> · Horizonte, fictional study company · owner: Patrícia with Rafael · survey: 22 of 40</p><ol><li><b>Free chatbot, personal account</b> · sales · proposals · client spreadsheet · <b>cut right away</b>; replace with AI on a company account with a contract, without the whole spreadsheet · Patrícia.</li><li><b>GravaReunião</b> · sales · records visits without notice · clients' voices and conversations · <b>cut recording without notice</b>; replace with note-taking or an approved tool with notice to the client · Patrícia.</li><li><b>MailResumo</b> (extension) · finance · invoice summaries · supplier emails and amounts · <b>cut</b> and evaluate an alternative in the corporate email · Rafael.</li><li><b>PlanilhaGênio</b> (add-on) · finance · formulas · access to the whole Drive · <b>cut the access</b> right away; evaluate an option with access to the spreadsheet only · Rafael.</li><li><b>Daily summary (free service)</b> · customer service · full conversations with tax ID and address, outside Brazil, no contract · <b>suspend and replace</b> with a vendor with a contract and anonymization · Juliana and Rafael.</li></ol><p>2nd round with the department leaders: by 10/31. Next survey: January 2027.</p>"
+          },
+          {
+            "rot": "How to check / common mistakes",
+            "html": "<ol><li><b>An inventory made only by IT.</b> Without a survey, the list shows what was bought, not what is used.</li><li><b>Punishing whoever spoke up.</b> In the next round, no one says anything.</li><li><b>Cutting without an alternative.</b> The need remains and the tool comes back through another account.</li><li><b>Forgetting the official shadow AI.</b> Automation by IT itself that is outside the inventory counts too.</li><li><b>Check:</b> each line has the data that passes through, destination, owner, decision and deadline; every \"cut\" line has an alternative or the reason there isn't one.</li></ol>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Horizonte's inventory to practice on; your team's for real.",
+      "fonte": "Lab pieces: <a href=\"https://inematds.github.io/prof2030-lab/inventario.html\">IT inventory and internal survey (F12)</a> and <a href=\"https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/\">service summary (F10)</a>.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · Horizonte's inventory",
+          "min": "30 min",
+          "texto": "Open the lab's IT inventory and read the 22 answers. Find the tools that aren't on the official list. Also open the service summary and check whether it is in the inventory. Fill in the template, decide each line, and write Horizonte's one-page policy.",
+          "pronto": "the inventory has all 5 tools (the 4 from the survey and the daily summary), each with department, data that passes through, destination, owner, decision and deadline; every decision to cut has an alternative; the policy has the four parts (allowed, not allowed, who to ask, think you made a mistake) and the date of the next survey."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Your team's survey",
+          "min": "30 min + 1 week",
+          "dias": 7,
+          "texto": "Send the anonymous survey to your team (or area), saying up front that no one will be punished. Wait a week, talk to the people who didn't respond, and build the inventory. Take the decisions to cut to IT with the alternative already worked out.",
+          "pronto": "the survey went out to the whole team, you know how many responded, you ran a second round with those who didn't respond, and the inventory lists each tool with its data, destination, owner, decision and deadline, plus the one-page policy published or sent for approval."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "4 questions. The explanation appears after you try.",
+      "perguntas": [
+        {
+          "p": "The survey revealed that a salesperson pastes the customer spreadsheet into a free chatbot. What is the best reaction?",
+          "opcoes": [
+            "A written warning, to set an example",
+            "Cut the use right away and offer an approved tool for writing proposals the same day",
+            "Let it go, because it saves time"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Punishing makes the next survey come back empty. Letting it go exposes customer data. Cutting with an alternative solves the risk and keeps the need met."
+        },
+        {
+          "p": "Which question decides the risk of a shadow tool?",
+          "opcoes": [
+            "Is it popular?",
+            "What data it takes, where it goes, under what contract, and whether it can train models with it",
+            "Is it free?"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "Risk travels with the data. Being free only makes it worse when the price is the use of your data, as in the terms of service of the lab's summary tool."
+        },
+        {
+          "p": "The daily customer service summary was created by IT itself. Does it go in the shadow AI inventory?",
+          "opcoes": [
+            "No, IT knows it exists",
+            "Yes: it is outside the official inventory, has no contract, and sends customer data outside",
+            "Only if someone complains"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Shadow is whatever is outside control, not just what an employee installed. Knowing it exists is not the same as having it registered, with an owner and a contract."
+        },
+        {
+          "p": "18 of the 40 people did not respond to the survey. What does that mean for the inventory?",
+          "opcoes": [
+            "That these people don't use AI",
+            "That it is incomplete until a second round, with the leaders of each department",
+            "Nothing, 22 responses are enough"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Silence is not zero. The inventory says how many responded and schedules the second round before declaring itself complete."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "Ask without punishing",
+          "texto": "Anonymous, concrete survey, and a count of who didn't respond."
+        },
+        {
+          "t": "Follow the data",
+          "texto": "What goes in, where it goes, contract, and use for training."
+        },
+        {
+          "t": "Cut with an alternative",
+          "texto": "Keep, replace or cut, with owner, date and reason."
+        },
+        {
+          "t": "One-page policy",
+          "texto": "What's allowed, what's not, who to ask. Survey again every quarter."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "Laboratório Horizonte: IT inventory and internal survey (F12, fictional study company)",
+          "href": "https://inematds.github.io/prof2030-lab/inventario.html",
+          "icone": "lista"
+        },
+        {
+          "t": "Laboratório Horizonte: the customer service summary (F10)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/",
+          "icone": "nuvem"
+        },
+        {
+          "t": "Profissional 2030 Base: trusting what AI builds (LGPD and where the data goes)",
+          "href": "https://inematds.github.io/prof2030-base/",
+          "icone": "escudo"
+        }
+      ]
+    }
+  ]
+}

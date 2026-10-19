@@ -31,7 +31,7 @@
         {"icone": "caneta", "titulo": "Escrever com limite", "sub": "efeito dentro de um teto", "forte": true,
          "itens": [{"icone": "cadeado", "t": "limite na ferramenta", "sub": "não só no texto"}],
          "detalhe": "O agente executa sozinho, mas dentro de um limite que a própria ferramenta impõe: criar pedido até R$ 5 mil, desconto até 5%, só para cliente cadastrado, um destinatário por e-mail. Se o limite só está escrito nas instruções, um texto esperto do cliente passa por cima."},
-        {"icone": "x", "titulo": "Apagar, pagar, enviar em massa", "sub": "fora do agente",
+        {"icone": "x", "titulo": "Fora do agente", "sub": "apagar, pagar, enviar em massa",
          "itens": [{"icone": "usuario", "t": "pessoa decide e faz", "sub": "uma por vez"}],
          "detalhe": "Apagar e-mail, esvaziar lixeira, mudar dado bancário, marcar como pago, mandar para uma lista inteira. O que não se desfaz fica fora do alcance do agente; se a tarefa exigir, é uma pessoa que faz, caso a caso. Corresponde ao vermelho da alçada do G3."}
       ],

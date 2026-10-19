@@ -1,0 +1,307 @@
+{
+  "slug": "fornecedor",
+  "num": 6,
+  "menu": "Proveedor",
+  "titulo": "Proveedor y dependencia del proveedor (lock-in)",
+  "titulo_curto": "Proveedor",
+  "minutos": 20,
+  "lead": "Una herramienta de IA sale de línea, cambia de precio y cambia de reglas en meses. Quien se entera el día del aviso paga más. El lock-in es quedar atado a un proveedor porque salir cuesta demasiado. En esta clase separas lo que es de la empresa de lo que es del proveedor, escribes los disparadores de salida y armas el plan de cambio antes de necesitarlo.",
+  "objetivo": "planificar el cambio de modelo o herramienta antes de necesitarlo: qué es tuyo, qué cambia, cuánto cuesta, quién lo hace y en cuánto tiempo.",
+  "competencias": [
+    "separar-ativo-da-empresa-do-fornecedor",
+    "escrever-gatilhos-de-saida",
+    "planejar-e-ensaiar-a-troca"
+  ],
+  "aprende": [
+    {
+      "t": "Qué es de la empresa y debe estar fuera de la plataforma"
+    },
+    {
+      "t": "Las señales de que te estás quedando atado"
+    },
+    {
+      "t": "Disparadores de salida escritos antes del aviso"
+    },
+    {
+      "t": "Plan de cambio con costo, dueño, plazo y un ensayo"
+    }
+  ],
+  "hero_alt": "Mesa de reunión con contrato impreso, bolígrafo y resaltador; una gerente y el dueño de la empresa siguen una videollamada en una pantalla grande.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "De lo que es tuyo al plan de salida",
+      "sub": "Saber qué es tuyo va primero; el plan solo funciona si esos archivos existen fuera de la herramienta. Haz clic en cada parte.",
+      "nos": [
+        {
+          "icone": "pasta",
+          "titulo": "Lo que es tuyo",
+          "sub": "se queda con la empresa",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "en formato abierto",
+              "sub": "texto, hoja de cálculo"
+            }
+          ],
+          "detalhe": "Todo lo que la empresa escribió y midió: constitución, paquete de contexto, procedimientos, matriz de nivel de autorización, contratos de herramienta, los 20 casos con la respuesta correcta y los registros de las acciones. Si eso solo existe dentro del panel del proveedor, no es realmente tuyo."
+        },
+        {
+          "icone": "nuvem",
+          "titulo": "Lo que es de ellos",
+          "sub": "va a cambiar",
+          "itens": [
+            {
+              "icone": "chip",
+              "t": "modelo, formato, conector",
+              "sub": "y el precio"
+            }
+          ],
+          "detalhe": "El modelo y la versión, el formato de configuración de la plataforma, los conectores, el lugar donde se guarda el historial y el precio. Nada de eso es malo; simplemente no está bajo tu control, y por eso entra en el plan."
+        },
+        {
+          "icone": "alvo",
+          "titulo": "Disparadores",
+          "sub": "cuándo activar",
+          "itens": [
+            {
+              "icone": "relogio",
+              "t": "escritos antes",
+              "sub": "con número"
+            }
+          ],
+          "detalhe": "Las condiciones que activan el plan, escritas antes del problema: aviso de descontinuación, precio por encima de un tope, cambio en los términos de uso de los datos, incidente grave, caída de calidad en los 20 casos, contrato por vencer."
+        },
+        {
+          "icone": "lista",
+          "titulo": "Plan",
+          "sub": "qué, cuánto, quién, cuándo",
+          "forte": true,
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "responsable y plazo",
+              "sub": "costo estimado"
+            }
+          ],
+          "detalhe": "Qué cambia con el cambio, cuánto cuesta (horas y dinero), quién hace cada parte, en cuánto tiempo, y qué pasa con la operación mientras tanto: las acciones afectadas vuelven a necesitar aprobación hasta que los casos de prueba pasen en la herramienta nueva."
+        },
+        {
+          "icone": "play",
+          "titulo": "Ensayo",
+          "sub": "una vez al año",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "20 casos en la alternativa",
+              "sub": "sin cambiar nada"
+            }
+          ],
+          "detalhe": "Corre los 20 casos de la clase 2 en la alternativa registrada, sin cambiar la operación. Lleva una tarde y muestra si el plan es real o solo papel. Si el ensayo falla, el plan se corrige mientras todavía hay tiempo."
+        }
+      ],
+      "legenda": "Principio del método Gestoria (INEMA): elegir modelos por evidencia en tareas reales, sin depender de un proveedor. Horizonte: empresa ficticia de estudio."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Cómo no quedar atado",
+      "sub": "Cuatro pasos. El plan es barato de escribir y caro de improvisar.",
+      "passos": [
+        {
+          "titulo": "Saca lo que es tuyo de la plataforma",
+          "sub": "copia en formato abierto",
+          "texto": [
+            "Exporta a un archivo de la empresa todo lo que ustedes escribieron y midieron. Texto y hoja de cálculo sirven en cualquier herramienta; la configuración en formato propio solo sirve en esa.",
+            "Revisa también que el historial (conversaciones, registros de acción) salga en un formato que se pueda leer fuera de ahí. El historial que no se exporta es la forma más común de quedar atado."
+          ],
+          "exemplo": {
+            "rot": "En Horizonte (ficticio)",
+            "texto": "La constitución de Hora solo existía escrita en el panel de la plataforma de WhatsApp. Ahora está en el archivo de la empresa, versión 2.0, con Patrícia como responsable; el panel recibe una copia."
+          }
+        },
+        {
+          "titulo": "Lee las señales",
+          "sub": "y el ciclo corto de los productos",
+          "texto": [
+            "Señales de que te estás quedando atado: historial que no se exporta, configuración que solo funciona ahí, precio que crece con el uso sin tope, descuento a cambio de un contrato largo, proceso que depende de una función en prueba.",
+            "Un producto sale de línea. OpenAI informa que el Agent Builder y los Evals de AgentKit serán desactivados el 30/11/2026, con migración al Agents SDK o a los Workspace Agents (anuncio del proveedor). Quien armó un agente ahí tiene un plazo para rehacerlo."
+          ],
+          "exemplo": {
+            "rot": "Lectura",
+            "texto": "No es un problema de un proveedor: es el ritmo del mercado. El panorama INEMA de octubre registra productos que salen de línea y reglas que cambian en meses."
+          }
+        },
+        {
+          "titulo": "Escribe los disparadores",
+          "sub": "con número, antes del aviso",
+          "texto": [
+            "Un buen disparador es verificable: \"el precio sube más de 30%\", \"aviso de descontinuación\", \"los términos pasan a permitir entrenar con nuestros datos\", \"más de 1 crítico en los 20 casos después de un cambio de versión\".",
+            "Un disparador puede haberse activado sin que nadie lo note. Revisa los proveedores del inventario de la clase 5 con la lista en la mano."
+          ],
+          "exemplo": {
+            "rot": "En Horizonte",
+            "texto": "El servicio gratuito del resumen diario (F10) ya tiene el disparador activado: sin contrato y con términos que permiten entrenar con las conversaciones. Va directo al plan de cambio."
+          }
+        },
+        {
+          "titulo": "Plan con costo y ensayo",
+          "sub": "qué, cuánto, quién, cuándo",
+          "texto": [
+            "Para cada proveedor importante: qué cambia en el cambio, cuánto cuesta, quién lo hace, el plazo y cómo sigue la operación mientras tanto. En el cambio, las acciones afectadas vuelven al amarillo y los casos de prueba se ejecutan de nuevo (regla del G3).",
+            "Ensaya una vez al año: los 20 casos en la alternativa, sin cambiar nada. Un plan que nunca se ensayó suele olvidar el historial, las credenciales y quién aprueba."
+          ],
+          "exemplo": {
+            "rot": "Costo del cambio (ficticio)",
+            "texto": "Rafael 16 h × R$ 90 = R$ 1.440; Patrícia aprobando todo en amarillo por 2 semanas, 5 h extras × R$ 80 = R$ 400. Total estimado: R$ 1.840 y 3 semanas."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo para copiar: plan de salida",
+      "sub": "Un plan por proveedor importante. La pestaña de al lado muestra el plan del proveedor del modelo de Hora.",
+      "blocos": [
+        {
+          "rot": "Plan de salida de proveedor",
+          "icone": "lista",
+          "conteudo": "PLAN DE SALIDA · proveedor <...> · qué provee <modelo/plataforma/conector>\nProcesos que dependen de él: <...> · responsable del plan: <nombre> · fecha <...>\n\nLO QUE ES NUESTRO (copia fuera de la plataforma, formato abierto)\n[ ] constitución / instrucciones   v<...>  en <carpeta>\n[ ] paquete de contexto            v<...>  en <carpeta>\n[ ] matriz de nivel de autorización y contratos de herramienta\n[ ] 20 casos con respuesta correcta (carpeta que el agente no lee)\n[ ] registros e historial: ¿se exporta? [ ] sí, formato <...>  [ ] no -> riesgo\n\nLO QUE ES SUYO: <modelo/versión, formato de configuración, conector, precio actual\n                 verificado el <fecha>>\n\nDISPARADORES DE SALIDA (cualquiera activa el plan)\n- aviso de descontinuación o fin de versión\n- el precio sube más de <...>% o el costo por tarea completada pasa de R$ <...>\n- los términos pasan a permitir el uso de nuestros datos para entrenamiento\n- <n> críticos en los casos de prueba después de un cambio de versión\n- incidente grave / el contrato vence el <fecha>\n\nALTERNATIVA: <proveedor/configuración> · último ensayo: <fecha> · resultado <...>\n\nCAMBIO\n| Qué cambia | Quién lo hace | Horas | R$ | Plazo |\n|---|---|---|---|---|\n| <...> | <nombre> | <...> | <...> | <...> |\nDURANTE EL CAMBIO: las acciones afectadas vuelven al amarillo; los casos de prueba se ejecutan de nuevo\nCOSTO TOTAL ESTIMADO: R$ <...> · PLAZO: <...> · APRUEBA: <nombre>\nPRÓXIMO ENSAYO: <fecha>"
+        },
+        {
+          "rot": "Prompt · qué nos ata",
+          "icone": "chat",
+          "conteudo": "Eres consultor de contratos de tecnología. Abajo está la descripción de\ncómo una empresa usa un proveedor de IA y el plan de salida que ella\nescribió. No recomiendes proveedor: señala riesgos de dependencia.\n\n1. ¿Qué parte del trabajo de la empresa solo existe dentro de la plataforma?\n2. ¿Qué dato o historial no sale en formato abierto?\n3. ¿Qué disparador de salida falta o no tiene número?\n4. ¿Al costo del cambio se le olvidó algo (credenciales, historial,\n   capacitación del equipo, período de aprobación manual)?\n\nUso del proveedor:\n\"\"\"<pega>\"\"\"\nPlan:\n\"\"\"<pega>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Plan de Hora (ejemplo)",
+            "html": "<p><b>Plan de salida · proveedor del modelo de Hora</b> · Horizonte, empresa ficticia de estudio · responsable: Patrícia · técnico: Rafael · aprueba: Carlos</p><ul><li><b>Nuestro, fuera de la plataforma:</b> constitución v2.0, paquete de contexto v3, matriz y contratos v1, los 20 casos (carpeta \"testes-hora\"). Historial de las conversaciones: se exporta en hoja de cálculo, una vez al mes.</li><li><b>Suyo:</b> el modelo de la gama media y la versión; el precio, verificado en el sitio el 15/10.</li><li><b>Disparadores:</b> descontinuación; precio +30%; costo por pedido superior a R$ 8; cambio en los términos de uso de los datos; más de 1 crítico en los 20 casos después de un cambio de versión.</li><li><b>Alternativa:</b> otra configuración de la gama media, de otro proveedor · ensayo el 20/10: 15 correctos, 4 aceptables, 1 incorrecto, 0 críticos.</li><li><b>Cambio:</b> Rafael reconfigura y prueba (16 h, R$ 1.440); Patrícia aprueba todo en amarillo por 2 semanas (5 h extras, R$ 400). Total estimado R$ 1.840, 3 semanas.</li><li><b>Próximo ensayo:</b> octubre de 2027.</li></ul>"
+          },
+          {
+            "rot": "Cómo verificar / errores comunes",
+            "html": "<ol><li><b>\"Todo está en la plataforma.\"</b> Entonces nada es tuyo. Exporta y guarda en el archivo de la empresa.</li><li><b>Disparador sin número.</b> \"Si se pone caro\" nunca se activa; \"+30%\" sí.</li><li><b>Costo del cambio solo técnico.</b> Se olvidan las semanas de aprobación manual y la capacitación del equipo.</li><li><b>Nunca ensayado.</b> La primera prueba de la alternativa ocurre el día en que la actual se cae.</li><li><b>Verificación:</b> cada ítem de \"lo que es nuestro\" tiene ruta de carpeta; cada disparador tiene número o evento; el cambio tiene responsable, horas, R$ y plazo por línea.</li></ol>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "El plan del proveedor del modelo de Hora para practicar; el de un proveedor tuyo para que valga.",
+      "fonte": "Piezas del laboratorio: <a href=\"https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/\">configuración de Hora</a> y <a href=\"https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/\">resumen de atención (F10)</a>.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · El plan de Hora",
+          "min": "30 min",
+          "texto": "Completa el plan de salida del proveedor del modelo de Hora con el modelo, usando las piezas de las clases 2 a 4 como \"lo que es nuestro\". Después escribe una línea extra para el servicio del resumen diario: qué disparador ya se activó y cuál es el primer paso del cambio. Ejecuta el prompt y responde a cada punto.",
+          "pronto": "el plan tiene al menos 5 ítems en \"lo que es nuestro\" con la carpeta de cada uno, al menos 4 disparadores con número o evento, la alternativa con fecha de ensayo, la tabla del cambio con responsable, horas, R$ y plazo en cada línea, y la línea del resumen diario con el disparador activado."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Un proveedor tuyo",
+          "min": "45 min",
+          "texto": "Elige el proveedor de IA del que más depende tu proceso. Averigua con TI qué se exporta y qué no. Escribe el plan, marca la fecha del primer ensayo y lleva los disparadores a quien aprueba la compra.",
+          "pronto": "el plan está guardado con lo que es tuyo fuera de la plataforma (o la lista de lo que falta exportar, con plazo), los disparadores con número, el costo estimado del cambio con responsable y plazo, y la fecha del ensayo en el calendario."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba rápida",
+      "sub": "4 preguntas. La explicación aparece después de tu intento.",
+      "perguntas": [
+        {
+          "p": "La constitución del agente solo existe escrita en el panel de la plataforma. ¿Cuál es el riesgo?",
+          "opcoes": [
+            "Ninguno, la plataforma lo guarda",
+            "Si la plataforma cambia o desaparece, el trabajo de la empresa se va con ella; debe haber una copia en formato abierto en el archivo de la empresa",
+            "Solo el riesgo de errores al escribir"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "Lo que la empresa escribió es un activo suyo. Guardado solo dentro del proveedor, queda como rehén del formato y del contrato de este."
+        },
+        {
+          "p": "¿Cuál de estos es un disparador de salida bien escrito?",
+          "opcoes": [
+            "\"Si el proveedor empeora\"",
+            "\"Precio por encima del 30% del actual o costo por pedido superior a R$ 8\"",
+            "\"Cuando aparezca algo mejor\""
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Un disparador debe poder ser verificado por cualquier persona, sin discusión. Los otros dos dependen de opinión y nunca se activan a tiempo."
+        },
+        {
+          "p": "El Agent Builder de AgentKit será desactivado el 30/11/2026, según OpenAI. ¿Qué le enseña esta noticia al gestor?",
+          "opcoes": [
+            "Que ese proveedor es malo",
+            "Que un producto sale de línea en meses, y el plan de salida debe existir antes del aviso",
+            "Que no se debe usar IA"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Es el ciclo corto del mercado, no un caso aislado. Quien tenía el trabajo fuera de la plataforma y un plan ensayado tiene una migración; quien no, una emergencia."
+        },
+        {
+          "p": "Durante el cambio de modelo de Hora, ¿qué pasa con el pedido de hasta R$ 5 mil, que estaba en verde?",
+          "opcoes": [
+            "Sigue en verde, es la misma regla",
+            "Vuelve al amarillo hasta que los casos de prueba pasen en la configuración nueva",
+            "Queda prohibido"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Cambiar de modelo cambia el comportamiento. La regla del G3 vale aquí: las acciones afectadas vuelven a requerir aprobación hasta rehacer la evidencia. Ese tiempo de aprobación entra en el costo del cambio."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumen",
+      "itens": [
+        {
+          "t": "Lo que es tuyo, fuera",
+          "texto": "Instrucciones, contexto, contratos, casos e historial en formato abierto."
+        },
+        {
+          "t": "Señales de dependencia",
+          "texto": "Historial que no sale, formato propio, precio sin tope."
+        },
+        {
+          "t": "Disparadores con número",
+          "texto": "Escritos antes del aviso, revisados con el inventario."
+        },
+        {
+          "t": "Plan ensayado",
+          "texto": "Qué, cuánto, quién, cuándo. Ensayo anual con los 20 casos."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Laboratorio Horizonte: el resumen de atención en un servicio gratuito (F10, empresa ficticia de estudio)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/",
+          "icone": "nuvem"
+        },
+        {
+          "t": "Área Gestión de IA: los nueve objetos de gestión del gerente de 2027",
+          "href": "https://eventos.inema.pro/gestao-ia/",
+          "icone": "alvo"
+        },
+        {
+          "t": "Profesional 2030 Base: el proveedor y hacia dónde puede ir el dato",
+          "href": "https://inematds.github.io/prof2030-base/",
+          "icone": "escudo"
+        }
+      ]
+    }
+  ]
+}

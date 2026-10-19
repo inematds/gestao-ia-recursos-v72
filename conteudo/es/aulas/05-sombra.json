@@ -1,0 +1,279 @@
+{
+  "slug": "sombra",
+  "num": 5,
+  "menu": "Sombra",
+  "titulo": "IA en la sombra",
+  "titulo_curto": "IA en la sombra",
+  "minutos": 20,
+  "lead": "La lista oficial de Rafael tiene ocho herramientas. La encuesta interna (22 de las 40 personas respondieron) encontró cuatro más: una extensión que lee correos del área financiera, una app que graba visitas a clientes, un chatbot gratuito con la hoja de cálculo de clientes y un complemento con acceso a todo el Drive. Nadie actuó con mala intención. En esta clase haces el inventario y decides qué se queda.",
+  "objetivo": "hacer el inventario de las herramientas de IA que el equipo ya usa sin que TI lo sepa, con responsable, dato que pasa y decisión de mantener, cambiar o cortar.",
+  "competencias": [
+    "inventariar-ia-na-sombra",
+    "avaliar-o-dado-que-passa",
+    "decidir-manter-trocar-cortar"
+  ],
+  "aprende": [
+    {
+      "t": "Preguntar de una forma que las personas respondan"
+    },
+    {
+      "t": "Seguir el dato: qué pasa, hacia dónde y bajo qué contrato"
+    },
+    {
+      "t": "Decidir mantener, cambiar o cortar, siempre con alternativa"
+    },
+    {
+      "t": "Una política de una página y la encuesta cada trimestre"
+    }
+  ],
+  "hero_alt": "Oficina abierta vista desde atrás: una persona graba con el celular, otra usa una ventana de chat en la laptop, otra trabaja en una hoja de cálculo de colores.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "El ciclo del inventario",
+      "sub": "No es una caza de brujas: es descubrir qué necesita el equipo y ofrecer una forma segura. Haz clic en cada etapa.",
+      "volta": "Cada trimestre, la encuesta se repite",
+      "nos": [
+        {
+          "icone": "megafone",
+          "titulo": "Preguntar",
+          "sub": "sin castigar",
+          "detalhe": "Encuesta anónima, por área, con preguntas concretas: qué herramienta, para qué, qué dato pones en ella. Avisa antes que nadie será castigado por lo que cuente. Quien tiene miedo no responde, y la sombra sigue."
+        },
+        {
+          "icone": "lista",
+          "titulo": "Listar",
+          "sub": "oficial y no oficial",
+          "detalhe": "Junta la lista de TI con las respuestas de la encuesta. Incluye lo que la propia TI armó y no registró: una automatización hecha a las apuradas también es sombra."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Seguir el dato",
+          "sub": "qué pasa y hacia dónde",
+          "forte": true,
+          "detalhe": "Para cada herramienta: qué dato entra (cliente, correo, voz, todo el Drive), hacia dónde va (cuenta personal, proveedor sin contrato, otro país), si el proveedor puede usar ese dato para entrenar modelos, y quién responde por ella."
+        },
+        {
+          "icone": "check",
+          "titulo": "Decidir",
+          "sub": "mantener, cambiar, cortar",
+          "detalhe": "Mantener: dato de bajo riesgo, contrato y responsable. Cambiar: la necesidad es legítima y la herramienta no. Cortar: dato de cliente o acceso excesivo sin control. Toda decisión de cortar viene con alternativa, o la herramienta vuelve por otra puerta."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Política",
+          "sub": "una página",
+          "detalhe": "Qué se puede, qué no se puede, a quién pedirle una herramienta nueva y en cuánto tiempo sale la respuesta. Lo bastante corta para leerse, publicada donde trabaja el equipo."
+        }
+      ],
+      "legenda": "Recomendación de la plantilla de respuestas del laboratorio para el F12: no castigar; hacer el inventario, evaluar cada herramienta, ofrecer una alternativa aprobada, publicar una política simple y repetir la encuesta cada trimestre. Horizonte: empresa ficticia de estudio."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Del hallazgo a la decisión",
+      "sub": "Cuatro pasos con el inventario de Horizonte (F12 y F10 en el laboratorio).",
+      "passos": [
+        {
+          "titulo": "Pregunta sin castigar",
+          "sub": "y cuenta quién no respondió",
+          "texto": [
+            "Las respuestas de Horizonte llegaron porque la encuesta era anónima y preguntaba \"cómo usas la tecnología en el trabajo\", sin la palabra prohibido. Aun así, 18 de las 40 personas no respondieron.",
+            "Quien no respondió es parte del resultado: puede ser el sector que más la usa. Haz una segunda ronda, conversando con cada líder, antes de decir que el inventario está completo."
+          ],
+          "exemplo": {
+            "rot": "En Horizonte",
+            "texto": "\"Para escribir propuestas pego la planilla de clientes en un chatbot de IA gratuito, en mi cuenta personal. Ahorra mucho tiempo.\" Ventas, respuesta 8. Es una necesidad real, resuelta de la forma equivocada."
+          }
+        },
+        {
+          "titulo": "Sigue el dato",
+          "sub": "el riesgo está en lo que pasa",
+          "texto": [
+            "La pregunta no es \"¿la herramienta es buena?\", sino \"¿qué se lleva de aquí y a dónde?\". Un corrector de texto que no guarda nada pesa menos que un complemento con acceso a todo el Drive.",
+            "No se puede proteger lo que no se conoce: el dato de un cliente que sale por una cuenta personal no tiene contrato, no tiene registro y no vuelve."
+          ],
+          "exemplo": {
+            "rot": "Los cuatro hallazgos",
+            "texto": "MailResumo lee los correos de finanzas (boletas, proveedores). GravaReunião graba a los clientes sin aviso. El chatbot gratuito recibe la planilla de clientes. PlanilhaGênio tiene acceso a todo el Drive."
+          }
+        },
+        {
+          "titulo": "Mantener, cambiar o cortar",
+          "sub": "siempre con alternativa",
+          "texto": [
+            "Corta lo que expone datos de clientes o da acceso amplio sin control, y córtalo ya. Pero si la necesidad es legítima (escribir propuestas más rápido), ofrece la alternativa aprobada el mismo día.",
+            "Quien decide es el dueño del proceso junto con TI; se escucha a quien usaba la herramienta. La decisión queda en el inventario con fecha y motivo."
+          ],
+          "exemplo": {
+            "rot": "Decisión (ficticia)",
+            "texto": "Chatbot personal con la planilla: cortar ya; cambiar por una herramienta de IA en cuenta de la empresa, con contrato, sin pegar la planilla completa. Dueña de la decisión: Patrícia, con Rafael."
+          }
+        },
+        {
+          "titulo": "La sombra oficial",
+          "sub": "TI también olvida registrar",
+          "texto": [
+            "El resumen diario de atención lo montó Rafael: envía las conversaciones completas, con CPF y dirección, a un servicio gratuito fuera de Brasil, sin contrato, cuyos términos permiten entrenar con los datos. No está en el inventario.",
+            "Entra en la lista como las demás. La parte legal (transferencia internacional, base legal) queda con quien se ocupa de la LGPD; el curso Profissional 2030 Base trata ese tema."
+          ],
+          "exemplo": {
+            "rot": "Decisión (ficticia)",
+            "texto": "Resumen diario: suspender el envío hasta cambiar a un proveedor con contrato, sin uso de los datos para entrenamiento y con anonimización previa. Registrar en el inventario. Dueña: Juliana, que lo usa; responsable técnico: Rafael."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "La encuesta, el inventario con decisión y la política de una página. La pestaña de al lado muestra el inventario de Horizonte.",
+      "blocos": [
+        {
+          "rot": "Encuesta anónima (4 preguntas)",
+          "icone": "megafone",
+          "conteudo": "ENCUESTA · ¿Cómo usas la tecnología y la IA en el trabajo? · anónima · <sector>\nNadie será castigado por lo que responda. Queremos saber qué te ayuda,\npara ofrecerte una forma segura de seguir.\n\n1. ¿Qué herramientas (apps, sitios, extensiones, asistentes) usas en el trabajo\n   además de las oficiales? ¿Para qué?\n2. ¿Qué información pones o dejas que esas herramientas lean?\n   (clientes, correos, planillas, fotos, audios, documentos)\n3. ¿La usas con cuenta de la empresa o cuenta personal? ¿Gratuita o de pago?\n4. Si la herramienta desapareciera mañana, ¿qué sería más difícil en tu trabajo?"
+        },
+        {
+          "rot": "Inventario de IA con decisión",
+          "icone": "lista",
+          "conteudo": "INVENTARIO DE IA · <área/empresa> · fecha <...> · responsable <nombre>\nEncuesta: respondieron <n> de <total> personas · 2ª ronda: <fecha>\n\n| Herramienta | Sector / quién la usa | Para qué | Dato que pasa | A dónde va / cuenta | ¿Contrato? ¿Entrena con el dato? | Dueño | Decisión (mantener/cambiar/cortar) | Alternativa | Plazo |\n|---|---|---|---|---|---|---|---|---|---|\n| <...> | <...> | <...> | <...> | <personal/empresa, país> | <sí/no> | <nombre> | <...> | <...> | <fecha> |\n\nCRITERIO: cortar = dato de cliente o acceso amplio sin control\n          cambiar = necesidad legítima, herramienta inadecuada\n          mantener = dato de bajo riesgo + contrato + dueño\nACCIONES INMEDIATAS: <accesos a revocar, envíos a suspender>\nPRÓXIMA ENCUESTA: <fecha, dentro de un trimestre>"
+        },
+        {
+          "rot": "Política de uso de IA (1 página)",
+          "icone": "arquivo",
+          "conteudo": "POLÍTICA DE USO DE IA · <empresa> · versión <...> · dueño <nombre>\n\nSE PUEDE (con las herramientas aprobadas: <lista>)\n- <usar IA para borradores de texto sin datos de clientes>\n- <...>\n\nNO SE PUEDE\n- Poner datos de clientes, empleados o financieros en una herramienta no aprobada\n  o en una cuenta personal.\n- Grabar a un cliente o a un colega sin aviso.\n- Dar a una extensión o complemento acceso a todos los archivos.\n- <...>\n\n¿QUIERES UNA HERRAMIENTA NUEVA? Pídela a <nombre/canal>. Respuesta en hasta <n> días hábiles.\n¿CREES QUE TE EQUIVOCASTE? Avisa a <nombre>. Quien avisa no es castigado; lo que se esconde, sí.\nREVISIÓN: cada trimestre, junto con la encuesta."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Inventario de Horizonte (ejemplo)",
+            "html": "<p><b>Inventario de IA · comercial y áreas cercanas · oct/2026</b> · Horizonte, empresa ficticia de estudio · responsable: Patrícia con Rafael · encuesta: 22 de 40</p><ol><li><b>Chatbot gratuito, cuenta personal</b> · ventas · propuestas · planilla de clientes · <b>cortar ya</b>; cambiar por IA en cuenta de la empresa con contrato, sin la planilla completa · Patrícia.</li><li><b>GravaReunião</b> · comercial · graba visitas sin aviso · voz y conversación de clientes · <b>cortar la grabación sin aviso</b>; cambiar por notas manuales o una herramienta aprobada con aviso al cliente · Patrícia.</li><li><b>MailResumo</b> (extensión) · finanzas · resumen de boletas · correos de proveedores y valores · <b>cortar</b> y evaluar una alternativa en el correo corporativo · Rafael.</li><li><b>PlanilhaGênio</b> (complemento) · finanzas · fórmulas · acceso a todo el Drive · <b>cortar el acceso</b> ya; evaluar una opción con acceso solo a la planilla · Rafael.</li><li><b>Resumen diario (servicio gratuito)</b> · atención · conversaciones completas con CPF y dirección, fuera de Brasil, sin contrato · <b>suspender y cambiar</b> por un proveedor con contrato y anonimización · Juliana y Rafael.</li></ol><p>2ª ronda con los líderes de los sectores: hasta el 31/10. Próxima encuesta: enero de 2027.</p>"
+          },
+          {
+            "rot": "Cómo verificar / errores comunes",
+            "html": "<ol><li><b>Inventario solo de TI.</b> Sin encuesta, la lista muestra lo que se compró, no lo que se usa.</li><li><b>Castigar a quien contó.</b> En la ronda siguiente, nadie cuenta nada.</li><li><b>Cortar sin alternativa.</b> La necesidad sigue y la herramienta vuelve por otra cuenta.</li><li><b>Olvidar la sombra oficial.</b> La automatización de la propia TI fuera del inventario también cuenta.</li><li><b>Verificación:</b> cada línea tiene el dato que pasa, el destino, el dueño, la decisión y el plazo; toda línea \"cortar\" tiene una alternativa o el motivo de no tenerla.</li></ol>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "El inventario de Horizonte para practicar; el de tu equipo para que valga.",
+      "fonte": "Piezas del laboratorio: <a href=\"https://inematds.github.io/prof2030-lab/inventario.html\">inventario de TI y encuesta interna (F12)</a> y <a href=\"https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/\">resumen de atención (F10)</a>.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · El inventario de Horizonte",
+          "min": "30 min",
+          "texto": "Abre el inventario de TI del laboratorio y lee las 22 respuestas. Encuentra las herramientas que no están en la lista oficial. Abre también el resumen de atención y verifica si está en el inventario. Completa el modelo, decide cada línea y escribe la política de una página de Horizonte.",
+          "pronto": "el inventario tiene las 5 herramientas (las 4 de la encuesta y el resumen diario), cada una con sector, dato que pasa, destino, dueño, decisión y plazo; toda decisión de cortar tiene alternativa; la política tiene las cuatro partes (se puede, no se puede, a quién pedir, creí que me equivoqué) y la fecha de la próxima encuesta."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · La encuesta de tu equipo",
+          "min": "30 min + 1 semana",
+          "dias": 7,
+          "texto": "Envía la encuesta anónima a tu equipo (o área), diciendo antes que nadie será castigado. Espera una semana, habla con quienes no respondieron y arma el inventario. Lleva las decisiones de cortar a TI con la alternativa ya pensada.",
+          "pronto": "la encuesta se envió a todo el equipo, sabes cuántos respondieron, hiciste la segunda ronda con quienes no respondieron, y el inventario tiene cada herramienta con dato, destino, dueño, decisión y plazo, además de la política de una página publicada o enviada para aprobación."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba rápida",
+      "sub": "4 preguntas. La explicación aparece después de tu intento.",
+      "perguntas": [
+        {
+          "p": "La encuesta reveló que un vendedor pega la planilla de clientes en un chatbot gratuito. ¿Cuál es la mejor reacción?",
+          "opcoes": [
+            "Una advertencia por escrito, para que sirva de ejemplo",
+            "Cortar el uso ya y ofrecer ese mismo día una herramienta aprobada para escribir propuestas",
+            "Dejarlo, porque ahorra tiempo"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Castigar hace que la próxima encuesta vuelva vacía. Dejarlo expone datos de clientes. Cortar con alternativa resuelve el riesgo y mantiene la necesidad atendida."
+        },
+        {
+          "p": "¿Qué pregunta decide el riesgo de una herramienta en la sombra?",
+          "opcoes": [
+            "¿Es popular?",
+            "Qué dato lleva, a dónde va, bajo qué contrato y si puede entrenar modelos con él",
+            "¿Es gratuita?"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "El riesgo viaja con el dato. Ser gratuita solo empeora las cosas cuando el precio es el uso de tus datos, como en los términos del servicio de resumen del laboratorio."
+        },
+        {
+          "p": "El resumen diario de atención lo creó la propia TI. ¿Entra en el inventario de IA en la sombra?",
+          "opcoes": [
+            "No, TI sabe que existe",
+            "Sí: está fuera del inventario oficial, sin contrato, y envía datos de clientes hacia afuera",
+            "Solo si alguien se queja"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Sombra es lo que está fuera de control, no solo lo que el empleado instaló. Saber que existe no es lo mismo que estar registrado, con dueño y contrato."
+        },
+        {
+          "p": "18 de las 40 personas no respondieron la encuesta. ¿Qué significa eso para el inventario?",
+          "opcoes": [
+            "Que esas personas no usan IA",
+            "Que está incompleto hasta una segunda ronda, con los líderes de cada área",
+            "Nada, 22 respuestas bastan"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "El silencio no es cero. El inventario dice cuántos respondieron y marca la segunda ronda antes de declararse completo."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Resumen",
+      "itens": [
+        {
+          "t": "Preguntar sin castigar",
+          "texto": "Encuesta anónima, concreta, y cuenta de quienes no respondieron."
+        },
+        {
+          "t": "Seguir el dato",
+          "texto": "Qué entra, a dónde va, contrato y uso para entrenamiento."
+        },
+        {
+          "t": "Cortar con alternativa",
+          "texto": "Mantener, cambiar o cortar, con dueño, fecha y motivo."
+        },
+        {
+          "t": "Política de una página",
+          "texto": "Se puede, no se puede, a quién pedir. Se vuelve a encuestar cada trimestre."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Laboratorio Horizonte: inventario de TI y encuesta interna (F12, empresa ficticia de estudio)",
+          "href": "https://inematds.github.io/prof2030-lab/inventario.html",
+          "icone": "lista"
+        },
+        {
+          "t": "Laboratorio Horizonte: el resumen de atención (F10)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/",
+          "icone": "nuvem"
+        },
+        {
+          "t": "Profissional 2030 Base: confiar en lo que construye la IA (LGPD y a dónde va el dato)",
+          "href": "https://inematds.github.io/prof2030-base/",
+          "icone": "escudo"
+        }
+      ]
+    }
+  ]
+}

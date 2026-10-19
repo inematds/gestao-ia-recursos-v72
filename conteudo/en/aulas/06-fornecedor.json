@@ -1,0 +1,307 @@
+{
+  "slug": "fornecedor",
+  "num": 6,
+  "menu": "Vendor",
+  "titulo": "Vendor and lock-in",
+  "titulo_curto": "Vendor",
+  "minutos": 20,
+  "lead": "AI tools get discontinued, change prices and change rules within months. Whoever finds out on the day of the notice pays more. Lock-in is being stuck with a vendor because leaving costs too much. In this lesson you separate what belongs to the company from what belongs to the vendor, write the exit triggers, and build the switch plan before you need it.",
+  "objetivo": "plan the switch of a model or tool before you need to: what is yours, what changes, how much it costs, who does it and how long it takes.",
+  "competencias": [
+    "separar-ativo-da-empresa-do-fornecedor",
+    "escrever-gatilhos-de-saida",
+    "planejar-e-ensaiar-a-troca"
+  ],
+  "aprende": [
+    {
+      "t": "What belongs to the company and must live outside the platform"
+    },
+    {
+      "t": "The signs that you're getting stuck"
+    },
+    {
+      "t": "Exit triggers written before the notice"
+    },
+    {
+      "t": "Switch plan with cost, owner, deadline and a rehearsal"
+    }
+  ],
+  "hero_alt": "A meeting table with a printed contract, a pen and a highlighter; a manager and the company owner follow a video call on a large screen.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From what is yours to the exit plan",
+      "sub": "Knowing what's yours comes first; the plan only works if these files exist outside the tool. Tap each part.",
+      "nos": [
+        {
+          "icone": "pasta",
+          "titulo": "What's yours",
+          "sub": "stays with the company",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "in an open format",
+              "sub": "text, spreadsheet"
+            }
+          ],
+          "detalhe": "Everything the company wrote and measured: constitution, context package, reusable procedures, authority limit matrix, tool contracts, the 20 cases with the right answer, and the action logs. If this only exists inside the vendor's dashboard, it isn't truly yours."
+        },
+        {
+          "icone": "nuvem",
+          "titulo": "What's theirs",
+          "sub": "will change",
+          "itens": [
+            {
+              "icone": "chip",
+              "t": "model, format, connector",
+              "sub": "and the price"
+            }
+          ],
+          "detalhe": "The model and its version, the platform's configuration format, the connectors, the place where the history is stored, and the price. None of this is bad; it's just not under your control, which is why it goes into the plan."
+        },
+        {
+          "icone": "alvo",
+          "titulo": "Triggers",
+          "sub": "when to act",
+          "itens": [
+            {
+              "icone": "relogio",
+              "t": "written beforehand",
+              "sub": "with a number"
+            }
+          ],
+          "detalhe": "The conditions that set the plan in motion, written before the problem: a discontinuation notice, a price above a ceiling, a change in the terms of use for your data, a serious incident, a drop in quality on the 20 cases, a contract about to expire."
+        },
+        {
+          "icone": "lista",
+          "titulo": "Plan",
+          "sub": "what, how much, who, when",
+          "forte": true,
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "owner and deadline",
+              "sub": "estimated cost"
+            }
+          ],
+          "detalhe": "What changes in the switch, how much it costs (hours and money), who does each part, in how much time, and what happens to the operation in the meantime: the affected actions go back to needing approval until the test cases pass on the new tool."
+        },
+        {
+          "icone": "play",
+          "titulo": "Rehearsal",
+          "sub": "once a year",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "20 cases on the alternative",
+              "sub": "without switching anything"
+            }
+          ],
+          "detalhe": "Run the 20 cases from lesson 2 on the registered alternative, without changing the operation. It takes an afternoon and shows whether the plan is real or just paper. If the rehearsal fails, the plan gets fixed while there is still time."
+        }
+      ],
+      "legenda": "Principle of the Gestoria method (INEMA): choose models by evidence on real tasks, without depending on one vendor. Horizonte: fictional study company."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How not to get stuck",
+      "sub": "Four steps. The plan is cheap to write and expensive to improvise.",
+      "passos": [
+        {
+          "titulo": "Take what's yours off the platform",
+          "sub": "copy in an open format",
+          "texto": [
+            "Export to a company file everything you wrote and measured. Text and spreadsheets work in any tool; configuration in a proprietary format only works in that one.",
+            "Also check that the history (conversations, action logs) comes out in a format you can read outside the platform. History that won't export is the most common form of lock-in."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte (fictional)",
+            "texto": "Hora's constitution only existed typed into the WhatsApp platform's dashboard. Now it's in the company file, version 2.0, with Patrícia as its owner; the dashboard gets a copy."
+          }
+        },
+        {
+          "titulo": "Read the signals",
+          "sub": "and the short life cycle of products",
+          "texto": [
+            "Signs you're getting stuck: history that won't export, configuration that only works there, a price that grows with use without a ceiling, a discount in exchange for a long contract, a process depending on a feature still in testing.",
+            "A product gets discontinued. OpenAI says the Agent Builder and the AgentKit Evals will be shut down on 11/30/2026, with migration to the Agents SDK or Workspace Agents (vendor announcement). Anyone who built an agent there has a deadline to redo it."
+          ],
+          "exemplo": {
+            "rot": "Reading",
+            "texto": "It's not one vendor's problem: it's the pace of the market. INEMA's October overview records products being discontinued and rules changing within months."
+          }
+        },
+        {
+          "titulo": "Write the triggers",
+          "sub": "with a number, before the notice",
+          "texto": [
+            "A good trigger is verifiable: \"price goes up more than 30%\", \"discontinuation notice\", \"the terms start to allow training on our data\", \"more than 1 critical error on the 20 cases after a version change\".",
+            "A trigger may have already fired without anyone noticing. Review the vendors in the lesson 5 inventory with the list in hand."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "The free daily summary service (F10) already has its trigger fired: no contract, and terms that allow training on the conversations. It goes straight into the switch plan."
+          }
+        },
+        {
+          "titulo": "Plan with cost and rehearsal",
+          "sub": "what, how much, who, when",
+          "texto": [
+            "For each key vendor: what changes in the switch, how much it costs, who does it, the timeline, and how operations keep running in the meantime. During the switch, the affected actions go back to yellow and the test cases run again (G3 rule).",
+            "Rehearse once a year: run the 20 cases on the alternative, without switching anything. A plan that has never been rehearsed tends to forget the history, the credentials, and who approves."
+          ],
+          "exemplo": {
+            "rot": "Cost of the switch (fictional)",
+            "texto": "Rafael 16 h × R$ 90 = R$ 1,440; Patrícia approving everything in yellow for 2 weeks, 5 extra hours × R$ 80 = R$ 400. Estimated total: R$ 1,840 and 3 weeks."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template to copy: exit plan",
+      "sub": "One plan per key vendor. The tab next to this one shows the exit plan for the vendor of Hora's model.",
+      "blocos": [
+        {
+          "rot": "Vendor exit plan",
+          "icone": "lista",
+          "conteudo": "EXIT PLAN · vendor <...> · what it provides <model/platform/connector>\nProcesses that depend on it: <...> · plan owner: <name> · date <...>\n\nWHAT IS OURS (copy outside the platform, open format)\n[ ] constitution / instructions   v<...>  in <folder>\n[ ] context package              v<...>  in <folder>\n[ ] authority limit matrix and tool contracts\n[ ] 20 cases with the right answer (folder the agent does not read)\n[ ] records and history: can it export? [ ] yes, format <...>  [ ] no -> risk\n\nWHAT IS THEIRS: <model/version, configuration format, connector, current price\n                checked on <date>>\n\nEXIT TRIGGERS (any one activates the plan)\n- notice of discontinuation or end of version\n- price rises by more than <...>% or cost per completed task goes above R$ <...>\n- terms start allowing use of our data for training\n- <n> critical errors in the test cases after a version change\n- serious incident / contract expires on <date>\n\nALTERNATIVE: <vendor/configuration> · last rehearsal: <date> · result <...>\n\nSWITCH\n| What changes | Who does it | Hours | R$ | Timeline |\n|---|---|---|---|---|\n| <...> | <name> | <...> | <...> | <...> |\nDURING THE SWITCH: affected actions go back to yellow; test cases run again\nTOTAL ESTIMATED COST: R$ <...> · TIMELINE: <...> · APPROVED BY: <name>\nNEXT REHEARSAL: <date>"
+        },
+        {
+          "rot": "Prompt · what locks us in",
+          "icone": "chat",
+          "conteudo": "You are a technology contracts consultant. Below is a description of\nhow a company uses an AI vendor and the exit plan it wrote.\nDo not recommend a vendor: point out lock-in risks.\n\n1. Which part of the company's work exists only inside the platform?\n2. Which data or history does not leave in an open format?\n3. Which exit trigger is missing or has no number?\n4. Did the cost of the switch forget anything (credentials, history,\n   team training, manual approval period)?\n\nVendor use:\n\"\"\"<paste>\"\"\"\nPlan:\n\"\"\"<paste>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Hora's plan (example)",
+            "html": "<p><b>Exit plan · vendor of Hora's model</b> · Horizonte, fictional study company · owner: Patrícia · technical lead: Rafael · approves: Carlos</p><ul><li><b>Ours, outside the platform:</b> constitution v2.0, context package v3, matrix and contracts v1, the 20 cases (folder \"testes-hora\"). Conversation history: exports as a spreadsheet, once a month.</li><li><b>Theirs:</b> the mid tier model and its version; the price, checked on the website on 10/15.</li><li><b>Triggers:</b> discontinuation; price +30%; cost per order above R$ 8; data-use terms changing; more than 1 critical error in the 20 cases after a version change.</li><li><b>Alternative:</b> another mid tier configuration, from another vendor · rehearsal on 10/20: 15 correct, 4 acceptable, 1 incorrect, 0 critical.</li><li><b>Switch:</b> Rafael reconfigures and tests (16 h, R$ 1,440); Patrícia approves everything in yellow for 2 weeks (5 extra hours, R$ 400). Estimated total R$ 1,840, 3 weeks.</li><li><b>Next rehearsal:</b> October 2027.</li></ul>"
+          },
+          {
+            "rot": "How to check / common mistakes",
+            "html": "<ol><li><b>\"Everything is on the platform.\"</b> Then nothing is yours. Export it and keep it in the company archive.</li><li><b>Trigger with no number.</b> \"If it gets expensive\" never fires; \"+30%\" does.</li><li><b>Switch cost that is only technical.</b> Forgetting the weeks of manual approval and the team training.</li><li><b>Never rehearsed.</b> The first test of the alternative happens on the day the current one goes down.</li><li><b>Check:</b> each item under \"what is ours\" has a folder path; each trigger has a number or an event; the switch has an owner, hours, R$ and timeline on each line.</li></ol>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Hora's model vendor plan to practice on; the plan for one of your own vendors for real.",
+      "fonte": "Lab pieces: <a href=\"https://inematds.github.io/prof2030-lab/pecas/agente-whatsapp/\">Hora's configuration</a> and <a href=\"https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/\">customer service summary (F10)</a>.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · Hora's plan",
+          "min": "30 min",
+          "texto": "Fill in the exit plan for the vendor of Hora's model, using the pieces from lessons 2 to 4 as \"what is ours\". Then write one extra line for the daily summary service: which trigger has already fired and what the first step of the switch is. Run the prompt and answer each point.",
+          "pronto": "the plan has at least 5 items under \"what is ours\" with the folder for each, at least 4 triggers with a number or an event, the alternative with a rehearsal date, the switch table with owner, hours, R$ and timeline on each line, and the daily summary line with the trigger that fired."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · One of your vendors",
+          "min": "45 min",
+          "texto": "Choose the AI vendor your process depends on most. Find out with IT what it can export and what it cannot. Write the plan, set the date of the first rehearsal, and take the triggers to whoever approves the purchase.",
+          "pronto": "the plan is saved with what is yours outside the platform (or the list of what still needs to be exported, with a deadline), the triggers with numbers, the estimated cost of the switch with owner and timeline, and the rehearsal date on the calendar."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "4 questions. The explanation appears after you try.",
+      "perguntas": [
+        {
+          "p": "The agent's constitution exists only typed into the platform's panel. What is the risk?",
+          "opcoes": [
+            "None, the platform keeps it",
+            "If the platform changes or goes away, the company's work goes with it; there must be a copy in an open format in the company archive",
+            "Only the risk of typos"
+          ],
+          "certa": 1,
+          "ref": "diagrama",
+          "explica": "What the company wrote is its asset. Kept only inside the vendor, it becomes hostage to the vendor's format and contract."
+        },
+        {
+          "p": "Which of these is a well-written exit trigger?",
+          "opcoes": [
+            "\"If the vendor gets worse\"",
+            "\"Price above 30% of the current one or cost per order above R$ 8\"",
+            "\"When something better shows up\""
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "A trigger must be verifiable by anyone, without debate. The other two depend on opinion and never fire in time."
+        },
+        {
+          "p": "OpenAI says the AgentKit Agent Builder will be shut down on 11/30/2026. What does this news teach the manager?",
+          "opcoes": [
+            "That this vendor is bad",
+            "That products get retired within months, and the exit plan must exist before the notice",
+            "That you should not use AI"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "It is the market's short cycle, not an isolated case. Whoever had the work outside the platform and a rehearsed plan has a migration; whoever did not has an emergency."
+        },
+        {
+          "p": "During the switch of Hora's model, what happens to the request of up to R$ 5 thousand, which was in green?",
+          "opcoes": [
+            "It stays in green, it is the same rule",
+            "It goes back to yellow until the test cases pass on the new configuration",
+            "It becomes prohibited"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Switching models changes behavior. The G3 rule applies here: affected actions go back to requiring approval until the evidence is redone. That approval time goes into the cost of the switch."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "What is yours, outside",
+          "texto": "Instructions, context, contracts, cases and history in open format."
+        },
+        {
+          "t": "Signs of lock-in",
+          "texto": "History you can't export, a proprietary format, a price with no cap."
+        },
+        {
+          "t": "Triggers with numbers",
+          "texto": "Written before the notice, reviewed with the inventory."
+        },
+        {
+          "t": "Rehearsed plan",
+          "texto": "What, how much, who, when. Annual rehearsal with the 20 cases."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "Horizonte Lab: the service summary on a free service (F10, fictional study company)",
+          "href": "https://inematds.github.io/prof2030-lab/pecas/resumo-atendimento/",
+          "icone": "nuvem"
+        },
+        {
+          "t": "AI Management Area: the nine management objects of the 2027 manager",
+          "href": "https://eventos.inema.pro/gestao-ia/",
+          "icone": "alvo"
+        },
+        {
+          "t": "Professional 2030 Base: the vendor and where the data can go",
+          "href": "https://inematds.github.io/prof2030-base/",
+          "icone": "escudo"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "id": "gestao-ia-recursos-v72",
+  "lang": "es",
+  "url": "https://inematds.github.io/gestao-ia-recursos-v72/es/",
+  "nome": "Recursos: modelos, datos y presupuesto",
+  "sub": "Formación Gestión de IA 2027 · G4",
+  "volta": {
+    "t": "Área Gestión de IA",
+    "href": "https://eventos.inema.pro/gestao-ia/"
+  },
+  "lado_card": {
+    "rot": "Formación Gestión de IA 2027 · G4",
+    "t": "Empieza por la puerta de entrada",
+    "texto": "El G0 muestra la empresa agéntica y el papel del gestor de 2027. Los demás cursos de la formación parten de él.",
+    "link": "Ir al G0",
+    "href": "https://inematds.github.io/gestao-ia-base-v72/"
+  },
+  "rodape": "INEMA.CLUB · contenido abierto y gratuito · formato INEMA Learning v7.2 · <a href=\"https://eventos.inema.pro/gestao-ia/\">eventos.inema.pro/gestao-ia</a> · <a href=\"https://inematds.github.io/prof2030-lab/\">laboratorio Horizonte (empresa ficticia de estudio)</a> · <a href=\"https://inema.club/\">inema.club</a>",
+  "videos": {},
+  "inicio": {
+    "kicker": "Formación Gestión de IA 2027 · G4 · 8 clases",
+    "titulo": "Recursos: modelos, datos y presupuesto",
+    "lead": "El proveedor muestra cuánto cuesta cada llamada. El gestor necesita saber cuánto cuesta cada resultado. En ocho clases calculas el costo por tarea completada, eliges el modelo según tus casos, organizas el conocimiento que lee el agente, das a las herramientas el acceso mínimo, encuentras la IA en la sombra, planificas la salida del proveedor y armas presupuesto y ROI estimado sin prometer ahorro.",
+    "cta": "Empezar por la clase 1",
+    "cta2": {
+      "t": "Ver el Área Gestión de IA",
+      "href": "https://eventos.inema.pro/gestao-ia/"
+    },
+    "capa_alt": "Un gerente de una distribuidora revisa, al final del día, una hoja de presupuesto junto a un notebook con un gráfico de barras; al fondo, los estantes del almacén.",
+    "numeros": [
+      {
+        "v": "8",
+        "t": "clases de 15 a 20 minutos"
+      },
+      {
+        "v": "18",
+        "t": "ejercicios con \"listo cuando\""
+      },
+      {
+        "v": "19",
+        "t": "modelos para copiar"
+      },
+      {
+        "v": "1",
+        "t": "conversación simulada con el dueño"
+      }
+    ],
+    "aulas_titulo": "Las clases",
+    "aulas_sub": "Primero la cuenta (cuánto cuesta el resultado), después cada recurso que entra en ella: el modelo, el conocimiento, las herramientas, lo que el equipo ya usa por fuera y el proveedor. Las clases 7 y 8 juntan todo en el presupuesto y en el plan de recursos del área.",
+    "blocos": [
+      {
+        "t": "Para quién es",
+        "itens": [
+          "Gestor de área, dueño de una pequeña o mediana empresa, líder de operaciones o de RR. HH. que ya tiene, o va a tener, agentes de IA en el equipo.",
+          "Quien no programa y no quiere programar: aquí administras el agente. Construir un agente es otro curso.",
+          "Quien firma la factura del agente, o tendrá que explicarle al dueño cuánto cuesta y cuánto rinde."
+        ]
+      },
+      {
+        "t": "Qué sales haciendo",
+        "itens": [
+          "Calcular el costo por tarea completada, con tiempo humano y retrabajo, y no solo el precio por llamada.",
+          "Elegir el modelo comparando dos configuraciones en tus propios casos, con informe de selección y alternativa.",
+          "Mantener el conocimiento que lee el agente con dueño, versión y vigencia, y dar a las herramientas solo el acceso que la tarea exige.",
+          "Armar el presupuesto mensual, el ROI estimado en tres escenarios y el plan de salida de un proveedor."
+        ]
+      },
+      {
+        "t": "El caso que atraviesa el curso",
+        "itens": [
+          "La <b>Horizonte Distribuidora</b>, <a href=\"https://inematds.github.io/prof2030-lab/\">empresa ficticia de estudio</a> de 40 personas que distribuye productos de limpieza en el interior de São Paulo.",
+          "Tú haces el papel de <b>Patrícia Lima, gerente comercial</b>, que responde por <b>Hora</b>, un agente que vende por WhatsApp. El proceso es el pedido que llega por WhatsApp y llega hasta la facturación.",
+          "Las fallas plantadas en el laboratorio (el asistente de correo que borra sin pedir permiso, las herramientas que TI no conoce, el panel sin línea de base) se vuelven problemas de gestión. Cada clase tiene una práctica en Horizonte y otra en tu propio proceso."
+        ]
+      }
+    ]
+  },
+  "ui": {
+    "pular": "Saltar al contenido",
+    "aulas": "Clases",
+    "concluido": "completado",
+    "aula": "Clase",
+    "nesta_aula": "En esta clase vas a aprender:",
+    "objetivo": "Objetivo:",
+    "proxima_aula": "Próxima clase",
+    "aula_anterior": "Clase anterior",
+    "voltar_inicio": "Volver al inicio del curso",
+    "marcar_concluida": "Marcar clase como completada",
+    "dg_dica": "Haz clic en cada bloque del diagrama para ver qué hace.",
+    "copiar": "Copiar",
+    "copiado": "Copiado",
+    "selo_simulacao": "Simulación: ejemplo ilustrativo",
+    "selo_real": "Ejemplo del repositorio",
+    "pronto_quando": "Listo cuando:",
+    "fiz": "Hice este ejercicio",
+    "video_pagina": "Página del video con guion",
+    "pergunta": "Pregunta",
+    "de": "de",
+    "cert_tag": "competencia",
+    "correto": "Correcto",
+    "errado": "No es esa",
+    "quiz_aguarda": "Elige una alternativa. La explicación aparece después de tu intento.",
+    "proxima_pergunta": "Siguiente pregunta",
+    "quiz_ver": "Ver resultado",
+    "quiz_fim": "Prueba completada",
+    "quiz_total": "Acertaste {a} de {n}. Si aciertas todas, la clase se marca como completada.",
+    "aparencia": "Apariencia",
+    "tamanho_texto": "Tamaño del texto",
+    "tema": "Tema",
+    "tema_escuro": "Oscuro",
+    "tema_papel": "Papel claro",
+    "role_dica": "Desplaza la página: cada etapa de abajo ilumina su parte del diagrama.",
+    "pre_requisito": "requiere",
+    "ver_aula": "Ver la clase",
+    "mapa_dica": "Haz clic en un ejercicio para ver qué hacer y el \"listo cuando\".",
+    "etapas": "Etapas",
+    "exercicios": "ejercicios",
+    "rever": "Repasar:",
+    "revisar_erradas": "Revisar las incorrectas",
+    "refazer": "Rehacer la prueba",
+    "h_semana": "h por semana",
+    "data_inicio": "Fecha de inicio",
+    "ritmo": "Tiempo disponible",
+    "gerar_plano": "Generar mi plan",
+    "baixar_md": "Descargar plan.md",
+    "baixar_ics": "Descargar para el calendario (.ics)",
+    "ind_estudo": "Estudio (clases)",
+    "ind_pratica": "Práctica declarada",
+    "ind_nota": "Práctica = ejercicios que marcaste como hechos. La comprobación viene en el examen de la certificación.",
+    "estudo": {
+      "titulo": "Tu estudio",
+      "continuar": "Continuar donde lo dejé",
+      "comecar": "Empezar por la clase 1",
+      "cta_continuar": "Continuar la clase {n}",
+      "hoje": "hoy",
+      "ontem": "ayer",
+      "ha_dias": "hace {n} días",
+      "desempenho": "Desempeño en las pruebas",
+      "notas": "Mis anotaciones",
+      "dados": "Copiar mis datos",
+      "sem_testes": "Aún no has hecho ningún test. El test queda al final de cada clase.",
+      "nao_fez": "test aún no hecho",
+      "ultimo": "Último",
+      "melhor": "Mejor",
+      "tentativas": "intentos",
+      "tentativa": "intento",
+      "tudo_certo": "Acertaste todo en el último test.",
+      "rever": "Para repasar",
+      "resposta": "Respuesta correcta:",
+      "ir_teste": "Rehacer la prueba",
+      "sem_notas": "Aún no hay ninguna anotación. En la clase, selecciona un fragmento del texto y toca Marcar o Anotar.",
+      "so_marcado": "(solo marcado)",
+      "marcar": "Marcar",
+      "anotar": "Anotar",
+      "salvar": "Guardar",
+      "apagar": "Borrar marca",
+      "fechar": "Cerrar",
+      "nota_ph": "Escribe tu anotación sobre este fragmento…",
+      "um_bloco": "Marca dentro de un solo párrafo.",
+      "nao_marca": "Este fragmento no se puede marcar.",
+      "dados_exp": "Tu progreso, tus anotaciones y las notas de los tests quedan solo en este navegador. Descarga una copia (.json) para guardarla o para continuar en otro computador o navegador; allí, carga la copia. Cargar se suma a lo que ya existe y no borra nada.",
+      "exportar": "Descargar copia",
+      "importar": "Cargar copia",
+      "import_ok": "Copia cargada ({n} elementos). Actualizando la página…",
+      "import_erro": "Archivo no reconocido. No se cambió nada.",
+      "import_outro": "Esta copia es de otro curso. No se cambió nada.",
+      "export_ok": "Copia descargada."
+    },
+    "conv_dica": "Elige tu respuesta. El comentario aparece justo después y la conversación sigue según tu elección.",
+    "conv_voce": "Tú",
+    "conv_escolha": "Tu respuesta",
+    "conv_boa": "Buena elección",
+    "conv_meio": "Se puede mejorar",
+    "conv_ruim": "Elección débil",
+    "conv_fim": "Fin de la conversación",
+    "conv_placar": "Hiciste {p} de {m} puntos posibles.",
+    "conv_licao": "Lección:",
+    "conv_recomecar": "Reiniciar la conversación",
+    "conv_feita": "Tu mejor puntaje: {p} de {m} puntos.",
+    "comecar": "Empezar la clase",
+    "nesta_vai": "En esta clase vas a",
+    "trocar_tema": "Cambiar tema claro/oscuro"
+  },
+  "icone": "grafico"
+}

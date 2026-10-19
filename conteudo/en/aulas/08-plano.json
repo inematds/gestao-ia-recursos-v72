@@ -1,0 +1,455 @@
+{
+  "slug": "plano",
+  "num": 8,
+  "menu": "Project",
+  "titulo": "Project: the resource plan + What changed",
+  "titulo_curto": "Project: the plan",
+  "minutos": 20,
+  "lead": "The owner won't read seven documents. They'll read one page: which model, which knowledge, which tools, how much it costs per month and how to get out if the vendor changes. The project is the area's resource plan, with the pieces from lessons 1 to 7 behind it, approved by a rubric and signed by someone who didn't write it. At the end, what changed over the quarter.",
+  "objetivo": "deliver the area's resource plan on one page and get it approved by the rubric, signed by someone who didn't write it.",
+  "competencias": [
+    "montar-plano-de-recursos",
+    "aplicar-rubrica-de-aprovacao",
+    "ler-precos-e-anuncios-com-data"
+  ],
+  "aprende": [
+    {
+      "t": "The five blocks of the resource plan on one page"
+    },
+    {
+      "t": "Apply the rubric, including the items that fail it on their own"
+    },
+    {
+      "t": "Who signs, who confirms the locks, and when to review"
+    },
+    {
+      "t": "What changed through October 2026, with date and source"
+    }
+  ],
+  "hero_alt": "A manager shows a single sheet with colored blocks to the owner and a technician at a round table; behind the glass, the warehouse with pallets.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The resource plan",
+      "sub": "Five blocks on one page, each backed by the pieces from a lesson, plus the rubric and the signature. Click each part.",
+      "volta": "Failed on one item: go back to the block that failed, not to zero",
+      "nos": [
+        {
+          "icone": "chip",
+          "titulo": "Models",
+          "sub": "lesson 2",
+          "detalhe": "For each task, the configuration chosen by the 20 cases, the result with the critic kept separate, the alternative and the date to redo the test."
+        },
+        {
+          "icone": "pasta",
+          "titulo": "Context",
+          "sub": "lesson 3",
+          "detalhe": "The package index: documents with owner, version and expiry, the precedence, what stays out and where the test cases live."
+        },
+        {
+          "icone": "cadeado",
+          "titulo": "Tools",
+          "sub": "lessons 4 and 5",
+          "detalhe": "Each tool with its access step and the locks confirmed by IT; the shadow AI inventory with the decisions and the date of the next survey."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Budget",
+          "sub": "lessons 1 and 7",
+          "forte": true,
+          "detalhe": "Cost per completed task, monthly cost with a cap and an alert, investment kept separate, and the estimated ROI in three scenarios, with the uncertainties written down."
+        },
+        {
+          "icone": "voltar",
+          "titulo": "Exit",
+          "sub": "lesson 6",
+          "detalhe": "For the important vendors: what belongs to the company outside the platform, the exit triggers with numbers, the estimated cost of switching, and the date of the drill."
+        },
+        {
+          "icone": "check",
+          "titulo": "Rubric and signature",
+          "sub": "whoever builds it doesn't approve it",
+          "detalhe": "The rubric gives the score, and six items fail the plan on their own. At Horizonte, Patrícia builds the plan, Rafael confirms the guardrails and the cap at the vendor, and Carlos signs."
+        }
+      ],
+      "legenda": "Approving the plan for teaching purposes does not, by itself, authorize spending or a contract at the company: that decision still belongs to whoever answers for it."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "From draft to signature",
+      "sub": "Four steps. The Horizonte plan is practice; the one for your area is what counts.",
+      "passos": [
+        {
+          "titulo": "One page",
+          "sub": "with the pieces behind it",
+          "texto": [
+            "The page summarizes; the pieces prove it. Each block has two or three lines and points to the lesson document that backs it up, in the right version.",
+            "Mark what is measured and what is estimated. A plan that mixes the two without saying so is the first to be challenged in the meeting."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "\"Resource plan · sales · v1 · Oct/2026\": one page in front, and behind it the model report, the package, the contracts, the inventory, the exit plan and the budget."
+          }
+        },
+        {
+          "titulo": "Run it through the rubric",
+          "sub": "100 points and six mandatory items",
+          "texto": [
+            "The rubric adds up to 100 points across six blocks. It passes with 75 or more and all six mandatory items checked. One missing mandatory item fails the plan, even with 95 points.",
+            "The mandatory items prevent the big damage: cost per task with human time, a model chosen by cases, a document with an owner, nothing irreversible within the agent's reach, a spending cap, and ROI in scenarios with no promised savings."
+          ],
+          "exemplo": {
+            "rot": "Panel test",
+            "texto": "Run the panel prompt (template next to it). It points out gaps; the score is decided by you and by whoever signs."
+          }
+        },
+        {
+          "titulo": "Who confirms, who signs",
+          "sub": "separation of duties",
+          "texto": [
+            "Whoever built the plan does not approve it. IT confirms in writing that the guardrails exist in the tool and that the cap is set at the vendor, when possible.",
+            "Whoever signs is whoever answers for the budget. They read the page, check the mandatory items, and ask about anything they didn't understand, preferably about the pessimistic scenario."
+          ],
+          "exemplo": {
+            "rot": "At Horizonte",
+            "texto": "Patrícia builds. Rafael confirms the guardrails for the order app and the email, and the R$ 1,400 cap. Carlos reads, asks about the −R$ 462, and signs."
+          }
+        },
+        {
+          "titulo": "Review date",
+          "sub": "the plan gets old",
+          "texto": [
+            "The plan goes out with a review date: every quarter, together with the shadow AI survey, or sooner if an exit trigger fires or the cost goes over the cap.",
+            "At the review, the estimated becomes measured: the baseline, the realized savings, the real cost for the month. That is how ROI stops being a range."
+          ],
+          "exemplo": {
+            "rot": "Rule",
+            "texto": "If the model, the vendor, or the price changed: redo the calculation from lesson 1 and the 20 cases from lesson 2 before touching the budget."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The one-page plan, the rubric, and a panel prompt. The tab next to it shows the Horizonte plan.",
+      "blocos": [
+        {
+          "rot": "Resource plan (1 page)",
+          "icone": "arquivo",
+          "conteudo": "RESOURCE PLAN · <area> · version <...> · <date> · owner <name>\nProcess(es): <...> · Values: measured (M) or estimated (E) marked on each line\n\n1. MODELS\n   <task>: <configuration> · 20 cases: <c/a/u/CRITICAL> · alternative <...> · redo on <date>\n2. CONTEXT\n   Package v<...> · <n> documents, all with an owner · left out: <...> · tests in <folder>\n3. TOOLS AND SHADOW AI\n   <tool>: step <...> · guardrails confirmed by <name> on <date>\n   Inventory: <n> tools · cut <n> · replaced <n> · next survey <date>\n4. BUDGET AND ESTIMATED ROI\n   Cost per completed task: R$ <...> (M/E) · cost for the month R$ <...> · cap R$ <...>\n   Initial investment R$ <...> · Estimated ROI: <pess>% / <likely>% / <opt>%\n   Realized savings: <evidence or \"not yet observed\"> · uncertainties: <...>\n5. EXIT\n   <vendor>: triggers <...> · switch R$ <...> in <timeframe> · drill <date>\n\nRUBRIC SCORE: <...>/100 · mandatory items <6 of 6>\nGUARDRAILS CONFIRMED BY IT: <name, date>\nBUILT BY: <name> · APPROVED BY (cannot be whoever built it): <name> on <date>\nNEXT REVIEW: <date> or sooner, if a trigger fires or the cost goes over the cap"
+        },
+        {
+          "rot": "Plan rubric (100 points)",
+          "icone": "lista",
+          "conteudo": "RUBRIC · resource plan · passes with >= 75 AND all 6 mandatory items\n\nBLOCK                          POINTS  CRITERION FOR FULL POINTS\n1. Models                         20    configuration per task chosen on 20 cases;\n                                       critical errors separate; alternative; date to redo\n2. Context                        15    owner, version and expiry per document; precedence;\n                                       left out of the package; tests separate from examples\n3. Tools and shadow AI            20    contract per tool with step and guardrails in the\n                                       tool; credential kept out of the text; inventory\n                                       with decision, alternative and next survey\n4. Vendor exit                    15    what is ours outside the platform; triggers with\n                                       numbers; cost and owner of the switch; drill date\n5. Budget and ROI                 25    cost per task with 6 lines; cap and alert;\n                                       investment kept separate; 3 scenarios; uncertainties\n6. Clarity                         5    one page; measured vs estimated marked;\n                                       fictional or anonymized data identified\n\nMANDATORY ITEMS (one missing fails the plan)\n[ ] Cost per completed task includes human time and rework\n[ ] Model chosen by cases, with critical errors separate and an alternative\n[ ] Every document in the package has a named owner\n[ ] No irreversible operation (delete, pay, mass send) within the agent's reach\n[ ] Monthly spending cap written down\n[ ] ROI in scenarios, with the word \"estimated\" and no promised savings\n\nSCORE: <...>/100 · mandatory items: <...>/6 · result: [ ] approved [ ] goes back to <block>"
+        },
+        {
+          "rot": "Prompt · panel review before signature",
+          "icone": "chat",
+          "conteudo": "You are the review panel for the resource plan of an area that uses\nAI agents, using the rubric below. You do not approve or fail the plan:\nyou point out gaps for whoever will sign.\n\nFor each block of the rubric:\n1. Say what is present and what is missing for full points,\n   quoting the passage from the plan.\n2. Mark each mandatory item as present or absent, with the passage.\n3. List the three questions the approver should ask before\n   signing, at least one about the pessimistic scenario.\n\nDo not invent information that is not in the plan.\n\nRubric:\n\"\"\"<paste the rubric>\"\"\"\nPlan:\n\"\"\"<paste the plan and, if it fits, the pieces>\"\"\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Horizonte plan (example)",
+            "html": "<p><b>Resource plan · commercial · v1 · Oct/2026</b> · Horizonte, fictional study company · owner: Patrícia</p><ol><li><b>Models:</b> requests on the mid tier (16/3/1/0 in 20 cases) · cheap alternative only for questions, after 20 cases of our own · redo in Jan/2027.</li><li><b>Context:</b> package v3, 7 documents, all with an owner · left out: CPF, customer spreadsheet, expired table · tests in \"testes-hora\".</li><li><b>Tools and shadow AI:</b> consultar_cliente (read), criar_pedido (write up to R$ 5 thousand and 5%), email (read; send only as a draft) · limits confirmed by Rafael · inventory: 5 tools, 4 cut and 1 suspended until the replacement · next survey Jan/2027.</li><li><b>Budget and ROI:</b> R$ 6.68 per request (M, with hours logged for one week) · cost for the month R$ 2,040, model ceiling R$ 1,400 · investment R$ 3,600 · estimated ROI −23% / +27% / +77% (E, baseline not measured) · realized savings: not yet observed.</li><li><b>Exit:</b> model vendor: triggers +30% in price, cost per request above R$ 8, data terms · switch R$ 1,840 in 3 weeks · rehearsal done on 10/20.</li></ol><p><b>Rubric:</b> 84/100, 6 of 6 required. <b>Assembled by:</b> Patrícia. <b>Limits set by:</b> Rafael. <b>Approved by:</b> Carlos. <b>Review:</b> January 2027.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "What changed · October 2026",
+      "sub": "Quarterly panel, replaced at each course review. Each item has a date, a source, and the type of claim. Prices change within weeks: always check the vendor's price on the day. The method in lessons 1 to 7 does not depend on any of them.",
+      "passos": [
+        {
+          "titulo": "Prices this quarter",
+          "sub": "per million tokens, input/output",
+          "texto": [
+            "Anthropic: Opus 5.5 at US$ 4/20, 40% less than Opus 5 (09/22/2026); Sonnet 5.5 at the same price as Sonnet 5, US$ 2/10 (09/28/2026); Fable 5.1 about 25% cheaper per task (09/01/2026). xAI: Grok 4.7 at US$ 2/6 (09/21/2026). Sources: vendor announcements and documentation, and trade press.",
+            "The INEMA overview reads the quarter this way: the price per task drops 40% to 50% with each generation. It is a reading of the announcements, not a measurement."
+          ],
+          "exemplo": {
+            "rot": "For the plan",
+            "texto": "Falling prices don't change the math: they change one number in it. Redo the model line with today's price and see how much it moves the cost per completed task."
+          }
+        },
+        {
+          "titulo": "How agents are billed",
+          "sub": "tiers and usage-based billing",
+          "texto": [
+            "OpenAI: Workspace Agents, which replace Custom GPTs, are now billed per token (07/06/2026). GPT-6 reached all plans in tiers: Luna on the free plan, Sol on paid plans, Astra on the Pro, Business and Enterprise plans (10/07–08/2026).",
+            "Anthropic: Managed Agents, agents that work on their own for hours, are moving toward billing per agent hour, on top of tokens. Sources: release notes and vendor pages."
+          ],
+          "exemplo": {
+            "rot": "Reading",
+            "texto": "Plan tier and billing method change the budget more than the list price does. The monthly cap and the per-task limit from lesson 7 still apply to any billing method."
+          }
+        },
+        {
+          "titulo": "Open and local",
+          "sub": "fixed cost, different questions",
+          "texto": [
+            "Qwen3.8-27B, an open model, runs on a laptop (CNBC, 08/17/2026). For a small or midsize business, open, run locally means a fixed cost and data kept in-house, with your own maintenance and licenses that differ between models.",
+            "Provenance matters too: on 09/09/2026, the NSA, CISA and FBI accused DeepSeek, Alibaba, Moonshot and others of \"distillation at scale\" of American models (The Register). It is a government accusation, not a court decision."
+          ],
+          "exemplo": {
+            "rot": "For the selection report",
+            "texto": "Open, run locally goes into the recorded alternative with three questions: who maintains it, what license, where it came from."
+          }
+        },
+        {
+          "titulo": "Being retired and governance",
+          "sub": "the short cycle",
+          "texto": [
+            "OpenAI: Agent Builder and the AgentKit Evals will be shut down on 11/30/2026, with migration to the Agents SDK or Workspace Agents. Gartner: worldwide spending on AI governance of US$ 492 million in 2026, rising to more than US$ 1 billion in 2030 (forecast, 02/17/2026).",
+            "A consulting report and a vendor announcement sell what they describe. Use them as a map, never as proof of your case: the proof is your cost-per-completed-task calculation and your 20 cases."
+          ],
+          "exemplo": {
+            "rot": "Next review of this panel",
+            "texto": "January 2027, with the following quarter's overview. What is method (lessons 1 to 7) doesn't change; what is price, product and number does."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "mapa",
+      "titulo": "The course map",
+      "sub": "The four deliverables that support the resource plan and the exercises that produce them. Click an exercise to see its \"done when\".",
+      "degraus": [
+        {
+          "aula": "custo",
+          "icone": "grafico",
+          "quando": "Week 1",
+          "titulo": "Measure",
+          "sub": "cost of the result",
+          "saida": "Cost-per-completed-task calculation with the six lines.",
+          "passo": "The foundation of everything: without the cost per result, model choice and ROI have no ground to stand on. The hours call for a week of note-taking."
+        },
+        {
+          "aula": "modelo",
+          "icone": "chip",
+          "quando": "Weeks 1 and 2",
+          "titulo": "Choose",
+          "sub": "model and context",
+          "saida": "Selection report with 20 cases and a context package with an owner.",
+          "passo": "Requires the calculation from lesson 1 to compare cost per result. The context package (lesson 3) comes along with it: the configuration includes what the agent reads."
+        },
+        {
+          "aula": "ferramentas",
+          "icone": "cadeado",
+          "quando": "Week 2",
+          "titulo": "Protect",
+          "sub": "tools, shadow AI, exit",
+          "saida": "Tool contracts, inventory and exit plan.",
+          "passo": "Requires the selection report. The contracts limit what the agent does; the inventory (lesson 5) finds what no one registered; the exit plan (lesson 6) protects what belongs to the company."
+        },
+        {
+          "aula": "orcamento",
+          "icone": "calendario",
+          "quando": "Week 3",
+          "titulo": "Budget",
+          "sub": "budget and ROI",
+          "saida": "Budget with a cap and estimated ROI in three scenarios.",
+          "passo": "Requires the calculation from lesson 1 and the decisions from the earlier steps. The conversation with the owner (simulation) is the rehearsal before the real meeting."
+        }
+      ],
+      "rolagem_fim": {
+        "titulo": "The whole plan",
+        "texto": "Measure, choose, protect and budget, in this order. Each deliverable builds on the previous one, and the plan only goes up for signature when the \"done when\" of each step is true."
+      },
+      "resultado": {
+        "titulo": "By the end of the course",
+        "texto": "A one-page resource plan, approved against the rubric and signed by someone who did not write it: models, context, tools, budget and exit.",
+        "total": "18 exercises"
+      },
+      "legenda": "Recommended order: each deliverable uses the previous one."
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Generate your plan with dates",
+      "sub": "Pick the start date and how much time you have per week. The plan respects the exercises that ask for a week of note-taking or research.",
+      "curso": "Resources: models, data and budget",
+      "horas_padrao": 3,
+      "degraus": [
+        {
+          "titulo": "Lesson 1 · What it costs to produce the result",
+          "aula": "custo"
+        },
+        {
+          "titulo": "Lesson 2 · Choose the model by the job",
+          "aula": "modelo"
+        },
+        {
+          "titulo": "Lesson 3 · Company knowledge as an asset",
+          "aula": "contexto"
+        },
+        {
+          "titulo": "Lesson 4 · Tools and integrations",
+          "aula": "ferramentas"
+        },
+        {
+          "titulo": "Lesson 5 · Shadow AI",
+          "aula": "sombra"
+        },
+        {
+          "titulo": "Lesson 6 · Vendor and lock-in",
+          "aula": "fornecedor"
+        },
+        {
+          "titulo": "Lesson 7 · Compute budget and ROI",
+          "aula": "orcamento"
+        },
+        {
+          "titulo": "Lesson 8 · The resource plan",
+          "aula": "plano"
+        }
+      ],
+      "txt": {
+        "titulo": "Plan — Resources: models, data and budget",
+        "inicio": "Start",
+        "ritmo": "Pace",
+        "termino": "Expected finish",
+        "ate": "by",
+        "pronto": "done when",
+        "semanas": "weeks",
+        "travou": "## What got stuck and the rule I created",
+        "h": "h per week",
+        "exs": "exercises"
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Horizonte's plan to practice the rubric; your own area's plan for real.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "1 · Horizonte's plan",
+          "min": "40 min",
+          "texto": "Put together the Horizonte pieces you made in lessons 1 to 7 and build the plan page using the template. Run it through the rubric and run the panel prompt. Fix whatever is missing until the score is above 75 with all six required items. Write down who confirms the safeguards and who signs at Horizonte, and why.",
+          "pronto": "Horizonte's plan fits on one page, has the five blocks with measured and estimated clearly marked, a score of 75 or more on the rubric with all six required items, and the name of the person who signs, different from the person who built it."
+        },
+        {
+          "id": "e2",
+          "titulo": "2 · Your area's plan",
+          "min": "60 min",
+          "texto": "Do the same with the pieces from the \"in your process\" practices. Hand it to a person who is responsible for the budget and who wrote none of it, ask them to check the required items, and note their questions, especially about the pessimistic scenario.",
+          "pronto": "your area's plan scores 75 or more, has all six required items, the date of the next review, and the signature (or written acceptance) of someone who did not build it."
+        },
+        {
+          "id": "e3",
+          "titulo": "3 · Your dated plan",
+          "min": "5 min",
+          "texto": "Use the generator above to build the plan with your dates and download the .ics for your calendar.",
+          "pronto": "the plan is saved and the dates are on your calendar."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "4 questions. The explanation appears after you try.",
+      "perguntas": [
+        {
+          "p": "The plan scored 90 points, but the email assistant can still delete messages on its own. Result?",
+          "opcoes": [
+            "Approved: 90 is well above 75",
+            "Rejected: an irreversible operation within the agent's reach is a required item, and one missing means rejection",
+            "Approved with a caveat"
+          ],
+          "certa": 1,
+          "ref": "codigo",
+          "explica": "The required items exist so that a high score doesn't hide a big mess. The plan goes back to the tools block, not to zero."
+        },
+        {
+          "p": "Who should sign the resource plan for Horizonte's sales area?",
+          "opcoes": [
+            "Patrícia, who built it and knows everything",
+            "Carlos, who is responsible for the budget, after Rafael confirms the safeguards",
+            "The model vendor"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Whoever builds it doesn't approve it. IT confirms the technical parts (safeguards, vendor cap); whoever answers for the money signs."
+        },
+        {
+          "p": "The price of a model dropped since the plan was approved. What should you do?",
+          "opcoes": [
+            "Announce the savings to the owner",
+            "Redo the cost-per-task calculation with today's price and, if you switch models, run the 20 cases before touching the budget",
+            "Nothing, the plan is approved"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "Price is a number in the calculation, not the calculation. And switching models without the cases is the untested switch from the simulation in lesson 7."
+        },
+        {
+          "p": "The \"What changed\" panel cites a government accusation against open model providers. How should you use that in the selection report?",
+          "opcoes": [
+            "Ban all open models",
+            "As a provenance question in the open, run-locally alternative, remembering it is an accusation, not a court decision",
+            "Ignore it, it has nothing to do with management"
+          ],
+          "certa": 1,
+          "ref": "passos",
+          "explica": "The type of claim matters: accusation, forecast, vendor research, and announcement carry different weight. In the report, provenance becomes one of the three questions for the alternative: who maintains it, what license, where it came from."
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Summary",
+      "itens": [
+        {
+          "t": "One page, five blocks",
+          "texto": "Models, context, tools, budget, and exit, with the pieces behind them."
+        },
+        {
+          "t": "Rubric with required items",
+          "texto": "75 points and the six required items. One missing means a fail."
+        },
+        {
+          "t": "Whoever builds it doesn't sign it",
+          "texto": "IT confirms the safeguards; whoever answers for the budget approves."
+        },
+        {
+          "t": "Market with a date",
+          "texto": "Price of the day, type of claim, and source, before any number."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Certificate",
+      "paragrafos": [
+        "INEMA qualification certificate \"AI Manager\", coming soon at cert.inema.pro. It is not a regulated professional certification.",
+        "This is course G4 of the AI Management Program 2027. The other courses cover the agentic company (G0), people (G1), processes (G2), agents (G3), and governing, measuring, and evolving (G5), where the program's final project lives. Block 5 of the final rubric, resources, is this plan."
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "AI Management Area: the program and the courses",
+          "href": "https://eventos.inema.pro/gestao-ia/",
+          "icone": "alvo"
+        },
+        {
+          "t": "G3 · Agents: hire, delegate, and supervise",
+          "href": "https://inematds.github.io/gestao-ia-agentes-v72/",
+          "icone": "usuario"
+        },
+        {
+          "t": "Gestoria: running a hybrid operation from end to end",
+          "href": "https://inematds.github.io/gestoria/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}
